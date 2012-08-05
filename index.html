@@ -1,18 +1,16 @@
 ---
 layout: base
-name: blog
-stylesheets:
-- /blog/css/blog.css
 ---
 
 <section><div class="posts">
+  
 <h1>
 recent posts
 </h1>
 
  <ul>
    {% for post in site.posts %}
-   <li class="post">
+   <li class="postling">
    <div class="left">
 	 <span class="date">{{ post.date | date: "%m/%d/%y" }}</span>
    </div>

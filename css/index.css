@@ -1,0 +1,72 @@
+
+.posts h1{
+	font-family: brandon-grotesque, verdana, serif;
+	color: rgb(40, 40, 40);
+	font-size: 18px;
+	font-weight: normal;
+	text-decoration: underline;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+.posts ul{
+	padding: 0px 0px;
+}
+
+.posts ul li{
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.postling{
+	font-family: brandon-grotesque, verdana, serif;
+}
+
+.postling .date{
+	font-size: 10px;
+	color: rgb(100, 100, 100);
+}
+
+.postling .title{
+    
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.postling .image{
+	clear: both;
+	margin-top: 10px;
+}
+
+.postling .right img{
+	border: 1px solid darkgrey;
+	height: 100px;
+}
+
+.postling .right, 
+.postling .left,
+.postling .blurb{
+	float: left;
+}
+
+.postling .left{
+	height: 100%;
+}
+
+.postling .right{
+	margin-left: 15px;
+}
+
+.postling .right a{
+	float: left;
+}
+
+.postling .blurb{
+	margin-top: 10px;
+	width: 700px;
+	clear: left;
+	font-family: georgia, serif;
+	font-size: 14px;
+	color: rgb(40, 40, 40);
+	line-height: 1.5;
+}

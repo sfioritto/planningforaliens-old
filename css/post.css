@@ -9,7 +9,7 @@ body {
 .post .top h2{
 	font-size: 24px;
 	color: rgb(20, 20, 20);
-	font-family: verdana, sans-serif;
+	font-family: brandon-grotesque, verdana, sans-serif;
     margin: 10px 0px 0px 0px;
     padding: 0;
 }
@@ -18,11 +18,8 @@ body {
 	margin: 25px 0px;
 	font-family: georgia, serif;
 	width: 550px;
-}
-
-.post .text{
 	line-height: 1.5;
-	font-size: 17px;
+	font-size: 14px;
 	color: rgb(40, 40, 40);
 }
 
@@ -34,6 +31,7 @@ body {
 	font-size: 19px;
 	margin-bottom: 15px;
 	margin-top: 25px;
+	font-family: brandon-grotesque, verdana, sans-serif;
 }
 
 strong{
