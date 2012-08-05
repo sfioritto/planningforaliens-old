@@ -48,3 +48,6 @@ strong{
     margin: 10px 0px;
 }
 
+.clear{
+    clear: both;
+}

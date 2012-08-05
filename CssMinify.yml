@@ -2,5 +2,6 @@ files: [
   'css/reset.css',
   'css/index.css',
   'css/post.css',
-  'css/feeds.css'
+  'css/feeds.css',
+  'css/banner.css'
 ]
