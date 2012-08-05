@@ -1,40 +1,23 @@
 <section role="banner"><div class="sectionbanner">
-<a href="/"><img id="bannerlogo" src="{{ site.urlroot }}/images/nymbus-logo.jpg" /></a>
 
 <nav role="navigation"><div class="navnavigation">
 <ul id="nav">
-
-  {% assign current = 'home' %}
-  <li><a href="/" {%if page.name == current %}class="activelink"{% endif %} >
-  {{ current }}
-  </a></li>
+  <li>
+  <a href="/">Planning for Aliens</a>
+  </li>
   
-  {% assign current = 'blog' %}
- <li><a href="/blog" {%if page.name == current %}class="activelink"{% endif %}>
-  {{ current }}
- </a></li>
+  <li id="twitter">
+  <a href="https://twitter.com/sfioritto" class="twitter-follow-button"
+  data-show-count="false"
+  data-size="large"
+  data-width="82px"
+  data-show-screen-name="false">
+  Follow @nymbusorg
+  </a>
+  </li>
+
+  <li id="feed">
+  <a href="http://feeds.feedburner.com/Nymbus" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a>
+  </li>
 </ul>
-</div></nav>
-
-<section role="feeds"><div class="feeds">
-  <ul id="feeds">
-	<li id="twitter">
-	<a href="https://twitter.com/nymbusorg"
-	class="twitter-follow-button"
-	data-show-count="false"
-	data-size="large"
-	data-width="82px"
-	data-show-screen-name="false">
-	Follow @nymbusorg
-	</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</li>
-	<li id="feed">
-	<a href="http://feeds.feedburner.com/Nymbus" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt="" style="border:0"/></a>
-	</li>
- </ul>
-</div></section>
-
-
-</div></section>
-
+</div></nav>    

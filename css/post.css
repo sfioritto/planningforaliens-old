@@ -20,18 +20,31 @@ body {
 	width: 550px;
 }
 
-.post .text p{
+.post .text{
 	line-height: 1.5;
-	margin-bottom: 15px;
 	font-size: 17px;
 	color: rgb(40, 40, 40);
 }
 
+.post .text p{
+	margin-bottom: 15px;
+}
 
-
-.post h3{
+.post h3, .post h2, strong{
 	font-size: 19px;
 	margin-bottom: 15px;
 	margin-top: 25px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.post ul{
+    list-style-type: disc;
+}
+
+.post ul li{
+    margin: 10px 0px;
 }
 
