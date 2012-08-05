@@ -1,0 +1,38 @@
+---
+layout: base
+name: blog
+stylesheets:
+- /blog/css/blog.css
+---
+
+<section><div class="posts">
+<h1>
+recent posts
+</h1>
+
+ <ul>
+   {% for post in site.posts %}
+   <li class="post">
+   <div class="left">
+	 <span class="date">{{ post.date | date: "%m/%d/%y" }}</span>
+   </div>
+   <div class="right">
+	 <a href="{{ site.urlroot}}{{ post.url }}" class="title">{{ post.title }}</a>
+	 {% if post.image %}
+	 <a href="{{ site.urlroot}}{{ post.url }}" class="image"><img src="{{ site.urlroot }}/images/posts/{{ post.image }}" /></a>
+	 {% endif %}
+	 {% if post.blurb %}
+	 <p class="blurb">
+	 {{ post.blurb }}
+   </p>
+   {% endif %}
+
+   </div>
+  <div class="clear"></div>
+   </li>
+
+   {% endfor %}
+ </ul>
+</div></section>
+
+

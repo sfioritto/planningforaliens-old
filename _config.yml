@@ -1,0 +1,7 @@
+auto: true
+urlroot: ""
+images: /images
+css: /css
+javascript: /javascript
+url: http://www.planningforaliens.com
+permalink: /blog/:year/:month/:day/:title

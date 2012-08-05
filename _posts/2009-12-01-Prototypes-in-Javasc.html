@@ -1,0 +1,79 @@
+
+---
+layout: post
+title: "Prototypes in Javascript"
+---
+<p>Inheritance allows programmers to reuse code. Code reuse is the holy grail of software development best practices. The most common form of inheritance relies on an idiom known as the Class. The Class is a blueprint of what an object should look like once instantiated. It is declaritive and exists at compile time. Any Class can inherit another Class and override methods declared by it’s parent or add new methods.</p><p>Example (I hate using metaphors to describe software, but it will have to do):<br/>
+A house blueprint defines a building with four walls and two windows. A villa blueprint adds plans for a jacuzzi and refers the builder to the house blueprint for everything else.</p><p>Another implementation of inheritance uses Prototypes instead of Classes. Prototypes are instantiated objects. Programmers take a Prototype and add or remove methods and properties to create a new object. Prototypal inheritance is procedural and happens at runtime.</p><p>Example (You’re about to see why I hate metaphors — they produce odd outcomes):<br/>
+You build a prototype airplane. For this metaphor to work you need to imagine that this prototype can make infinite copies of itself, and the copies stay in perfect sync with eachother. Remember the Mirror Image spell? Like that. If the original prototype gets a scratch, all the copies instantly have the same scratch. If one of the copies is scratched, it doesn’t affect the original. Now, take one of those copies and replace the wings. That’s prototypal inheritance.</p><p>Using Classes, you are reusing the directions for building the object. Using Prototypes, you are reusing objects.</p><p>This is what prototypal inheritance looks like in a fake programming language I call OolongScript:<br/>
+<code><br/>
+var biplane = { 'sound' : 'buzzZZZzzz',<br/>
+'color' : 'blue',<br/>
+'numWings'	 : 4,<br/>
+'chanceOfFailure' : 60%;}</code></p><p><code>var jet = create(biplane); //jet is a magic copy of biplane</code></p><p>//Let's improve our biplane copy<br/>
+jet.numWings = 2;<br/>
+jet.chanceOfFailure = 5%;<br/>
+jet.weaponry = "Smart Bomb";</p><p>//okay, how many wings does the jet have?<br/>
+print jet.numWings<br/>
+&gt;&gt; 2<br/>
+//What color is the jet?<br/>
+print jet.color<br/>
+&gt;&gt; blue</p><p>//Did we mess up the biplane?<br/>
+print biplane.numWings<br/>
+&gt;&gt; 4<br/>
+print biplane.weaponry<br/>
+&gt;&gt; Undefined</p><p>//All airplanes should be red, not blue.<br/>
+biplane.color = 'red'</p><p>//What color is the jet?<br/>
+print jet.color<br/>
+&gt;&gt; red</p><p>//I want an F22 Raptor, not some lousy generic jet<br/>
+var raptor = create(jet)//Create a magic copy of the jet.<br/>
+raptor.stealth = True<br/>
+raptor.sound = "looooooooud"</p><p>print raptor.weaponry //should be "Smart Bomb" as defined on the jet.<br/>
+&gt;&gt; Smart Bomb</p><p></p><p><code>print raptor.color //should be red, just like the biplane<br/>
+&gt;&gt; red<br/>
+</code><br/>
+The raptor is built on a magic copy of the jet which uses a magical copy of the biplane prototype as a base. The jet and raptor replace the bits they don’t want and add new stuff. This doesn’t affect the biplane. But when the biplane changes color, the jet is automatically updated, as is the raptor.</p><p>Prototypal Inheritance in JavaScript (not OolongScript)</p><p>Javascript facilitates inheritance using prototypes, but where OolongScript has “create” for making magic copies, JavaScript has constructor functions and the prototype property. This is not better, it’s just harder to understand. But working from the example above, we should be able to understand what is happening.</p><p>The code for creating the biplane is the same:<br/>
+<code><br/>
+var biplane = { 'sound' : 'buzzZZZzzz',<br/>
+'color' : 'blue',<br/>
+'numWings'	 : 4,<br/>
+'chanceOfFailure' : 60%;}<br/>
+</code><br/>
+In JavaScript we want to ‘construct’ a jet by calling a function. It might look like this in OolongScript:<br/>
+<code><br/>
+var this = create(biplane); //Set this to a magic copy of the biplane<br/>
+var Jet = function(){<br/>
+//Let's improve our biplane prototype<br/>
+this.numWings = 2;<br/>
+this.chanceOfFailure = 5%;<br/>
+this.weaponry = "Smart Bomb";<br/>
+return this;<br/>
+}<br/>
+var jet = Jet();<br/>
+</code><br/>
+Except in JavaScript there is no ‘create’ function. So how does JavaScript set the variable ‘this’ to a magic copy of the biplane? Like so:<br/>
+<code><br/>
+// The Jet function remains the same. 'this' is a JavaScript keyword that we don't need<br/>
+// to define anywhere. We tell JavaScript what 'this' should be later using the 'new'<br/>
+// keyword, as you'll see below.<br/>
+var Jet = function(){<br/>
+//Let's improve our biplane prototype<br/>
+this.numWings = 2;<br/>
+this.chanceOfFailure = 5%;<br/>
+this.weaponry = "Smart Bomb";<br/>
+return this;<br/>
+}</code></p><p><code>//Set the prototype property of the function Jet<br/>
+Jet.prototype = biplane;</code></p><p></p><p><code>// Calling a function with 'new' in front of it tells JavaScript to bind<br/>
+// the keyword 'this' to a magic copy of the prototype property of<br/>
+// the function Jet, which we set the line above.<br/>
+var jet = new Jet();<br/>
+</code><br/>
+This whole setup is really hard to wrap your head around. Understanding prototypal inheritance is much easier when you can ‘create’ magic copies of objects at will. Wouldn’t it be nice if JavaScript had the ‘create’ function like we did in OolongScript? I give you my slightly simplified version of Douglas Crockford’s ‘create’ function:<br/>
+<code><br/>
+var create = function(o) {<br/>
+var F = function () {};<br/>
+F.prototype = o;<br/>
+return new F();<br/>
+};<br/>
+</code><br/>
+I leave it as an exercise to the reader to figure out how this works.</p><p>Hint: replace ‘F’ with ‘Jet’ from the example above and ‘o’ with ‘biplane’.</p>
