@@ -1,0 +1,37 @@
+body {
+    margin-left: 80px;
+}
+
+.post{
+	margin-top: 40px;
+}
+
+.post .top h2{
+	font-size: 24px;
+	color: rgb(20, 20, 20);
+	font-family: verdana, sans-serif;
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+}
+
+.post .text{
+	margin: 25px 0px;
+	font-family: georgia, serif;
+	width: 550px;
+}
+
+.post .text p{
+	line-height: 1.5;
+	margin-bottom: 15px;
+	font-size: 17px;
+	color: rgb(40, 40, 40);
+}
+
+
+
+.post h3{
+	font-size: 19px;
+	margin-bottom: 15px;
+	margin-top: 25px;
+}
+
