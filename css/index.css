@@ -6,7 +6,6 @@
 	font-weight: normal;
 	text-decoration: underline;
 	margin-bottom: 25px;
-	margin-top: 15px;
 }
 
 .posts ul{
@@ -69,4 +68,8 @@
 	font-size: 14px;
 	color: rgb(40, 40, 40);
 	line-height: 1.5;
+}
+
+.posts{
+    margin-left: 80px;
 }

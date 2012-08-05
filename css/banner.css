@@ -6,15 +6,34 @@
 #home {
 	font-family: brandon-grotesque, verdana, sans-serif;
     color: rgb(20, 20, 20);
-    font-size: 32px;
+    font-size: 40px;
     text-decoration: none;
     font-weight: bold;
+    margin-right: 25px;
+    padding-right: 25px;
+    letter-spacing: 4px;
+    border-right: 2px dotted grey;
 }
 
 #home:hover{
     text-decoration: underline;
 }
 
-banner, .sectionbanner{
-    padding-top: 50px;
+section[role="banner"]{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+nav[role="navigation"]{
+    background-color: lightgrey;
+    padding: 15px 10px 15px 80px;
+}
+
+
+#feed{
+    padding-top: 5px;
+}
+
+#twitter{
+    padding-top: 8px;
 }
