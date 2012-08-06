@@ -4,5 +4,7 @@ files: [
   'css/post.css',
   'css/feeds.css',
   'css/banner.css',
-  'css/error.css'
+  'css/error.css',
+  'css/about.css',
+  'css/base.css'
 ]

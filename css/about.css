@@ -1,0 +1,21 @@
+.about{
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.about img{
+    border: 1px solid lightgrey;
+}
+
+div.beauty{
+    float: left;
+    margin-left: 50px;
+}
+
+div.blathering{
+    float: left;
+}
+
+.firstheader{
+    margin-top: 0px;
+}
