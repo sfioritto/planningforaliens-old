@@ -3,12 +3,8 @@ h2, strong{
 	margin-bottom: 15px;
 	margin-top: 25px;
 	font-family: brandon-grotesque, verdana, sans-serif;
-}
-
-strong{
     font-weight: bold;
 }
-
 
 .clear{
     clear: both;
@@ -18,9 +14,8 @@ h1{
 	font-family: brandon-grotesque, verdana, serif;
 	color: rgb(40, 40, 40);
 	font-size: 18px;
-	font-weight: normal;
-	text-decoration: underline;
-	margin-bottom: 25px;
+	font-weight: bold;
+	margin-bottom: 40px;
 }
 
 .text p{

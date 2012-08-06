@@ -5,17 +5,30 @@
 
 .about img{
     border: 1px solid lightgrey;
+    display: inline;
 }
 
 div.beauty{
     float: left;
-    margin-left: 50px;
+    margin-right: 80px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
-div.blathering{
+
+.beauty h2.firstheader{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.blathering{
     float: left;
 }
 
-.firstheader{
-    margin-top: 0px;
+.blathering h2{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
 }
+
