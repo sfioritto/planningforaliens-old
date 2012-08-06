@@ -7,11 +7,12 @@
 }
 
 .post .top h2{
-	font-size: 24px;
+	font-size: 22px;
 	color: rgb(20, 20, 20);
 	font-family: brandon-grotesque, verdana, sans-serif;
     margin: 10px 0px 0px 0px;
     padding: 0;
+    font-weight: normal;
 }
 
 .post .text p{
