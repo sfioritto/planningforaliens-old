@@ -3,5 +3,6 @@ files: [
   'css/index.css',
   'css/post.css',
   'css/feeds.css',
-  'css/banner.css'
+  'css/banner.css',
+  'css/error.css'
 ]
