@@ -1,34 +1,44 @@
-.about{
-    margin-left: 80px;
-    margin-bottom: 50px;
+.about {
+    padding-bottom: 2em;
 }
 
-.about img{
-    border: 1px solid lightgrey;
-    display: inline;
+.about .beauty img {
+    padding: .25em;
+    border: 1px solid #777777;
 }
 
-div.beauty{
-    float: left;
-    margin-right: 80px;
-    margin-top: 80px;
-    margin-bottom: 20px;
+.about .beauty {
+    padding: 1.5em 0 1.5em 0;
 }
 
-
-.beauty h2.firstheader{
-    margin: 0px;
-    font-size: 12px;
-    font-weight: normal;
+.about .beauty figure {
+    display: block;
 }
 
-.blathering{
-    float: left;
+.about .blathering h3 {
+    font-size: 2em;
+    font-weight: 600;
+    padding-bottom: .25em;
+    padding-top: 1em;
 }
 
-.blathering h2{
-    font-size: 14px;
-    font-weight: normal;
-    font-style: italic;
+.about .beauty figcaption,
+.about .blathering p {
+    line-height: 1.4210526em;
+    font-size: 1.1667em;
 }
 
+@media screen and (min-width: 600px) {
+    .about .banner {
+        padding-bottom: 2em;
+    }
+}
+
+/*
+  Freeze the width for larger screens.
+*/
+@media screen and (min-width: 900px) {
+    .about .blathering {
+        width: 600px;
+    }
+}

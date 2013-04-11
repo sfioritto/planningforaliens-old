@@ -1,0 +1,151 @@
+@import url("http://hello.myfonts.net/count/268473");
+
+@font-face {
+    font-family: 'UnicodSans';
+    src: url('webfonts/268473_0_0.eot');
+    src: url('webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
+    url('webfonts/268473_0_0.woff') format('woff'),
+    url('webfonts/268473_0_0.ttf') format('truetype');
+}
+
+/*
+  typekit fallbacks.
+*/
+.wf-loading body {
+    visibility: hidden;
+}
+.wf-inactive body, .wf-active body {
+    visibility: visible;
+}
+.wf-active body{
+    font-weight: 300;
+}
+
+/* 
+Designed for mobile first, so start with a condensed version
+of the font.
+*/
+body{
+    font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
+    font-style: normal;
+}
+
+body{
+    color: #222222;
+}
+
+.content header, 
+.content section, 
+.content footer,
+.content footer section{
+    padding: 0 5%;
+}
+.content header{
+    padding-top: 5%;
+}
+.content footer{
+    padding-bottom: 5%;
+}
+
+.content h2{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+
+/*email list subscription styling*/
+#subscribe #email label{
+    font-size: 1.25em;
+}
+
+#email label span.emphatic{
+    color: #f21032;
+    font-style: normal;
+}
+
+#subscribe {
+    background-color: #e2f9f9;
+    padding: 4em 2em;
+}
+
+#email {
+    width: 100%;
+}
+
+#email button {
+    font-family: unicodsans;
+    font-size: 2em;
+    margin-top: .75em;
+    background: lightgrey;
+    border: 1px solid grey;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    box-shadow: inset 0 0 1px 1px #f6f6f6;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+#email button:hover {
+    background: lightgrey;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    cursor: pointer; 
+}
+
+#email button:active {
+    background: lightgrey;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; 
+}
+
+#email input{
+    font-family: unicodsans;
+    font-size: 1.5em;
+    padding: .5em;
+    width: 80%;
+    max-width: 300px;
+    margin-right: .5em;
+}
+
+#email label{
+    font-family: unicodsans;
+    display: block;
+    margin-bottom: .75em;
+    font-size: 1.5em;
+}
+
+a,
+.emphatic{
+    color: #f21032;
+}
+
+a:visited{
+    color: #888888;
+}
+
+.emphatic{
+    font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+
+    .content section, .content header, .content footer section, .content footer{
+        padding: 0;
+    }
+    .content {
+        margin: 11.11111% 22.22222% 22.22222% 11.11111%;
+    }
+}
+
+/* this is just for a little javascript typography
+helper thing I'm using. */
+#dontwrap{
+    white-space: nowrap;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}

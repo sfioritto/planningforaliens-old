@@ -1,13 +1,44 @@
 ---
 layout: base
-name: blog
+author: sean
 ---
 
-<div class="post">
-  <div class="top">
-	<h2>{{ page.title }}</h2>
- </div>
- <div class="clear"></div>
-  <div class="text">
-	{{ content }}
-  </div>
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<article class="post content">
+  <header>
+    <h2>{{ page.title }}</h2>
+    <p class="byline">
+      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">page.author</a>
+    </p>
+    <p class="tldr">
+      {{ page.blurb }}
+    </p>
+    <ul id="sharing">
+      <li class="float">
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+      </li>
+      <li class="end float">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </li>
+      <li class="clear"></li>
+    </ul>
+  </header>
+  {{ content }}
+  <footer>
+  {% include subscribe.html %}
+  </footer>
+  {% include banner.html %}
+
+

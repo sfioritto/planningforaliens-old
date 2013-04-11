@@ -1,39 +1,42 @@
-#nav li{
-    float: left;
-    margin-right: 20px;
+.banner figure {
+    font-family: unicodsans;
+    margin: 0;
 }
 
-#home {
-	font-family: brandon-grotesque, verdana, sans-serif;
-    color: rgb(20, 20, 20);
-    font-size: 40px;
+/* 
+   By default show the short caption
+   Only posts at small resolutions use 
+   the long caption.
+*/
+.banner figcaption.short{
+    margin-top: 0;
+    font-size: 1em;
+}
+.banner figcaption.long{
+    display: none;
+}
+
+.banner figcaption.short a,
+.banner figcaption.short a:visited{
+    color: #f21032;
     text-decoration: none;
-    font-weight: bold;
-    margin-right: 25px;
-    padding-right: 25px;
-    letter-spacing: 4px;
-    border-right: 2px dotted grey;
+}
+.banner figcaption.short a span.aliens{
+    color: #222222;
+    font-size: 6em;
+}
+.banner figure img{
+    max-width: 100%;
 }
 
-#home:hover{
-    text-decoration: underline;
-}
-
-section[role="banner"]{
-    margin-top: 50px;
-    margin-bottom: 70px;
-}
-
-nav[role="navigation"]{
-    background-color: lightgrey;
-    padding: 15px 10px 15px 80px;
-}
-
-
-#feed{
-    padding-top: 5px;
-}
-
-#twitter{
-    padding-top: 8px;
+@media screen and (min-width: 1000px){
+    .banner{
+        margin: 0;
+    }
+    .banner img{
+        float: left;
+    }
+    .banner figcaption.short{
+        padding-top: 150px;
+    }
 }
