@@ -1,6 +1,5 @@
 ---
 layout: base
-author: sean
 ---
 
 <!-- facebook -->
@@ -19,7 +18,7 @@ fjs.parentNode.insertBefore(js, fjs);
   <header>
     <h2>{{ page.title }}</h2>
     <p class="byline">
-      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">page.author</a>
+      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ page.author}}</a>
     </p>
     <p class="tldr">
       {{ page.blurb }}

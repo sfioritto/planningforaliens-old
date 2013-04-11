@@ -10,19 +10,25 @@ layout: base
   
   <section><div class="articles">
 
-    <div class="lead">
-      <h2><a href="/">how to lose weight with sciency-science</a></h2>
-      <p class="byline">published on <span class="pubdate">12/13/2013</span> by <a class="author" href="/about">sean</a></p>
-      <p class="tldr">
-        For the past three weeks I've been exploring small business ideas. I've decided it's time I took a serious look at making an info product.
-      </p>
-    </div>
-
     <div class="history">
-      <ul>
-        {% for post in site.posts limit:9 %}
+        {% for post in site.posts limit:10 %}
 
-        {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
+        {% if forloop.first %}
+        <div class="lead">
+          <h2><a href="/">{{ post.title }}</a></h2>
+          <p class="byline">
+            published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
+          </p>
+          <p class="tldr">
+            For the past three weeks I've been exploring small business ideas. I've decided it's time I took a serious look at making an info product.
+          </p>
+        </div>
+
+        <!-- start the list -->
+        <ul> 
+        {% else %}
+
+        {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
         {% case modulo %}
         {% when '0' %}
         <li class="last">
@@ -32,7 +38,7 @@ layout: base
         <li>
         {% endcase %}
 
-          <h3 class="title"><a href="/">{{ post.title }}</a></h3>
+          <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
           <p class="byline">
             published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
           </p>
@@ -40,6 +46,8 @@ layout: base
             {{ post.blurb }}
           </p>
         </li>
+
+        {% endif %}
         {% endfor %}
         <li>
           <h3 class="older"><a href="/">read older posts</a></h3>
