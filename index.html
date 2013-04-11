@@ -21,12 +21,16 @@ layout: base
     <div class="history">
       <ul>
         {% for post in site.posts limit:9 %}
+
         {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
-        {% if modulo == '0' %}
+        {% case modulo %}
+        {% when '0' %}
         <li class="last">
+        {% when '1'%}
+        <li class="clearleft">
         {% else %}
         <li>
-        {% endif %}
+        {% endcase %}
 
           <h3 class="title"><a href="/">{{ post.title }}</a></h3>
           <p class="byline">

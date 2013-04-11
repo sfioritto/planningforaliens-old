@@ -145,6 +145,10 @@ helper thing I'm using. */
     float: left;
 }
 
+.clearleft{
+    clear: left;
+}
+
 .clear{
     clear: both;
 }
