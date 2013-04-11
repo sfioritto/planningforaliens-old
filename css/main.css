@@ -1,11 +1,10 @@
-@import url("http://hello.myfonts.net/count/268473");
 
 @font-face {
     font-family: 'UnicodSans';
-    src: url('webfonts/268473_0_0.eot');
-    src: url('webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
-    url('webfonts/268473_0_0.woff') format('woff'),
-    url('webfonts/268473_0_0.ttf') format('truetype');
+    src: url('/webfonts/268473_0_0.eot');
+    src: url('/webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/webfonts/268473_0_0.woff') format('woff'),
+    url('/webfonts/268473_0_0.ttf') format('truetype');
 }
 
 /*
