@@ -10,51 +10,53 @@ layout: base
   
   <section><div class="articles">
 
+    {% for post in site.posts limit:10 %}
+    
+    {% if forloop.first %}
+    <div class="lead">
+      <h2><a href="/">{{ post.title }}</a></h2>
+      <p class="byline">
+        published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
+      </p>
+      <p class="tldr">
+        For the past three weeks I've been exploring small business ideas. I've decided it's time I took a serious look at making an info product.
+      </p>
+    </div>
+
+    <!-- start the list -->
     <div class="history">
-        {% for post in site.posts limit:10 %}
+      <ul> 
 
-        {% if forloop.first %}
-        <div class="lead">
-          <h2><a href="/">{{ post.title }}</a></h2>
-          <p class="byline">
-            published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
-          </p>
-          <p class="tldr">
-            For the past three weeks I've been exploring small business ideas. I've decided it's time I took a serious look at making an info product.
-          </p>
-        </div>
+    {% else %}
 
-        <!-- start the list -->
-        <ul> 
-        {% else %}
+      {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+      {% case modulo %}
+      {% when '0' %}
+      <li class="last">
+      {% when '1'%}
+      <li class="clearleft">
+      {% else %}
+      <li>
+      {% endcase %}
 
-        {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
-        {% case modulo %}
-        {% when '0' %}
-        <li class="last">
-        {% when '1'%}
-        <li class="clearleft">
-        {% else %}
-        <li>
-        {% endcase %}
+      <!-- inside the li -->
+      <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p class="byline">
+        published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
+      </p>
+      <p class="tldr">
+        {{ post.blurb }}
+      </p>
+      </li>
 
-          <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <p class="byline">
-            published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
-          </p>
-          <p class="tldr">
-            {{ post.blurb }}
-          </p>
-        </li>
-
-        {% endif %}
-        {% endfor %}
-        <li>
-          <h3 class="older"><a href="/">read older posts</a></h3>
-        </li>
+      {% endif %}
+      {% endfor %}
+      <li>
+        <h3 class="older"><a href="/">read older posts</a></h3>
+      </li>
       </ul>
       <div class="clear"></div>
-    </div>
+    </div><!-- end history -->
   </div></section><!-- end articles -->
   
   <footer>
