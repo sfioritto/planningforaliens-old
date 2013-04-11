@@ -14,13 +14,7 @@ layout: base
     
     {% if forloop.first %}
     <div class="lead">
-      <h2><a href="/">{{ post.title }}</a></h2>
-      <p class="byline">
-        published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
-      </p>
-      <p class="tldr">
-        For the past three weeks I've been exploring small business ideas. I've decided it's time I took a serious look at making an info product.
-      </p>
+      {%include article.html %}
     </div>
 
     <!-- start the list -->
@@ -40,13 +34,7 @@ layout: base
       {% endcase %}
 
       <!-- inside the li -->
-      <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="byline">
-        published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ post.author }}</a>
-      </p>
-      <p class="tldr">
-        {{ post.blurb }}
-      </p>
+      {% include article.html %}
       </li>
 
       {% endif %}

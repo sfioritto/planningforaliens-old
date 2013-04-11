@@ -11,6 +11,21 @@ layout: base
   <section><div class="articles">
     <div class="history">
       <ul>
+        {% for post in site.posts %}
+
+        {% capture modulo %}{{ forloop.index | mod:3 }}{% endcapture %}
+        {% case modulo %}
+        {% when '0' %}
+        <li class="last">
+        {% when '1'%}
+        <li class="clearleft">
+        {% else %}
+        <li>
+        {% endcase %}
+        {%include article.html %}
+        </li>
+        {% endfor %}
+
       </ul>
     </div>
     <div class="clear"></div>
