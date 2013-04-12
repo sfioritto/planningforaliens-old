@@ -4,7 +4,12 @@
   <head>
     <meta charset=utf-8 />
     <meta name="viewport" content="initial-scale-1.0, width=device-width" />
+
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
     <title>planning for aliens</title>
+    {% endif %}
 
     <!-- typekit -->
     <script data-cfasync="false" type="text/javascript" src="//use.typekit.net/dvh7yst.js"></script>
