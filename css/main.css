@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'UnicodSans';
     src: url('/webfonts/268473_0_0.eot');
@@ -11,6 +10,7 @@
   typekit fallbacks.
 */
 .wf-loading body {
+    font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
     visibility: hidden;
 }
 .wf-inactive body, .wf-active body {
