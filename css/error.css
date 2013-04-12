@@ -1,0 +1,37 @@
+
+.error {
+    padding: 5%;
+}
+
+.error section{
+    text-align: center;
+}
+
+.error section h1 {
+    font-family: unicodsans;
+    font-size: 6em;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    white-space: no-wrap;
+}
+
+.error section h1 .oh {
+    font-size: 2em;
+}
+
+.error section p{
+    margin-top: 2em;
+}
+
+.error .banner{
+    margin-top: 3em;
+}
+
+.error .banner figcaption{
+    float: left;
+    clear: left;
+    padding-top: 0;
+}
