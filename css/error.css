@@ -3,11 +3,11 @@
     padding: 5%;
 }
 
-.error section{
+.error .section{
     text-align: center;
 }
 
-.error section h1 {
+.error .section h1 {
     font-family: unicodsans;
     font-size: 6em;
     -webkit-hyphens: auto;
@@ -18,11 +18,11 @@
     white-space: no-wrap;
 }
 
-.error section h1 .oh {
+.error .section h1 .oh {
     font-size: 2em;
 }
 
-.error section p{
+.error .section p{
     margin-top: 2em;
 }
 

@@ -11,7 +11,7 @@ for this to make sense.
 .home footer{
     padding: 0
 }
-.home footer section:first-child{
+.home footer .section:first-child{
     padding: 0;
 }
 

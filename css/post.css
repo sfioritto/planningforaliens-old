@@ -128,10 +128,10 @@
  
 @media screen and (min-width: 550px){
 
-    .post section p:nth-child(2) {
+    .post .section p:nth-child(2) {
         text-indent: 0;
     }
-    .post section p {
+    .post .section p {
         text-indent: 1.5em;
         line-height: 1.5em;
         margin-bottom: 1em;
@@ -142,7 +142,7 @@
       add some cushion since we have room.
       First reset the current padding to 0;
       */
-    .post section, .post header, .post footer section, .post footer{
+    .post .section, .post header, .post footer .section, .post footer{
         padding: 0;
     }
     .post {
@@ -183,7 +183,7 @@
         margin: 11.111111% 22.222222% 22.222222% 11.111111%;
     }
 
-    .post section p{
+    .post .section p{
         /*since the width is frozen, I just used pixels here.*/
         line-height: 27px; 
     }
@@ -191,7 +191,7 @@
     /*
       Swing notes into the marginalia.
      */
-    .post section .note{
+    .post .section .note{
         position: absolute;
         left: -webkit-calc(11.1111%  +  600px + 1.5em);
         left: -moz-calc(11.1111%  +  600px + 1.5em);

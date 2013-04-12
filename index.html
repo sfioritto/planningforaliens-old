@@ -8,7 +8,7 @@ layout: base
     {%include gun.html %}
   </header>
   
-  <section><div class="articles">
+  <div class="section"><div class="articles">
 
     {% for post in site.posts limit:10 %}
     
@@ -45,18 +45,18 @@ layout: base
       </ul>
       <div class="clear"></div>
     </div><!-- end history -->
-  </div></section><!-- end articles -->
+  </div></div><!-- end articles -->
   
   <footer>
-    <section><div id="subscribe">
+    <div class="section"><div id="subscribe">
       <form id="email">
         <label>I have an email list. <span class="emphatic">You should try it.</span></label>
         <input type="email" />
         <button>sign me up</button>
       </form>
-    </div></section>
+    </div></div>
     
-    <section><div id="me">
+    <div class="section"><div id="me">
       <h2>Pleased to meet you.</h2>
       <p>
         <a href = "/about">Hey. I'm Sean.</a> I write about web design and front-end development. We should meet. 
@@ -77,7 +77,7 @@ layout: base
           </p>
         </li>
       </ul>
-    </div></section>
+    </div></div>
     
     <div class="clear"></div>
   </footer>
