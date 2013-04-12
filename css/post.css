@@ -193,9 +193,9 @@
      */
     .post section .note{
         position: absolute;
-        left: -webkit-calc(11.1111% + 600px + 1.25em);
-        left: -moz-calc(11.1111% + 600px + 1.25em);
-        left: calc(11.1111% + 600px + 1.25em);
+        left: -webkit-calc(11.1111%  +  600px);
+        left: -moz-calc(11.1111%  +  600px);
+        left: calc(11.1111%  +  600px);
         width: 70px;
         font-size: .75em;
         font-style: italic;
