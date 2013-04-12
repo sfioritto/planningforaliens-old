@@ -54,14 +54,21 @@
     clear: both;
 }
 
-.post h2 {
+.post h2, 
+.post h3 {
     font-style: italic;
     margin-top: 2em;
     margin-bottom: 1em;
     font-size: 1.33333333em;
     text-transform: lowercase;
 }
-.post p{
+.post h3{
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.post p,
+.post li{
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -71,6 +78,9 @@
     font-size: 1.1667em;
     line-height: 1.4210526em;
     margin-bottom: 1.4210526em;
+}
+.post li{
+    margin-bottom: 1em; /*override the rule above.*/
 }
 
 /*show the long caption for smaller screen resolutions.*/
