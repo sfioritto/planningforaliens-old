@@ -170,6 +170,10 @@ for this to make sense.
         padding-right: 6%;
 
     }
+    .articles .history li.clearleft{
+        clear: left;
+    }
+
     .articles .history li.last{
         width: 29%;
         padding-right: 0;
