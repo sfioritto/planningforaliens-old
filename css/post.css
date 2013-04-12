@@ -45,8 +45,12 @@
     font-style: italic;
     font-size: .83333em;
 }
-.post header .pubdate{
+
+.wf-active .post header .pubdate{
     font-weight: 600;
+}
+.post header .pubdate{
+    font-weight: bold;
 }
 
 /*facebook and twitter buttons*/

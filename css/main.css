@@ -6,24 +6,16 @@
     url('/webfonts/268473_0_0.ttf') format('truetype');
 }
 
-/*
-  typekit fallbacks.
-*/
-.wf-loading body {
-    font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
-    visibility: hidden;
-}
-.wf-inactive body, .wf-active body {
-    visibility: visible;
-}
-.wf-active body{
-    font-weight: 100;
-}
-
 /* 
 Designed for mobile first, so start with a condensed version
 of the font.
 */
+.wf-active body{
+    font-weight: 100;
+}
+.wf-inactive body{
+    font-weight: normal;
+}
 body{
     font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
     font-style: normal;
@@ -46,9 +38,12 @@ body{
     padding-bottom: 5%;
 }
 
+.wf-active h2{
+    font-weight: 600;
+}
 .content h2{
     font-size: 2em;
-    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 1em;
 }
 
