@@ -27,11 +27,21 @@
 }
 
 .error .banner{
-    margin-top: 3em;
+    margin: 3em 0 0 0;
+    padding: 0;
+    max-width: 400px;
+    display: inline;
 }
 
-.error .banner figcaption{
-    float: left;
-    clear: left;
+.error .banner figure{
+    text-align: center;
+}
+
+.error .banner figcaption.short{
     padding-top: 0;
+    float: none;
+}
+
+.error .banner img{
+    float: none;
 }
