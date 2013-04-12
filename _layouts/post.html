@@ -39,5 +39,9 @@ fjs.parentNode.insertBefore(js, fjs);
   {% include subscribe.html %}
   </footer>
   {% include rocket.html %}
-
-
+  <script>
+    setTimeout(function(){
+    var sharing = document.getElementById("sharing");
+    sharing.className = "loaded";
+    }, 1500);
+  </script>

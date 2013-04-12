@@ -8,10 +8,6 @@
     max-width: 100%;
 }
 
-.post header{
-    padding-top: 5%;
-}
-
 .post footer{
     padding: 0;
     background-color: #e2f9f9;
@@ -39,7 +35,8 @@
     margin: .5em 0;
 }
 .post header{
-    margin-bottom: 4em;
+    margin-bottom: 3em;
+    padding-top: 5%;
 }
 .post header p.byline{
     font-style: italic;
@@ -54,6 +51,9 @@
 }
 
 /*facebook and twitter buttons*/
+.post #sharing li{
+    margin: 0;
+}
 .post #sharing li.float{
     float: left;
 }
@@ -63,6 +63,17 @@
 .post #sharing .clear{
     clear: both;
 }
+.post #sharing{
+    opacity: 0;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+.post #sharing.loaded{
+    opacity: 1;
+}
+
 
 .post h2, 
 .post h3 {
