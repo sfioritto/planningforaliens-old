@@ -35,7 +35,7 @@
     margin: .5em 0;
 }
 .post header{
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     padding-top: 5%;
 }
 .post header p.byline{
@@ -64,7 +64,9 @@
     clear: both;
 }
 .post #sharing{
+    position: absolute;
     opacity: 0;
+    overflow: hidden;
     -moz-transition: opacity .5s;
     -webkit-transition: opacity .5s;
     -o-transition: opacity .5s;
@@ -73,7 +75,6 @@
 .post #sharing.loaded{
     opacity: 1;
 }
-
 
 .post h2, 
 .post h3 {
