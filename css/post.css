@@ -191,7 +191,7 @@
     /*
       Swing notes into the marginalia.
      */
-    .post .section .note{
+    .csscalc .post .section .note{
         position: absolute;
         left: -webkit-calc(11.1111%  +  600px + 1.5em);
         left: -moz-calc(11.1111%  +  600px + 1.5em);
