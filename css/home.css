@@ -2,16 +2,16 @@
 
 /*
 At small resolutions the email list box expands
-to the edges of the screen. The footer is
+to the edges of the screen. The .footer is
 the email list on the home screen.
 
 Look at the padding settings in main.css
 for this to make sense.
 */
-.home footer{
+.home .footer{
     padding: 0
 }
-.home footer .section:first-child{
+.home .footer .section:first-child{
     padding: 0;
 }
 

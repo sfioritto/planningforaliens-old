@@ -27,14 +27,14 @@ body{
 
 .content header, 
 .content .section, 
-.content footer,
-.content footer .section{
+.content .footer,
+.content .footer .section{
     padding: 0 5%;
 }
 .content header{
     padding-top: 5%;
 }
-.content footer{
+.content .footer{
     padding-bottom: 5%;
 }
 
@@ -125,7 +125,7 @@ a:visited{
 
 @media screen and (min-width: 600px) {
 
-    .content .section, .content header, .content footer .section, .content footer{
+    .content .section, .content header, .content .footer .section, .content .footer{
         padding: 0;
     }
     .content {
