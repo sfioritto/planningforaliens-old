@@ -23,30 +23,30 @@
     font-weight: bold;
 }
 
-.post header h2{
+.post .header h2{
     font-family: unicodsans, verdana, sans-serif;
     font-style: normal;
     font-size: 3em;
     font-weight: normal !important; /*fix for firefox*/
     margin: 0;
 }
-.post header p{
+.post .header p{
     font-size: 1em;
     margin: .5em 0;
 }
-.post header{
+.post .header{
     margin-bottom: 5em;
     padding-top: 5%;
 }
-.post header p.byline{
+.post .header p.byline{
     font-style: italic;
     font-size: .83333em;
 }
 
-.wf-active .post header .pubdate{
+.wf-active .post .header .pubdate{
     font-weight: 600;
 }
-.post header .pubdate{
+.post .header .pubdate{
     font-weight: bold;
 }
 
@@ -142,7 +142,7 @@
       add some cushion since we have room.
       First reset the current padding to 0;
       */
-    .post .section, .post header, .post .footer .section, .post .footer{
+    .post .section, .post .header, .post .footer .section, .post .footer{
         padding: 0;
     }
     .post {

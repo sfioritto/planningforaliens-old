@@ -13,7 +13,7 @@ layout: base
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <article class="post content">
-  <header>
+  <div class="header"><header>
     <h2>{{ page.title }}</h2>
     <p class="byline">
       published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ page.author}}</a>
@@ -31,7 +31,7 @@ layout: base
       </li>
       <li class="clear"></li>
     </ul>
-  </header>
+  </header></div>
   {{ content }}
   <div class="footer"><footer>
   {% include subscribe.html %}
