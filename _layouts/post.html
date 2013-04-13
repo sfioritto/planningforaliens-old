@@ -12,7 +12,7 @@ layout: base
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<article class="post content">
+<div class="post content"><article>
   <div class="header"><header>
     <h2>{{ page.title }}</h2>
     <p class="byline">
@@ -37,6 +37,7 @@ layout: base
   {% include subscribe.html %}
   </footer></div>
   {% include rocket.html %}
+  </article></div>
   <script>
     setTimeout(function(){
     var sharing = document.getElementById("sharing");
