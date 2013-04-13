@@ -13,6 +13,10 @@
     background-color: #e2f9f9;
 }
 
+.post .note{
+    color: #59aeb7;
+}
+
 /*
   typekit setup
 */
@@ -199,11 +203,12 @@
         width: 70px;
         font-size: .75em;
         font-style: italic;
-        line-height: 1.1875;
+        line-height: 1.1875em;
         text-align: left;
         text-indent: 0;
         background-color: #e2f9f9;
         padding: 3em 1.5em;
+        color: #ffffff;
     }
 }
 
@@ -216,7 +221,6 @@
 @media screen and (max-width: 899px){
     .post .note{
         font-style: italic;
-        color: #59aeb7;
     }
     .post .note:before{
         content: "(";
