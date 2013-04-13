@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-.error .banner figcaption.short{
+.error .banner .figcaptionshort{
     padding-top: 0;
     float: none;
 }

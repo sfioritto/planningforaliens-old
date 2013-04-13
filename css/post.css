@@ -106,10 +106,10 @@
 }
 
 /*show the long caption for smaller screen resolutions.*/
-.post .banner figcaption.long{
+.post .banner .figcaptionlong{
     display: block;
 }
-.post .banner figcaption.short{
+.post .banner .figcaptionshort{
     display: none;
 }
 .post .banner img{
@@ -158,10 +158,10 @@
         -o-transform:rotate(0deg); /* Opera */
         float: none;
     }
-    .post .banner figcaption.long{
+    .post .banner .figcaptionlong{
         display: none;
     }
-    .post .banner figcaption.short{
+    .post .banner .figcaptionshort{
         display: block;
         font-size: 1em;
         padding-top: 0;

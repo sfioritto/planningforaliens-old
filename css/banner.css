@@ -8,20 +8,20 @@
    Only posts at small resolutions use 
    the long caption.
 */
-.banner figcaption.short{
+.banner .figcaptionshort{
     margin-top: 0;
     font-size: 1em;
 }
-.banner figcaption.long{
+.banner .figcaptionlong{
     display: none;
 }
 
-.banner figcaption.short a,
-.banner figcaption.short a:visited{
+.banner .figcaptionshort a,
+.banner .figcaptionshort a:visited{
     color: #f21032;
     text-decoration: none;
 }
-.banner figcaption.short a span.aliens{
+.banner .figcaptionshort a span.aliens{
     color: #222222;
     font-size: 6em;
 }
@@ -36,7 +36,7 @@
     .banner img{
         float: left;
     }
-    .banner figcaption.short{
+    .banner .figcaptionshort{
         padding-top: 150px;
     }
 }
