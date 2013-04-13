@@ -1,4 +1,4 @@
-.banner figure {
+.banner .figure {
     font-family: unicodsans, verdana, sans-serif;
     margin: 0;
 }
@@ -25,7 +25,7 @@
     color: #222222;
     font-size: 6em;
 }
-.banner figure img{
+.banner .figure img{
     max-width: 100%;
 }
 
