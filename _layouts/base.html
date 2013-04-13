@@ -18,13 +18,15 @@
 
     <link rel="alternate" type="application/rss+xml" title="rss"
           href="http://feeds.feedburner.com/planningforaliens"/>
-    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/banner.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/home.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/post.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/about.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/error.css"/>
+    {% css_asset_tag global %}
+    - /_assets/reset.css
+    - /_assets/main.css
+    - /_assets/banner.css
+    - /_assets/home.css
+    - /_assets/post.css
+    - /_assets/about.css
+    - /_assets/error.css
+    {% endcss_asset_tag %}
 
 
     <style>
