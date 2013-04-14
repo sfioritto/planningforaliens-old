@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I redesigned my blog. It's responsive!"
+title: "A Responsive Redesign of This Blog"
 blurb: ""
 author: "sean"
 ---
@@ -8,19 +8,80 @@ author: "sean"
 <div class="section">
   <h2>Web design is hard.</h2>
   <p>
-  I am not a designer, I'm a developer. I recently decided my projects would benefit from more thoughtful, informed design so I'm learning a few design skills. I spent the last two weeks reading hundreds of articles on Smashing magazine and .Net magazine. I bought and read <a href="//bootstrappingdesign.com">Bootstrapping Design</a> and <a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326">The Elements of Typographic Design</a>. Then I put a few of my newly acquired skills to use redesigning this blog.
+  I am not a designer, I'm a developer. I decided my projects would benefit from more thoughtful, informed design so I'm learning a few design skills. I spent the last two weeks reading hundreds of articles on Smashing magazine and .Net magazine. I bought and read <a href="//bootstrappingdesign.com">Bootstrapping Design</a> and <a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326">The Elements of Typographic Design</a>. Then I put a few of my newly acquired skills to use redesigning this blog.
   </p>
   <p>
-  The result is what you are looking at now. It's fully responsive and works on every device and browser I could think of to test, <span class="note">It even works in IE6 and IE7. It just falls back to the mobile version.</span> It took me five days, which took me completely by surprise. Building a website for every possible screen and browser is not a simple task. And for me at least I couldn't separate code and design, I had to do both at the same time. I can't imagine creating a psd for every breakpoint -- how would you even figure out what the breakpoints are? It's a brave new world out there and I can't imagine working on a team with designers that can't code.
+  The result is what you are looking at now. It's fully responsive and works on every device and browser I could think of to test. <span class="note">It even works in IE6 and IE7. It just falls back to the mobile version.</span> It took me five days, which took me completely by surprise -- I thought it would take two. As it turns out, building a website for every possible screen and browser is not a simple task.
   </p>
   <p>
-  The rest of this post is a walkthrough of my design process. If you're new to responsive web design this might be a good place to start. My blog is completely open source and available on <a href="//github.com/sfioritto/planningforaliens">Github</a>. And while I'm new to design I'm not new to front-end development and I love helping people learn about programming. So get in touch on <a href="//twitter.com/sfioritto">Twitter</a> if you have any questions. But honestly the code is pretty straightforward -- nothing fancy. This was mainly an exercise in learning a little more about design.
+  The rest of this post is a walkthrough of my design process. If you're new to responsive web design this might be a good place to start; the code is pretty straightforward -- nothing fancy. My blog is completely open source and available on <a href="//github.com/sfioritto/planningforaliens">Github</a>. And while I'm new to design I'm not new to front-end development and I love helping people learn about programming. I'm also looking for feedback since this is my first attempt at "designing" something. So get in touch on <a href="//twitter.com/sfioritto">Twitter.</a>
   </p>
 </div>
 
 <div class="section">
   <h2>Typography first.</h2>
   <p>
-  This is a blog, so readability should be the first thing I think about when designing, and that means typography. 
+  This is a blog, so readability should be the first thing I think about when designing, and that means typography. My approach with picking a typeface was to <a href="http://www.graphic-design.com/Type/voice/">think about the voice</a> of the typeface. I tried to conjure up an image of the person writing this blog. I know, you're thinking, "it's just you. Why don't you just picture yourself?" Real humans are complicated, even me apparently. I struggled to describe myself. So I conjured up a character I thought represented the tone I want for this blog: professional but a little adventurous. <span class="note">The character was Captain Picard.  I'm a Star Trek fan, I can't help myself. I wonder what his blog would look like...</span>
+  </p>
+  <p>
+  I ended up with two typefaces. Proxima Nova is used for most of the text and Unicodsans is used sparingly for titles and headers. Futura would have made sense, (as far as the voice goes), but it's not readable in paragraphs. Proxima Nova is a good compromise, and it looks beautiful.
+  </p>
+</div>
+<div class="section">
+  <h2>Start with small screens.</h2>
+  <p>
+    I have four main views: posts, home page, about page and the archives. Every view has a primary goal and a few secondary goals. On the home page I care about showing the content and overall topic of the blog. Posts should be easy to read and skim quickly if necessary. For most of the views I want people to know about my email list. The list is an important tool for my business, so I want people to sign up. (p.s. If you're finding this post useful, you should sign up for my email list. :-)
+  <p>
+    I started with the post page since it's the most important. I set Chrome to 320x480 <a href="https://developers.google.com/chrome-developer-tools/docs/mobile-emulation">using the developer tools</a> and dropped some markup from an older blog post into a file. I set some reasonable font sizes and line heights and took a stab at getting the spacing right. I wanted the text to be justified but at the lower resolution the <a href="http://en.wikipedia.org/wiki/River_(typography)">rivers</a> and gaps were pretty bad. So I changed the font family to the condensed version of Proxima Nova and tweaked a few things until it looked better. I find it to be acceptable. <span class="note">Most of my fiddling at the small screens was making typographical decisions. I'm sure a pro would have made many different decisions. Typography is hard, but we all know that, right?</span>
+  </p>
+<p>
+  Posts are focused on content first. After content I want you to know about my email list. Navigation is a distant third so the only navigation to the rest of my site is at the very bottom. I realize it's not conventional, but I don't think navigation should be at the top of a blog; that's not how people use blogs. They stumble on an article, read it and then close the tab. If you're lucky they share the link on Twitter and if you're really lucky they poke around to find out if they should subscribe to your mailing list. My home page is designed with this in mind as well. I'm assuming that you are scanning my articles after just reading something I wrote, so I made sure you could easily skim article headlines and then sign up for the email list if they look intriguing.
+</p>
+</div>
+<div class="section">
+  <h2>Picking breakpoints.</h2>
+  <p>
+    Picking breakpoints was a process of expanding the browser window until things looked bad then setting a media query and tweaking until it looked better. I tried to just adjust type settings like margins and sizes and line heights, but eventually on the home page I had to create multiple columns. I also realized there were points where I could show more information on a slightly larger screen, so I took advantage and added more data to the markup. I also did a few subtle but fancy things because I was having fun. <span class="note">For example this note is inline for smaller screens but I swing it out into the marginalia at larger resolutions.</span>
+  </p>
+</div>
+<div class="section">
+  <h2>Picking colors.</h2>
+  <p>
+    I waited until I was almost completely done with layout before I actually picked a color scheme. Maybe this is not a good idea, I'm not sure. But I felt the layout and typography was the most important so that should come first.
+  </p>
+  <p>
+    I don't know anything about color theory. What I know about colors is what I read in Bootstrapping Design. So I know that warm and cool colors tend to project different kinds of feelings and energy. Since I knew the tone of the blog was "professional but adventurous" I needed a predominantly cool color scheme. But I also wanted a flare of fun here and there, so I picked a blue and red that go well together. I added blues to bigger areas and used the red sparingly. This was definitely the weakest part of the process for me which is why there is so little color.
+  </p>
+</div>
+<div class="section">
+  <h2>Testing testing testing testing...</h2>
+  <p>
+    So it turns out if you want your site to work on every screen and every device you have to do quite a bit of testing. I used Browser Stack and I would say it was good enough. Ideally I would want a device lab but that's not exactly an expense I can justify for such a small project. 
+  </p>
+  <p>
+    I kept the markup and css as simple as possible but I knew there were a few things that wouldn't work in older browsers. Sure enough when I loaded up the site in IE7 the marginalia didn't work (they use calc) and a bunch of my layout was broken since I was using Html5 elements like header and footer and my CSS selectors referred to them. <span class="note">I added some div wrappers and threw in modernizr to detect calc and that was that.</span> 
+  </p>
+  <p>
+    It took me a few hours to go through each of the layouts on my page on all the devices and browsers I wanted to test. I can't imagine doing that on a much larger site.
+  </p>
+</div>
+<div class="section">
+  <h2>
+    Deploying and performance.
+  </h2>
+  <p>
+    Making a reading experience enjoyable on a phone requires more than just making the font bigger. Performance is really important and I am always thinking about performance. That's the primary reason this blog is completely static and hosted on Amazon S3. Serving up static files this way is already fast, but I wanted to make it even faster so in addition to some basic performance optimizations like bundling assets, I decided to throw a CDN in front of the blog.
+  </p>
+  <p>
+    I went with <a href="https://www.cloudflare.com/">CloudFlare</a> for a few reasons but mainly because it was super easy to get it started and configured. There's a free tier and then paid tiers starting at $20/month which is what I went with. It's faster and offered a few other features I wanted.
+  </p>
+</div>
+<div class="section">
+  <h2>What do you think of the design?</h2>
+  <p>
+    This is really the first time I've thoughtfully applied design principals to anything. A lot of the thinking is similar to writing good code or even just good copy. With both of those I spend most of my time thinking about the reader. Are my thoughts clear and concise? Will they know why I chose "this" over "that"?
+  </p>
+  <p>
+    I would love to take on something a little more ambitious than a blog redesign, but who knows what kind of time I'll have. I may do a few one page, hypothetical designs to try and stretch myself. Admittedly the aesthetic on this site is a bit plain but that was more to do with working within the constraints of my current design abilities and less to do with my personal aesthetic. I could stand for just a little more fanciness.
   </p>
 </div>

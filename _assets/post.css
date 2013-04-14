@@ -13,8 +13,8 @@
     background-color: #e2f9f9;
 }
 
-.post .note{
-    color: #59aeb7;
+.no-csscalc .post .note{
+    font-weight: italic;
 }
 
 /*
@@ -207,7 +207,7 @@
         text-align: left;
         text-indent: 0;
         background-color: #e2f9f9;
-        padding: 3em 1.5em;
+        padding: 1.5em 1.5em;
         color: #222222;
     }
 }
@@ -219,9 +219,6 @@
   css to turn everything back to defaults.
 */
 @media screen and (max-width: 899px){
-    .post .note{
-        font-style: italic;
-    }
     .post .note:before{
         content: "(";
     }
