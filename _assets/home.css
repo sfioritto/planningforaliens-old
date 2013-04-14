@@ -87,6 +87,7 @@ for this to make sense.
 }
 #me p{
     font-style: italic;
+    line-height: 1.4em;
 }
 #contact li {
     margin-top: 1em;
