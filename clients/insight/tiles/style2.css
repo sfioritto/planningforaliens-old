@@ -1,0 +1,96 @@
+body{
+    margin: 5% 15%;
+}
+body a{
+    text-decoration: none;
+}
+
+
+div {
+    margin-top: 3em;
+}
+
+.testimonials li{
+    margin-top: 2em;
+}
+.testimonials li, p{
+       width: 670px; 
+}
+p {
+    text-align: justify;
+    margin: 1em 0;
+    line-height: 1.625em;
+}
+h1, h2.logo{
+    text-align: center;
+}
+
+.contact p{
+    text-align: center;
+    width: 100%;
+}
+.images img{
+    width: 50%;
+}
+.images{
+    margin: 8em 0;
+}
+/*end shared*/
+
+
+body{
+    font-family: minion-pro-caption, verdana, serif;
+    background-color: #232423;
+    color: #eeeeee;
+}
+h1{
+    font-size: 7em;
+    color: #4591F5;
+}
+h2.logo{
+    font-size: 2em;
+}
+h1, h2.logo{
+    font-family: trajan-pro-3, verdana, serif;
+    font-weight: 400;
+}
+.contact .phone{
+    font-size: 3em;
+    font-weight: 700;
+    color: #DEC83A;
+}
+h2, h3{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.testimonials li{
+    margin-bottom: 4em;
+    margin-top: 3em;
+}
+.curlyend, .curlystart{
+    font-size: 8em;
+    height: 1px;
+}
+.curlyend{
+    float: right;
+    margin-top: 25px;
+    display: none;
+}
+.curlystart{
+    margin-top: 25px;
+    float: left;
+}
+
+.callout{
+    color: #DEC83A;
+}
+
+
+/*
+light grey: BDC4C4
+grey: 5A5F66
+dark grey: 2C2E38
+red: EB2800
+black: 232423;
+*/
