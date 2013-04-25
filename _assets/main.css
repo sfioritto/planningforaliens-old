@@ -28,7 +28,8 @@ body{
 .content .header, 
 .content .section, 
 .content .footer,
-.content .footer .section{
+.content .footer .section,
+.content .banner{
     padding: 0 5%;
 }
 .content .header{

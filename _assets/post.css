@@ -118,11 +118,11 @@
 }
 .post .banner img{
     max-width: 100%;
-    transform:rotate(92deg);
-    -ms-transform:rotate(92deg); /* IE 9 */
-    -moz-transform:rotate(92deg); /* Firefox */
-    -webkit-transform:rotate(92deg); /* Safari and Chrome */
-    -o-transform:rotate(92deg); /* Opera */
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
 }
 .post .banner{
     padding-top: 8em;
@@ -184,7 +184,7 @@
 @media screen and (min-width: 900px){
 
     .post {
-        margin: 11.111111% 22.222222% 22.222222% 11.111111%;
+        margin: 4em 8em 8em 4em;
     }
 
     .post .section p{
@@ -197,9 +197,9 @@
      */
     .csscalc .post .section .note{
         position: absolute;
-        left: -webkit-calc(11.1111%  +  600px + 1.5em);
-        left: -moz-calc(11.1111%  +  600px + 1.5em);
-        left: calc(11.1111%  +  600px + 1.5em);
+        left: -webkit-calc(4em +  600px + 1.5em);
+        left: -moz-calc(4em +  600px + 1.5em);
+        left: calc(4em + 600px + 1.5em);
         width: 70px;
         font-size: .75em;
         font-style: italic;
