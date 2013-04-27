@@ -1,0 +1,209 @@
+body{
+    font-family: minion-pro-caption, verdana, serif;
+    background-color: #232423;
+    color: #eeeeee;
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .05) 5%, transparent 5%, transparent);
+    background-image: -moz-linear-gradient(to right, rgba(255, 255, 255, .05) 5%, transparent 5%, transparent);
+    background-image: -o-linear-gradient(to right, rgba(255, 255, 255, .05) 5%, transparent 5%, transparent);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .05) 5%, transparent 5%, transparent);
+    background-size: 15px 15px;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: #DEC83A;
+}
+
+section{
+    padding: 1em;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5em;
+}
+
+a{
+    color: #4591F5;
+    text-decoration: none;
+}
+
+.emphasis{
+    color: #DEC83A;
+}
+
+/*******************************
+ header styling
+ */
+header{
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1{
+    font-size: 3em;
+    letter-spacing: .2em;
+    font-weight: 300;
+}
+
+header h2{
+    font-size: 1.33333em;
+    font-weight: 400;
+    margin-top: .25em;
+}
+
+h1, header h2{
+    font-family: trajan-pro-3, verdana, serif;
+}
+/*
+ end header styling
+*******************************/
+
+
+/******************************
+phone
+*/
+.phone a{
+    font-size: 2em;
+    font-weight: 700;
+}
+.phone{
+    background-color: #232423;
+    text-align: center;
+    box-shadow: 0 0 .35em #DEC83A;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: #DEC83A;
+}
+/*
+end phone
+******************************/
+
+/******************************
+yelp
+*/
+
+.yelp{
+    margin-top: 3.5em;
+    margin-bottom: 2.5em;
+    min-height: 80px;
+}
+
+.yelp p{
+    font-family: trajan-pro-3, verdana, serif;
+    font-size: 1.5em;
+    line-height: 1.34em;
+}
+
+.yelp img{
+    float: left;
+    width: 90px;
+    margin-right: .5em;
+    margin-bottom: .5em;
+    margin-left: -5px;
+}
+/*
+end yelp
+******************************/
+
+
+/******************************
+fleet
+*/
+
+.fleet{
+    text-align: center;
+}
+
+.fleet li{
+    margin-top: 3em;
+    width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fleet li .wrapper{
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    background-color: white;
+}
+.fleet li img{
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.fleet figcaption{
+    margin-top: .75em;
+}
+
+/*
+end fleet
+******************************/
+
+
+/******************************
+services
+*/
+
+.services li{
+    margin-bottom: 1em;
+    font-size: 1.333em;
+}
+
+.services li:before{
+    content: "\00BB \0020";
+}
+
+/*
+end services
+******************************/
+
+
+/******************************
+testimonials
+*/
+
+.testimonials{
+    max-width: 100%;
+    padding: 0;
+}
+
+.testimonials li{
+    margin-bottom: 3em;
+}
+
+.testimonials ul{
+    background-color: #232423;
+    width: 100%;
+    padding: 2em 0;
+    box-shadow: 0 0 .35em #DEC83A;
+}
+
+.testimonials h3,
+.testimonials li p{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials li p{
+    line-height: 1.4375em;
+}
+
+.curlystart{
+    font-size: 8em;
+    height: 1px;
+    margin-top: 45px;
+    float: left;
+}
+
+
+/*
+end testimonials
+******************************/
