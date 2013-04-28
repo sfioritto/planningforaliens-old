@@ -1,0 +1,15 @@
+.childselectors > ul > li{
+    border: 5px solid red;
+}
+
+.childselectors > ul > li > ul{
+    border: 5px solid blue;
+}
+
+.adjacentsibling h3 + p{
+    color: red;
+}
+
+.generalsibling h3 ~ p{
+    color: red;
+}

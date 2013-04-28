@@ -29,6 +29,10 @@
     - /_assets/error.css
     {% endcss_asset_tag %}
 
+    {% if page.style %}
+    <link rel="stylesheet" href="/css/{{ page.style }}" type="text/css"/>
+    {% endif %}
+
 
     <style>
       @import url("http://hello.myfonts.net/count/268473");

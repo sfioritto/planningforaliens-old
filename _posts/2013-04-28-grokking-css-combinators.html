@@ -1,0 +1,113 @@
+---
+layout: post
+title: "Grokking CSS Combinators A.K.A. Fancy Pants Selectors"
+blurb: "We all know how to write standard descendant selectors but have you ever seen something like ul > li {} or h2 ~ p {} lurking in a stylesheet and wondered why these selectors were written in an alien language? Don't worry, you are not alone. Take ten minutes to read this and you'll never be confused again."
+style: "combinators.css"
+author: "sean"
+---
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&lang=html&skin=sunburst"></script>
+<div class="section">
+  <h2>It looks harder than it really is</h2>
+  <p>
+  If you've never bothered to learn about CSS combinators they can look like an alien language. But once you spend ten minutes with the basics you should be able to figure out what's happening really quickly. I used to avoid using these selectors because my old foes IE6 and IE7 didn't support them, but we don't need to worry about those guys anymore (right?!?). Instead we should use whatever selectors make sense and then figure out a way to make our design work in browsers we need to support.
+  </p>
+</div>
+
+<div class="section childselectors">
+  <h2>.childselectors > ul > li {...}</h2>
+  <p>
+    First up is the child selector. The normal selectors you are probably familiar with are called descendant selectors. They look like this:
+  </p>
+  <pre class="prettyprint">ul li { margin-top: 5px; }</pre>
+  <p>
+    With this descendant selector you are selecting every &lt;li&gt; that is under the &lt;ul&gt;. But what if one of the &lt;li&gt; tags of the &lt;ul&gt; has an inner list with other &lt;li&gt; tags? And you don't want to style those? That's where the child selector comes in. It only selects the children of the element that match the rule, not all of the descendants. It's easier to understand with an example.
+  </p>
+  <pre class="prettyprint">
+&lt;ul&gt;
+    &lt;li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;inner list&lt;/li&gt;
+        &lt;li&gt;inner list&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;outer list&lt;/li&gt;
+    &lt;li&gt;outer list&lt;/li&gt;
+  &lt;/ul&gt;
+  </pre>
+  <pre class="prettyprint">
+.childselectors > ul > li{
+    border: 5px solid red;
+}
+
+.childselectors > ul > li > ul{
+    border: 5px solid blue;
+}
+  </pre>
+  <ul>
+    <li>
+      <ul>
+        <li>inner list</li>
+        <li>inner list</li>
+      </ul>
+    </li>
+    <li>outer list</li>
+    <li>outer list</li>
+  </ul>
+  <p>
+    I love how precise you can be with these selectors without having to create special classes.
+  </p>
+</div>
+<div class="section">
+  <h2>.adjacentsibling h3 + p{ color: red; }</h2>
+  <p>
+    Descendant and child selectors handle elements below other elements. What if you want to grab an element next to another element? For example, each section of this blog starts with an &lt;h2&gt; tag which is followed by content wrapped in &lt;p&gt; tags. The &lt;p&gt; tags are next to the &lt;h2&gt; tags and we can select them using an adjacent selector, which is the plus sign.
+  </p>
+  <p>
+    For this example I want to make the text of the first paragraph of each section red, which is basically like saying the first &lt;p&gt; tag following the first &lt;h2&gt; tag of each section. We can do this using an adjacent selector, like so:
+  </p>
+  <pre class="prettyprint">
+&lt;h3&gt;example header&lt;/h3&gt;
+&lt;p&gt;This is the first paragraph and I should be red.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph and I should be normal.&lt;/p&gt;
+  </pre>
+  <pre class="prettyprint">
+    .adjacentsibling h3 + p{
+       color: red;
+    }
+  </pre>
+  <div class="adjacentsibling">
+    <h3>example header</h3>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+  </div>  
+</div>
+<div class="section">
+  <h2>.generalsibling h3 ~ p</h2>
+  <p>
+    The adjacent sibling selector only gives us the first sibling that matches the rule, but what if you want all the siblings? Just change the + to a ~ and you're good to go.
+  </p>
+  <pre class="prettyprint">
+&lt;h3&gt;example header&lt;/h3&gt;
+&lt;p&gt;This is the first paragraph and I should be red.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph and I should be normal.&lt;/p&gt;
+  </pre>
+  <pre class="prettyprint">
+    .adjacentsibling h3 ~ p{
+       color: red;
+    }
+  </pre>
+  <div class="generalsibling">
+    <h3>example header</h3>
+    <p>This is the first paragraph. I should be red.</p>
+    <p>This is the second paragraph. I should also be red.</p>
+  </div>  
+</div>
+<div class="section">
+  <h2>The tiny screwdriver in the Swiss Army Knife</h2>
+  <p>
+    These selectors are not the coolest CSS feature of all time. They are more like that tiny screwdriver that comes with some Swiss Army knives. I almost never need it but on occasion it's the only thing that will work.
+  </p>
+  <p>
+    (P.S. Swiss Army Knives are awesome).
+  </p>
+</div>
