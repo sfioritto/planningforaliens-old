@@ -5,7 +5,8 @@ blurb: "We all know how to write standard descendant selectors but have you ever
 style: "combinators.css"
 author: "sean"
 ---
-<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&lang=html&skin=sunburst"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js" type="text/javascript"></script>
+<script>window.onload = prettyPrint;</script>
 <div class="section">
   <h2>It looks harder than it really is</h2>
   <p>
@@ -22,7 +23,7 @@ author: "sean"
   <p>
     With this descendant selector you are selecting every &lt;li&gt; that is under the &lt;ul&gt;. But what if one of the &lt;li&gt; tags of the &lt;ul&gt; has an inner list with other &lt;li&gt; tags? And you don't want to style those? That's where the child selector comes in. It only selects the children of the element that match the rule, not all of the descendants. It's easier to understand with an example.
   </p>
-  <pre class="prettyprint">
+  <pre class="prettyprint" lang="html">
 &lt;ul&gt;
     &lt;li&gt;
       &lt;ul&gt;
@@ -111,3 +112,4 @@ author: "sean"
     (P.S. Swiss Army Knives are awesome).
   </p>
 </div>
+<script>window.onload = prettyPrint;</script>
