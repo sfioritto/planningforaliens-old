@@ -15,7 +15,7 @@
 .banner .figcaptionshort{
     margin-top: 0;
     font-size: 1em;
-    padding-top: 5em;
+    padding-top: 3em;
 }
 .banner .figcaptionlong{
     display: none;
@@ -30,7 +30,7 @@
 }
 .banner .figcaptionshort a span.aliens{
     color: #222222;
-    font-size: 2em;
+    font-size: 3em;
 }
 .banner .figure img{
     width: 45%;
@@ -41,6 +41,7 @@
 @media screen and (min-width: 600px){
     .banner .figcaptionshort{
         font-size: 1.4em;
+        padding-top: 4em;
     }
     .banner .figcaptionshort a span.aliens{
         font-size: 4em;
