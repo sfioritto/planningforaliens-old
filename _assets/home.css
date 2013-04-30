@@ -20,7 +20,7 @@ for this to make sense.
 }
 
 .articles .lead{
-    background-color: #e2f9f9;
+    background-color: #ABD7E0;
     padding: .75em;
     margin-bottom: 2em;
 }
@@ -46,7 +46,7 @@ for this to make sense.
 }
 
 .articles .byline .author {
-    color: #f21032;
+    color: #ff0023;
 }
 
 .articles h3{

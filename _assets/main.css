@@ -55,12 +55,12 @@ body{
 }
 
 #email label span.emphatic{
-    color: #f21032;
+    color: #ff0023;
     font-style: normal;
 }
 
 #subscribe {
-    background-color: #e2f9f9;
+    background-color: #ABD7E0;
     padding: 4em 2em;
 }
 
@@ -114,7 +114,7 @@ body{
 
 a,
 .emphatic{
-    color: #f21032;
+    color: #ff0023;
 }
 
 a:visited{

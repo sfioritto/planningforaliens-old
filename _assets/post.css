@@ -10,7 +10,7 @@
 
 .post .footer{
     padding: 0;
-    background-color: #e2f9f9;
+    background-color: #ABD7E0;
 }
 
 .no-csscalc .post .note{
@@ -201,7 +201,7 @@
         font-style: italic;
         line-height: 1.1875em;
         text-align: left;
-        background-color: #e2f9f9;
+        background-color: #ABD7E0;
         padding: 1.5em 1.5em;
         color: #222222;
     }
