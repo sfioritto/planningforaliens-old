@@ -42,6 +42,9 @@
     .banner .figcaptionshort{
         font-size: 1.4em;
     }
+    .banner .figcaptionshort a span.aliens{
+        font-size: 4em;
+    }
 }
 
 @media screen and (min-width: 1000px){
@@ -57,7 +60,8 @@
     .banner .figcaptionshort{
         font-size: 2em;
     }
+
     .banner figure img{
-        width: 380px;
+        width: 300px;
     }
 }
