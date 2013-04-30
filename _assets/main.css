@@ -130,8 +130,15 @@ a:visited{
     .content .section, .content .header, .content .footer .section, .content .footer{
         padding: 0;
     }
+    .content .header, 
+    .content .section, 
+    .content .footer{
+        margin: 0 auto;
+    }
+
     .content {
-        margin: 0 10%;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
