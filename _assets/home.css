@@ -114,6 +114,9 @@ for this to make sense.
         padding-bottom: 3em;
 
     }
+    .articles .history .byline span.byline{
+        display: none;
+    }
     .articles .history .byline{
         padding-bottom: .75em;
     }
