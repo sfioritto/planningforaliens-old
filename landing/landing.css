@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'UnicodSans';
+    src: url('/webfonts/268473_0_0.eot');
+    src: url('/webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/webfonts/268473_0_0.woff') format('woff'),
+    url('/webfonts/268473_0_0.ttf') format('truetype');
+}
+
+body{
+    color: #222222;
+    font-family: "proxima-nova", verdana, sans-serif;
+    padding: 1em;
+}
+a,
+.emphatic{
+    color: #f21032;
+    font-weight: 600;
+}
+a:visited{
+    color: #666666;
+}
+
+h1{
+    font-family: 'UnicodSans', sans-serif;
+    src: url('/webfonts/268473_0_0.eot');
+    src: url('/webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
+    url('/webfonts/268473_0_0.woff') format('woff'),
+    url('/webfonts/268473_0_0.ttf') format('truetype');
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 2em; /*has 1em added from body padding.*/
+    margin-bottom: 3em;
+}
+h1 .emphatic{
+    font-size: 2em;
+    position: relative;
+    top: .5em;
+}
+
+.wf-active h2{
+    font-weight: 300;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    background-color: #e2f9f9;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: .5em 1em;
+}
+
+h2, p{
+    line-height: 1.437em;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 1em;
+}
+p, li{
+    font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
+}
+section{
+    margin-bottom: 2em;
+}
+
+ul li:before{
+    content: " \00BB  ";
+}
+
+ul li{
+    margin: .75em;
+}
+
+section.email{
+    background-color: #e2f9f9;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 2em 1em;
+}
+section.email h2{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+section.email .emphatic{
+    font-weight: 300;
+}
+section.email h2,
+section.email form button{
+    font-family: unicodsans, verdana, sans-serif;
+}
+
+section.email button {
+    font-size: 2em;
+    background: lightgrey;
+    border: 1px solid grey;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    box-shadow: inset 0 0 1px 1px #f6f6f6;
+    padding: .5em .5em .25em .5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+section.email button:hover {
+    background: lightgrey;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    cursor: pointer; 
+}
+
+section.email button:active {
+    background: lightgrey;
+    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
+    box-shadow: inset 0 0 1px 1px #e3e3e3;
+    color: #000; 
+}
+
+section.email input{
+    font-family: unicodsans, verdana, sans-serif;
+    font-size: 1.5em;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 370px;
+    margin-right: .5em;
+}
+
+.bottom h2{
+    background-color: white;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
