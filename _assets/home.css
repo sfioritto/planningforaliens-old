@@ -166,6 +166,10 @@ for this to make sense.
 
 
 @media screen and (min-width: 1200px){
+
+    .content{
+        padding-bottom: 3em;
+    }
     /* 
        three columns 
        two gutters at 3% each
