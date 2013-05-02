@@ -1,264 +1,144 @@
-@font-face {
-    font-family: 'UnicodSans';
-    src: url('/webfonts/268473_0_0.eot');
-    src: url('/webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
-    url('/webfonts/268473_0_0.woff') format('woff'),
-    url('/webfonts/268473_0_0.ttf') format('truetype');
+body{
+    font-family: "proxima-nova", verdana, sans-serif;
 }
 
-body{
-    color: #222222;
-    font-family: "proxima-nova", verdana, sans-serif;
-    padding: 1em;
-}
-a,
 .emphatic{
     color: #ff0023;
+}
+
+.cool{
+    color: #54CBE3;
     font-weight: 600;
 }
-a:visited{
-    color: #666666;
+
+.dark{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #333333;
+    color: #dddddd;
 }
 
-h1{
-    font-family: 'UnicodSans', sans-serif;
-    src: url('/webfonts/268473_0_0.eot');
-    src: url('/webfonts/268473_0_0.eot?#iefix') format('embedded-opentype'),
-    url('/webfonts/268473_0_0.woff') format('woff'),
-    url('/webfonts/268473_0_0.ttf') format('truetype');
-    font-size: 1.25em;
-    text-align: center;
-    margin-top: 2em; /*has 1em added from body padding.*/
-    margin-bottom: 3em;
-}
-h1 .emphatic{
-    font-size: 1.75em;
-    letter-spacing: .1em;
-    display: block;
-    margin-top: .5em;
+.light{
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #333333;
 }
 
-.wf-active .h2{
-    font-weight: 300;
-}
-.h2{
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    background-color: #ABD7E0;
-    margin-left: -1em;
-    margin-right: -1em;
-    padding: .5em 1em;
-
+.triangle-down{
+    position: relative;
 }
 
-.h2, p{
-    line-height: 1.437em;
-}
-
-p{
-    margin-bottom: 1em;
-}
-p, li{
-    font-family: "proxima-nova-alt-condensed", verdana, sans-serif;
-}
-section{
-    margin-bottom: 2em;
-}
-
-ul li:before{
-    content: " \00BB  ";
+.triangle-down:after, .triangle-down:before{
+    content: "";
+    height: 2em;
     position: absolute;
-    left: -1em;
+    left: 0;
+    right: 50%;
+ }
+
+
+/******************************
+ * start header styles
+ */
+
+header{
+    margin-top: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
+/*    background-image: -webkit-linear-gradient(bottom, #333333, white 1.5em);*/
+}
+
+header .triangle-down{
+    margin: 0 -1em;
+    top: 2em;
+}
+
+header .triangle-down:before {
+    background: linear-gradient(to right top, #333333 50%, white 55%);
+}
+
+header .triangle-down:after {
+    left: 50%;
+    right: 0;
+    background: linear-gradient(to left top, #333333 50%, white 55%);
+}
+
+
+h1,
+h2.big{
+    font-size: 3em;
+    text-align: center;
+    line-height: 1.125em;
+}
+
+h1 span{
+    display: block;
+    font-size: 1.25em;
+    letter-spacing: .1em;
+    font-weight: 600;
+    line-height: 1.25em;
+}
+/*
+ * end header styles
+ ******************************/
+
+/******************************
+ * first dark section
+ */
+div.dark .triangle-down{
+    margin: 0 -1em;
+}
+
+div.dark .triangle-down:before {
+    background: linear-gradient(to right top, white 50%, #333333 55%);
+}
+
+div.dark .triangle-down:after {
+    left: 50%;
+    right: 0;
+    background: linear-gradient(to left top, white 50%, #333333 55%);
+}
+
+/*
+ * end first dark section
+ ******************************/
+
+
+
+.bottomspace{
+    padding-bottom: 32px;
+}
+.topspace{
+    padding-top: 32px;
+}
+
+h2{
+    font-size: 1.75em;
+    line-height: 1.343em;
+}
+h2.big{
+    padding: 64px 0;
+}
+
+p,
+ul,
+li{
+    padding-bottom: 1em;
+}
+
+p,
+ul li{
+    line-height: 1.4375em;
 }
 
 ul li{
-    margin: .75em;
-    list-style-position: outside;
-    position: relative; /*so the list bullet shows up.*/
+    position: relative;
+    margin-left: 1.5em;
 }
 
-section.email{
-    background-color: #ABD7E0;
-    margin-left: -1em;
-    margin-right: -1em;
-    padding: 2em 1em;
-}
-section.email .h2{
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-}
-section.email .emphatic{
-    font-weight: 300;
-}
-section.email .h2,
-section.email form button{
-    font-family: unicodsans, verdana, sans-serif;
-}
-
-section.email input{
-    font-family: unicodsans, verdana, sans-serif;
-    font-size: 2em;
-    padding: .5em;
-    box-sizing: border-box;
-    width: 100%;
-    margin-right: .5em;
-    max-width: 470px;
-}
-
-section.email button {
-    font-size: 2em;
-    background: lightgrey;
-    border: 1px solid grey;
-    border-radius: 3px;
-    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
-    box-shadow: inset 0 0 1px 1px #f6f6f6;
-    padding: .4em .5em .3em .5em;
-    text-align: center;
-    margin-top: 1em;
-}
-
-section.email button:hover {
-    background: lightgrey;
-    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
-    box-shadow: inset 0 0 1px 1px #eaeaea;
-    cursor: pointer; 
-}
-
-section.email button:active {
-    background: lightgrey;
-    -webkit-box-shadow: inset 0 0 1px 1px #e3e3e3;
-    box-shadow: inset 0 0 1px 1px #e3e3e3;
-    color: #000; 
-}
-
-.bottom .h2{
-    background-color: white;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-@media screen and (min-width: 500px){
-    p, li{
-        font-family: "proxima-nova", verdana, sans-serif;
-    }
-    body{
-        padding: 1em;
-    }
-    h1{
-        font-size: 1.75em;
-    }
-}
-
-@media screen and (min-width: 650px){
-
-    /*Fix the sign up form*/
-    section.email{
-        text-align: center;
-        width: 100%;
-        margin-top: 4em;
-        margin-bottom: 4em;
-    }
-
-    section.email .h2{
-        margin: 1em -1em;
-        margin-top: 0;
-        background-color: #ABD7E0;
-        padding: .5em 1em;
-        width: 100%;
-    }
-    section.email h2{
-        font-size: 1.5em;
-        font-style: normal;
-        text-align: center;
-        width: 100%;
-    }
-
-    section.email input{
-        width: 370px;
-    }
-    section.email button{
-        margin: 0;
-    }
-    
-    header, section {
-        width: 430px;
-        margin: 0 auto;
-    }
-
-    section .first h2{
-        color: #222222;
-        font-style: normal;
-    }
-
-    section.left, section.right{
-        padding-left: 80px; /*line it up*/
-        margin-top: 4em;
-    }
-
-    section div.right{
-        -webkit-transform: skewX(-30deg);
-    }
-
-    section div.left{
-        -webkit-transform: skewX(30deg);
-    }
-
-    section p.left{
-        float: right;
-        width: 30%;
-        text-align: right;
-        margin-right: 1.5em;
-    }
-    section p.right{
-        float: right;
-        width: 40%;
-        text-align: left;
-    }
-    section div.center{
-        width: 70%;
-        margin: 0 auto;
-        padding-right: 15%;
-    }
-
-    section.solution, section.bottom{
-        text-align: justify;
-    } 
-    section.solution .h2{
-/*        -webkit-transform: none;
-        margin: 2em 0;
-        padding: 0;
-        width: 90%;*/
-        background-color: #DDB736;
-    }
-    section.solution .h2 h2{
-        font-style: normal;
-    }
-
-    section div.right h2{
-        -webkit-transform: skewX(30deg);
-    }
-
-
-    section div.left h2{
-        -webkit-transform: skewX(-30deg);
-    }
-
-    section .h2{
-        padding: 1.15em;
-        border-radius: 5px;
-        margin: 2em auto; /*center and add more whitespace*/
-    }
-    section h2{
-        font-weight: 600;
-        text-align: center;
-        font-style: italic;
-        line-height: 1.375em;
-    }
-}
-
-.clear{
-    clear: both;
+ul li:before{
+    content: " \00BB\00BB  ";
+    position: absolute;
+    left: -1.5em;
+    top: -.15em;
 }
