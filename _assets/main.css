@@ -50,12 +50,11 @@ body{
 
 
 /*email list subscription styling*/
-#subscribe #email label{
+#email label{
     font-size: 1.25em;
 }
 
 #email label span.emphatic{
-    color: #ff0023;
     font-style: normal;
 }
 
