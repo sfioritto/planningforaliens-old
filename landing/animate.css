@@ -1,0 +1,44 @@
+.animate h1 span{
+    -webkit-animation: 
+    hide-span 1.5s,
+    fade 2s 1.5s;
+}
+
+.animate h1{
+    -webkit-animation: 
+    header-h1 1.5s steps(1);
+
+}
+
+@-webkit-keyframes header-h1 {
+    from {
+        left: 150px;
+    }
+    50%{
+        left: 80px;
+    }
+    80%{
+        left: 30px;
+    }
+    95%{
+        left: 5px;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hide-span {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
