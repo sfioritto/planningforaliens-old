@@ -2,6 +2,11 @@ body{
     font-family: "proxima-nova", verdana, sans-serif;
 }
 
+.center{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .emphatic{
     color: #ff0023;
 }
@@ -11,30 +16,48 @@ body{
     font-weight: 600;
 }
 
+.dark, .light{
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    overflow: hidden;
+}
+
 .dark{
-    padding-left: 1em;
-    padding-right: 1em;
     background-color: #333333;
     color: #dddddd;
 }
 
 .light{
-    padding-left: 1em;
-    padding-right: 1em;
     color: #333333;
 }
 
-.triangle-down{
-    position: relative;
+
+div.triangle{
+    text-align: center;
 }
 
-.triangle-down:after, .triangle-down:before{
-    content: "";
-    height: 2em;
-    position: absolute;
-    left: 0;
-    right: 50%;
- }
+span.triangle{
+    color: white;
+    font-size: 8vw;
+    display: inline-block;
+    line-height: 70%;
+    -webkit-transform: scaleX(18);
+    transform: scaleX(18);
+    background-color: #333333;
+}
+
+span.triangle.inverse{
+
+    color: #333333;
+    background-color: white;
+}
+
+span.triangle.blue{
+    color: #54CBE3;
+    background-color: white;
+    -webkit-transform: scaleX(15) rotate(180deg);
+    transform: scaleX(15) rotate(180deg);
+}
 
 
 /******************************
@@ -45,30 +68,19 @@ header{
     margin-top: 0;
     padding-top: 4em;
     padding-bottom: 4em;
-/*    background-image: -webkit-linear-gradient(bottom, #333333, white 1.5em);*/
 }
 
-header .triangle-down{
-    margin: 0 -1em;
-    top: 2em;
+h1,
+h1 span,
+h2.big,
+h2.title{
+    font-size: 3em;
+    line-height: 1.125em;
 }
-
-header .triangle-down:before {
-    background: linear-gradient(to right top, #333333 50%, white 55%);
-}
-
-header .triangle-down:after {
-    left: 50%;
-    right: 0;
-    background: linear-gradient(to left top, #333333 50%, white 55%);
-}
-
 
 h1,
 h2.big{
-    font-size: 3em;
     text-align: center;
-    line-height: 1.125em;
 }
 
 h1 span{
@@ -76,7 +88,6 @@ h1 span{
     font-size: 1.25em;
     letter-spacing: .1em;
     font-weight: 600;
-    line-height: 1.25em;
 }
 /*
  * end header styles
@@ -85,45 +96,44 @@ h1 span{
 /******************************
  * first dark section
  */
-div.dark .triangle-down{
-    margin: 0 -1em;
-}
 
-div.dark .triangle-down:before {
-    background: linear-gradient(to right top, white 50%, #333333 55%);
-}
 
-div.dark .triangle-down:after {
-    left: 50%;
-    right: 0;
-    background: linear-gradient(to left top, white 50%, #333333 55%);
-}
+
 
 /*
  * end first dark section
  ******************************/
 
 
-
 .bottomspace{
     padding-bottom: 32px;
 }
 .topspace{
-    padding-top: 32px;
+    padding-top: 2em;
 }
 
 h2{
     font-size: 1.75em;
     line-height: 1.343em;
 }
-h2.big{
-    padding: 64px 0;
+
+h2.big,
+h2.title,
+div.email{
+    margin: 64px 0;
+}
+h2.title{
+    margin-bottom: 0;
 }
 
 p,
-ul,
 li{
     padding-bottom: 1em;
+}
+
+p.last,
+li.last{
+    padding-bottom: 0;
 }
 
 p,
@@ -141,4 +151,132 @@ ul li:before{
     position: absolute;
     left: -1.5em;
     top: -.15em;
+}
+
+/******************************
+ * email form
+ */
+
+div.email{
+    color: #222222;
+    text-align: center;
+}
+
+div.email h2{
+    font-weight: 600;
+}
+
+.email h2{
+    margin-bottom: 1em;
+}
+
+#email input{
+    font-size: 1.5em;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: .5em;
+    background-color: white;
+}
+
+#email button {
+    font-size: 1.75em;
+    margin-top: .75em;
+    background: #333333;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: .75em;
+    text-align: center;
+    color: #eeeeee;
+}
+
+#email button:hover {
+    background: #444444;
+    cursor: pointer; 
+}
+
+#email button:active {
+    color: #54CBE3;
+}
+
+.light ul li:before{
+    color: #54CBE3;
+}
+
+
+/*
+ * end email form
+ ******************************/
+
+/******************************
+ * start bottom section
+ */
+.bottom h2{
+    margin-bottom: .5em;
+}
+
+.email + div + div{
+    padding-top: 2%;
+    background-image: -webkit-linear-gradient(top, #54CBE3, white 2%, white);
+}
+
+.book h2{
+    text-align: center;
+}
+.book h2 img{
+    max-width: 100%;
+}
+
+h2.quote{
+    margin: 1em 0;
+}
+
+.curlystart{
+    font-size: 8em;
+    height: 1px;
+    margin-top: .32em;
+    float: left;
+}
+
+/*
+ * end bottom section
+ ******************************/
+
+@media screen and (min-width: 1000px){
+
+    body{
+        font-size: 1.5em;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .center{
+        max-width: 700px;
+    }
+
+    header{
+        margin-top: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .topspace{
+        padding-top: 3em;
+    }
+
+    h1,
+    h1.span,
+    h2.big,
+    h2.title{
+        line-height: 1.319em;
+    }
+
+    h2{
+        line-height: 1.357em;
+    }
+
+    .bottomspace{
+        padding-bottom: 48px;
+    }
+
 }
