@@ -120,7 +120,7 @@ a:visited{
     color: #888888;
 }
 
-.emphatic{
+em, .emphatic{
     font-style: italic;
 }
 
