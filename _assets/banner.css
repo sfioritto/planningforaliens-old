@@ -41,12 +41,7 @@
 @media screen and (min-width: 600px){
     .banner .figure{
         width: 95%;
-        text-align: center;
         margin: 0 auto;
-    }
-
-    .banner .figure img{
-        width: 300px;
     }
 
     .banner .figcaptionshort{
@@ -59,6 +54,10 @@
 }
 
 @media screen and (min-width: 1000px){
+    .banner .figure{
+        max-width: 51em;
+        text-align: left;
+    }
     .banner{
         margin: 0;
     }

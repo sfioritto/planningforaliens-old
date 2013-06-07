@@ -135,7 +135,8 @@ em, .emphatic{
         margin: 0 auto;
     }
 
-    .content {
+    .about.content,
+    .home.content{
         width: 90%;
         margin: 0 auto;
     }

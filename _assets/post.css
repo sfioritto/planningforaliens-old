@@ -106,6 +106,15 @@
 }
 .post li{
     margin-bottom: 1em; /*override the rule above.*/
+    position: relative;
+    margin-left: 1.5em;
+}
+
+.post li:before{
+    content: " \00BB\00BB ";
+    position: absolute;
+    left: -1.5em;
+    top: -.15em;
 }
 
 /*show the long caption for smaller screen resolutions.*/
@@ -172,8 +181,8 @@
 
 @media screen and (min-width: 600px){
     .post {
-        width: 600px;
-        margin: 4em auto;
+        max-width: 600px;
+        margin: 4em;
     }
 }
 
