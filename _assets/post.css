@@ -124,7 +124,7 @@
     -o-transform:rotate(90deg); /* Opera */
 }
 .post .banner{
-    padding-top: 8em;
+    padding-top: 2em;
     background-color: white;
 }
 
@@ -170,17 +170,14 @@
     }
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 600px){
     .post {
         width: 600px;
+        margin: 4em auto;
     }
 }
 
 @media screen and (min-width: 900px){
-
-    .post {
-        margin: 4em 8em 8em 4em;
-    }
 
     .post .section p{
         /*since the width is frozen, I just used pixels here.*/

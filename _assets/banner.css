@@ -19,7 +19,7 @@
 }
 .banner .figcaptionlong{
     display: none;
-    margin-top: 3em;
+    padding-top: 3em;
     text-align: center;
 }
 
@@ -39,6 +39,16 @@
 }
 
 @media screen and (min-width: 600px){
+    .banner .figure{
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .banner .figure img{
+        width: 300px;
+    }
+
     .banner .figcaptionshort{
         font-size: 1.4em;
         padding-top: 4em;
