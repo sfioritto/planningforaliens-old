@@ -93,7 +93,7 @@
 }
 
 .post p,
-.post li{
+.post article li{
     text-align: justify;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -104,17 +104,22 @@
     line-height: 1.4210526em;
     margin-bottom: 1.4210526em;
 }
-.post li{
-    margin-bottom: 1em; /*override the rule above.*/
+.post article li{
+    margin-bottom: 0; /*override the rule above.*/
     position: relative;
     margin-left: 1.5em;
 }
 
-.post li:before{
+.post article li:before{
     content: " \00BB\00BB ";
     position: absolute;
     left: -1.5em;
     top: -.15em;
+}
+
+.post article ul{
+    margin-top: 1.4210526em;
+    margin-bottom: 1.4210526em;
 }
 
 /*show the long caption for smaller screen resolutions.*/
