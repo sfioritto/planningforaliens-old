@@ -54,6 +54,14 @@
     font-weight: bold;
 }
 
+.post figure{
+    margin: 2em 0;
+}
+
+.post figure img{
+    max-width: 100%;
+}
+
 /*facebook and twitter buttons*/
 .post #sharing li{
     margin: 0;
