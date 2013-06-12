@@ -1,0 +1,24 @@
+.sketching{
+    padding: 0 5%;
+}
+
+.sketching .figure img{
+    width: 100%;
+}
+
+.sketching .figure{
+    width: 30%;
+    margin: 0 auto;
+    float: left;
+}
+
+.sketching .get{
+    float: right;
+    width: 65%;
+    width: calc(70% - 2em);
+    margin-left: 2em;
+}
+
+.sketching .get h3{
+    margin: 0 0 1em 0
+}
