@@ -1,17 +1,53 @@
 ---
 layout: post
 title: "How does the new Mac Pro site work?"
-blurb: ""
+blurb: "Apple's Mac Pro page apes the great flash sites of the early aughts, but those smooth animations and transitions are pure HTML5. I poked around the implementation with Chrome's developer tools and reverse engineered the coolest parts.."
 author: "sean"
 ---
 
 <div class="section">
 
   <h2>
-  The new Mac Pro looks like the most expensive Kleenex box cover money can buy.
+  The most expensive Kleenex box cover money can buy
   </h2>
   <p>
-  The product page for the Kleenex box of the century piqued my curiousity. It behaves like a flash site from the early 2000's but of course it's designed by Apple so it looks pretty.
+  The new Mac Pro reminds me of those colored, plastic sheaths your grandma slides over fugly kleenex boxes so they match the decor in her bathroom. But after starting at it for a while it began to look like the dark, sleek, Jobsian future I've been waiting for.
   </p>
-  
+  <p>
+    In any case, the product page for the Kleenex box of the century piqued my curiosity. The page behaves like a Flash site from the early 2000's but it's running on pure HTML5 and Javascript. I guess web standards are finally catching up to Flash. (Hooray?)
+  </p>
+  <p>
+  Chrome's developer tools and Firebug revealed about what I expected and one very interesting surprise.
+  </p>
+
+  </div>
+  <div class="section">
+  <h2>The markup in Chrome</h2>
+  <figure>
+    <a href="/images/macpro/markup-chrome.png"><img src="/images/macpro/markup-chrome.png"></img></a>
+  </figure>
+  <h2>
+  The markup in Firefox.
+  </h2>
+  <figure>
+    <a href="/images/macpro/markup-firefox.png"><img src="/images/macpro/markup-firefox.png"></img></a>
+  </figure>
+    </div>
+    <div class="section">
+
+  <p>A canvas tag. Intriguing.</p>
+  <p>
+  The Chrome markup use a video tag but they used canvas in Firefox. I'll come back to the Firefox markup in a bit, but first let's dissect the Chrome implementation.
+  </p>
+  <h2>How it works in a nutshell</h2>
+  <p>
+      There is one main video on the page. When you scroll or click on one of the navigation links the video is advanced to the section you are about to view using javascript. At the same time a CSS animation is generated and put into a queue to be executed once the video stops. A timer (or an event listener, I didn't figure this out), in the background waits until the video reaches the right spot, pauses the video, then starts the animation to show the supporting copy. Finally the last frame of the video is covered up with an identical image -- presumably it looks better than a video frame.
+  </p>
+  <h2>The video tag</h2>
+  <figure>
+    <a href="/images/macpro/videotag.png"><img src="/images/macpro/videotag.png"></img></a>
+  </figure>
+  <p>
+    The video tag is absolutely positioned. 
+  </p>
 </div>
