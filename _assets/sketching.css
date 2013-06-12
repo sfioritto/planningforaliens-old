@@ -2,8 +2,25 @@
     padding: 0 5%;
 }
 
+.post .sketching h2{
+    text-align: center;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.post .sketching h3{
+    font-style: normal;
+    margin: 1em 0;
+}
+
+.sketching figure img,
 .sketching .figure img{
     width: 100%;
+    margin: 0;
+}
+
+.post .sketching figure{
+    margin: 0;
 }
 
 .sketching .figure{
@@ -21,4 +38,33 @@
 
 .sketching .get h3{
     margin: 0 0 1em 0
+}
+
+.sketching .get ul li{
+    position: relative;
+    margin-left: 1.5em;
+    margin-bottom: .5em;
+}
+
+.sketching .get ul li:before{
+    content: " \00BB\00BB ";
+    position: absolute;
+    left: -1.5em;
+    top: -.15em;
+}
+
+
+.sketching .cta{
+    text-align: center;
+}
+
+.sketching .get ul{
+    margin-top: 1em;
+}
+
+.sketching .cta #email button{
+    background-color: rgb(225,96,72);
+    color: #eeeeee;
+    padding: 24px;
+    padding: 1rem;
 }
