@@ -5,6 +5,7 @@
 .banner .figure {
     font-family: unicodsans, verdana, sans-serif;
     margin: 0;
+    text-align: center;
 }
 
 /* 
@@ -57,6 +58,9 @@
     .banner .figure{
         max-width: 51em;
         text-align: left;
+    }
+    .post .banner .figure{
+        text-align: center;
     }
     .banner{
         margin: 0;
