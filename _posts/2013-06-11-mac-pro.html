@@ -19,10 +19,10 @@ style: "prettify.css"
   And I want one soooo bad...
   </p>
   <p>
-    In any case, the product page for the Kleenex box of the century piqued my curiosity. The page behaves like a Flash site from the early 2000's but it's running on pure HTML5 and Javascript. I guess web standards are finally catching up to Flash. (Hooray?)
+    In any case, the product page for the Kleenex box of the century piqued my curiosity. The page behaves like a Flash site from the early 2000's but it's running on pure HTML5 and Javascript.
   </p>
   <p>
-    Chrome's developer tools and Firebug revealed about what I expected and one very interesting surprise. I'll get to that at the very end.
+    Chrome's developer tools and Firebug revealed about what I expected and one big surprise.
   </p>
   
   <h2>A quick caveat</h2>
@@ -32,18 +32,18 @@ style: "prettify.css"
   
   <h2>How it works in a nutshell</h2>
   <p>
-    There is one main video tag on the page. When you scroll or click on one of the navigation links the video is advanced to the section you are about to view using Javascript. At the same time a big event loop is kicked off in the background that coordinates animating the copy with the video. When the video hits a stopping point it is covered up with an identical image -- presumably it looks better than a video frame.
+    There is one main video tag on the page. When you scroll or click on one of the navigation links the video is advanced to the section you are about to view using Javascript. At the same time a big event loop is kicked off in the background that coordinates animating the copy with the video. When the video hits a stopping point it is covered up with an identical image -- presumably it looks better than a still video frame.
   </p>
 
   <h2>Everything is absolutely positioned</h2>
   <p>
-    The first thing I checked was the markup. I scrolled down to the first spec page, right-clicked right over the video and went to inspect element. 
+    The first thing I looked at was the markup. I scrolled down to the first spec page, right-clicked right over the video and went to inspect element. 
   </p>
   <figure>
     <a href="/images/macpro/placeholder.png"><img src="/images/macpro/placeholder.png"></img></a>
   </figure>
   <p>
-    It's just an empty placeholder. It turns out almost everything on the page is absolutely positioned. This made it a little challenging to figure out the structure of the markup, but I figured it out eventually.
+    I found an empty placeholder. It turns out almost everything on the page is absolutely positioned. This made it a little challenging to figure out the structure of the markup.
   </p>
   <p>
     There are two video tags. One is for the intro video which you see when the page loads. The other video is used to show the Mac Pro swooping around and dancing in the middle of the page.
@@ -73,10 +73,13 @@ style: "prettify.css"
     <a href="/images/macpro/videotag.png"><img src="/images/macpro/videotag.png"></img></a>
   </figure>
   <p>
-    Apple doesn't use flash so it's no surprise to see the <a href="http://www.html5rocks.com/en/tutorials/video/basics/">video tag</a> here. This is what let's them easily jump around in the video using Javascript. All you do is set the currentTime property of the video and then say video.play(). What if you want to go backwards? Set video.playbackRate to -1.
+    Apple doesn't use flash so it's no surprise to see the <a href="http://www.html5rocks.com/en/tutorials/video/basics/">video tag</a> here. The video tag let's them easily jump around in the video using Javascript. All you do is set the currentTime property of the video and then say video.play(). 
+    </p>
+    <p>
+      If you scroll up the video plays backwards. How? Just set video.playbackRate to something less than 0.
   </p>
   <p>
-    But how do you stop the video at the right point? This is where the educated guesses begin.
+    But how do they stop the video at the right point? This is where the educated guesses begin.
   </p>
 
   <h2>requestAnimationFrame</h2>
@@ -96,28 +99,31 @@ style: "prettify.css"
     }
   </pre>
   <p>
-    It's a bit dense, and now you can see why I've had to speculate about so much. This is an update method that triggers a couple of events, sets some timing properties, proces "clips" (I'll show you those in a minute), then kicks off the requestAnimationFrame loop to call itself again.
+    It's a bit dense, and now you can see why I've had to speculate about so much. This is an update method that triggers a couple of events, sets some timing properties, processes "clips" (I'll show you those in a minute), then kicks off the requestAnimationFrame loop to call itself again and again and again...
   </p>
   <p>
     The clips being processed are chunks of animations defined as Javascript objects. Here is an example:
   </p>
   <pre class="prettyprint">
-    clips: [{start: -1.95,
-    end: 0,
-    media: new t("#change .copy",
-    1.95, [{property: "opacity",from: 1,to: 1}, {property: "translate",axis: "y",from: 0,to: 0,units: "px",easing: "linear"}])}]}}, 
-    {name: "intro",
-    pause: 2,
-    time: 2,
-    labelSelector: "#change",
     ...
-    }},
+    clips: [
+    {start: -1.95,
+     end: 0,
+     media: new t("#change .copy",
+                  1.95, 
+                  [{property: "opacity",from: 1,to: 1}, 
+                   {property: "translate",axis: "y",from: 0,to: 0,units: "px",easing: "linear"}
+                   ])
+    }
+   ],
+   ...
+
   </pre>
   <p>
     There is a start and end time and then another object that defines properties and from and to values. That sure looks like an animation to me.
   </p>
   <p>
-    They probably predefined all of these clips to correspond with frames in the video, (start and end), and then change the properties on each trip through the requestAnimationFrame loop until the end time or final property value is reached.
+    They probably predefined all of these clips to correspond with frames in the video, (using the start and end properties), and then change the properties on each trip through the requestAnimationFrame loop until the end time or final property value is reached.
   </p>
 
   <h2>So you said there was a surprise</h2>
@@ -127,7 +133,7 @@ style: "prettify.css"
     <a href="/images/macpro/markup-chrome.png"><img src="/images/macpro/markup-chrome.png"></img></a>
   </figure>
   <p>
-    Here is the markup in Firefox.
+    Now here is the markup in Firefox.
   </p>
   <figure>
     <a href="/images/macpro/markup-firefox.png"><img src="/images/macpro/markup-firefox.png"></img></a>
@@ -143,12 +149,15 @@ style: "prettify.css"
     I don't know why they aren't just streaming the video to Firefox. Maybe the video tag support in my version of Firefox isn't good enough for what they want to do?
   </p>
   <p>
-    It's an interesting technique, but it's a bit heavy handed with the CPUs. Loading the site in Firefox brings my puny Macbook Air to its knees. 
+    It's an interesting technique, but it's a bit heavy handed with the CPU. Loading the site in Firefox brings my puny Macbook Air to its knees. 
   </p>
 
   <h2>Coordinating animations with video playback</h2>
   <p>
-    My biggest takeaway from this is how easy it is to coordinate animations with video using HTML5 and Javascript. We're very quickly running out of stuff we <em>can't</em> do in the browser.
+    My biggest takeaway from this is how easy it is to coordinate animations with video using HTML5 and Javascript. There are so many places where this could be really awesome.
+  </p>
+  <p>
+    We're very quickly running out of stuff we <em>can't</em> do in the browser.
   </p>
 
   <h2>Did I get something wrong?</h2>
