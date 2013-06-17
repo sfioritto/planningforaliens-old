@@ -145,9 +145,14 @@ style: "prettify.css"
   <p>
     If you look at the network tab hundreds of images are being downloaded. My guess is they are painting these images to the canvas element one frame at a time, (within that same requestAnimationFrame event loop we looked at above), to create a video. 
   </p>
-  <p>
+  <p class="strike">
     I don't know why they aren't just streaming the video to Firefox. Maybe the video tag support in my version of Firefox isn't good enough for what they want to do?
   </p>
+<p>
+Update 6-17-2013 
+</p>
+<blockquote class="twitter-tweet"><p><a href="https://twitter.com/sfioritto">@sfioritto</a> great article on the Mac Pro site!&#10;The canvas is there probably because Apple didn&#39;t wanted to use OGG for Firefox &lt;video&gt;</p>&mdash; Tiago Pedras (@tiagopedras) <a href="https://twitter.com/tiagopedras/statuses/345839567217246208">June 15, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   <p>
     It's an interesting technique, but it's a bit heavy handed with the CPU. Loading the site in Firefox brings my puny Macbook Air to its knees. 
   </p>

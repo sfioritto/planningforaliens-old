@@ -150,6 +150,9 @@
     background-color: white;
 }
 
+.post .strike{
+    text-decoration: line-through;
+}
  
 @media screen and (min-width: 550px){
 
