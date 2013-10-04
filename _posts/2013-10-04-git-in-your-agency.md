@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git for Humans: How to Get Started with Git in Your Agency Today"
-blurb: "lsakdjf"
+blurb: "The biggest hurdle you will face when using Git in your agency is the learning curve."
 author: "sean"
 ---
 
