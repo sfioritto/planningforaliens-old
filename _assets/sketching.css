@@ -13,27 +13,26 @@
     margin: 1em 0;
 }
 
+.sketching .figure{
+    width: 50%;
+    margin: 2em auto;
+}
+
+
 .sketching figure img,
 .sketching .figure img{
     width: 100%;
     margin: 0;
 }
 
+.sketching .figure img {
+    -webkit-filter: drop-shadow(0px 10px 26px #222222);
+    -moz-filter: drop-shadow(0px 10px 26px #222222);
+    filter: drop-shadow(0px 10px 26px #222222);
+}
+
 .post .sketching figure{
     margin: 0;
-}
-
-.sketching .figure{
-    width: 30%;
-    margin: 0 auto;
-    float: left;
-}
-
-.sketching .get{
-    float: right;
-    width: 65%;
-    width: calc(70% - 2em);
-    margin-left: 2em;
 }
 
 .sketching .get h3{
@@ -58,13 +57,31 @@
     text-align: center;
 }
 
-.sketching .get ul{
-    margin-top: 1em;
-}
-
 .sketching .cta #email button{
     background-color: rgb(225,96,72);
     color: #eeeeee;
     padding: 24px;
     padding: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 550px){
+    .sketching .get ul{
+        margin-top: 1em;
+    }
+
+    .sketching .figure{
+        width: 30%;
+        margin: 0 auto;
+        float: left;
+    }
+    
+    .sketching .get{
+        float: right;
+        width: 65%;
+        width: calc(70% - 2em);
+        margin-left: 2em;
+    }
 }
