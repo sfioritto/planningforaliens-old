@@ -26,9 +26,9 @@
 }
 
 .sketching .figure img {
-    -webkit-filter: drop-shadow(0px 10px 26px #222222);
-    -moz-filter: drop-shadow(0px 10px 26px #222222);
-    filter: drop-shadow(0px 10px 26px #222222);
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+    -moz-filter: drop-shadow(5px 5px 5px #222222);
+    filter: drop-shadow(5px 5px 5px #222222);
 }
 
 .post .sketching figure{
