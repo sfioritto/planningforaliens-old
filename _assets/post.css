@@ -101,7 +101,7 @@
 }
 
 .post p,
-.post article .section li{
+.post article li{
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -111,20 +111,20 @@
     line-height: 1.4210526em;
     margin-bottom: 1.4210526em;
 }
-.post article .section li{
+.post article li{
     margin-bottom: 0; /*override the rule above.*/
     position: relative;
     margin-left: 1.5em;
 }
 
-.post article .section li:before{
+.post article li:before{
     content: " \00BB\00BB ";
     position: absolute;
     left: -1.5em;
     top: -.15em;
 }
 
-.post article .section ul{
+.post article ul{
     margin-top: 1.4210526em;
     margin-bottom: 1.4210526em;
 }
@@ -155,7 +155,7 @@
  
 @media screen and (min-width: 550px){
 
-    .post .section p {
+    .post p {
         line-height: 1.5em;
         margin-bottom: 1em;
     }
@@ -165,7 +165,7 @@
       add some cushion since we have room.
       First reset the current padding to 0;
       */
-    .post .section, .post .header, .post .footer .section, .post .footer{
+    .post, .post .header, .post .footer, .post .footer{
         padding: 0;
     }
     .post {
@@ -203,7 +203,7 @@
 
 @media screen and (min-width: 900px){
 
-    .post .section p{
+    .post p{
         /*since the width is frozen, I just used pixels here.*/
         line-height: 27px; 
     }
@@ -211,7 +211,7 @@
     /*
       Swing notes into the marginalia.
      */
-    .csscalc .post .section .note{
+    .csscalc .post .note{
         position: absolute;
         left: -webkit-calc(4em +  600px + 1.5em);
         left: -moz-calc(4em +  600px + 1.5em);

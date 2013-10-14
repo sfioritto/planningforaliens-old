@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: flexbox
 title: "Git for Humans: How to Get Started with Git in Your Agency Today"
 blurb: "The biggest hurdle you will face when using Git in your agency is Git itself."
 author: "sean"
