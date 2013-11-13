@@ -76,6 +76,13 @@
         line-height: 1.4em;
 }
 
+#ck_success_msg p {
+    color: rgb(225,96,72);
+    font-size: 2rem;
+    line-height: 1.1em;
+    text-align: center;
+}
+
 @media screen and (min-width: 550px){
     .sketching .figure {
         float: left;
