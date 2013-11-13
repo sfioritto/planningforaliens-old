@@ -117,4 +117,4 @@ Conclusion
 
 It actually took me years to develop this process. I tried to bring distributed version control into my last organization many times, and I failed many times. The main point of failure was Git's complexity. There is great power with that complexity, but the learning curve is almost unapproachable for mere mortals without a ton of help and motivation.
 
-If you don't have the Git religion yet and are looking for a simple guide to getting up and running with the basics, there's an entire chapter devoted to the topic in my book, (Sketching with CSS)[http://www.sketchingwithcss.com/]. You can pre-order it today for a pretty steep discount, or sign up for my launch list and find out when it's done.
+If you don't have the Git religion yet and are looking for a simple guide to getting up and running with the basics, there's an entire chapter devoted to the topic in my book, [Sketching with CSS](http://www.sketchingwithcss.com/). You can pre-order it today for a pretty steep discount, or sign up for my launch list and find out when it's done.

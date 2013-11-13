@@ -107,6 +107,10 @@ for this to make sense.
 
 @media screen and (min-width: 600px){
 
+    .articles {
+        padding: 3em;
+    }
+
     /*one column*/
     .articles .history li{
         float: left;
@@ -139,7 +143,7 @@ for this to make sense.
 
 
 @media screen and (min-width: 1000px){
-        .articles .lead p{
+    .articles .lead p{
         font-size: 2em;
         text-align: left;
         line-height: 1.4375em;

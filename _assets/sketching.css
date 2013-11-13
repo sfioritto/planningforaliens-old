@@ -2,20 +2,17 @@
     padding: 0 5%;
 }
 
-.post .sketching h2{
+.post .sketching h3 {
+    font-size: 3rem;
+    margin: 2rem auto;
     text-align: center;
-    font-style: normal;
-    font-size: 2em;
-}
-
-.post .sketching h3{
-    font-style: normal;
-    margin: 1em 0;
 }
 
 .sketching .figure{
-    width: 50%;
-    margin: 2em auto;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 
@@ -35,53 +32,62 @@
     margin: 0;
 }
 
-.sketching .get h3{
-    margin: 0 0 1em 0
-}
-
-.sketching .get ul li{
-    position: relative;
-    margin-left: 1.5em;
-    margin-bottom: .5em;
-}
-
-.sketching .get ul li:before{
-    content: " \00BB\00BB ";
-    position: absolute;
-    left: -1.5em;
-    top: -.15em;
-}
-
-
-.sketching .cta{
-    text-align: center;
-}
-
-.sketching .cta #email button{
+.sketching button{
     background-color: rgb(225,96,72);
     color: #eeeeee;
     padding: 24px;
     padding: 1rem;
+    font-family: unicodsans, verdana, sans-serif;
+    display: block;
+    margin: 1rem auto;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
+.sketching input, .sketching label {
+    display: block;
 
+    margin: 1rem auto;
+}
 
+.sketching label {
+    font-weight: 600;
+    width: 16rem;
+}
+
+.sketching input {
+    width: 14rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.sketching div.opt-in {
+    width: 14rem;
+    margin: 0 auto;
+}
+
+.sketching .opt-in > label, .sketching .opt-in > input {
+        display: inline;
+        width: initial;
+        margin: 0;
+}
+
+.sketching .opt-in > label {
+        line-height: 1.4em;
+}
 
 @media screen and (min-width: 550px){
-    .sketching .get ul{
-        margin-top: 1em;
+    .sketching .figure {
+        float: left;
+        box-sizing: border-box;
+        width: 30%;
+        margin: 0;
+        padding: 0 2rem 2rem 0;
     }
 
-    .sketching .figure{
-        width: 30%;
-        margin: 0 auto;
-        float: left;
-    }
-    
-    .sketching .get{
-        float: right;
-        width: 65%;
-        width: calc(70% - 2em);
-        margin-left: 2em;
+    .sketching .figure::after {
+	    content: "";
+	    display: table;
+	    clear: both;
     }
 }
