@@ -47,6 +47,13 @@
     font-size: .83333em;
 }
 
+p.byline span {
+    padding-left: 3px;
+}
+p.byline span iframe {
+    margin-bottom: -5px;
+}
+
 .wf-active .post .header .pubdate{
     font-weight: 600;
 }

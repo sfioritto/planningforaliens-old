@@ -16,7 +16,7 @@ layout: base
   <div class="header"><header>
     <h2>{{ page.title }}</h2>
     <p class="byline">
-      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="/about">{{ page.author}}</a>
+      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="https://twitter.com/sfioritto">{{ page.author}}</a> <span class="follow-me"><a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="false">Follow @sfioritto</a></span>
     </p>
     <p class="tldr">
       {{ page.blurb }}
@@ -44,3 +44,4 @@ layout: base
     sharing.className = "loaded";
     }, 4000);
   </script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
