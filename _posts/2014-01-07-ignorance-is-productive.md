@@ -21,8 +21,12 @@ Faced with mounting evidence against my crusade for better code, I made a few ad
 
 After being a jerk for so many years I wasn't invited to as many code reviews, but when I was, I spent more time talking about the positive aspects of the code. It no longer surprised me to see an explosion of spaghetti code, so instead of complaining about it, I tried to teach them one technique they could use in the future to help them get their job done faster. Code reviews became a teaching opportunity.
 
-When I was assigned a bug, instead of rewriting the code I worked on improving my ability to read other peoples code. I learned it's best to start with an attitude of respect for the author of the code. Assume they had a plan. Imagine the effort they put into making the feature work, and how proud they were when they finished. Pretend it was written by a younger version of myself. Whatever I had to do to keep a positive attitude while reading the code, because I discovered a positive attitude improved my ability to  
+When I was assigned a bug, instead of rewriting the code I worked on improving my ability to read other peoples code. I learned it's best to start with an attitude of respect for the author of the code. Assume they had a plan. Imagine the effort they put into making the feature work, and how proud they were when they finished. Pretend it was written by a younger version of myself. Whatever I had to do to keep a positive attitude while reading the code, because I discovered a positive attitude resulted in me fixing bugs faster. And I made more friends this way.
 
+It turns out, you can build a successful company on top of a giant pile of spaghetti code. In fact, I think this is probably the norm. And railing against hard to read code will result in less friends for you and the code will likely remain the same. So where does that leave us in terms of writing maintainable, readable, beautiful HTML and CSS?
 
-You should treat the code you are reading with respect.
+You should write your code to the best of your ability because it shows respect for future maintainers. When you read another person's code, assume they wrote it to the best of their ability and were also trying to respect your time. You'll make more friends this way.
 
+I guess what I'm saying is clean, maintainable, semantic code is really for the benefit of other developers. 'Do unto others" and all that.
+
+Have a great day, and make some cool things!
