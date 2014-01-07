@@ -16,8 +16,8 @@ Humility
 
 I wrote a
 [blog post](http://twosixes.wordpress.com/2010/05/24/bumps-in-the-road/)
-back in 2010 with a big list of my failed "businesses". Ironically the
-post is on the blog I was using for my last failed thing.
+back in 2010 with a big list of my failed "businesses". Ironically, that
+post is on the blog I was running for my last failed business.
 
 At some point you have to admit you don't know how to start a
 business. So I admitted to myself I didn't have a clue about business
@@ -50,25 +50,31 @@ as you can actually create a pretty good product, you will make
 money. It's almost guaranteed.
 
 At this point in my career as an entrepreneur, I was pretty geared up
-for maximizing my chances of success. So I decided to start with
+for maximizing my chances of success. No moonshots for me. So I decided to start with
 customers, not a product. When I quit my job and people asked me what
 my business was going to be, I said, "It will be for web designers,
-that's all I know for sure."
+that's all I know."
 
 30X500 is almost completely about empathy and how to have some for
-your customers. So it's pretty much a guarantee you will make money,
-so I signed up.
+your customers. So it's pretty much a guarantee you will make money. I
+signed up.
+
+The rest of my story, and how I grew my list to over 3,000 people and made over $15,000, is really just me
+executing what I learned in 30X500 to the best of my ability. 
 
 What customers do you want
 ------------------------------
 
-The first step in learning about your customers is to pick the
-customers you want.
+If you start with customers, then the first step is to pick the customers you want.
 
-I want my customers to have money and to be inclined to spend it. They
+I wanted my customers to have money and to be inclined to spend it. They
 should also be working on things I'm interested in, so I don't get too
 bored making stuff for them later (because it gets boring fast, just
-trust me on this).
+trust me on this). They should also hang out on the web, otherwise I
+would have no idea how to reach them.
+
+There are other qualifications, but these are the
+most important.
 
 In retrospect, I should have picked web developers, or Python
 developers or Javascript developers &mdash; all things that I am. But I
@@ -79,8 +85,6 @@ shoes, so it's easier to market to them, easier to understand their
 problems and easier to identify pains that are big enough for you to
 solve and charge money for.
 
-Make your job easier and pick great customers.
-
 Research, research, research
 ------------------------------
 
@@ -88,11 +92,11 @@ The next step is to really understand your customers and what they are
 struggling with every day. Look for pain, anguish, guilt, frustration,
 etc. Take the pain away ... $$$.
 
-<span class="note">Don't do customer interviews. I used to do
+(Don't do customer interviews. I used to do
 these, but people lie (usually to be nice). Just go read what they are saying on the sites
-they hang out on, this will be much more truthy.</span>
+they hang out on, this will be much more truthy.)
 
-The hardest part about this phase for me was to not get distracted by
+The hardest part about the research phase for me was to not get distracted by
 product ideas. I was always tempted by articles or comments where
 people were asking specifically for software and then I'd start
 dreaming about how I would make it, how much I'd charge, etc. This is
@@ -109,7 +113,7 @@ Sketching with CSS is born
 You don't have to write software to solve someone's problem. There are
 other kinds of
 products. [Sketching with CSS](http://www.sketchingwithcss.com/) is a
-book/package/info product thing. It felt weird to me to start a
+book/video/info product thing. It felt weird to me to start a
 company and not write software. Software is what I do. But given all
 of my past failures I really wanted to do something small, that I
 could finish quickly. 
@@ -137,32 +141,34 @@ I now have over 3,000 people on my mailing list, a far cry
 from 15. How did I do it?
 
 This is where all of the research I did really paid off. First, I
-uncovered so many great blog post ideas as I was reading articles and
-comment threads, so I have a pretty big list of ideas. Also, I now
-know where web designers hang out. So all I do is pick a topic from my
-list, write a really good blog post and then share it in all of the places
-where I know my customers hang out. I put an email sign up form at the
-bottom of every post. 
+uncovered many great blog post ideas as I was reading articles and
+comment threads, so I have a pretty big list of ideas. Also, as a
+result of my research, I know where web designers hang out. So all I
+do is pick a topic from my list, write a really good blog post and
+then share it in all of the places where I know my customers hang
+out.
 
-Then just do that over, and over, and over, and over ...
+And I put an email sign up form at the bottom of every post. 
+
+Write blog post, promote it everywhere.I did that over, and over, and over, and over ...
 
 A few tactics for growing your list
 ------------------------------
 
-You don't have to write blog posts. The most successful thing I did
+* You don't have to write blog posts. The most successful thing I did
 for growing my mailing list was the
 [Ultimate Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html).
 
-Another tactic, if you are writing a book, is to give away a
-chapter. I
+* Give away a chapter. I
 [did that](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 and snagged 500 email addresses.
 
-Consider writing guest posts. I wrote
+* Write guest posts. I wrote
 [one big guest post](http://coding.smashingmagazine.com/2013/11/18/the-future-of-video-in-web-design/)
-for Smashing Magazine and it resulted in about 500 email addresses.
+for Smashing Magazine and it resulted in another 500 email
+addresses. I plan to guest post more this year.
 
-Add a sweetener. Give something away for free in exchange for an email
+* Add a sweetener. Give something away for free in exchange for an email
 address. I give away an interactive video course all about
 flexbox. People love the course and the email forms convert really
 well. I use Nathan Barry's [ConvertKit](https://convertkit.com/) to
@@ -178,6 +184,17 @@ email list. I am not a fast wrtier. If you can crank out a blog post
 in an hour or two, instead of the day it takes me, you will finish
 much more quickly than I did.
 
+I was writing and promoting for 6 months. A far cry from Nathan's
+turnaround time of 3 months. Structuring and prioritizing your time is
+a skill and apparently years of corporate dronehood had atrophied
+this particular skill for me. Plus I'm slow at writing.
+
+But whatever, my excuses don't matter. Instead the takeaway for you
+should be to start with an even smaller project than Sketching with
+CSS. Maybe you are good at structuring and prioritizing your time but
+chances are you will run into another skill bottleneck.
+
+Product scope is like a multiplier for all of your faults, so pick something small.
 
 Launch it
 ------------------------------
@@ -190,13 +207,14 @@ launch it.
 
 I launched [Sketching with CSS](http://www.sketchingwithcss.com/)
 twice. The first launch I announced pre-orders to a list of
-about 1000. The second launch was whent he book was finished and went
-out to 3,111 people.
+about 1000. The second launch was when the book was finished and I
+launched to 3,111 people.
 
 On the first launch I made about $5,000 in two days. Since the second
-launch was to a list that was twice as big, I expected to make about
+launch was to a list that was three times as big, I expected to make about
 twice as much (factoring in some people on the list had already
-pre-ordered). I made $5,000. Oops. I clearly messed up my launch.
+pre-ordered). Instead I only made $5,000. Oops. I clearly messed up my
+launch.
 
 After chatting with Amy Hoy on Skype about it, I learned that I had
 failed to build anticipation for the product. In the second launch I
@@ -226,7 +244,7 @@ skill. Structuring and prioritizing your time is a skill.
 You're probably not great at all of these skills, so start small so
 you can learn as you grow your business.
 
-Charge more
+One more thing, charge more
 ------------------------------
 
 You should charge for the value of your product, e.g. my price points
@@ -249,10 +267,9 @@ over it, and the only way to learn how to get over the fear is to
 money. Charge for the real value of your product, don't undersell
 yourself.
 
-Oh, and if you decide to charge this much you will also learn what it
-takes to really get to know your customers. I know I wasn't
-comfortable with any of my prices until I knew it would be worth it to
-my customers. I've had zero refunds.
+Oh, and the more you charge the better your customers, generally
+speaking. I love my customers. 
+
 
 
 
