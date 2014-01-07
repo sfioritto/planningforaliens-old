@@ -20,8 +20,7 @@ back in 2010 with a big list of my failed "businesses". Ironically, that
 post is on the blog I was running for my last failed business.
 
 At some point you have to admit you don't know how to start a
-business. So I admitted to myself I didn't have a clue about business
-and I needed to educate myself.
+business. Clearly, I was clueless and needed an education.
 
 The new plan was to treat the next year like I was working on a
 graduate degree for entrepreneurship.
@@ -31,7 +30,7 @@ The best professors ever
 
 Since I was making my own graduate degree, I could pick whatever
 professors I wanted. After searching long and hard, I decided Amy
-Hoy's 30X500 class for entrepreneurs was exactly what I was looking
+Hoy's [30X500](http://30x500.com/) class for entrepreneurs was exactly what I was looking
 for.
 
 This decision was multifaceted, but the main deciding factor was I was
@@ -42,6 +41,8 @@ industry" or ... whatever, you get the point. It's all about me, me,
 me, our product, our vision, etc.
 
 Businesses start with a customer, startups start with a product.
+--------------------------------------------------
+
 Startups fail most of the time and I think it's because they start
 with a product and try to find a market. If you are interested in
 making money, this is backwards. If you start with people and invest
@@ -55,7 +56,7 @@ customers, not a product. When I quit my job and people asked me what
 my business was going to be, I said, "It will be for web designers,
 that's all I know."
 
-30X500 is almost completely about empathy and how to have some for
+30X500 is almost completely about empathy, and how to have some for
 your customers. So it's pretty much a guarantee you will make money. I
 signed up.
 
@@ -150,7 +151,7 @@ out.
 
 And I put an email sign up form at the bottom of every post. 
 
-Write blog post, promote it everywhere.I did that over, and over, and over, and over ...
+Write a blog post, promote it everywhere. I did that over, and over, and over, and over ...
 
 A few tactics for growing your list
 ------------------------------
@@ -169,9 +170,9 @@ for Smashing Magazine and it resulted in another 500 email
 addresses. I plan to guest post more this year.
 
 * Add a sweetener. Give something away for free in exchange for an email
-address. I give away an interactive video course all about
-flexbox. People love the course and the email forms convert really
-well. I use Nathan Barry's [ConvertKit](https://convertkit.com/) to
+address. I give away an [interactive video course all about
+flexbox](http://www.sketchingwithcss.com/flexbox/). People love the course and the email forms convert really
+well. I use Nathan's [ConvertKit](https://convertkit.com/) to
 deliver the course then move those emails over to MailChimp from time
 to time.
 
@@ -185,13 +186,13 @@ in an hour or two, instead of the day it takes me, you will finish
 much more quickly than I did.
 
 I was writing and promoting for 6 months. A far cry from Nathan's
-turnaround time of 3 months. Structuring and prioritizing your time is
-a skill and apparently years of corporate dronehood had atrophied
-this particular skill for me. Plus I'm slow at writing.
+usual turnaround time of 3 months. Structuring and prioritizing your
+time is a skill and apparently years of corporate dronehood had
+atrophied this particular skill for me. Plus I'm slow at writing.
 
 But whatever, my excuses don't matter. Instead the takeaway for you
-should be to start with an even smaller project than Sketching with
-CSS. Maybe you are good at structuring and prioritizing your time but
+should be to start with an even smaller project than ]Sketching with
+CSS](http://www.sketchingwithcss.com/). Maybe you are good at structuring and prioritizing your time but
 chances are you will run into another skill bottleneck.
 
 Product scope is like a multiplier for all of your faults, so pick something small.
@@ -202,7 +203,7 @@ Launch it
 There is an art to launching a product, and I do not have
 it. Fortunately it is a skill that can be learned, and I am working on
 it. If you haven't launched a product before, you are probably bad at
-it. All the more reason to do a small product; so you can learn how to
+it. All the more reason to do a small product, so you can learn how to
 launch it.
 
 I launched [Sketching with CSS](http://www.sketchingwithcss.com/)
