@@ -7,7 +7,7 @@ author: "sean"
 
 The last company I worked for almost never hired experienced developers, (I was the only experienced hire for years), and instead favored hiring recent college grads with degrees in things like  Economics, Philosophy, English, Biology, Physics, and Anthropology. Anything but Computer Science. They hired really smart but completely inexperienced people who had previously expressed no interest in programming. Then they dropped them into a huge, complicated code base for one of the largest Asp.net sites on the web accountable for more than half of the company's revenue. We're talking billions of dollars.
 
-I thought this strategy was nuts.
+I thought this strategy was nuts. All of these newbies wrote terrible, unmaintainable code.
 
 I spent my first few years at the company in grouchy programmer mode. I railed against messy code and obliterated people during code reviews. I joined the standards committee and helped create reams of documentation for how to write clean, standardized code. I pushed the adoption of Git over our ancient source control system. I whined to my managers about configuration management and integration risk. Every time I was assigned a bug to fix I would rewrite huge swaths of code because it was so bad, I couldn't bring myself to check it in without refactoring everything.
 
