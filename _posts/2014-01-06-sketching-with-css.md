@@ -270,7 +270,19 @@ yourself.
 Oh, and the more you charge the better your customers, generally
 speaking. I love my customers. 
 
+Onward and upward
+------------------------------
 
+Since I started selling the book I've been making about $4,000 a
+month. Not bad! But not good enough either.
+
+If I can pull this off even after screwing up two launches, picking
+too big of a first product and choosing an audience I have a hard time
+relating to, you can do it too.
+
+And hey, if you're a web designer and your floated elements never seem
+to go where you want them to, you should sign up for my free lesson on
+flexbox. It's the future of CSS layout.
 
 
 
