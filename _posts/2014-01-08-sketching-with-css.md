@@ -62,12 +62,6 @@ Don't do customer interviews. I used to do
 these, but people lie (usually to be nice). Instead, go read what they say on the sites
 where they hang out. The results will be more truthful.
 
-For me, the hardest part about the research phase was not getting distracted by
-product ideas. I was always tempted by articles or comments where
-people specifically asked for software, and then I'd start
-dreaming about how I'd make it, how much I'd charge, and how I'd market it. But the research phase is
-totally not the time to do that.
-
 I read hundreds, probably thousands, of articles and forum threads
 until I discovered some patterns. Here is
 [one example](http://www.sazzy.co.uk/2012/02/why-i-cant-design-in-the-browser/comment-page-1/)
@@ -149,7 +143,7 @@ email list. I am not a fast writer. If you can crank out a blog post
 in an hour or two instead of the day it takes me, you will finish
 much more quickly than I did.
 
-I wrote and promoted for 6 months, which is a far cry from Nathan Barry's
+I wrote and promoted for 6 months, which is a far cry from, say, Nathan Barry's
 usual turnaround time of 3 months. Structuring and prioritizing your
 time are skills, and apparently years of corporate dronehood had
 atrophied these particular skills for me. Plus, did I mention that I'm slow at writing? 
