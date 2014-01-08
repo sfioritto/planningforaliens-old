@@ -12,63 +12,27 @@ The plan was to land a quiet, easy day job and work on building a software busin
 The day-job-pays-for-side-projects plan failed. So I quit my job.
 
 
-Humility
+An education in entrepreneurship
 --------------------
 
-I wrote a
-[blog post](http://twosixes.wordpress.com/2010/05/24/bumps-in-the-road/)
-back in 2010 with a big list of my failed "businesses." Ironically, that
-post is on the blog I made for my last failed business.
-
-At some point, I had to admit that I didn't know how to start a
-business. I was clueless and needed an education.
-
 My new plan was to treat the next year like I was working on a
-graduate degree for entrepreneurship.
-
-The best professors ever
-------------------------------
-
-Since I was making my own graduate degree, I could pick whatever
-professors I wanted. After searching long and hard, I decided Amy
-Hoy's [30X500](http://30x500.com/) class for entrepreneurs was exactly what I was looking
-for.
-
-This decision was multifaceted, but the main factor was that I was
-not interested in creating a Silicon Valley, YCombinator, lean
-startup-type thing.
-
-Have you found product/market fit yet?
---------------------------------------------------
-
-Startups are about a product. "My augmented reality
-glasses will revolutionize the world," or, "Our web application will disrupt the pet
-industry," or whatever. You get the point. It's all about me, me,
-me, our product, our vision.
-
-Startups fail most of the time, and I think it's because they begin
-with a product and then try to find a market. If you are interested in
-making money, this idea is backwards. If you start with people, invest
-time in understanding the daily aches and pains of their lives, and
-you actually create a decent product, you will make
-money. It's almost guaranteed.
-
-At this point in my career as an entrepreneur, I was pretty geared up
-for maximizing my chances of success. No moonshots for me. So I decided to start with
-customers and not a product. When I quit my job and people asked me what
-my business was going to be, I said, "It will be for web designers.
-That's all I know."
-
-30X500 is almost completely about empathy and how to have some for
-your customers. So I signed up.
+graduate degree for entrepreneurship. So I read [books](http://www.startupbook.net/) and
+[took classes](http://30x500.com/) and [found](https://twitter.com/amyhoy) [mentors](https://twitter.com/studiofellow).
 
 The rest of my story and how I grew my email list to over 3,000 people and made over $15,000 is really just me
-executing what I learned in 30X500 to the best of my ability. 
+executing what I learned from these smart, successful business owners to the best of my ability. 
 
 Lesson #1: Choose your customers carefully
 ------------------------------
 
-If you start with customers, the first step is to pick the customers that you want.
+You should start with customers, not a product.
+
+ If you start with people, invest time in understanding the daily
+ aches and pains of their lives, and you actually create a decent
+ product to solve those problems, you will make money. It’s almost guaranteed.
+
+So it follows if step one is to understand your customers, you should
+pick the customers that you want.
 
 I decided I wanted my customers to have money and be inclined to spend it. They
 should also be working on things I'm interested in, so I don't get too
@@ -282,11 +246,17 @@ If I can pull this off even after screwing up two launches, picking
 too big of a first product, and choosing an audience I have a hard time
 relating to, you can do it, too.
 
+If you're looking for more entrepreneurial posts like this, you might be
+interested in
+[how patio11 redesigned my landing page]({% post_url 2013-06-02-evolution-of-landing-page %}).
+And I often talk shop on
+twitter, I'd love to [meet you there](https://twitter.com/sfioritto).
+
 And hey, if you're a web designer and your floated elements never seem
 to go where you want them to, you should sign up for my free lesson on
-flexbox. It's the future of CSS layout.
+flexbox using the form at the bottom of this post. It's the future of CSS layout. Or you could just
+[buy my book](http://www.sketchingwithcss.com/). :-)
 
-Or you could just [buy my book](http://www.sketchingwithcss.com/). :-)
 
 
 
