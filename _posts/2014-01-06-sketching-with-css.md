@@ -2,7 +2,8 @@
 layout: flexbox
 title: "3,111 email addresses and $15,798: The story of my first successful
 product"
-blurb: "Do you have a giant list of side projects and startup ideas that have garnered zero interest and made zero dollars? Me too. With a successful product finally under my belt, my story can help you skip a few painful steps in the process."
+blurb: "Do you have a giant list of side projects and startup ideas
+that have garnered zero interest and made zero dollars? Me too! But with a successful product finally under my belt, my story can help you skip a few painful steps in the process."
 author: "sean"
 ---
 
@@ -35,13 +36,15 @@ for.
 
 This decision was multifaceted, but the main factor was that I was
 not interested in creating a Silicon Valley, YCombinator, lean
-startup-type thing. Startups are about a product. "My augmented reality
+startup-type thing.
+
+Have you found product/market fit yet?
+--------------------------------------------------
+
+Startups are about a product. "My augmented reality
 glasses will revolutionize the world," or, "Our web application will disrupt the pet
 industry," or whatever. You get the point. It's all about me, me,
 me, our product, our vision.
-
-Businesses start with a customer; startups start with a product.
---------------------------------------------------
 
 Startups fail most of the time, and I think it's because they begin
 with a product and then try to find a market. If you are interested in
@@ -62,7 +65,7 @@ your customers. So I signed up.
 The rest of my story and how I grew my email list to over 3,000 people and made over $15,000 is really just me
 executing what I learned in 30X500 to the best of my ability. 
 
-What customers do you want?
+Lesson #1: Choose your customers carefully
 ------------------------------
 
 If you start with customers, the first step is to pick the customers that you want.
@@ -85,7 +88,7 @@ shoes. It's easier to market to them, easier to understand their
 problems, and easier to identify pains big enough for you to
 solve and charge money for.
 
-Research, research, research
+Lesson #2: Have some empathy for your customers
 ------------------------------
 
 The next step is to really understand your customers and what they 
@@ -112,16 +115,17 @@ Sketching with CSS is born
 You don't have to write software to solve someone's problem. There are
 other kinds of
 products. [Sketching with CSS](http://www.sketchingwithcss.com/) is a
-book/video/info product. Software is what I do, so it felt weird to me to start a
-company and not write software. But given all
+book/video/info product. Software is what I do, so it felt weird to me
+to start a company and not write software. But given all
 my past failures, I wanted to do something small that I
 could finish quickly. 
 
-Once I decided on my customers (web designers), their pain (the frustrations of designing in the browser), and a solution
+Once I decided on my customers (web designers), their pain (the
+frustrations of designing in the browser), and a solution
 (an ebook with videos), I created a landing page and started growing
 my email list.
 
-Only 15 email addresses! What am I doing wrong?
+Lesson #3: Turns out entrepreneurship is a grind
 ------------------------------
 
 I put my new landing page on the web_design subreddit, and I got 15
@@ -168,11 +172,11 @@ addresses. I plan to guest post more this year.
 * Add a sweetener. Give something away for free in exchange for an email
 address. I give away an [interactive video course all about
 flexbox](http://www.sketchingwithcss.com/flexbox/). People love the course, and the email forms convert
-well. I use Nathan's [ConvertKit](https://convertkit.com/) to
+well. I use Nathan Barry's [ConvertKit](https://convertkit.com/) to
 deliver the course and then move those emails over to MailChimp from time
 to time.
 
-Finish it
+Lesson #4: Start small ... then go even smaller.
 ------------------------------
 
 I underestimated the amount of work it would take to write a book and
@@ -181,7 +185,7 @@ email list. I am not a fast writer. If you can crank out a blog post
 in an hour or two instead of the day it takes me, you will finish
 much more quickly than I did.
 
-I wrote and promoted for 6 months, which is a far cry from Nathan's
+I wrote and promoted for 6 months, which is a far cry from Nathan Barry's
 usual turnaround time of 3 months. Structuring and prioritizing your
 time are skills, and apparently years of corporate dronehood had
 atrophied these particular skills for me. Plus, did I mention that I'm slow at writing? 
@@ -193,7 +197,7 @@ chances are you will run into another skill bottleneck.
 
 Product scope is like a multiplier for all of your faults, so pick something small.
 
-Launch it
+Lesson #5: Launching is an art form
 ------------------------------
 
 There is an art to launching a product, and I do not have
@@ -223,7 +227,7 @@ build anticipation. Oops.
 
 Fortunately, I can launch again. I'll fix it the next time around.
 
-Skills to learn
+Lesson #6: You probably don't know what you are doing
 ------------------------------
 
 My launch failure highlights one important lesson I've
@@ -248,7 +252,7 @@ are $39, $99, and $249. A $7 ebook is a legit way to make money and build
 an audience, but if you're in it to learn, you'll learn more if you
 charge based on value.
 
-Let me explain. It takes guts to charge $249 for a book. And because
+Let me explain. It takes guts to charge $249 for an info product. And because
 it's so scary, unless you are a fool, you will absolutely do your research
 and make something worth the price. For me,
 the price forced me to know my customers' pains inside and
@@ -261,13 +265,18 @@ over it. Don't avoid it, don't be a wimp, and charge real
 money. Charge for the actual value of your product, and don't undersell
 yourself.
 
+You may be thinking asking for money for something is no big deal,
+piece of cake, not scary at all &mdash; talk to me when you've
+actually done it.
+
 Oh, and the more you charge, the better your customers will be. I love my customers. 
 
 Onward and upward
 ------------------------------
 
-Since I started selling the book, I've been making about $4,000 a
-month. Not bad! But not good enough, either.
+Since I've started charging for a product I'm selling on the internet,
+I've been making about $4,000 a month. Not bad! But not good enough,
+either.
 
 If I can pull this off even after screwing up two launches, picking
 too big of a first product, and choosing an audience I have a hard time
@@ -276,6 +285,8 @@ relating to, you can do it, too.
 And hey, if you're a web designer and your floated elements never seem
 to go where you want them to, you should sign up for my free lesson on
 flexbox. It's the future of CSS layout.
+
+Or you could just [buy my book](http://www.sketchingwithcss.com/). :-)
 
 
 
