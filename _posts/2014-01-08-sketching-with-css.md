@@ -56,7 +56,13 @@ Lesson #2: Have some empathy for your customers
 ------------------------------
 
 The next step is to really understand your customers and what they 
-struggle with every day. Look for pain, anguish, guilt, and frustration. Take that pain away...and make $$$.
+struggle with every day. Look for pain, anguish, guilt, and
+frustration. Take that pain away...and make $$$.
+
+If you want to really, really dig into this and build a repeatable
+process for finding business opportunities over and over again, you
+need to sign up for [30x500](http://30x500.com/). That class was the best money I've ever spent on
+entrepreneurial training information, ever, period.
 
 Don't do customer interviews. I used to do
 these, but people lie (usually to be nice). Instead, go read what they say on the sites
