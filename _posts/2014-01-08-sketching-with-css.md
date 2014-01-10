@@ -59,11 +59,6 @@ The next step is to really understand your customers and what they
 struggle with every day. Look for pain, anguish, guilt, and
 frustration. Take that pain away...and make $$$.
 
-If you want to really, really dig into this and build a repeatable
-process for finding business opportunities over and over again, you
-need to sign up for [30x500](http://30x500.com/). That class was the best money I've ever spent on
-entrepreneurial training information, ever, period.
-
 Don't do customer interviews. I used to do
 these, but people lie (usually to be nice). Instead, go read what they say on the sites
 where they hang out. The results will be more truthful.
@@ -71,7 +66,13 @@ where they hang out. The results will be more truthful.
 I read hundreds, probably thousands, of articles and forum threads
 until I discovered some patterns. Here is
 [one example](http://www.sazzy.co.uk/2012/02/why-i-cant-design-in-the-browser/comment-page-1/)
-of many articles I found filled with really frustrated people. I wanted to help them!
+of many articles I found filled with really frustrated people. I
+wanted to help them!
+
+(P.S. If you want to build a repeatable
+process for finding business opportunities over and over again, and
+who doesn't, I recommend starting with [this little essay by Amy Hoy](http://unicornfree.com/2013/how-do-you-create-a-product-people-want-to-buy). Good stuff.)
+
 
 Sketching with CSS is born
 ------------------------------
