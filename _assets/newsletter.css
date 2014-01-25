@@ -1,0 +1,82 @@
+header.newsletter, main.post {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header figure.rocket img{
+    width: 100%;
+}
+
+header figure.rocket {
+    max-width: 200px;
+}
+
+@media screen and (min-width: 500px) {
+    header figure.rocket {
+        float: right;
+        width: 25%;
+    }
+}
+
+header.newsletter h1 {
+    font-family: unicodsans, verdana, sans-serif;
+    font-size: 3rem;
+}
+
+header.newsletter h2 {
+    font-size: 2rem;
+    padding-top: 2rem;
+    font-weight: 400;
+}
+
+main.newsletter h2{
+    margin: 2rem 0;
+}
+
+header.newsletter {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.mustache {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.newsletter ul li{
+    margin: 1rem 0;
+    list-style: disc;
+}
+
+.newsletter form {
+    margin: 2rem 0;
+}
+
+.newsletter form input.email {
+    font-family: unicodsans, verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+    max-width: 30rem;
+    margin: 1rem auto;
+}
+
+.newsletter input.button {
+    font-family: unicodsans, verdana, sans-serif;
+    text-transform: uppercase;
+    padding: .5em;
+    font-size: 1.5rem;
+    background: #e46119;
+    border: 1px solid #222;
+    border-radius: 5px;
+    color: #eeeeee;
+    width: 13rem;
+}
+
+.newsletter * , .newsletter *:before, .newsletter *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
