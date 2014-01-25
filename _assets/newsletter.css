@@ -80,3 +80,26 @@ header.newsletter {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+.newsletter figure.me {
+    float: left;
+    width: 50%;
+    max-width: 200px;
+    margin: .5rem 1rem 1rem 0;
+}
+
+.newsletter figure.me img {
+    border: 2px solid #222;
+}
+
+.newsletter .cta {
+    border: 1px solid #444;
+    padding: 0 2rem;
+}
+
+.newsletter .cta h2, .newsletter .cta ul, .newsletter .cta form {
+    width: 100%;
+    max-width: 31rem;
+    margin-left: auto;
+    margin-right: auto;
+}
