@@ -22,5 +22,96 @@ layout: nil
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
+
+ <entry>
+   <title>The Invasion</title>
+   <link href="http://www.planningforaliens.com/the-invasion"/>
+   <updated>2014-01-08T00:00:00-06:00</updated>
+   <id>http://www.planningforaliens.com/the-invasion</id>
+   <content type="html">&lt;header class=&quot;newsletter&quot;&gt;
+
+  &lt;figure class=&quot;rocket&quot;&gt;
+    &lt;img src=&quot;/images/rocket.jpg&quot;/&gt;
+  &lt;/figure&gt;
+  
+  &lt;h1&gt;The Invasion&lt;/h1&gt;
+  &lt;h2&gt;A weekly(ish) newsletter for web people in the trenches&lt;/h2&gt;
+&lt;/header&gt;
+
+&lt;main class=&quot;post content newsletter&quot;&gt;
+  
+  &lt;p&gt; The web is stuffed with HTML5 evangelists, elite Javascript hackers, CSS3 black belts, mustachioed Node.js hipsters and responsive design gurus. It seems like &lt;span class=&quot;skim&quot;&gt;every day there&apos;s something new and revolutionary you need to learn&lt;/span&gt; to keep up with the all the cool kids.&lt;/p&gt;
+  
+  &lt;p&gt;
+  To some extent, it&apos;s fun to read up on the latest tech. &lt;span class=&quot;skim&quot;&gt;Who doesn&apos;t like oohing and aahing over a flashy, HTML5 demo in Chrome Canari?&lt;/span&gt; But at the same time, these kinds of demos and articles are frustrating. &lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;skim&quot;&gt;What&apos;s the point if you never get to put to practice the topics they cover? &lt;/span&gt;&lt;/p&gt;
+  
+  &lt;p&gt;&lt;em&gt;Your&lt;/em&gt; code has to work in IE8.&lt;/p&gt;
+  
+  &lt;p&gt;&lt;em&gt;Your&lt;/em&gt; projects start with piles of legacy code, not a fresh, clean HTML document.&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;Your&lt;/em&gt; boss doesn&apos;t give a hoot about semantic markup.&lt;/p&gt;
+  
+  &lt;p class=&quot;skim&quot;&gt;
+    The real job of web development is messy and complicated.
+  &lt;/p&gt;
+  
+  &lt;p&gt;This is why every week or so I write for my newsletter on topics relevant to regular ol&apos; web developers, like you and me.  I promise, there will never be a pedantic, semi-religious screed on responsive design. &lt;span class=&quot;skim&quot;&gt;Because we&apos;re in the thick of it, making real things on the web, for real people.&lt;/span&gt; We don&apos;t have time for nonsense.&lt;/p&gt;
+  
+  &lt;div class=&quot;cta&quot;&gt;
+  &lt;h2&gt;Join over 3,000 un-mustachioed web designers and web developers.&lt;/h2&gt;
+  
+  &lt;ul&gt;
+    &lt;li&gt;Straightforward, practical tips and tricks for web development.&lt;/li&gt;
+    &lt;li&gt;Advice and thoughts for people in the trenches.&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  &lt;form action=&quot;http://planningforaliens.us4.list-manage.com/subscribe/post?u=e35ff45f3fa9775e481b8e515&amp;amp;id=4c290c222e&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
+	
+    &lt;div class=&quot;mc-field-group&quot;&gt;
+      &lt;input type=&quot;email&quot; placeholder=&quot;Your email address&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;mce-responses&quot; class=&quot;clear&quot;&gt;
+      &lt;div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&quot;position: absolute; left: -5000px;&quot;&gt;&lt;input type=&quot;text&quot; name=&quot;b_e35ff45f3fa9775e481b8e515_4c290c222e&quot; value=&quot;&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;clear&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Be awesome&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;&gt;&lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+
+&lt;h2&gt;What people say about the newsletter.&lt;/h2&gt;
+  
+  &lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Subscribe to &lt;a href=&quot;https://twitter.com/sfioritto&quot;&gt;@sfioritto&lt;/a&gt; &amp;#39;s newsletter, sometimes you get gems like this: &lt;a href=&quot;http://t.co/nZEjW3GKcx&quot;&gt;http://t.co/nZEjW3GKcx&lt;/a&gt;&amp;#10;&amp;#10;Well said, Sir.&lt;/p&gt;&amp;mdash; Travis Neilson (@travisneilson) &lt;a href=&quot;https://twitter.com/travisneilson/statuses/420675470649085953&quot;&gt;January 7, 2014&lt;/a&gt;&lt;/blockquote&gt;
+  
+  &lt;blockquote&gt;&quot;Thanks for these Sean. Your e-mails continue to be both insightful and inspiring.&quot;&lt;/blockquote&gt;
+  
+  &lt;blockquote&gt;&quot;I just wanted to tell you this is one of the best newsletters I&apos;ve gotten in the past year. &quot;&lt;/blockquote&gt;
+  
+  
+  &lt;h3&gt;Who am I?&lt;/h3&gt;
+  
+  &lt;figure class=&quot;me&quot;&gt;
+    &lt;img src=&quot;/images/me.jpg&quot; alt=&quot;Sean Fioritto&quot;&gt;&lt;/img&gt;
+  &lt;/figure&gt;
+  
+  &lt;p&gt;
+    Hey there, I&apos;m Sean, and I&apos;m probably a lot like you. I make stuff for the web. My web dev skills are mostly self-taught over the last decade or so and I really love what I do.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Recently, I wrote a book on web development called &lt;a href=&quot;http://www.sketchingwithcss.com/&quot;&gt;Sketching with CSS&lt;/a&gt;. I&apos;m also an &lt;a href=&quot;http://coding.smashingmagazine.com/2013/11/18/the-future-of-video-in-web-design/&quot;&gt;author in Smashing Magazine&lt;/a&gt; and I&apos;ve written some &lt;a href=&quot;https://github.com/sfioritto/charlie.js&quot;&gt;cool open source projects&lt;/a&gt;.
+  &lt;/p&gt;
+  &lt;p&gt;
+    Today, I&apos;m an entrepreneur. In the not so distant past I did the usual 9-5 thing doing web development for a couple big companies.
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    I&apos;d love to meet you on Twitter. &lt;a href=&quot;https://twitter.com/sfioritto&quot; class=&quot;twitter-follow-button&quot; data-show-count=&quot;true&quot; &gt;Follow @sfioritto&lt;/a&gt;
+
+  &lt;/p&gt;
+  
+&lt;/main&gt;</content>
+ </entry>
  
 </feed>
