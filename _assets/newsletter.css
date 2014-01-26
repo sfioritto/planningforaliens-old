@@ -119,3 +119,21 @@ header.newsletter {
 .newsletter .skim {
     font-weight: 600;
 }
+
+.email-confirm h1 {
+    font-family: unicodsans, verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+}
+
+.email-confirm p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.email-confirm .twitter-follow-button {
+    display: block;
+    margin: 0 auto;
+}
