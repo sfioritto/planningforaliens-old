@@ -105,13 +105,13 @@ header.newsletter {
     margin-right: auto;
 }
 
-#sharing {
+#newsletter-sharing {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-#sharing > div {
+#newsletter-sharing > div {
     float: left;
     padding: 1rem .5rem;
 }
