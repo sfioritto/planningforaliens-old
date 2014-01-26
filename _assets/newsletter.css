@@ -1,3 +1,4 @@
+
 header.newsletter, main.post {
     max-width: 40rem;
     margin: 0 auto;
@@ -35,7 +36,7 @@ main.newsletter h2{
 }
 
 header.newsletter {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
 }
 
@@ -70,7 +71,6 @@ header.newsletter {
     font-size: 1.5rem;
     background: #e46119;
     border: 1px solid #222;
-    border-radius: 5px;
     color: #eeeeee;
     width: 13rem;
 }
@@ -94,7 +94,8 @@ header.newsletter {
 
 .newsletter .cta {
     border: 1px solid #444;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
 }
 
 .newsletter .cta h2, .newsletter .cta ul, .newsletter .cta form {
@@ -102,4 +103,19 @@ header.newsletter {
     max-width: 31rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+#sharing {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sharing > div {
+    float: left;
+    padding: 1rem .5rem;
+}
+
+.newsletter .skim {
+    font-weight: 600;
 }

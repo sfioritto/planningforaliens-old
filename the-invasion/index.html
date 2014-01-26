@@ -2,7 +2,14 @@
 layout: base
 title: The Invasion
 ---
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <header class="newsletter">
 
   <figure class="rocket">
@@ -15,25 +22,27 @@ title: The Invasion
 
 <main class="post content newsletter">
   
-  <p> The web is stuffed with HTML5 evangelists, elite Javascript hackers, CSS3 black belts, mustachioed Node.js hipsters and responsive design gurus. It seems like every day there's something new and enticing to learn about. </p>
-  
-  <p>The pace of change is overwhelming.</p>
+  <p> The web is stuffed with HTML5 evangelists, elite Javascript hackers, CSS3 black belts, mustachioed Node.js hipsters and responsive design gurus. It seems like <span class="skim">every day there's something new and revolutionary you need to learn</span> to keep up with the all the cool kids.</p>
   
   <p>
-  But who doesn't like oohing and aahing over a flashy, HTML5 demo in Chrome Canari? It's fun reading about state of the art web development. At the same time, these kinds of demos and articles are frustrating. What's the point if you never get to put to practice the topics they cover? </p>
+  To some extent, it's fun to read up on the latest tech. <span class="skim">Who doesn't like oohing and aahing over a flashy, HTML5 demo in Chrome Canari?</span> But at the same time, these kinds of demos and articles are frustrating. </p>
+
+<p><span class="skim">What's the point if you never get to put to practice the topics they cover? </span></p>
   
   <p><em>Your</em> code has to work in IE8.</p>
   
   <p><em>Your</em> projects start with piles of legacy code, not a fresh, clean HTML document.</p>
+
+  <p><em>Your</em> boss doesn't give a hoot about semantic markup.</p>
   
-  <p>
-    The real web is messy and complicated.
+  <p class="skim">
+    The real job of web development is messy and complicated.
   </p>
   
-  <p>This is why every week or so I write for my newsletter about topics relevant to real web developers, like you and me. We don't own agencies or have big, fancy clients. We're in the thick of it, making things for the web.</p>
+  <p>This is why every week or so I write for my newsletter on topics relevant to regular ol' web developers, like you and me.  There will never be a pedantic, semi-religious screed on responsive design. <span class="skim">Because we're in the thick of it, making real things on the web, for real people.</span> We don't have time for nonsense.</p>
   
   <div class="cta">
-  <h2>Join over 3,000 web designers and web developers.</h2>
+  <h2>Join over 3,000 un-mustachioed web designers and web developers.</h2>
   
   <ul>
     <li>Straightforward, practical tips and tricks for web development.</li>
@@ -87,6 +96,13 @@ title: The Invasion
   </p>
   
 </main>
-  
-  
-  
+
+<div id="sharing">
+  <div>
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+  </div>
+  <div>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-text="The Invasion, a weekly(ish) newsletter for web developers in the trenches." data-via="sfioritto">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  </div>
+</div>
