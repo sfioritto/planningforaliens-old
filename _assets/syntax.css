@@ -2,10 +2,9 @@
     background: #eeeeee; 
     padding: 1em;
     font-size: 1rem;
-    overflow: hidden;
+    overflow: auto;
     margin: 2em 0;
     border-left: 5px solid #999999;
-    text-overflow: ellipsis;
 }
 .highlight pre{
     font-family: monospace, san-serif;
