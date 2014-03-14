@@ -10,11 +10,17 @@ author: "sean"
 I've been
 [writing about](http://www.sketchingwithcss.com/samplechapter/) and
 [teaching flexbox](http://www.sketchingwithcss.com/flexbox-tutorial/)
-for a while now and the most common question I am asked is, "when will
+for a while now and the most common question I am asked is, "When will
 support be good enough for me to use flexbox in a real project?"
 
-In this article we will explore options for using flexbox starting
-with the best case scenario and working our way down to IE8.
+I've always thought flexbox
+[has a place in rapid prototyping](http://www.planningforaliens.com/blog/2013/10/07/flexbox-first/). But
+I also think, with a little planning, many of us could be using flexbox in
+production today.
+
+In this article we will explore options for when flexbox can be used
+in production. We will start with the best case scenario and work our way
+down to IE8.
 
 The demo we'll be using is the sign up page for a [little side project](http://www.pagesnap.io/)
 a [friend of mine](https://twitter.com/zrail) is working on. He ran
@@ -28,8 +34,11 @@ ideal layout we'll be working with.
 
 The code for the examples is on Github [here](https://github.com/sfioritto/real-world-flexbox).
 
-You only need to support bleeding edge browsers
+Scenario #1: You only need to support bleeding edge browsers
 ------------------------------
+
+Like I said, we'll be starting with the best case scenario. We'll get
+to IE8 soon enough.
 
 When I look at traffic logs for any of my sites, IE doesn't really
 exist. About 1% of my traffic is IE10/11. My
@@ -42,7 +51,7 @@ If your traffic looks like this, you can use flexbox today, right now,
 with a few caveats:
 
 * Don't use flex-wrap, (not supported in Firefox until version 28)
-* Use the -webkit prefix
+* Include the -webkit prefix in addition to the unprefixed syntax
 * Don't use it for  [overall page layout](http://jakearchibald.com/2014/dont-use-flexbox-for-page-layout/)
 
 Follow these rules and you should be good to go.
@@ -52,7 +61,7 @@ example. I'm only going to explain some of the flexbox CSS for the
 example &mdash; just the stuff that might be confusing.
 
 The top box with the different pricing plans is a flex
-container. Pete wants the buttons to be lined up at the
+container. My friend Pete wants the buttons to be lined up at the
 bottom. If the outer container is a flex container with align-items
 set to stretch, (the default), then all of the boxes will have equal
 height and it's easy to put the buttons at the bottom.
@@ -62,7 +71,7 @@ height and it's easy to put the buttons at the bottom.
   display: flex; }{% endhighlight %}
 
 Then each of the pricing tiers is also a flex container. You have to
-change the direction to column and align items to flex-start,
+change the direction to column and align-items to flex-start,
 otherwise the buttons stretch to fill the horizontal space.
 
 {% highlight css %}
@@ -81,9 +90,9 @@ then set margin-top: auto.
 
 I used flexbox in a few other spots on the page in similar ways but
 since I'm assuming you know flexbox already, I'm not going to go into
-more detail here. You can look at the code for this example [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/latest_syntax_only).
+more detail here. (Dont' know flexbox yet? Go [here](http://www.sketchingwithcss.com/flexbox-tutorial/).) You can look at the code for this example [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/latest_syntax_only).
 
-You have very little IE traffic
+Scenario #2: You have very little IE traffic
 ------------------------------
 
 Even with only a trickle of traffic from older browsers, it's likely you'll want IE10 and Firefox 25 or
@@ -94,9 +103,9 @@ versions of Firefox, Safari and Opera into the fold. (Check out
 [caniuse](http://caniuse.com/#feat=flexbox) for more detail on
 supported browsers).
 
-It is tedious to write the syntax for every version of
+It's tedious to write the syntax for every version of
 flexbox plus all of the prefixes, so instead use [Autoprefixer](https://github.com/ai/autoprefixer). If
-you're not already using Grunt/Gulp/makefiles, whatever,
+you're not already using Grunt/Gulp/makefiles/whatever,
 this will
 [get you started with Grunt and Autoprefixer](http://www.planningforaliens.com/blog/2014/03/07/grunt/).
 
@@ -143,10 +152,10 @@ the code generated for the pricing packages section.
       flex: 1 0 auto; }{% endhighlight %}
 
 With Autoprefixer, you get this automatically, so you just write the
-latest syntax, and an extra bonus is you get this for all of your CSS,
+latest syntax. An extra bonus is you get this for all of your CSS,
 not just flexbox. 
 
-You have to support IE8, but it doesn't have to look as nice
+Scenario #3: You have to support IE8, but it doesn't have to look as nice
 ------------------------------
 
 Most clients and bosses want their website to look the same in every
@@ -196,15 +205,15 @@ display properties.
   margin-left: 16px;
   margin-left: 1rem; }{% endhighlight %}
 
-The footer is also a flexbox, but you get the idea at this point. Here
-is what it looks like in IE8.
+The footer is also a flexbox, so I made it work with a few floats. You
+get the idea at this point. Here is what it looks like in IE8.
 
 <figure>
     <img src="/images/flexbox-now/progressive.png" />
 </figure>
   
 
-You have to support IE8 and 9 and it needs to look exactly they same.
+Scenario #4: You have to support IE8 and 9 and it needs to look exactly they same.
 ------------------------------
 
 If you find yourself in this category, you may not want to use
@@ -261,10 +270,12 @@ The new flexbox syntax hasn't been stable for very long, so not a lot
 of us know it yet. If you've been thinking of adding it to your web
 development arsenal, I've got the perfect thing for you.
 
-I've been working on a [free course for flexbox](http://www.sketchingwithcss.com/flexbox-tutorial/), this just happens to
+I've been working on a
+[free course for flexbox](http://www.sketchingwithcss.com/flexbox-tutorial/),
+the article you've just read happens to
 be the last lesson in the series. So if you liked this and you want to
 get the rest,
-[clicky click right here](http://www.sketchingwithcss.com/flexbox-tutorial/).
+[clicky-click right here](http://www.sketchingwithcss.com/flexbox-tutorial/).
 
 
 

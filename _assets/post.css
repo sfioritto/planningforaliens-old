@@ -70,6 +70,10 @@ p.byline span iframe {
 }
 
 /*facebook and twitter buttons*/
+.post #sharing {
+    list-style: none;
+}
+
 .post #sharing li{
     margin: 0;
 }
@@ -77,6 +81,7 @@ p.byline span iframe {
     float: left;
 }
 .post #sharing li.end{
+    padding-top: 5px;
     margin-left: 15px;
 }
 .post #sharing .clear{
@@ -124,16 +129,10 @@ p.byline span iframe {
     margin-left: 1.5em;
 }
 
-.post article .section li:before{
-    content: " \00BB\00BB ";
-    position: absolute;
-    left: -1.5em;
-    top: -.15em;
-}
-
 .post article ul{
     margin-top: 1.4210526em;
     margin-bottom: 1.4210526em;
+    list-style: disc;
 }
 
 /*show the long caption for smaller screen resolutions.*/
