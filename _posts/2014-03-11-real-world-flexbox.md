@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "flexbox in the real world"
-blurb: "Flexbox is awesome, but support for the latest syntax is not good enough
-for most projects. Is it possible to use flexbox and
-still support IE8? Yes, kind of."
+blurb: "Flexbox is awesome, but is it possible to use flexbox and
+still support IE8? If you follow these guidelines, you can start using
+flexbox today."
 author: "sean"
 ---
 
@@ -19,14 +19,14 @@ I also think that with a little planning, many of us could be using flexbox in
 production today.
 
 In this article, we will explore options for when flexbox can be used
-in production. We will start with the best case scenarios and work our way
+in production, starting with the best case scenario and working our way
 down to IE8.
 
 The demo we'll be using is the sign up page for a [side project](http://www.pagesnap.io/)
 a [friend of mine](https://twitter.com/zrail) is working on. Pete ran
 into a few layout problems using Bootstrap's grid system that are
-easily solved with flexbox, so it's a great example. Here's the basic,
-ideal layout we'll be working with.
+easily solved with flexbox, so it's a great example. Here's the layout
+we'll be creating.
 
 <figure>
     <img src="/images/flexbox-now/layout.png" />
@@ -37,17 +37,21 @@ The code for the examples is on Github [here](https://github.com/sfioritto/real-
 Scenario #1: You only need to support bleeding edge browsers.
 ------------------------------
 
-Like I said, we're starting with the best case scenario. We'll get
+We're starting with the best case scenario but we'll get
 to IE8 soon enough.
 
+You can see a live demo of this scenario
+[here](/examples/real-world-flexbox/latest_syntax_only/) and look at
+the code [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/latest_syntax_only).
+
 When I look at the traffic logs for my sites, IE practically doesn't
-exist. Only about 1% of my traffic is IE10/11. My
-[blog](http://www.planningforaliens.com/) and
+exist. Only about 1% of my traffic is IE10/11. This
+[blog](http://www.planningforaliens.com/) and my
 [product pages](http://www.sketchingwithcss.com/) are made for web
 developers like you, so I only need to support the latest
 browsers that people like us tend to run.
 
-If your traffic looks like this, then you can use flexbox today, right now,
+If your traffic looks like this, then you can use the latest flexbox syntax today, right now,
 with a few caveats:
 
 * Don't use flex-wrap, because it's not supported in Firefox until version 28.
@@ -70,6 +74,7 @@ First, make the entire section a flex container.
 
 {% highlight css %}
 .plans {
+  display: -webkit-flex;
   display: flex; }{% endhighlight %}
 
 This puts them into a row and stretches them vertically.
@@ -79,8 +84,11 @@ otherwise the buttons will stretch to fill the horizontal space.
 
 {% highlight css %}
 .plans > div {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-start;
   align-items: flex-start; }{% endhighlight %}
 
 All that's left is to put the buttons at the bottom of each
@@ -92,12 +100,16 @@ section. Select each of the buttons and set margin-top: auto.
 
 I used flexbox in a few other spots on the page in similar ways, but
 since I'm assuming you know flexbox already, I won't go into
-more detail. (Dont' know flexbox yet? Go [here](http://www.sketchingwithcss.com/flexbox-tutorial/).) You can look at the code for this example [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/latest_syntax_only).
+more detail. (Dont' know flexbox yet? Go [here](http://www.sketchingwithcss.com/flexbox-tutorial/).) 
 
 Scenario #2: You have very little IE traffic.
 ------------------------------
 
-Even with only a trickle of traffic from older browsers, it's likely you'll still want IE10 and Firefox 25 to work.
+The live demo for this scenario is
+[here](/examples/real-world-flexbox/autoprefixed/) and the code is [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/autoprefixed).
+
+Even with only a trickle of traffic from older browsers, it's likely
+you'll still want IE10 and Firefox 25 or older to work.
 
 If you combine the previous versions of flexbox with the latest syntax, you bring IE10 and older
 versions of Firefox, Safari, and Opera into the fold. (Check out
@@ -159,6 +171,10 @@ not just for flexbox.
 Scenario #3: You have to support IE8, but it doesn't have to look as nice.
 ------------------------------
 
+The live demo for this scenario is
+[here](/examples/real-world-flexbox/progressive_enhancement/) and the
+code is [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/progressive_enhancement).
+
 Most clients and bosses want their websites to look the same in every
 supported browser, but a few of us have clients and bosses who buy into
 progressive enhancement.
@@ -171,6 +187,11 @@ fall back to the simpler layout.
 
 Zoe Gillenwater did a great presentation on this a few months back. [Here's a
 link to her presentation](http://zomigi.com/blog/flexbox-presentation/).
+
+This is the most bulletproof way to use flexbox and support older
+browsers, but it also means duplicating some of your layout code and
+figuring out what's "good enough" with a client or boss can sometimes
+be difficult.
 
 To keep things simple for our example, we'll give up on the buttons being lined up at the
 bottom in IE8 and IE9. But we still need the
@@ -216,6 +237,9 @@ should get the idea at this point. Here is what it looks like in IE8.
 
 Scenario #4: You have to support IE8 and 9, and it needs to look exactly the same.
 ------------------------------
+
+The live demo for this scenario is
+[here](/examples/real-world-flexbox/flexie/) and the code is [here](https://github.com/sfioritto/real-world-flexbox/tree/master/demos/flexie).
 
 If you find yourself in this category, you may not want to use
 flexbox at all. You're not completely out of luck, but the options available to
