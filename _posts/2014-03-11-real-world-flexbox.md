@@ -62,14 +62,19 @@ example.
 The top box with the different pricing plans is a flex
 container, and Pete wants the buttons to be lined up at the
 bottom. If the outer container is a flex container with align-items
-set to stretch (the default), then all the boxes will have equal
-height. This is an easy way to put the buttons at the bottom.
+set to stretch, (the default), then all of the boxes will have equal
+height and it's easy to put the buttons at the bottom with an auto
+margin on the buttons.
+
+First, make the entire section a flex container.
 
 {% highlight css %}
 .plans {
   display: flex; }{% endhighlight %}
 
-Each of the pricing tiers is also a flex container. Change the direction to column and align-items to flex-start;
+This puts them into a row and stretches them vertically.
+
+Then make each of the pricing tiers a flex container. Change the direction to column and align-items to flex-start;
 otherwise the buttons will stretch to fill the horizontal space.
 
 {% highlight css %}
