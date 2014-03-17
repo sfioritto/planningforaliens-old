@@ -32,7 +32,15 @@ we'll be creating.
     <img src="/images/flexbox-now/layout.png" />
 </figure>
 
-The code for the examples is on Github [here](https://github.com/sfioritto/real-world-flexbox).
+The code for the examples is on Github
+[here](https://github.com/sfioritto/real-world-flexbox).
+
+The four scenarios we will cover are:
+
+* Supporting only bleeding edge browsers
+* You have very little IE traffic
+* You have to support IE8, but it can look different
+* You have to support IE8 and it has to look the same
 
 Scenario #1: You only need to support bleeding edge browsers.
 ------------------------------
