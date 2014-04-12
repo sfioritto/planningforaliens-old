@@ -2,9 +2,9 @@
 Nothing sucks the joy out of programming like a job. 
 ------------------------------
 
-Hey there web developer! Or maybe you're the "front-end guy", CSS ninja or whatever it is your company decided to call you.
 
-Hey there, person that makes stuff for the web.
+Hey, web developer. Pssst, over here.
+------------------------------
 
 Do you remember the first few months at your job? Your work was fun and rewarding because everything was new and challenging.
 
