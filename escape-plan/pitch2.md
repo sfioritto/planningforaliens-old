@@ -1,20 +1,17 @@
 Nothing sucks the joy out of programming like a job. 
-------------------------------
-If your job is threatening to ruin your love of programming, you need an Escape Plan.
-
-Escape Plans are training for busy, experienced web developers stuck in crummy day jobs. Each course is a sprint to create a project with a web technology you haven't used yet. They fit around your schedule and are run at a pace that assumes you know what you are doing.
+==============================
 
 Clueless managers. Mountains of spaghetti code. Intermittent bugs.
 ------------------------------
 
 Unrealistic deadlines. Overlong standup meetings. Meetings. Piles and piles of deadly, ancient code written with apparent hostility. Intermittent bugs that send you to the edge of insanity and back.
 
-Web development used to be an adventure every day.
+Web development has lost its luster.
 ------------------------------
 
-But now, most of your days are filled with endless boredom and frustration.
-
 Drive to work. Attach this form to this CRUD backend. Go to meetings. Fix that bug you thought you fixed last week. Scan Hacker News. Go to meetings. Drive home. Repeat.
+
+Remember how fun it was to learn something new all the time? That's why you got into this line of work. Now your work days teeter perilously over a bottomless pit boredom and frustration.
 
 Your job rarely offers you the opportunity to learn something new.
 ------------------------------
@@ -22,6 +19,8 @@ Your job rarely offers you the opportunity to learn something new.
 You cherish the opportunity to create new features.
 
 A blank text editor window and empty bug tracking tools are like a splash of cold water after being lost in the desert for days. You feel a small spark of that joy you used to feel all the time as you type: `git init .`
+
+But these opportunities are rare and managers always squash your proposals for using new libraries, languages, frameworks, etc.
 
 Can you get a new job if you need it, or are your skills to rusty?
 ------------------------------
@@ -41,23 +40,30 @@ How would he fare if he was laid off? Can you imagine the pressure he must feel 
 
 Because if you keep coasting at work without learning new skills, you'll be that guy in a few years.
 
-Just "start a side project" doesn't work.
+"Just start a side project" doesn't work.
 ------------------------------
 
 The standard advice is to have a side project.
 
-But most side projects end up as Github Ghost Towns because you're drained at the end of the day and don't have the energy for your best work. 
+The sad reality is most side projects end up as Github Ghost Towns. Probably because you're drained at the end of the day and don't have the energy for your best work. 
 
 You need an Escape Plan.
 ------------------------------
 
-You need a ticket to Code Disneyland, a magical wonderland filled with Shiny New Things, blank text editors, empty git repos and clean slates.
+What if you finished your side projects? Imagine your Github profile filled with interesting projects created with languages or frameworks you want to use daily in your career? Would you feel a little better about shopping your resume around? Would you worry less about losing your job?
 
-An Escape Plan is a structured sprint to create a project with a web technology you haven't used yet.
+Escape Plans are your ticket to Code Disneyland.
+------------------------------
+
+A magical wonderland filled with Shiny New Things, blank text editors and empty git repos.
+
+Escape Plans are training for busy, experienced web developers stuck in crummy day jobs. Each course is a sprint to create a project with a web technology you haven't used yet.
+
+Each course is designed to fit around your schedule at a pace that assumes you know what you are doing.
 
 An hour or so every night for one week or one long weekend day, however you work best. At the end of a sprint you'll have a working project and a fundamental grasp of the topic that can only come from hands on experience.
 
-CTA
+CTA FOR EMAIL HERE
 
 Questions you probably have rattling around in your head.
 ------------------------------
@@ -65,14 +71,18 @@ Questions you probably have rattling around in your head.
 What topics will be covered?
 ------------------------------
 
-Topics are still TBD, (allthough the first lesson is already well under way), but likely candidates are frameworks like Angular or Meteor, big libraries like D3.js, languages like Go or Haskell. For the most part the curriculum will be geared towards experienced developers, but there will also be courses to help beginners bridge the gap.
+Topics are still TBD, (although the first lesson is already well under way), but likely candidates are frameworks like Angular or Meteor, big libraries like D3.js, languages like Go or Haskell. For the most part the curriculum will be geared towards experienced developers, but there will also be courses to help beginners bridge the gap.
 
 If you have a cool thing you really wish you had time to learn, you can send suggestions to sean@planningforaliens.com.
 
 Can I choose my own project?
 ------------------------------
 
-Nope. I'd love to offer this option, and maybe later I will. But the problem with this is most side projects fail, and they usually fail because they are too ambitious. Escape Plans are very carefully scoped to make sure you finish.
+Of course! Say for example you've signed up for the Angular.js escape plan and really, really want to build your own mortgage calculator. You can totally make this happen. Lessons are structured to teach a concept and then followed up with exercises. The exercises assume you are following along with the built in project, but with a little thought you can apply the exercises to your own project instead.
+
+The problem with this is most side projects fail, and they usually fail because they are too ambitious. Escape Plans are structured around projects that are very carefully scoped to make sure you finish. 
+
+Also, if your side project goes way outside the scope of the class, I can't provide as much help in the forums. 
 
 What format are the lessons in?
 ------------------------------
