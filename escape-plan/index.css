@@ -3,7 +3,8 @@
 
 body {
   font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-image: url("stardust.png"); }
 
 main {
   width: 100%;
@@ -42,16 +43,21 @@ h2.escape {
 
 .rocket {
   padding: 1rem;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 200px; }
+
+h2, p {
+  color: #c7c8c9; }
 
 h2 {
   font-family: 'Archer A', 'Archer B';
   font-weight: 800;
   font-style: italic;
   margin: 1rem 0;
-  font-size: 1rem;
-  color: #371211;
-  line-height: 1.4em; }
+  font-size: 1.6154rem;
+  color: #d96a48;
+  line-height: 1.4em;
+  text-align: center; }
 
 p {
   max-width: 30rem;

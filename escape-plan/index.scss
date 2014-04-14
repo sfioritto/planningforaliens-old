@@ -7,6 +7,7 @@
 
 body {
     @include whitney;
+    background-image: url("stardust.png");
 }
 
 @mixin clearfix {
@@ -57,15 +58,21 @@ h2.escape {
 .rocket {
     padding: 1rem;
     max-width: 100%;
+    width: 200px;
+}
+
+h2, p {
+    color: $rocket-grey;
 }
 
 h2 {
     @include archer-bold;
     font-style: italic;
     margin: 1rem 0;
-    font-size: $font-size-1;
-    color: $dark-complementary-color;
+    font-size: $font-size-2;
+    color: $light-complementary-color;
     line-height: 1.4em;
+    text-align: center;
 }
 
 p {
