@@ -70,3 +70,6 @@ em {
 
 main {
   padding: 1rem; }
+
+.cta form {
+  display: none; }
