@@ -1,33 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
   font-weight: 400; }
 
 main {
-  width: 40rem;
+  width: 100%;
   margin: 0 auto; }
 
-h1, h2 {
-  font-family: 'Archer A', 'Archer B';
-  font-weight: 500;
-  font-style: italic; }
-
-h1, h2.launch {
-  color: #3e75ab;
-  font-size: 4.2308rem;
-  margin: 4rem 0; }
+.top {
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 h1 {
-  text-align: center; }
+  padding: 0 1rem;
+  max-width: 19rem;
+  width: 100%;
+  font-size: 2.6154rem;
+  text-align: center;
+  margin: 1rem 0;
+  float: left;
+  color: #371211;
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+h2.escape {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  color: #b93c2f;
+  font-size: 2.6154rem;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1em; }
+
+.rocket {
+  padding: 1rem;
+  max-width: 100%; }
 
 h2 {
-  margin: 3rem 0;
-  font-size: 2.6154rem;
-  color: #222222; }
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  font-style: italic;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #371211;
+  line-height: 1.4em; }
 
 p {
-  width: 30rem;
+  max-width: 30rem;
+  width: 100%;
   line-height: 1.4em;
   margin: 1rem 0; }
 
 em {
   font-weight: 600; }
+
+main {
+  padding: 1rem; }

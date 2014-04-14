@@ -1,43 +1,84 @@
-@import '../colors';
-@import '../fonts';
+@import 'colors';
+@import 'fonts';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
     @include whitney;
 }
 
+@mixin clearfix {
+    &::after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
 
 main {
-    width: 40rem;
+    width: 100%;
     margin: 0 auto;
 }
 
-h1, h2 {
-    @include archer;
-    font-style: italic;
-}
-
-h1, h2.launch {
-    color: $base-color;
-    font-size: $font-size-4;
-    margin: 4rem 0;
+.top {
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
+    padding: 0 1rem;
+    max-width: 19rem;
+    width: 100%;
+    font-size: $font-size-3;
     text-align: center;
+    margin: 1rem 0;
+    float: left;
+    color: $dark-complementary-color;
+    @include tungsten;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2.escape {
+    @include archer-bold;
+    color: $complementary-color;
+    font-size: $font-size-3;
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 1em;
+}
+
+.rocket {
+    padding: 1rem;
+    max-width: 100%;
 }
 
 h2 {
-    margin: 3rem 0;
-    font-size: $font-size-3;
-    color: $black;
+    @include archer-bold;
+    font-style: italic;
+    margin: 1rem 0;
+    font-size: $font-size-1;
+    color: $dark-complementary-color;
+    line-height: 1.4em;
 }
 
 p {
-    width: 30rem;
+    max-width: 30rem;
+    width: 100%;
     line-height: 1.4em;
     margin: 1rem 0;
 }
 
 em {
     font-weight: 600;
+}
+
+main {
+    padding: 1rem;
 }
