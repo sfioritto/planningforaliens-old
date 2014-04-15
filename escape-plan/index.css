@@ -60,7 +60,7 @@ h2 {
   text-align: center; }
 
 p {
-  max-width: 30rem;
+  max-width: 40rem;
   width: 100%;
   line-height: 1.4em;
   margin: 1rem 0; }
@@ -73,3 +73,13 @@ main {
 
 .cta form {
   display: none; }
+
+@media screen and (min-width: 800px) {
+  p {
+    font-size: 1.6154rem; }
+
+  h2 {
+    font-size: 2.6154rem; }
+
+  main {
+    max-width: 40rem; } }
