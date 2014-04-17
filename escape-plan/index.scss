@@ -9,7 +9,6 @@ body {
     @include whitney;
     background-image: url("grey.png");
     background-image: url("old_mathematics.png");
-//    background-image: url("stardust.png");
 }
 
 @mixin clearfix {
@@ -30,10 +29,7 @@ header {
 
     
     h1 {
-        @include archer;
-        width: 100%;
-        margin: 0 auto;
-        max-width: 42rem;
+        @include archer-bold;
         margin: 0 auto;
         font-size: $font-size-2;
         text-align: left;
@@ -52,7 +48,6 @@ header {
 }
 
 .banner {
-//    margin-bottom: 5rem;
 
     .float {
         display: flex;
@@ -83,29 +78,24 @@ header {
     }
 }
 
-main {
+main, h1 {
     width: 100%;
     margin: 0 auto;
-    max-width: 42rem;
+    max-width: 48rem;
 }
 
-h2, p {
+p, h2 {
+    @include archer;
     color: $dark-complementary-color;
     font-size: $font-size-2;
-}
-
-h2 {
-    font-size: $font-size-3;
-}
-
-p {
     width: 100%;
     line-height: 1.4em;
     margin: 1rem 0;
 }
 
-em {
-    font-weight: 600;
+h2 {
+    @include archer-bold;
+    font-style: italic;
 }
 
 
