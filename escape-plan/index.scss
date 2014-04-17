@@ -19,6 +19,16 @@ body {
     }
 }
 
+@mixin breakpoint($point) {
+  @if $point == big {
+    @media (min-width: 475px) { @content; }
+  }
+  @else if $point == bigger {
+    @media (min-width: 530px) { @content; }
+  }
+}
+
+
 header {
 
     padding: 3rem 0 2rem 0;
@@ -49,14 +59,13 @@ header {
 
 .banner {
 
-    .float {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+//    position: relative;
+//    margin-bottom: -29rem;
+    
     h2 {
         @include tungsten;
         font-size: 2rem;
@@ -64,23 +73,44 @@ header {
         font-style: normal;
         padding: 0 1rem;
         text-transform: uppercase;
-        width: 20rem;
+        width: 18rem;
         line-height: 1.3em;
         flex: 0 1 auto;
         text-shadow: 1px 1px $rocket-grey;
         color: $dark-complementary-color;
+
+        @include breakpoint(big) {
+            font-size: $font-size-3;
+            width: 20rem;
+        }
+        
+        @include breakpoint(bigger) {
+            font-size: $font-size-4;
+            width: 20rem;
+        }
     }
     
     .rocket {
         width: 215px;
-        flex: 0 1 auto;
+        min-width: 150px;
+        flex: 0 2 auto;
         padding: 2rem 1rem;
     }
 }
 
-main, h1 {
+main {
     width: 100%;
     margin: 0 auto;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid $rocket-grey;
+    padding-top: 1rem;
+}
+
+main > *, h1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 48rem;
 }
 
@@ -90,7 +120,8 @@ p, h2 {
     font-size: $font-size-2;
     width: 100%;
     line-height: 1.6em;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 h2, .bold, em {
@@ -109,8 +140,3 @@ h2.big {
     }
 }
 
-@media screen and (min-width: 400px) {
-    .banner h2 {
-        font-size: $font-size-4;
-    }
-}
