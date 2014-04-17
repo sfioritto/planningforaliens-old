@@ -1,4 +1,5 @@
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -64,7 +65,7 @@ main {
   margin: 0 auto;
   background: white;
   border-radius: 2px;
-  border: 1px solid #c7c8c9;
+  border-top: 1px solid #c7c8c9;
   padding: 1rem; }
 
 main > *, h1 {
@@ -115,8 +116,6 @@ h2.bigger {
   min-width: 200px;
   margin: 1rem auto;
   float: right; }
-  .octo img {
-    width: 100%; }
 
 .quote {
   padding-left: 1.5rem;
@@ -139,6 +138,3 @@ h2.bigger {
     .quote {
       padding-left: 0;
       max-width: 40rem; } }
-
-.cta form {
-  display: none; }
