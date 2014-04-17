@@ -22,41 +22,37 @@ body {
 
 header {
 
-    padding: 4rem 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    padding: 3rem 0 2rem 0;
+
+    background-image: url("background.png");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+
     
     h1 {
-        flex: 1 1 auto;
-        @include archer-light;
+        @include archer;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 42rem;
+        margin: 0 auto;
         font-size: $font-size-2;
-        padding: 0 .5rem; //horizontal spacing
+        text-align: left;
+        padding: 0 1rem;
+        color: $dark-complementary-color;
+
+        span {
+            display: block;
+            @include tungsten;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: $font-size-4;
+        }
     }
 
-    .sample {
-        flex: 1 1 auto;
-        margin: 0 .5rem; // for spacing
-        min-width: 14rem;
-        line-height: 1em;
-        @include tungsten;
-        background-color: $light-complementary-color;
-        border-radius: 5px;
-        padding: 1rem 1rem;
-        text-align: center;
-        font-size: $font-size-2;
-        text-transform: uppercase;
-        color: #eee;
-        box-shadow: 1px 1px 5px $black;
-    }
 }
 
 .banner {
-    background-image: url("background.png");
-    background-size: contain;
-    background-repeat: repeat-x;
-    margin-bottom: 5rem;
+//    margin-bottom: 5rem;
 
     .float {
         display: flex;
@@ -83,11 +79,11 @@ header {
     .rocket {
         max-width: 215px;
         flex: 1 1 auto;
-        padding: 8rem 1rem 1rem 1rem;
+        padding: 2rem 1rem;
     }
 }
 
-main, header {
+main {
     width: 100%;
     margin: 0 auto;
     max-width: 42rem;

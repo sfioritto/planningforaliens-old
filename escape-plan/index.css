@@ -8,63 +8,54 @@ body {
   background-image: url("old_mathematics.png"); }
 
 header {
-  padding: 4rem 0;
+  padding: 3rem 0 2rem 0;
+  background-image: url("background.png");
+  background-repeat: repeat-x;
+  background-attachment: fixed; }
+  header h1 {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 500;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 42rem;
+    margin: 0 auto;
+    font-size: 1.6154rem;
+    text-align: left;
+    padding: 0 1rem;
+    color: #371211; }
+    header h1 span {
+      display: block;
+      font-family: 'Tungsten A', 'Tungsten B';
+      font-weight: 400;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 4.2308rem; }
+
+.banner .float {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; }
-  header h1 {
-    flex: 1 1 auto;
-    font-family: 'Archer A', 'Archer B';
-    font-weight: 400;
-    font-size: 1.6154rem;
-    padding: 0 .5rem; }
-  header .sample {
-    flex: 1 1 auto;
-    margin: 0 .5rem;
-    min-width: 14rem;
-    line-height: 1em;
-    font-family: 'Tungsten A', 'Tungsten B';
-    font-weight: 400;
-    background-color: #d96a48;
-    border-radius: 5px;
-    padding: 1rem 1rem;
-    text-align: center;
-    font-size: 1.6154rem;
-    text-transform: uppercase;
-    color: #eee;
-    box-shadow: 1px 1px 5px #222222; }
+  justify-content: center;
+  position: relative; }
+.banner h2 {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  text-transform: uppercase;
+  width: 8rem;
+  line-height: 1.3em;
+  flex: 2 1 0;
+  max-width: 345px;
+  text-shadow: 1px 1px #c7c8c9;
+  color: #371211; }
+.banner .rocket {
+  max-width: 215px;
+  flex: 1 1 auto;
+  padding: 2rem 1rem; }
 
-.banner {
-  background-image: url("background.png");
-  background-size: contain;
-  background-repeat: repeat-x;
-  margin-bottom: 5rem; }
-  .banner .float {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: relative; }
-  .banner h2 {
-    font-family: 'Tungsten A', 'Tungsten B';
-    font-weight: 400;
-    font-size: 2rem;
-    font-weight: 400;
-    padding: 0 1rem;
-    text-transform: uppercase;
-    width: 8rem;
-    line-height: 1.3em;
-    flex: 2 1 0;
-    max-width: 345px;
-    text-shadow: 1px 1px #c7c8c9;
-    color: #371211; }
-  .banner .rocket {
-    max-width: 215px;
-    flex: 1 1 auto;
-    padding: 8rem 1rem 1rem 1rem; }
-
-main, header {
+main {
   width: 100%;
   margin: 0 auto;
   max-width: 42rem; }
