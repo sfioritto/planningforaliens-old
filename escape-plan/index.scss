@@ -27,7 +27,7 @@ body {
     @media (min-width: 530px) { @content; }
   }
   @else if $point == biggest {
-    @media (min-width: 725px) { @content; }
+    @media (min-width: 750px) { @content; }
   }
 
 }
@@ -181,6 +181,9 @@ h2.bigger {
         position: absolute;
         margin-left: -.6em;
         margin-top: .1em;
+        @include breakpoint(biggest) {
+            font-size: $font-size-5;
+        }
     }
     span.said::after {
         content: close-quote;
@@ -198,6 +201,26 @@ h2.bigger {
         padding-left: 0;
         max-width: 40rem;
     }
+}
+
+
+.logos {
+    text-align: center;
+    > img {
+        width: 70px;
+        padding-right: 1rem;
+    }
+    margin: 2rem auto;
+}
+
+.escape-cta {
+    @include tungsten;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center;
+    font-size: $font-size-4;
+    margin: 3rem auto;
 }
 
 .cta {

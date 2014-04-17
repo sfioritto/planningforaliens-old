@@ -127,6 +127,9 @@ h2.bigger {
     position: absolute;
     margin-left: -.6em;
     margin-top: .1em; }
+    @media (min-width: 750px) {
+      .quote span.said::before {
+        font-size: 6.8462rem; } }
   .quote span.said::after {
     content: close-quote; }
   .quote span.said {
@@ -134,7 +137,24 @@ h2.bigger {
   .quote span.by {
     font-family: 'Archer A', 'Archer B';
     font-weight: 800; }
-  @media (min-width: 725px) {
+  @media (min-width: 750px) {
     .quote {
       padding-left: 0;
       max-width: 40rem; } }
+
+.logos {
+  text-align: center;
+  margin: 2rem auto; }
+  .logos > img {
+    width: 70px;
+    padding-right: 1rem; }
+
+.escape-cta {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  font-size: 4.2308rem;
+  margin: 3rem auto; }
