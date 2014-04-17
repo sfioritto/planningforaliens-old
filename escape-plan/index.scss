@@ -7,7 +7,6 @@
 
 body {
     @include whitney;
-    background-image: url("grey.png");
     background-image: url("old_mathematics.png");
 }
 
@@ -26,6 +25,10 @@ body {
   @else if $point == bigger {
     @media (min-width: 530px) { @content; }
   }
+  @else if $point == biggest {
+    @media (min-width: 725px) { @content; }
+  }
+
 }
 
 
@@ -139,6 +142,15 @@ em {
 }
 
 h2.big {
+
+    @include breakpoint(bigger) {
+        line-height: 1.3em;
+        font-size: $font-size-3;
+    }
+}
+
+h2.bigger {
+
     color: $complementary-color;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -146,6 +158,47 @@ h2.big {
     @include breakpoint(bigger) {
         line-height: 1.3em;
         font-size: $font-size-3;
+    }
+}
+
+.octo {
+    width: 30%;
+    min-width: 200px;
+    margin: 1rem auto;
+    float: right;
+    img {
+        width: 100%;
+    }
+}
+
+.quote {
+
+    padding-left: 1.5rem; //room for hanging quote
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    span.said::before {
+        content: open-quote;
+        font-size: $font-size-4;
+        position: absolute;
+        margin-left: -.6em;
+        margin-top: .1em;
+    }
+    span.said::after {
+        content: close-quote;
+    }
+
+    span.said {
+        font-style: italic;
+    }
+    
+    span.by {
+        @include archer-bold;
+    }
+
+    @include breakpoint(biggest) {
+        padding-left: 0;
+        max-width: 40rem;
     }
 }
 
