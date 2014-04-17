@@ -4,63 +4,79 @@
 body {
   font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
   font-weight: 400;
-  background-image: url("stardust.png"); }
+  background-image: url("grey.png");
+  background-image: url("old_mathematics.png"); }
 
-main {
-  width: 100%;
-  margin: 0 auto; }
-
-.top {
-  background-image: url("background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+header {
+  padding: 4rem 0;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  header h1 {
+    flex: 1 1 auto;
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 400;
+    font-size: 1.6154rem;
+    padding: 0 .5rem; }
+  header .sample {
+    flex: 1 1 auto;
+    margin: 0 .5rem;
+    min-width: 14rem;
+    line-height: 1em;
+    font-family: 'Tungsten A', 'Tungsten B';
+    font-weight: 400;
+    background-color: #d96a48;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 1.6154rem;
+    text-transform: uppercase;
+    color: #eee;
+    box-shadow: 1px 1px 5px #222222; }
 
-h1 {
-  padding: 0 1rem;
-  max-width: 19rem;
+.banner {
+  background-image: url("background.png");
+  background-size: contain;
+  background-repeat: repeat-x;
+  margin-bottom: 5rem; }
+  .banner .float {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+  .banner h2 {
+    font-family: 'Tungsten A', 'Tungsten B';
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    width: 8rem;
+    line-height: 1.3em;
+    flex: 2 1 0;
+    max-width: 345px;
+    text-shadow: 1px 1px #c7c8c9;
+    color: #371211; }
+  .banner .rocket {
+    max-width: 215px;
+    flex: 1 1 auto;
+    padding: 8rem 1rem 1rem 1rem; }
+
+main, header {
   width: 100%;
-  font-size: 2.6154rem;
-  text-align: center;
-  margin: 1rem 0;
-  float: left;
-  color: #371211;
-  font-family: 'Tungsten A', 'Tungsten B';
-  font-weight: 400;
-  font-weight: 400;
-  text-transform: uppercase; }
-
-h2.escape {
-  font-family: 'Archer A', 'Archer B';
-  font-weight: 800;
-  color: #b93c2f;
-  font-size: 2.6154rem;
-  text-align: center;
-  margin: 1rem 0;
-  line-height: 1em; }
-
-.rocket {
-  padding: 1rem;
-  max-width: 100%;
-  width: 200px; }
+  margin: 0 auto;
+  max-width: 42rem; }
 
 h2, p {
-  color: #c7c8c9; }
+  color: #371211;
+  font-size: 1.6154rem; }
 
 h2 {
-  font-family: 'Archer A', 'Archer B';
-  font-weight: 800;
-  font-style: italic;
-  margin: 2rem 0;
-  font-size: 1.6154rem;
-  color: #d96a48;
-  line-height: 1.2em;
-  text-align: center; }
+  font-size: 2.6154rem; }
 
 p {
-  max-width: 40rem;
   width: 100%;
   line-height: 1.4em;
   margin: 1rem 0; }
@@ -68,18 +84,9 @@ p {
 em {
   font-weight: 600; }
 
-main {
-  padding: 1rem; }
-
 .cta form {
   display: none; }
 
-@media screen and (min-width: 800px) {
-  p {
-    font-size: 1.6154rem; }
-
-  h2 {
-    font-size: 2.6154rem; }
-
-  main {
-    max-width: 40rem; } }
+@media screen and (min-width: 400px) {
+  .banner h2 {
+    font-size: 4.2308rem; } }

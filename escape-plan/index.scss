@@ -7,7 +7,9 @@
 
 body {
     @include whitney;
-    background-image: url("stardust.png");
+    background-image: url("grey.png");
+    background-image: url("old_mathematics.png");
+//    background-image: url("stardust.png");
 }
 
 @mixin clearfix {
@@ -18,65 +20,89 @@ body {
     }
 }
 
-main {
+header {
+
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    h1 {
+        flex: 1 1 auto;
+        @include archer-light;
+        font-size: $font-size-2;
+        padding: 0 .5rem; //horizontal spacing
+    }
+
+    .sample {
+        flex: 1 1 auto;
+        margin: 0 .5rem; // for spacing
+        min-width: 14rem;
+        line-height: 1em;
+        @include tungsten;
+        background-color: $light-complementary-color;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: $font-size-2;
+        text-transform: uppercase;
+        color: #eee;
+        box-shadow: 1px 1px 5px $black;
+    }
+}
+
+.banner {
+    background-image: url("background.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    margin-bottom: 5rem;
+
+    .float {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    h2 {
+        @include tungsten;
+        font-size: 2rem;
+        font-weight: 400;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        width: 8rem;
+        line-height: 1.3em;
+        flex: 2 1 0;
+        max-width: 345px;
+        text-shadow: 1px 1px $rocket-grey;
+        color: $dark-complementary-color;
+    }
+    
+    .rocket {
+        max-width: 215px;
+        flex: 1 1 auto;
+        padding: 8rem 1rem 1rem 1rem;
+    }
+}
+
+main, header {
     width: 100%;
     margin: 0 auto;
-}
-
-.top {
-    background-image: url("background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-h1 {
-    padding: 0 1rem;
-    max-width: 19rem;
-    width: 100%;
-    font-size: $font-size-3;
-    text-align: center;
-    margin: 1rem 0;
-    float: left;
-    color: $dark-complementary-color;
-    @include tungsten;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-h2.escape {
-    @include archer-bold;
-    color: $complementary-color;
-    font-size: $font-size-3;
-    text-align: center;
-    margin: 1rem 0;
-    line-height: 1em;
-}
-
-.rocket {
-    padding: 1rem;
-    max-width: 100%;
-    width: 200px;
+    max-width: 42rem;
 }
 
 h2, p {
-    color: $rocket-grey;
+    color: $dark-complementary-color;
+    font-size: $font-size-2;
 }
 
 h2 {
-    @include archer-bold;
-    font-style: italic;
-    margin: 2rem 0;
-    font-size: $font-size-2;
-    color: $light-complementary-color;
-    line-height: 1.2em;
-    text-align: center;
+    font-size: $font-size-3;
 }
 
 p {
-    max-width: 40rem;
     width: 100%;
     line-height: 1.4em;
     margin: 1rem 0;
@@ -86,9 +112,6 @@ em {
     font-weight: 600;
 }
 
-main {
-    padding: 1rem;
-}
 
 .cta {
     form {
@@ -96,17 +119,8 @@ main {
     }
 }
 
-@media screen and (min-width: 800px) {
-    
-    p {
-        font-size: $font-size-2;
-    }
-
-    h2 {
-        font-size: $font-size-3;
-    }
-
-    main {
-        max-width: 40rem;
+@media screen and (min-width: 400px) {
+    .banner h2 {
+        font-size: $font-size-4;
     }
 }
