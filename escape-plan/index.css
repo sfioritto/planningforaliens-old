@@ -66,7 +66,7 @@ main {
   background: white;
   border-radius: 2px;
   border: 1px solid #c7c8c9;
-  padding-top: 1rem; }
+  padding: 1rem; }
 
 main > *, h1 {
   width: 100%;
@@ -80,18 +80,31 @@ p, h2 {
   color: #371211;
   font-size: 1.6154rem;
   width: 100%;
-  line-height: 1.6em;
   margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  line-height: 1.4em; }
+  @media (min-width: 530px) {
+    p, h2 {
+      line-height: 1.6em; } }
 
-h2, .bold, em {
+h2, .bold {
   font-family: 'Archer A', 'Archer B';
   font-weight: 800;
   font-style: italic; }
 
-h2.big {
-  font-size: 2.6154rem;
+em {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
   color: #b93c2f; }
+
+h2.big {
+  color: #b93c2f;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (min-width: 530px) {
+    h2.big {
+      line-height: 1.3em;
+      font-size: 2.6154rem; } }
 
 .cta form {
   display: none; }

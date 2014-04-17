@@ -104,7 +104,7 @@ main {
     background: white;
     border-radius: 2px;
     border: 1px solid $rocket-grey;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 main > *, h1 {
@@ -119,19 +119,34 @@ p, h2 {
     color: $dark-complementary-color;
     font-size: $font-size-2;
     width: 100%;
-    line-height: 1.6em;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    line-height: 1.4em;
+
+    @include breakpoint(bigger) {
+        line-height: 1.6em;
+    }
 }
 
-h2, .bold, em {
+h2, .bold {
     @include archer-bold;
     font-style: italic;
 }
 
-h2.big {
-    font-size: $font-size-3;
+em {
+    @include archer-bold;
     color: $complementary-color;
+}
+
+h2.big {
+    color: $complementary-color;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint(bigger) {
+        line-height: 1.3em;
+        font-size: $font-size-3;
+    }
 }
 
 .cta {
