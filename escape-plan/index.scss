@@ -61,19 +61,19 @@ header {
         @include tungsten;
         font-size: 2rem;
         font-weight: 400;
+        font-style: normal;
         padding: 0 1rem;
         text-transform: uppercase;
-        width: 8rem;
+        width: 20rem;
         line-height: 1.3em;
-        flex: 2 1 0;
-        max-width: 345px;
+        flex: 0 1 auto;
         text-shadow: 1px 1px $rocket-grey;
         color: $dark-complementary-color;
     }
     
     .rocket {
-        max-width: 215px;
-        flex: 1 1 auto;
+        width: 215px;
+        flex: 0 1 auto;
         padding: 2rem 1rem;
     }
 }
@@ -89,15 +89,19 @@ p, h2 {
     color: $dark-complementary-color;
     font-size: $font-size-2;
     width: 100%;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin: 1rem 0;
 }
 
-h2 {
+h2, .bold, em {
     @include archer-bold;
     font-style: italic;
 }
 
+h2.big {
+    font-size: $font-size-3;
+    color: $complementary-color;
+}
 
 .cta {
     form {

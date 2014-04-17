@@ -39,17 +39,17 @@ header {
   font-weight: 400;
   font-size: 2rem;
   font-weight: 400;
+  font-style: normal;
   padding: 0 1rem;
   text-transform: uppercase;
-  width: 8rem;
+  width: 20rem;
   line-height: 1.3em;
-  flex: 2 1 0;
-  max-width: 345px;
+  flex: 0 1 auto;
   text-shadow: 1px 1px #c7c8c9;
   color: #371211; }
 .banner .rocket {
-  max-width: 215px;
-  flex: 1 1 auto;
+  width: 215px;
+  flex: 0 1 auto;
   padding: 2rem 1rem; }
 
 main, h1 {
@@ -63,13 +63,17 @@ p, h2 {
   color: #371211;
   font-size: 1.6154rem;
   width: 100%;
-  line-height: 1.4em;
+  line-height: 1.6em;
   margin: 1rem 0; }
 
-h2 {
+h2, .bold, em {
   font-family: 'Archer A', 'Archer B';
   font-weight: 800;
   font-style: italic; }
+
+h2.big {
+  font-size: 2.6154rem;
+  color: #b93c2f; }
 
 .cta form {
   display: none; }
