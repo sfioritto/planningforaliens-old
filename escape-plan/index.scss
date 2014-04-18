@@ -8,7 +8,7 @@
 
 body {
     @include whitney;
-    background-image: url("old_mathematics.png");
+    background-image: url("../old_mathematics.png");
 }
 
 @mixin clearfix {
@@ -37,7 +37,7 @@ header {
 
     padding: 3rem 0 2rem 0;
 
-    background-image: url("background.png");
+    background-image: url("../background.png");
     background-repeat: repeat-x;
     background-attachment: fixed;
 
@@ -164,7 +164,7 @@ h2.bigger {
 
 .octo {
     width: 30%;
-    min-width: 200px;
+    min-width: 150px;
     margin: 1rem auto;
     float: right;
 }
@@ -219,7 +219,10 @@ h2.bigger {
     text-transform: uppercase;
     line-height: 1em;
     text-align: center;
-    font-size: $font-size-4;
+    font-size: $font-size-3;
+    @include breakpoint(big) {
+        font-size: $font-size-4;
+    }
     margin: 3rem auto;
 }
 
@@ -240,7 +243,10 @@ h2.bigger {
         }
 
     }
+
     form {
+        margin: 2rem auto;
+
         @include breakpoint(big) {
             flex: 1 1 auto;
             padding-left: 3rem;
@@ -271,9 +277,6 @@ h2.bigger {
             color: white;
             box-shadow: 1px 1px 5px $black;
             line-height: 1rem;
-        }
-        .email, .button {
-
         }
     }
 }

@@ -1,0 +1,251 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
+  font-weight: 400;
+  background-image: url("../old_mathematics.png"); }
+
+header {
+  padding: 3rem 0 2rem 0;
+  background-image: url("../background.png");
+  background-repeat: repeat-x;
+  background-attachment: fixed; }
+  header h1 {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 800;
+    margin: 0 auto;
+    font-size: 1.6154rem;
+    text-align: left;
+    padding: 0 1rem;
+    color: #371211; }
+    header h1 span {
+      display: block;
+      font-family: 'Tungsten A', 'Tungsten B';
+      font-weight: 400;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 4.2308rem; }
+
+.banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .banner h2 {
+    font-family: 'Tungsten A', 'Tungsten B';
+    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    width: 18rem;
+    line-height: 1.3em;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    text-shadow: 1px 1px #c7c8c9;
+    color: #371211; }
+    @media (min-width: 475px) {
+      .banner h2 {
+        font-size: 2.6154rem;
+        width: 20rem; } }
+    @media (min-width: 530px) {
+      .banner h2 {
+        font-size: 4.2308rem;
+        width: 20rem; } }
+  .banner .rocket {
+    width: 215px;
+    min-width: 150px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 2 auto;
+    -ms-flex: 0 2 auto;
+    flex: 0 2 auto;
+    padding: 2rem 1rem; }
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 2px;
+  border-top: 1px solid #c7c8c9;
+  padding: 1rem; }
+
+main > *, h1 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem; }
+
+p, h2 {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 500;
+  color: #371211;
+  font-size: 1.6154rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4em; }
+  @media (min-width: 530px) {
+    p, h2 {
+      line-height: 1.6em; } }
+
+h2, .bold {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  font-style: italic; }
+
+em {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  color: #b93c2f; }
+
+@media (min-width: 530px) {
+  h2.big {
+    line-height: 1.3em;
+    font-size: 2.6154rem; } }
+
+h2.bigger {
+  color: #b93c2f;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  @media (min-width: 530px) {
+    h2.bigger {
+      line-height: 1.3em;
+      font-size: 2.6154rem; } }
+
+.octo {
+  width: 30%;
+  min-width: 150px;
+  margin: 1rem auto;
+  float: right; }
+
+.quote {
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .quote span.said::before {
+    content: open-quote;
+    font-size: 4.2308rem;
+    position: absolute;
+    margin-left: -0.6em;
+    margin-top: 0.1em; }
+    @media (min-width: 750px) {
+      .quote span.said::before {
+        font-size: 6.8462rem; } }
+  .quote span.said::after {
+    content: close-quote; }
+  .quote span.said {
+    font-style: italic; }
+  .quote span.by {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 800; }
+  @media (min-width: 750px) {
+    .quote {
+      padding-left: 0;
+      max-width: 40rem; } }
+
+.logos {
+  text-align: center;
+  margin: 2rem auto; }
+  .logos > img {
+    width: 70px;
+    padding-right: 1rem; }
+
+.escape-cta {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1em;
+  text-align: center;
+  font-size: 2.6154rem;
+  margin: 3rem auto; }
+  @media (min-width: 475px) {
+    .escape-cta {
+      font-size: 4.2308rem; } }
+
+@media (min-width: 475px) {
+  .cta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }
+.cta .rocket {
+  width: 100px;
+  margin: 1rem auto;
+  display: block; }
+  @media (min-width: 475px) {
+    .cta .rocket {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto; } }
+.cta form {
+  margin: 2rem auto; }
+  @media (min-width: 475px) {
+    .cta form {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding-left: 3rem; } }
+  .cta form label {
+    display: block;
+    font-family: 'Tungsten A', 'Tungsten B';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.6154rem; }
+  .cta form .email {
+    font-size: 1.6154rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 30rem; }
+  .cta form .button {
+    display: block;
+    font-family: 'Tungsten A', 'Tungsten B';
+    font-weight: 400;
+    background-color: #b93c2f;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6154rem;
+    text-transform: uppercase;
+    color: white;
+    -webkit-box-shadow: 1px 1px 5px #222222;
+    box-shadow: 1px 1px 5px #222222;
+    line-height: 1rem; }
+
+.me {
+  float: left;
+  width: 50%;
+  max-width: 200px;
+  margin: 1rem;
+  border: 1px solid #c7c8c9; }
