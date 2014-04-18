@@ -224,8 +224,64 @@ h2.bigger {
 }
 
 .cta {
-    form {
 
+    @include breakpoint(big) {
+        display: flex;	
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .rocket {
+        width: 100px;
+        margin: 1rem auto;
+        display: block;
+        @include breakpoint(big) {
+            flex: 0 1 auto;
+        }
+
+    }
+    form {
+        @include breakpoint(big) {
+            flex: 1 1 auto;
+            padding-left: 3rem;
+        }
+        label {
+            display: block;
+            @include tungsten;
+            text-transform: uppercase;
+            font-size: $font-size-3;
+        }
+        .email {
+            font-size: $font-size-2;
+            padding: .5rem;
+            margin-top: 1rem;
+            width: 100%;
+            max-width: 30rem;
+        }
+        .button {
+            display: block;
+            @include tungsten;
+            background-color: $complementary-color;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: $font-size-2;
+            text-transform: uppercase;
+            color: white;
+            box-shadow: 1px 1px 5px $black;
+            line-height: 1rem;
+        }
+        .email, .button {
+
+        }
     }
 }
 
+.me {
+    float: left;
+    width: 50%;
+    max-width: 200px;
+    margin: 1rem;
+    border: 1px solid $rocket-grey;
+}
