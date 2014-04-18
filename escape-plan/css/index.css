@@ -18,7 +18,7 @@ header {
   margin-right: -1rem;
   margin-top: -1rem; }
   header h1 {
-    font-family: 'Archer A', 'Archer B';
+    font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800;
     margin: 0 auto;
     font-size: 1.6154rem;
@@ -29,7 +29,7 @@ header {
     max-width: 40rem; }
     header h1 span {
       display: block;
-      font-family: 'Tungsten A', 'Tungsten B';
+      font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
       font-weight: 400;
       font-weight: 700;
       text-transform: uppercase;
@@ -57,7 +57,7 @@ header {
   margin-left: -1rem;
   margin-right: -1rem; }
   .banner h2 {
-    font-family: 'Tungsten A', 'Tungsten B';
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
     font-size: 1.6154rem;
     width: 10rem;
@@ -72,6 +72,14 @@ header {
     flex: 0 1 auto;
     text-shadow: 1px 1px #c7c8c9;
     color: #371211; }
+    @media (max-width: 320px) {
+      .banner h2 {
+        margin: 0;
+        padding: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
     @media (min-width: 400px) {
       .banner h2 {
         text-align: left;
@@ -86,12 +94,19 @@ header {
     width: 50%;
     min-width: 150px;
     max-width: 215px;
+    min-width: 150px;
+    max-width: 215px;
     -webkit-box-flex: 0;
     -webkit-flex: 0 2 auto;
     -ms-flex: 0 2 auto;
     flex: 0 2 auto;
     padding: 2rem 1rem;
     display: block; }
+    @media (max-width: 320px) {
+      .banner .rocket {
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px; } }
 
 main {
   width: 100%;
@@ -107,7 +122,7 @@ main > * {
   max-width: 48rem; }
 
 p, h2 {
-  font-family: 'Archer A', 'Archer B';
+  font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
   color: #371211;
   font-size: 1rem;
@@ -123,12 +138,12 @@ p, h2 {
       line-height: 1.6em; } }
 
 h2, .bold {
-  font-family: 'Archer A', 'Archer B';
+  font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 800;
   font-style: italic; }
 
 em {
-  font-family: 'Archer A', 'Archer B';
+  font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 800;
   color: #b93c2f; }
 
@@ -170,7 +185,7 @@ h2.bigger {
   .quote span.said {
     font-style: italic; }
   .quote span.by {
-    font-family: 'Archer A', 'Archer B';
+    font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800; }
   @media (min-width: 750px) {
     .quote {
@@ -185,7 +200,7 @@ h2.bigger {
     padding-right: 1rem; }
 
 .escape-cta {
-  font-family: 'Tungsten A', 'Tungsten B';
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -232,7 +247,7 @@ h2.bigger {
       padding-left: 3rem; } }
   .cta form label {
     display: block;
-    font-family: 'Tungsten A', 'Tungsten B';
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 2.6154rem; }
@@ -244,19 +259,23 @@ h2.bigger {
     max-width: 30rem; }
   .cta form .button {
     display: block;
-    font-family: 'Tungsten A', 'Tungsten B';
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
     background-color: #b93c2f;
     border-radius: 5px;
     padding: 1rem;
     margin-top: 1rem;
     text-align: center;
-    font-size: 1.6154rem;
+    font-size: 1rem;
     text-transform: uppercase;
     color: white;
     -webkit-box-shadow: 1px 1px 5px #222222;
     box-shadow: 1px 1px 5px #222222;
-    line-height: 1rem; }
+    line-height: 1rem;
+    max-width: 100%; }
+    @media (min-width: 400px) {
+      .cta form .button {
+        font-size: 1.6154rem; } }
 
 .me {
   float: left;

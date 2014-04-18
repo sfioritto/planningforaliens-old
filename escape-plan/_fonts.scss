@@ -11,21 +11,21 @@ $font-size-5: 6.8462rem;
 }
 
 @mixin archer-bold {
-    font-family: 'Archer A', 'Archer B';
+    font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800;
 }
 
 @mixin archer {
-    font-family: 'Archer A', 'Archer B';
+    font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
 }
 
 @mixin archer-light {
-    font-family: 'Archer A', 'Archer B';
+    font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 400;
 }
 
 @mixin tungsten{
-    font-family: 'Tungsten A', 'Tungsten B';
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
 }
