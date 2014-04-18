@@ -86,7 +86,8 @@ header {
         font-size: 4.2308rem;
         line-height: 1.2em;
         width: 320px;
-        width: 20rem; } }
+        width: 20rem;
+        margin-left: 2rem; } }
   .banner .rocket, .banner h2 {
     display: inline-block;
     vertical-align: middle; }
