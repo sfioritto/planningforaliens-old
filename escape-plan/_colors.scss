@@ -6,6 +6,7 @@ $dark-base-color: darken($base-color, 15%);
 $complementary-color: rgb(185,60,47);
 $dark-complementary-color: rgb(55,18,17);
 $light-complementary-color: rgb(217,106,72);
+$lighter-complementary-color: lighten($light-complementary-color, 30%);
 $rocket-grey: rgb(199,200,201);
 $black: #222222;
 $grey: lighten($black, 10%);

@@ -195,12 +195,17 @@ p, h2 {
 
 h2, .bold {
     @include archer-bold;
-    font-style: italic;
+//    font-style: italic;
 }
 
 em {
     @include archer-bold;
     color: $complementary-color;
+}
+
+.highlight {
+    background-color: $lighter-complementary-color;
+//    background-clip: content;
 }
 
 h2.big {
@@ -211,7 +216,7 @@ h2.big {
     }
 }
 
-h2.bigger {
+.bigger {
 
     color: $complementary-color;
     margin-top: 32px;
@@ -387,4 +392,8 @@ h2.bigger {
     margin: 16px;
     margin: 1rem;
     border: 1px solid $rocket-grey;
+}
+
+.training {
+
 }
