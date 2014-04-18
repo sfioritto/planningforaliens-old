@@ -9,6 +9,7 @@
 body {
     @include whitney;
     background: white;
+    padding: 16px;
     padding: 1rem;
 }
 
@@ -44,11 +45,15 @@ body {
 
 header {
 
+    padding: 48px 0 32px 0;
     padding: 3rem 0 2rem 0;
     background-image: url("../background.png");
     background-size: 100%;
+    margin-left: -16px;
     margin-left: -1rem;
+    margin-right: -16px;
     margin-right: -1rem;
+    margin-top: -16px;
     margin-top: -1rem;
     
     h1 {
@@ -56,9 +61,11 @@ header {
         margin: 0 auto;
         font-size: $font-size-2;
         text-align: left;
+        padding: 0 16rem;
         padding: 0 1rem;
         color: $dark-complementary-color;
         width: 100%;
+        max-width: 40 * 16px;
         max-width: 40rem;
 
         span {
@@ -79,15 +86,19 @@ header {
     align-items: center;
     justify-content: center;
     background-image: url("../old_mathematics.png");
+    margin-left: -16px;
     margin-left: -1rem;
+    margin-right: -16px;
     margin-right: -1rem;
 
     h2 {
         @include tungsten;
         font-size: $font-size-2;
+        width: 10 * 16px;
         width: 10rem;
         font-weight: 400;
         font-style: normal;
+        padding: 0 16px;
         padding: 0 1rem;
         text-transform: uppercase;
         line-height: 1.3em;
@@ -103,6 +114,7 @@ header {
 
         @include breakpoint(small) {
             text-align: left;
+            font-size: 32px;
             font-size: 2rem;
             width: 18rem;
         }
@@ -110,6 +122,7 @@ header {
         @include breakpoint(bigger) {
             font-size: $font-size-4;
             line-height: 1.2em;
+            width: 20 * 16px;
             width: 20rem;
         }
     }
@@ -128,6 +141,7 @@ header {
         min-width: 150px;
         max-width: 215px;
         flex: 0 2 auto;
+        padding: 32px 16px;
         padding: 2rem 1rem;
         display: block;
     }
@@ -138,6 +152,7 @@ main {
     margin: 0 auto;
     border-radius: 2px;
     border-top: 1px solid $rocket-grey;
+    padding: 16px 0;
     padding: 1rem 0;
 }
 
@@ -145,6 +160,7 @@ main > * {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    max-width: 48 * 16px;
     max-width: 48rem;
 }
 
@@ -153,7 +169,9 @@ p, h2 {
     color: $dark-complementary-color;
     font-size: $font-size-1;
     width: 100%;
+    margin-top: 16px;
     margin-top: 1rem;
+    margin-bottom: 16px;
     margin-bottom: 1rem;
     line-height: 1.4em;
 
@@ -187,7 +205,9 @@ h2.big {
 h2.bigger {
 
     color: $complementary-color;
+    margin-top: 32px;
     margin-top: 2rem;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
 
     @include breakpoint(bigger) {
@@ -199,14 +219,18 @@ h2.bigger {
 .octo {
     width: 30%;
     min-width: 150px;
+    margin: 16px auto;
     margin: 1rem auto;
     float: right;
 }
 
 .quote {
 
+    padding-left: 24px;
     padding-left: 1.5rem; //room for hanging quote
+    margin-top: 32px;
     margin-top: 2rem;
+    margin-bottom: 32px;
     margin-bottom: 2rem;
     
     span.said::before {
@@ -233,6 +257,7 @@ h2.bigger {
 
     @include breakpoint(biggest) {
         padding-left: 0;
+        max-width: 40 * 16px;
         max-width: 40rem;
     }
 }
@@ -242,8 +267,10 @@ h2.bigger {
     text-align: center;
     > img {
         width: 70px;
+        padding-right: 16px;
         padding-right: 1rem;
     }
+    margin: 32px auto;
     margin: 2rem auto;
 }
 
@@ -257,6 +284,7 @@ h2.bigger {
     @include breakpoint(big) {
         font-size: $font-size-4;
     }
+    margin: 3 * 16px auto;
     margin: 3rem auto;
 }
 
@@ -270,6 +298,7 @@ h2.bigger {
 
     .rocket {
         width: 100px;
+        margin: 16px auto;
         margin: 1rem auto;
         display: block;
         @include breakpoint(big) {
@@ -279,10 +308,12 @@ h2.bigger {
     }
 
     form {
+        margin: 32px auto;
         margin: 2rem auto;
 
         @include breakpoint(big) {
             flex: 1 1 auto;
+            padding-left: 3 * 16px;
             padding-left: 3rem;
         }
         label {
@@ -293,9 +324,12 @@ h2.bigger {
         }
         .email {
             font-size: $font-size-2;
+            padding: 8px;
             padding: .5rem;
+            margin-top: 16px;
             margin-top: 1rem;
             width: 100%;
+            max-width: 30 * 16px;
             max-width: 30rem;
         }
         .button {
@@ -303,7 +337,9 @@ h2.bigger {
             @include tungsten;
             background-color: $complementary-color;
             border-radius: 5px;
+            padding: 16px;
             padding: 1rem;
+            margin-top: 16px;
             margin-top: 1rem;
             text-align: center;
             font-size: $font-size-1;
@@ -324,6 +360,7 @@ h2.bigger {
     float: left;
     width: 50%;
     max-width: 200px;
+    margin: 16px;
     margin: 1rem;
     border: 1px solid $rocket-grey;
 }
