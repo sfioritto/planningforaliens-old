@@ -8,9 +8,7 @@
 
 body {
     @include whitney;
-    background: white;
-    padding: 16px;
-    padding: 1rem;
+    background-image: url("../old_mathematics.png");
 }
 
 @mixin clearfix {
@@ -31,6 +29,9 @@ body {
   @else if $point == biggest {
     @media (min-width: 750px) { @content; }
   }
+  @else if $point == huge {
+      @media (min-width: 1250px) { @content; }
+  }
   @else if $point == small {
     @media (min-width: 400px) { @content; }
   }
@@ -38,25 +39,14 @@ body {
     @media (max-width: 320px) { @content; }
   }
 
-
-
 }
 
-
 header {
-
-    padding: 48px 0 32px 0;
-    padding: 3rem 0 2rem 0;
+    padding: 48px 16px 32px 16px;
+    padding: 3rem 1rem 2rem 1rem;
     background-image: url("../background.png");
-    background-size: 100%;
-    background-attachment: fixed;
-    margin-left: -16px;
-    margin-left: -1rem;
-    margin-right: -16px;
-    margin-right: -1rem;
-    margin-top: -16px;
-    margin-top: -1rem;
-    
+    background-repeat: repeat;
+
     h1 {
         @include archer-bold;
         margin: 0 auto;
@@ -66,13 +56,13 @@ header {
         padding: 0 1rem;
         color: $dark-complementary-color;
         width: 100%;
-        max-width: 40 * 16px;
-        max-width: 40rem;
+        max-width: 48 * 16px;
+        max-width: 48rem;
 
         span {
             display: block;
             @include tungsten;
-            font-weight: 700;
+            font-weight: 600;
             text-transform: uppercase;
             font-size: $font-size-4;
         }
@@ -81,17 +71,11 @@ header {
 }
 
 .banner {
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-image: url("../old_mathematics.png");
-    margin-left: -16px;
-    margin-left: -1rem;
-    margin-right: -16px;
-    margin-right: -1rem;
-    border-bottom: 1px solid $rocket-grey;
+
     h2 {
         @include tungsten;
         font-size: 1.4rem;
@@ -158,12 +142,28 @@ header {
 }
 
 main {
+    display: block;
+    background: white;
     width: 100%;
-    margin: 0 auto;
     border-radius: 2px;
     padding: 16px 0;
     padding: 1rem 0;
+    border-top: 1px solid $rocket-grey;
+    @include breakpoint(huge) {
+        border: 1px solid $rocket-grey;
+    }
 }
+
+.banner, main {
+    padding: 16px;
+    padding: 1rem;
+    @include breakpoint(huge) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 main > * {
     width: 100%;

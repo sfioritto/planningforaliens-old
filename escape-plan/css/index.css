@@ -6,23 +6,13 @@
 body {
   font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
   font-weight: 400;
-  background: white;
-  padding: 16px;
-  padding: 1rem; }
+  background-image: url("../old_mathematics.png"); }
 
 header {
-  padding: 48px 0 32px 0;
-  padding: 3rem 0 2rem 0;
+  padding: 48px 16px 32px 16px;
+  padding: 3rem 1rem 2rem 1rem;
   background-image: url("../background.png");
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-attachment: fixed;
-  margin-left: -16px;
-  margin-left: -1rem;
-  margin-right: -16px;
-  margin-right: -1rem;
-  margin-top: -16px;
-  margin-top: -1rem; }
+  background-repeat: repeat; }
   header h1 {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800;
@@ -33,13 +23,13 @@ header {
     padding: 0 1rem;
     color: #371211;
     width: 100%;
-    max-width: 640px;
-    max-width: 40rem; }
+    max-width: 768px;
+    max-width: 48rem; }
     header h1 span {
       display: block;
       font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
       font-weight: 400;
-      font-weight: 700;
+      font-weight: 600;
       text-transform: uppercase;
       font-size: 4.2308rem; }
 
@@ -61,12 +51,6 @@ header {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url("../old_mathematics.png");
-  margin-left: -16px;
-  margin-left: -1rem;
-  margin-right: -16px;
-  margin-right: -1rem;
-  border-bottom: 1px solid #c7c8c9;
   /*for browsers without flexbox*/
   text-align: center; }
   .banner h2 {
@@ -129,11 +113,25 @@ header {
         width: 100px; } }
 
 main {
+  display: block;
+  background: white;
   width: 100%;
-  margin: 0 auto;
   border-radius: 2px;
   padding: 16px 0;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  border-top: 1px solid #c7c8c9; }
+  @media (min-width: 1250px) {
+    main {
+      border: 1px solid #c7c8c9; } }
+
+.banner, main {
+  padding: 16px;
+  padding: 1rem; }
+  @media (min-width: 1250px) {
+    .banner, main {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 main > * {
   width: 100%;
