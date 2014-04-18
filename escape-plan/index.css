@@ -57,9 +57,9 @@ header {
   .banner h2 {
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.4rem;
     width: 160px;
-    width: 10rem;
+    width: 12rem;
     font-weight: 400;
     font-style: normal;
     padding: 0 16px;
@@ -221,21 +221,27 @@ h2.bigger {
       font-size: 4.2308rem; } }
 
 @media (min-width: 475px) {
+  .cta .rocket, .cta form {
+    display: inline-block; } }
+@media (min-width: 475px) {
   .cta {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: flex-start; } }
 .cta .rocket {
   width: 100px;
   margin: 16px auto;
-  margin: 1rem auto;
-  display: block; }
+  margin: 1rem auto; }
   @media (min-width: 475px) {
     .cta .rocket {
       flex: 0 1 auto; } }
+  .cta .rocket img {
+    width: 100%; }
 .cta form {
   margin: 32px auto;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  vertical-align: top; }
   @media (min-width: 475px) {
     .cta form {
       flex: 1 1 auto;
@@ -243,11 +249,13 @@ h2.bigger {
       padding-left: 3rem; } }
   .cta form label {
     display: block;
+    text-align: left;
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 2.6154rem; }
   .cta form .email {
+    display: block;
     font-size: 1.6154rem;
     padding: 8px;
     padding: 0.5rem;
@@ -284,6 +292,3 @@ h2.bigger {
   margin: 16px;
   margin: 1rem;
   border: 1px solid #c7c8c9; }
-
-.contact {
-  font-size: 1rem; }

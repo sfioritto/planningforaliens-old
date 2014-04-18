@@ -94,9 +94,9 @@ header {
     border-bottom: 1px solid $rocket-grey;
     h2 {
         @include tungsten;
-        font-size: $font-size-1;
+        font-size: 1.4rem;
         width: 10 * 16px;
-        width: 10rem;
+        width: 12rem;
         font-weight: 400;
         font-style: normal;
         padding: 0 16px;
@@ -298,7 +298,16 @@ h2.bigger {
 
 .cta {
 
+    .rocket, form {
+        @include breakpoint(big) {
+            //non-flexbox browser
+            display: inline-block;
+        }
+    }
+
+
     @include breakpoint(big) {
+        text-align: center; //non-flexbox
         display: flex;	
         align-items: center;
         justify-content: flex-start;
@@ -308,16 +317,20 @@ h2.bigger {
         width: 100px;
         margin: 16px auto;
         margin: 1rem auto;
-        display: block;
+
         @include breakpoint(big) {
             flex: 0 1 auto;
         }
-
+        
+        img {
+            width: 100%;
+        }
     }
 
     form {
         margin: 32px auto;
         margin: 2rem auto;
+        vertical-align: top;
 
         @include breakpoint(big) {
             flex: 1 1 auto;
@@ -326,11 +339,13 @@ h2.bigger {
         }
         label {
             display: block;
+            text-align: left;
             @include tungsten;
             text-transform: uppercase;
             font-size: $font-size-3;
         }
         .email {
+            display: block;
             font-size: $font-size-2;
             padding: 8px;
             padding: .5rem;
@@ -371,8 +386,4 @@ h2.bigger {
     margin: 16px;
     margin: 1rem;
     border: 1px solid $rocket-grey;
-}
-
-.contact {
-    font-size: $font-size-1;
 }
