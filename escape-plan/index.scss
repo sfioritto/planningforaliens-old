@@ -8,7 +8,8 @@
 
 body {
     @include whitney;
-    background-image: url("../old_mathematics.png");
+    background: white;
+    padding: 1rem;
 }
 
 @mixin clearfix {
@@ -29,6 +30,10 @@ body {
   @else if $point == biggest {
     @media (min-width: 750px) { @content; }
   }
+  @else if $point == small {
+    @media (min-width: 400px) { @content; }
+  }
+
 
 }
 
@@ -36,11 +41,11 @@ body {
 header {
 
     padding: 3rem 0 2rem 0;
-
     background-image: url("../background.png");
-    background-repeat: repeat-x;
-    background-attachment: fixed;
-
+    background-size: 100%;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
     
     h1 {
         @include archer-bold;
@@ -49,6 +54,8 @@ header {
         text-align: left;
         padding: 0 1rem;
         color: $dark-complementary-color;
+        width: 100%;
+        max-width: 40rem;
 
         span {
             display: block;
@@ -67,51 +74,55 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-//    position: relative;
-//    margin-bottom: -29rem;
-    
+    background-image: url("../old_mathematics.png");
+    margin-left: -1rem;
+    margin-right: -1rem;
+
     h2 {
         @include tungsten;
-        font-size: 2rem;
+        font-size: $font-size-2;
+        width: 10rem;
         font-weight: 400;
         font-style: normal;
         padding: 0 1rem;
         text-transform: uppercase;
-        width: 18rem;
         line-height: 1.3em;
         flex: 0 1 auto;
         text-shadow: 1px 1px $rocket-grey;
         color: $dark-complementary-color;
 
-        @include breakpoint(big) {
-            font-size: $font-size-3;
-            width: 20rem;
+        @include breakpoint(small) {
+            text-align: left;
+            font-size: 2rem;
+            width: 18rem;
         }
         
         @include breakpoint(bigger) {
             font-size: $font-size-4;
+            line-height: 1.2em;
             width: 20rem;
         }
     }
     
     .rocket {
-        width: 215px;
+        width: 50%;
         min-width: 150px;
+        max-width: 215px;
         flex: 0 2 auto;
         padding: 2rem 1rem;
+        display: block;
     }
 }
 
 main {
     width: 100%;
     margin: 0 auto;
-    background: white;
     border-radius: 2px;
     border-top: 1px solid $rocket-grey;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
-main > *, h1 {
+main > * {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -121,11 +132,15 @@ main > *, h1 {
 p, h2 {
     @include archer;
     color: $dark-complementary-color;
-    font-size: $font-size-2;
+    font-size: $font-size-1;
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
     line-height: 1.4em;
+
+    @include breakpoint(small) {
+        font-size: $font-size-2;
+    }
 
     @include breakpoint(bigger) {
         line-height: 1.6em;
@@ -287,4 +302,8 @@ h2.bigger {
     max-width: 200px;
     margin: 1rem;
     border: 1px solid $rocket-grey;
+}
+
+.contact {
+    font-size: $font-size-1;
 }

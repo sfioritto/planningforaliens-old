@@ -5,13 +5,16 @@
 body {
   font-family: 'Whitney SSm A', 'Whitney SSm B', verdana, sans-serif;
   font-weight: 400;
-  background-image: url("../old_mathematics.png"); }
+  background: white;
+  padding: 1rem; }
 
 header {
   padding: 3rem 0 2rem 0;
   background-image: url("../background.png");
-  background-repeat: repeat-x;
-  background-attachment: fixed; }
+  background-size: 100%;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -1rem; }
   header h1 {
     font-family: 'Archer A', 'Archer B';
     font-weight: 800;
@@ -19,7 +22,9 @@ header {
     font-size: 1.6154rem;
     text-align: left;
     padding: 0 1rem;
-    color: #371211; }
+    color: #371211;
+    width: 100%;
+    max-width: 40rem; }
     header h1 span {
       display: block;
       font-family: 'Tungsten A', 'Tungsten B';
@@ -32,43 +37,49 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-image: url("../old_mathematics.png");
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .banner h2 {
     font-family: 'Tungsten A', 'Tungsten B';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.6154rem;
+    width: 10rem;
     font-weight: 400;
     font-style: normal;
     padding: 0 1rem;
     text-transform: uppercase;
-    width: 18rem;
     line-height: 1.3em;
     flex: 0 1 auto;
     text-shadow: 1px 1px #c7c8c9;
     color: #371211; }
-    @media (min-width: 475px) {
+    @media (min-width: 400px) {
       .banner h2 {
-        font-size: 2.6154rem;
-        width: 20rem; } }
+        text-align: left;
+        font-size: 2rem;
+        width: 18rem; } }
     @media (min-width: 530px) {
       .banner h2 {
         font-size: 4.2308rem;
+        line-height: 1.2em;
         width: 20rem; } }
   .banner .rocket {
-    width: 215px;
+    width: 50%;
     min-width: 150px;
+    max-width: 215px;
     flex: 0 2 auto;
-    padding: 2rem 1rem; }
+    padding: 2rem 1rem;
+    display: block; }
 
 main {
   width: 100%;
   margin: 0 auto;
-  background: white;
   border-radius: 2px;
   border-top: 1px solid #c7c8c9;
-  padding: 1rem; }
+  padding: 1rem 0; }
 
-main > *, h1 {
+main > * {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -78,11 +89,14 @@ p, h2 {
   font-family: 'Archer A', 'Archer B';
   font-weight: 500;
   color: #371211;
-  font-size: 1.6154rem;
+  font-size: 1rem;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 1.4em; }
+  @media (min-width: 400px) {
+    p, h2 {
+      font-size: 1.6154rem; } }
   @media (min-width: 530px) {
     p, h2 {
       line-height: 1.6em; } }
@@ -213,3 +227,6 @@ h2.bigger {
   max-width: 200px;
   margin: 1rem;
   border: 1px solid #c7c8c9; }
+
+.contact {
+  font-size: 1rem; }
