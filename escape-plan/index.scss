@@ -49,6 +49,7 @@ header {
     padding: 3rem 0 2rem 0;
     background-image: url("../background.png");
     background-size: 100%;
+    background-attachment: fixed;
     margin-left: -16px;
     margin-left: -1rem;
     margin-right: -16px;
@@ -90,10 +91,10 @@ header {
     margin-left: -1rem;
     margin-right: -16px;
     margin-right: -1rem;
-
+    border-bottom: 1px solid $rocket-grey;
     h2 {
         @include tungsten;
-        font-size: $font-size-2;
+        font-size: $font-size-1;
         width: 10 * 16px;
         width: 10rem;
         font-weight: 400;
@@ -101,6 +102,7 @@ header {
         padding: 0 16px;
         padding: 0 1rem;
         text-transform: uppercase;
+        text-align: left;
         line-height: 1.3em;
         flex: 0 1 auto;
         text-shadow: 1px 1px $rocket-grey;
@@ -125,12 +127,21 @@ header {
             width: 20 * 16px;
             width: 20rem;
         }
+
+    }
+
+    /*for browsers without flexbox*/
+    text-align: center;
+    .rocket, h2 {
+        display: inline-block;
+        vertical-align: middle;
     }
     
     .rocket {
-        width: 50%;
-        min-width: 150px;
-        max-width: 215px;
+
+        img {
+            width: 100%;
+        }
 
         @include breakpoint(tiny) {
             min-width: 100px;
@@ -138,12 +149,10 @@ header {
             width: 100px;
         }
 
-        min-width: 150px;
-        max-width: 215px;
-        flex: 0 2 auto;
+        flex: 0 2 150px;
+        width: 200px;
         padding: 32px 16px;
         padding: 2rem 1rem;
-        display: block;
     }
 }
 
@@ -151,7 +160,6 @@ main {
     width: 100%;
     margin: 0 auto;
     border-radius: 2px;
-    border-top: 1px solid $rocket-grey;
     padding: 16px 0;
     padding: 1rem 0;
 }
