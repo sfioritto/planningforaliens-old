@@ -18,12 +18,11 @@ header {
     margin: 0 auto;
     font-size: 1.6154rem;
     text-align: left;
-    padding: 0 16rem;
-    padding: 0 1rem;
     color: #371211;
     width: 100%;
     max-width: 768px;
-    max-width: 48rem; }
+    max-width: 48rem;
+    text-shadow: 2px 2px #c7c8c9; }
     header h1 span {
       display: block;
       font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
@@ -53,7 +52,7 @@ header {
     text-align: left;
     line-height: 1.3em;
     flex: 0 1 auto;
-    text-shadow: 1px 1px #c7c8c9;
+    text-shadow: 2px 2px #c7c8c9;
     color: #371211; }
     @media (max-width: 320px) {
       .banner h2 {
