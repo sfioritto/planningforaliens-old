@@ -89,7 +89,7 @@ You have to actually practice using the damn thing. It's so rare for docs to wal
 
 (P.P.S. Angular does have a [tutorial app](https://docs.angularjs.org/tutorial), but I haven't tried it yet. If you're stuck wallowing in the regular docs, it might be worth a try.)
 
-Oh, and a "hello world" app is not enough, because again, not enough context. [The first screencast DHH did for Rails.](http://learnpythonthehardway.org/) is a really good example of the kind of demo your docs should include. It's gold.
+Oh, and a "hello world" app is not enough, because again, not enough context. [The first screencast DHH did for Rails.](http://youtu.be/Gzj723LkRJY) is a really good example of the kind of demo your docs should include. It's gold.
 
 I remember following along way back then. As you watch that screencast, you will find yourself asking "how did he do that?" or "what is that tool he's using?" You will almost never ask why he's doing something, because his opinion is so abundantly clear!
 
