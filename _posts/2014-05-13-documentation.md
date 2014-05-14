@@ -1,7 +1,7 @@
 ---
 layout: escape
 title: "The Infamous Angular Learning Curve"
-blurb: "some stuff in here"
+blurb: "Angular is an extremely powerful tool for creating client-side applications .. that is, if you can figure out how to use it."
 author: "sean"
 ---
 
@@ -27,7 +27,7 @@ The docs keep going like this, sentence after sentence, paragraph after paragrap
 
 It's like, if you were writing Star Wars and you revealed the Death Star is fully operational, Darth Vader is Luke's father and the goofy, green alien is actually Master Yoda and then never tell the viewer who Luke is and what the force is, (IT'S NOT MIDI-CHOLRIANS DAMMIT), and why you should root for the rebellion and not join the Dark Side. 
 
-At least a bad movie might involve something sexy or actiony, but here we get "subsitutable objects" and an "execution context." Technical docs can't fall back on Michael Bay-style expensive CG to keep your interest, so they better at least have a plot.
+At least a bad movie might involve something sexy or action-y, but here we get "substitutable objects" and an "execution context." Technical docs can't fall back on Michael Bay-style expensive CG to keep your interest, so they better at least have a plot.
 
 And it's not just Angular. Most technical docs are even worse.
 
@@ -36,12 +36,14 @@ But docs are docs, right? Don't they just document what the code does?
 
 Right, so maybe this assumption is the root of the problem.
 
-How many times in your career have you been told to "just read the code", because reading code is so easy... You probably know that "just read the code" is not a great way to document a code base.
+How many times in your career have you been told to "just read the code". Yeah, because reading code is so easy.
+
+You probably know that "just read the code" is not a great way to document a code base.
 
 Docs that just document what the code does are almost as bad as telling someone to go read the code.
 ------------------------------
 
-Think back to the last time you were reading code written by someone else and you couldn't understand what was happening. So basically every time you read someone else's code.
+Think back to the last time you were reading code written by someone else and you couldn't understand what was happening. So basically, think back to the last time you read someone else's code.
 
 You hop from variable to function to method to class trying to follow the call stack and build a model of the state as the code executes, but it's just not coming together in your head. So what do you do?
 
@@ -60,13 +62,15 @@ And we write our docs like it's code. Hell, some people even strive for executab
 
 By rewriting the code, you filled in the context. When you're looking at code, you're looking at the picture of the tux guy with the sewing machine. No context. It's a mystery.
 
-As you are writing code, the context and the story behind it, the thing that is going to help future you/other programmers understand what you did, is IN YOUR MIND and not in the code. This is so easy to forget, especially when you go to write docs.
+As you are writing code, the context and the story behind it, the thing that is going to help future you/other programmers understand what you did, is IN YOUR MIND and not in the code.
+
+This is so easy to forget, especially when you go to write docs.
 
 To some extent this is the "curse of knowledge" but with code it's worse because, well, you have the code ... surely that documents something?
 
 Wrong. It only tells part of the story and in the worst possible way.
 
-(P.S. This is why 'tests as documentation' is complete bullshit, it's the same problem. Tests document the what not the why. The just assert a bunch of stuff but give you no context.)
+(P.S. This is why 'tests as documentation' is complete bullshit, it's the same problem. Tests document the what not the why. They just assert a bunch of stuff but give you no context.)
 
 The other reason docs fail
 ------------------------------
@@ -75,7 +79,7 @@ When you are learning something new and complex, you have to actually use it.
 
 Think about when you first learned recursion. There's a good chance you got the general concept but then you blew a few stacks writing your first recursive functions. A conceptual understanding of recursion is not enough for you to successfully write a recursive function.
 
-A conceptual understaning of music theory is not enough for you to sit down and play a piano.
+A conceptual understanding of music theory is not enough for you to sit down and play a piano.
 
 A conceptual understanding of a directive in Angular is not enough to write your first directive.
 
@@ -89,13 +93,13 @@ Oh, and a "hello world" app is not enough, because again, not enough context. [T
 
 I remember following along way back then. As you watch that screencast, you will find yourself asking "how did he do that?" or "what is that tool he's using?" You will almost never ask why he's doing something, because his opinion is so abundantly clear!
 
-The other thing is, as you follow along it's like you keep aquiring new super powers.
+The other thing is, as you follow along it's like you keep acquiring new super powers.
 
 * Run script, wow, look at all those files I just created!
 * Create controller, load browser window - what, I just made something show up on the screen?
 * Create a post table, BOOOM, I'm saving things in a database, woooot.
 
-There are plenty of mysteries along the way, but you can look past them because so you are having so much fun getting stuff done and you know you can work your way back to a deeper understanding later. It's like the opening scene of Breaking Bad, it has so many missing pieces but it doesn't matter because you're having fun watching the show and you know you'll find out what is happening later.
+There are plenty of mysteries along the way, but you can look past them because you are having so much fun getting stuff done and you know you can work your way back to a deeper understanding later. It's like the opening scene of Breaking Bad, it has so many missing pieces but it doesn't matter because you're having fun watching the show and you know you'll find out what is happening later.
 
  [ end rant ]
 
