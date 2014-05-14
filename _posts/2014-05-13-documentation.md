@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: escape
 title: "The Infamous Angular Learning Curve"
 blurb: "some stuff in here"
 author: "sean"
@@ -102,11 +102,8 @@ There are plenty of mysteries along the way, but you can look past them because 
 So, are you learning Angular right now?
 ------------------------------
 
-If you are, sign up for an [Escape Plan](http://planningforaliens.com/escape-plan), training for experienced developers. Each course is structured around a project, is hands on and assumes you know what you're doing. And there will be plenty of context. :-)
+How are the docs treating you? If you're tired of smashing your brain on the docs and  wasting your time culling through scattered tutorials, my [next course](http://planningforaliens.com/escape-plan), is all about Angular. I guarantee there will be plenty of context. :-)
 
-The next course is an Angular project.
-
-
-
+Just put your email address in the form here and you'll get a launch day discount.
 
 

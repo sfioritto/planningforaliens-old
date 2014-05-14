@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+
+<!-- facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="post content"><article>
+  <div class="header"><header>
+    <h2>{{ page.title }}</h2>
+    <p class="byline">
+      published <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span> by <a class="author" href="https://twitter.com/sfioritto">{{ page.author}}</a> <span class="follow-me"><a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="false">Follow @sfioritto</a></span>
+    </p>
+    <p class="tldr">
+      {{ page.blurb }}
+    </p>
+    <ul id="sharing">
+      <li class="float">
+        <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="verdana"></div>
+      </li>
+      <li class="end float">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </li>
+      <li class="clear"></li>
+    </ul>
+  </header></div>
+  {{ content }}
+  <div class="escape">
+    <figure class="rocket">
+      <img src="/images/rocket.png" />
+    </figure>
+    <form action="http://planningforaliens.us4.list-manage.com/subscribe/post?u=e35ff45f3fa9775e481b8e515&amp;id=80faa4d4d2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <label for="mce-EMAIL">Email Address  </label>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_e35ff45f3fa9775e481b8e515_80faa4d4d2" value="" /></div>
+      <input type="submit" value="Get your discount" name="subscribe" id="mc-embedded-subscribe" class="button" />
+    </form>
+  </div>
+  
+</footer></div>
+{% include rocket.html %}
+</article></div>
+<script>
+  setTimeout(function(){
+  var sharing = document.getElementById("sharing");
+  sharing.className = "loaded";
+  }, 4000);
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
