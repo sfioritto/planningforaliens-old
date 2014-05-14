@@ -106,8 +106,12 @@ There are plenty of mysteries along the way, but you can look past them because 
 So, are you learning Angular right now?
 ------------------------------
 
-How are the docs treating you? If you're tired of smashing your brain on the docs and  wasting your time culling through scattered tutorials, my [next course](http://planningforaliens.com/escape-plan), is all about Angular. I guarantee there will be plenty of context. :-)
+How are the docs treating you? If you're tired of smashing your brain on the docs and  wasting your time culling through scattered tutorials, let me teach you! I do this for a living.
 
-Just put your email address in the form here and you'll get a launch day discount.
+My [next course](http://planningforaliens.com/escape-plan), is all about Angular and I guarantee there will be plenty of context. :-)
 
+Escape Plans, (what I call my training courses), are designed from the ground up for busy people with jobs. Each course fits into an hour or so every night for one week or one long weekend day, however you work best. At the end of a sprint you'll have a working Angular project and a fundamental grasp of the topic that can only come from hands on experience.
 
+Most training or books leave you empty handed. At the end of an Escape Plan course, you'll have a fully functioning project to demonstrate your newly acquired skills.
+
+So if after reading this you were wondering how I might approach teaching someone about Angular, just put your email address in this little form because I'll be giving away a lesson or two. And if you're on the launch list, you get a discount.
