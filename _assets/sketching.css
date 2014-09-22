@@ -1,3 +1,4 @@
+
 .sketching{
     padding: 0 5%;
 }
@@ -33,55 +34,41 @@
     margin: 0;
 }
 
-.sketching button{
+.sketching .button{
     background-color: rgb(225,96,72);
     color: #eeeeee;
     padding: 24px;
     padding: 1rem;
     font-family: unicodsans, verdana, sans-serif;
     display: block;
-    margin: 1rem auto;
-    font-size: 2rem;
+    margin: 1rem 0;
+    font-size: 1.75rem;
     text-transform: uppercase;
+    max-width: 25rem;
+    width: 100%;
+    text-align: center;
 }
 
 .sketching input, .sketching label {
     display: block;
-
-    margin: 1rem auto;
+    margin: .5rem 0;
+    box-sizing: border-box;
 }
 
 .sketching label {
     font-weight: 600;
-    width: 16rem;
+    max-width: 25rem;
+    width: 100%;
 }
 
 .sketching input {
-    width: 14rem;
+    max-width: 25rem;
+    width: 100%;
     padding: 1rem;
     font-size: 1rem;
-}
-
-.sketching div.opt-in {
-    width: 14rem;
-    margin: 0 auto;
-}
-
-.sketching .opt-in > label, .sketching .opt-in > input {
-        display: inline;
-        width: initial;
-        margin: 0;
-}
-
-.sketching .opt-in > label {
-        line-height: 1.4em;
-}
-
-#ck_success_msg p {
-    color: rgb(225,96,72);
-    font-size: 2rem;
-    line-height: 1.1em;
-    text-align: center;
+    &.button {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 550px){
