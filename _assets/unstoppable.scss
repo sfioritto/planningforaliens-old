@@ -7,6 +7,10 @@
   box-sizing: border-box; 
 }
 
+.drip-tab-container {
+    @include archer;
+}
+
 .button {
     @include tungsten;
     background-color: $complementary-color;
