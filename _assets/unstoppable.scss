@@ -120,11 +120,15 @@ h2 {
 .top h1, .top h2, .top form, .body form, .body .bbl_list{
     max-width: 43rem;
     margin: 0 auto;
+    padding: 0 .5rem;
 }
 
 h1 {
     padding: 0 0 2rem 0;
-    font-size: $font-size-5;
+    font-size: $font-size-4;
+    @media screen and (min-width: 700px) {
+        font-size: $font-size-5;
+    }
     color: $dark-base-color;
     @include tungsten;
     text-transform: uppercase;
@@ -134,7 +138,10 @@ h1 {
     span.second {
         @include nitro;
         padding: .5rem 0;
-        font-size: $font-size-4;
+        font-size: 2rem;
+        @media screen and (min-width: 700px) {
+            font-size: $font-size-4;
+        }
         display: block;
         color: $complementary-color;
     }

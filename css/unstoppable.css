@@ -98,15 +98,19 @@ h2 {
 
 .top h1, .top h2, .top form, .body form, .body .bbl_list {
   max-width: 43rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 .5rem; }
 
 h1 {
   padding: 0 0 2rem 0;
-  font-size: 6.8462rem;
+  font-size: 4.2308rem;
   color: #3a99c7;
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 300;
   text-transform: uppercase; }
+  @media screen and (min-width: 700px) {
+    h1 {
+      font-size: 6.8462rem; } }
   h1 span.first {
     font-weight: 700; }
   h1 span.second {
@@ -114,9 +118,12 @@ h1 {
     font-weight: 400;
     font-style: normal;
     padding: .5rem 0;
-    font-size: 4.2308rem;
+    font-size: 2rem;
     display: block;
     color: #b93c2f; }
+    @media screen and (min-width: 700px) {
+      h1 span.second {
+        font-size: 4.2308rem; } }
   h1 span.third {
     display: block; }
   h1 span.fourth {
