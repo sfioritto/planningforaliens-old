@@ -1,0 +1,17 @@
+$base-color: rgb(118,184,216);	
+$light-base-color: lighten($base-color, 25%);
+$lighter-base-color: lighten($base-color, 30%);
+$lightest-base-color: lighten($base-color, 50%);
+$dark-base-color: darken($base-color, 15%);
+$darker-base-color: darken($base-color, 30%);
+$complementary-color: rgb(185,60,47);
+$dark-complementary-color: rgb(55,18,17);
+$light-complementary-color: rgb(217,106,72);
+$lighter-complementary-color: lighten($light-complementary-color, 30%);
+$rocket-grey: rgb(199,200,201);
+$black: #222222;
+$dark-grey: lighten($black, 5%);
+$white: #f8f8f8;
+$grey: lighten($black, 10%);
+$light-grey: lighten($black, 25%);
+$lighter-grey: lighten($black, 45%);
