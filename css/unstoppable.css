@@ -23,41 +23,40 @@ a:visited {
   font-family: 'Archer A', 'Archer B';
   font-weight: 800;
   font-style: normal;
-  font-size: 2.6154rem;
+  font-size: 1.6154rem;
   color: #b93c2f;
-  padding-top: 1rem; }
+  padding: 2rem 0 1rem 0; }
 
 .bbl_title {
   font-size: 1.6154rem;
   padding: 1rem 0 .5rem 0; }
 
-.bbl_description {
-  font-size: 1rem; }
-
 .top {
   background-image: url("/images/old_mathematics.png");
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  border-top: 1px solid #c7c8c9; }
   .top h2 {
-    text-align: center;
     font-size: 1.6154rem;
     font-family: 'Archer A', 'Archer B';
     font-weight: 500;
     font-style: italic;
     color: #76b8d8; }
     .top h2 p {
-      padding: 1rem; }
+      padding: 1rem 0; }
     .top h2 a {
       color: #3a99c7; }
 
+.top h1, .top h2, .body .bbl_list {
+  max-width: 43rem;
+  margin: 0 auto; }
+
 h1 {
   padding: 0 0 2rem 0;
-  margin: 0 auto;
   font-size: 6.8462rem;
   color: #3a99c7;
   font-family: 'Tungsten A', 'Tungsten B';
   font-weight: 300;
-  text-transform: uppercase;
-  max-width: 43rem; }
+  text-transform: uppercase; }
   h1 span.first {
     font-weight: 700; }
   h1 span.second {
