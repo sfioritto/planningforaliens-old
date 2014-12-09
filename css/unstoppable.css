@@ -3,6 +3,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+a {
+  color: #3a99c7; }
+
+a:visited {
+  color: #76b8d8; }
+
 .body {
   background-color: #f8f8f8;
   padding: 2rem; }
@@ -24,17 +30,13 @@
 .bbl_title {
   font-size: 1.6154rem;
   padding: 1rem 0 .5rem 0; }
-  .bbl_title a {
-    color: #3a99c7; }
-  .bbl_title a:visited {
-    color: #76b8d8; }
 
 .bbl_description {
   font-size: 1rem; }
 
 .top {
   background-image: url("/images/old_mathematics.png");
-  padding-bottom: 2rem; }
+  padding: 2rem 0; }
   .top h2 {
     text-align: center;
     font-size: 1.6154rem;
@@ -44,6 +46,8 @@
     color: #76b8d8; }
     .top h2 p {
       padding: 1rem; }
+    .top h2 a {
+      color: #3a99c7; }
 
 h1 {
   padding: 0 0 2rem 0;
@@ -53,7 +57,7 @@ h1 {
   font-family: 'Tungsten A', 'Tungsten B';
   font-weight: 300;
   text-transform: uppercase;
-  width: 43rem; }
+  max-width: 43rem; }
   h1 span.first {
     font-weight: 700; }
   h1 span.second {

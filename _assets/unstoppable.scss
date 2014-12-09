@@ -7,6 +7,13 @@
   box-sizing: border-box; 
 }
 
+a {
+    color: $dark-base-color;
+}
+a:visited {
+    color: $base-color;
+}
+
 .body {
     background-color: $white;
     padding: 2rem;
@@ -31,12 +38,6 @@
 .bbl_title {
     font-size: $font-size-2;
     padding: 1rem 0 .5rem 0;
-    a {
-        color: $dark-base-color;
-    }
-    & a:visited {
-        color: $base-color;
-    }
 }
 
 .bbl_description {
@@ -51,8 +52,9 @@
         @include archer-italic;
         color: $base-color;
         p { padding: 1rem; }
+        a {color: $dark-base-color;}
     }
-    padding-bottom: 2rem;
+    padding: 2rem 0;
 }
 
 h1 {
@@ -62,7 +64,7 @@ h1 {
     color: $dark-base-color;
     @include tungsten;
     text-transform: uppercase;
-    width: 43rem;
+    max-width: 43rem;
     span.first {
         font-weight: 700;
     }
