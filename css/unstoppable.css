@@ -3,6 +3,37 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.button {
+  font-family: 'Tungsten A', 'Tungsten B';
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+input.email {
+  font-size: 1.6154rem;
+  padding: 8px;
+  padding: .5rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 480px;
+  max-width: 30rem; }
+
+.rocket {
+  width: 100px;
+  float: left; }
+
 a {
   color: #3a99c7; }
 
@@ -14,6 +45,7 @@ a:visited {
   padding: 2rem; }
 
 .bbl_list {
+  padding-top: 4rem;
   color: #222222;
   font-family: 'Archer A', 'Archer B';
   font-weight: 500;
@@ -31,22 +63,24 @@ a:visited {
   font-size: 1.6154rem;
   padding: 1rem 0 .5rem 0; }
 
+.email-form {
+  padding-top: 1rem; }
+
+h2 {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  font-style: normal;
+  padding: 1rem 0;
+  font-size: 1.6154rem; }
+  h2 a {
+    color: #3a99c7; }
+
 .top {
   background-image: url("/images/old_mathematics.png");
-  padding: 2rem 0;
+  padding: 3rem 0 2rem 0;
   border-top: 1px solid #c7c8c9; }
-  .top h2 {
-    font-size: 1.6154rem;
-    font-family: 'Archer A', 'Archer B';
-    font-weight: 500;
-    font-style: italic;
-    color: #76b8d8; }
-    .top h2 p {
-      padding: 1rem 0; }
-    .top h2 a {
-      color: #3a99c7; }
 
-.top h1, .top h2, .body .bbl_list {
+.top h1, .top h2, .top form, .body form, .body .bbl_list {
   max-width: 43rem;
   margin: 0 auto; }
 
@@ -71,3 +105,9 @@ h1 {
     display: block; }
   h1 span.fourth {
     display: block; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }

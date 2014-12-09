@@ -7,6 +7,39 @@
   box-sizing: border-box; 
 }
 
+.button {
+    @include tungsten;
+    background-color: $complementary-color;
+    border-radius: 5px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: $font-size-2;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 1px 1px 5px $black;
+    line-height: 1rem;
+    max-width: 100%;
+}
+
+input.email {
+    font-size: $font-size-2;
+    padding: 8px;
+    padding: .5rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 30 * 16px;
+    max-width: 30rem;
+}
+
+.rocket {
+    width: 100px;
+    float: left;
+}
+
 a {
     color: $dark-base-color;
 }
@@ -20,6 +53,7 @@ a:visited {
 }
 
 .bbl_list {
+    padding-top: 4rem;
     color: $black;
     @include archer;
 }
@@ -44,20 +78,28 @@ a:visited {
 //    font-size: $font-size-1;
 }
 
+.email-form {
+    padding-top: 1rem;
+}
+
+h2 {
+    @include archer-bold;
+    padding: 1rem 0;
+    font-size: $font-size-2;
+    a {color: $dark-base-color;}
+}
+
 .top {
     background-image: url("/images/old_mathematics.png");
-    padding: 2rem 0;
+    padding: 3rem 0 2rem 0;
     border-top: 1px solid $rocket-grey;
     h2 {
-        font-size: $font-size-2;
-        @include archer-italic;
-        color: $base-color;
-        p { padding: 1rem 0; }
-        a {color: $dark-base-color;}
+//        @include archer-italic;
+//        color: $base-color;
     }
 }
 
-.top h1, .top h2, .body .bbl_list{
+.top h1, .top h2, .top form, .body form, .body .bbl_list{
     max-width: 43rem;
     margin: 0 auto;
 }
@@ -84,4 +126,11 @@ h1 {
     span.fourth {
         display: block;
     }
+}
+
+#sharing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
 }
