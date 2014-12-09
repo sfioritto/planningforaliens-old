@@ -16,8 +16,20 @@ $font-size-5: 6.8462rem;
     font-style: normal;
 }
 
-@mixin turbo {
-    font-family: 'Turbo A', 'Turbo B';
-    font-weight: 400;
+@mixin archer {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin archer-italic {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 500;
+    font-style: italic;
+}
+
+@mixin archer-bold {
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 800;
     font-style: normal;
 }

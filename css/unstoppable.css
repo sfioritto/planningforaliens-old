@@ -3,11 +3,51 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.body {
+  background-color: #f8f8f8;
+  padding: 2rem; }
+
+.bbl_list {
+  color: #222222;
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 500;
+  font-style: normal; }
+
+.bbl_category_title {
+  font-family: 'Archer A', 'Archer B';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.6154rem;
+  color: #b93c2f;
+  padding-top: 1rem; }
+
+.bbl_title {
+  font-size: 1.6154rem;
+  padding: 1rem 0 .5rem 0; }
+  .bbl_title a {
+    color: #3a99c7; }
+  .bbl_title a:visited {
+    color: #76b8d8; }
+
+.bbl_description {
+  font-size: 1rem; }
+
 .top {
-  margin: 0 auto; }
+  background-image: url("/images/old_mathematics.png");
+  padding-bottom: 2rem; }
+  .top h2 {
+    text-align: center;
+    font-size: 1.6154rem;
+    font-family: 'Archer A', 'Archer B';
+    font-weight: 500;
+    font-style: italic;
+    color: #76b8d8; }
+    .top h2 p {
+      padding: 1rem; }
 
 h1 {
-  margin: 3rem auto;
+  padding: 0 0 2rem 0;
+  margin: 0 auto;
   font-size: 6.8462rem;
   color: #3a99c7;
   font-family: 'Tungsten A', 'Tungsten B';

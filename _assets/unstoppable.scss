@@ -7,12 +7,57 @@
   box-sizing: border-box; 
 }
 
+.body {
+    background-color: $white;
+    padding: 2rem;
+}
+
+.bbl_list {
+    color: $black;
+    @include archer;
+}
+
+.bbl_category_title {
+    @include archer-bold;
+    font-size: $font-size-3;
+    color: $complementary-color;
+    padding-top: 1rem;
+}
+
+.bbl_item {
+
+}
+
+.bbl_title {
+    font-size: $font-size-2;
+    padding: 1rem 0 .5rem 0;
+    a {
+        color: $dark-base-color;
+    }
+    & a:visited {
+        color: $base-color;
+    }
+}
+
+.bbl_description {
+    font-size: $font-size-1;
+}
+
 .top {
-    margin: 0 auto;
+    background-image: url("/images/old_mathematics.png");
+    h2 {
+        text-align: center;
+        font-size: $font-size-2;
+        @include archer-italic;
+        color: $base-color;
+        p { padding: 1rem; }
+    }
+    padding-bottom: 2rem;
 }
 
 h1 {
-    margin: 3rem auto;
+    padding: 0 0 2rem 0;
+    margin: 0 auto;
     font-size: $font-size-5;
     color: $dark-base-color;
     @include tungsten;
