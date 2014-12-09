@@ -31,7 +31,6 @@ input.email {
     margin-top: 16px;
     margin-top: 1rem;
     width: 100%;
-    max-width: 30 * 16px;
     max-width: 30rem;
 }
 
@@ -49,11 +48,10 @@ a:visited {
 
 .body {
     background-color: $white;
-    padding: 2rem;
+    padding-bottom: 2rem;
 }
 
 .bbl_list {
-    padding-top: 4rem;
     color: $black;
     @include archer;
 }
@@ -76,6 +74,22 @@ a:visited {
 
 .bbl_description {
 //    font-size: $font-size-1;
+}
+
+.email-form-box {
+    max-width: 43rem;
+    margin: 0 auto;
+    background: $white;
+    padding: 1rem;
+    border: 1px solid $rocket-grey;
+    h2 {
+        padding: 0;
+        font-size: $font-size-1;
+        color: $dark-base-color;
+    }
+    input.email {
+        max-width: 26rem;
+    }
 }
 
 .email-form {
