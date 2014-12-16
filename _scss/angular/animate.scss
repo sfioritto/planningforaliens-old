@@ -1,0 +1,35 @@
+@import "typography";
+@import "colors";
+@import "angular";
+
+.title {
+    @include centered;
+    @include clear;
+    
+    h1, figure {
+        @include breakpoint(biggest){
+            float: right;
+        }
+    }
+    h1 {
+        @include tungsten;
+        font-weight: 700;
+        color: $black;
+        font-size: $font-size-4;
+        @include breakpoint(big) {
+            font-size: $font-size-5;
+        }
+        
+        text-transform: uppercase;
+        > span {
+            display: block;
+        }
+    }
+    figure {
+        max-width: 13rem;
+        padding-right: 2rem;
+        img {
+            max-width: 100%;
+        }
+    }
+}

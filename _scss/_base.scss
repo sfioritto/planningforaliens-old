@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.drip-tab-container {
+    @include archer;
+}
+
+a {
+    color: $dark-base-color;
+}
+a:visited {
+    color: $base-color;
+}
+
+#sharing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}
+
+@mixin centered {
+    max-width: 43rem;
+    margin: 0 auto;
+    padding: 0 .5rem;
+}
+
+@mixin clear {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin breakpoint($point) {
+  @if $point == big {
+    @media (min-width: 475px) { @content; }
+  }
+  @else if $point == bigger {
+    @media (min-width: 530px) { @content; }
+  }
+  @else if $point == biggest {
+    @media (min-width: 750px) { @content; }
+  }
+  @else if $point == huge {
+      @media (min-width: 1250px) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 400px) { @content; }
+  }
+  @else if $point == tiny {
+    @media (max-width: 320px) { @content; }
+  }
+
+}

@@ -1,0 +1,101 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+a {
+  color: #3a99c7; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+input.email {
+  font-size: 1.6154rem;
+  padding: 8px;
+  padding: .5rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 30rem; }
+
+.rocket {
+  width: 100px;
+  float: left; }
+
+.email-form-box {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  max-width: 43rem;
+  margin: 1rem auto 0 auto;
+  background: #f8f8f8;
+  padding: 1rem;
+  border: 1px solid #c7c8c9; }
+  .email-form-box h2 {
+    padding: 0;
+    font-size: 1rem;
+    color: #3a99c7; }
+  .email-form-box input.email {
+    max-width: 26rem; }
+
+.top {
+  background-image: url("/images/old_mathematics.png");
+  padding: 3rem 0 2rem 0;
+  border-bottom: 1px solid #c7c8c9; }
+
+.title {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding: 0 .5rem; }
+  .title::after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 750px) {
+    .title h1, .title figure {
+      float: right; } }
+  .title h1 {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    font-weight: 700;
+    color: #222222;
+    font-size: 4.2308rem;
+    text-transform: uppercase; }
+    @media (min-width: 475px) {
+      .title h1 {
+        font-size: 6.8462rem; } }
+    .title h1 > span {
+      display: block; }
+  .title figure {
+    max-width: 13rem;
+    padding-right: 2rem; }
+    .title figure img {
+      max-width: 100%; }

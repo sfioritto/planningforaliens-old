@@ -23,12 +23,37 @@
     <link rel="stylesheet" href="/css/{{ page.style }}" type="text/css"/>
     {% endif %}
 
+    {% if page.javascript %}
+    <script src="{{ page.javascript }}"></script>
+    {% endif %}
+
 
   </head>
   
   <body>
 
     {{ content }}
+    <div id="sharing">
+      <a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="true">Follow @sfioritto</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="sfioritto">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+    
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {}; 
+      _dcs.account = '8233391';
+      
+      (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true; 
+      dc.src = '//tag.getdrip.com/8233391.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
 
   </body>
 </html>

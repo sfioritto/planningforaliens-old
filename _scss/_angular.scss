@@ -1,0 +1,56 @@
+@import "base";
+
+.button {
+    @include tungsten;
+    background-color: $complementary-color;
+    border-radius: 5px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: $font-size-2;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 1px 1px 5px $black;
+    line-height: 1rem;
+    max-width: 100%;
+}
+
+input.email {
+    font-size: $font-size-2;
+    padding: 8px;
+    padding: .5rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 30rem;
+}
+
+.rocket {
+    width: 100px;
+    float: left;
+}
+
+.email-form-box {
+    @include archer-bold;
+    max-width: 43rem;
+    margin: 1rem auto 0 auto;
+    background: $white;
+    padding: 1rem;
+    border: 1px solid $rocket-grey;
+    h2 {
+        padding: 0;
+        font-size: $font-size-1;
+        color: $dark-base-color;
+    }
+    input.email {
+        max-width: 26rem;
+    }
+}
+
+.top {
+    background-image: url("/images/old_mathematics.png");
+    padding: 3rem 0 2rem 0;
+    border-bottom: 1px solid $rocket-grey;
+}

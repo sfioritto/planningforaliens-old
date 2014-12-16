@@ -1,0 +1,75 @@
+@import "typography";
+@import "colors";
+@import "base";
+@import "angular";
+
+.body {
+    background-color: $white;
+    padding-bottom: 2rem;
+}
+
+.bbl_list {
+    color: $black;
+    @include archer;
+}
+
+.bbl_category_title {
+    @include archer-bold;
+    font-size: $font-size-2;
+    color: $complementary-color;
+    padding: 2rem 0 1rem 0;
+}
+
+.bbl_item {
+
+}
+
+.bbl_title {
+    font-size: $font-size-2;
+    padding: 1rem 0 .5rem 0;
+}
+
+.bbl_description {
+//    font-size: $font-size-1;
+}
+
+h2 {
+    @include archer-bold;
+    padding: 1rem 0;
+    font-size: $font-size-2;
+    a {color: $dark-base-color;}
+}
+
+.top h1, .top h2, .top form, .body form, .body .bbl_list{
+    @include centered;
+}
+
+h1 {
+    padding: 0 0 2rem 0;
+    font-size: $font-size-4;
+    @media screen and (min-width: 700px) {
+        font-size: $font-size-5;
+    }
+    color: $dark-base-color;
+    @include tungsten;
+    text-transform: uppercase;
+    span.first {
+        font-weight: 700;
+    }
+    span.second {
+        @include nitro;
+        padding: .5rem 0;
+        font-size: 2rem;
+        @media screen and (min-width: 700px) {
+            font-size: $font-size-4;
+        }
+        display: block;
+        color: $complementary-color;
+    }
+    span.third {
+        display: block;
+    }
+    span.fourth {
+        display: block;
+    }
+}
