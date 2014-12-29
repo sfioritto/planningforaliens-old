@@ -33,3 +33,15 @@
         }
     }
 }
+
+.body {
+    @include centered;
+    padding: 1rem 0;
+    
+    p {
+        margin: 1rem 0;
+        @include archer;
+        line-height: 1.3em;
+        font-size: $font-size-2;
+    }
+}

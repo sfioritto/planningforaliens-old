@@ -99,3 +99,16 @@ input.email {
     padding-right: 2rem; }
     .title figure img {
       max-width: 100%; }
+
+.body {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding: 0 .5rem;
+  padding: 1rem 0; }
+  .body p {
+    margin: 1rem 0;
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.3em;
+    font-size: 1.6154rem; }
