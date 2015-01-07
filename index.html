@@ -2,92 +2,57 @@
 layout: base
 ---
 
-<div class="home content">
+<header>
+  <figure>
+    <a href="/"><img src="/images/raygun.png" alt="planning for aliens"></img></a>
+    </figure>
+    <h1>Planning for Alients</h1>
+</header>
 
-  <div class="header"><header>
-    {%include gun.html %}
-  </header></div>
-  
-  <div class="section"><div class="articles">
+<div class="featured">
+  <h2>
+    <a href="/angular/ginormous-unstoppable-angular-resource-list/">The Ginormous and Unstoppable List of Useful Angular Resources</a>
+  </h2>
+  <p class="summary">
+    A huge list of links to Angular articles and resources covering
+    every conceivable Angular topic.
+  </p>
+  <img src="/images/home/shield.png" />
+</div>
 
-    {% for post in site.posts limit:10 %}
-    
-    {% if forloop.first %}
-    <div class="lead">
-      {%include article.html %}
-    </div>
+<div class="older">
 
-    <!-- start the list -->
-    <div class="history">
-      <ul> 
+  <div>
+    <h3><a href="http://www.sketchingwithcss.com/flexbox-tutorial/">Goodbye Floats and Clearfixes, Hello Flexbox</a></h3>
+    <p>
+      Add flexbox to your bag of tricks with this series of five, free
+      interactive videos.
+    </p>
+    <img src="/images/home/css-sucks.png" />
+  </div>
 
-    {% else %}
+  <div>
+    <h3><a href="http://www.sketchingwithcss.com/samplechapter/cheatsheet.html">The Ultimate Flexbox Cheat Sheet</a></h3>
+    <p>
+      This cheat sheet is convenient resource if you are getting
+      started with flexbox. All of that tricky, new syntax in one place.
+    </p>
+    <img src="/images/home/cheatsheet.png" />
+  </div>
 
-      {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
-      {% case modulo %}
-      {% when '0' %}
-      <li class="last">
-      {% when '1'%}
-      <li class="clearleft">
-      {% else %}
-      <li>
-      {% endcase %}
+</div>
 
-      <!-- inside the li -->
-      {% include article.html %}
-      </li>
+<div class="angular-escape">
+</div>
 
-      {% endif %}
-      {% endfor %}
-      <li>
-        <h3 class="older"><a href="/archive">read older posts</a></h3>
-      </li>
-      </ul>
-      <div class="clear"></div>
-    </div><!-- end history -->
-  </div></div><!-- end articles -->
-  
-  <div class="footer"><footer>
-    <div class="section"><div id="subscribe">
-      
-      <form action="https://www.getdrip.com/forms/3128974/submissions"
-      method="post" target="_blank" data-drip-embedded-form="3068"
-      class="validate" id="email">
-        <label for="mce-email">If you liked this, <span class="emphatic">you should try my email list.</span></label>
-        <input type="email" name="fields[email]" value="" class="required email" />
-        <button data-drip-attribute="sign-up-button">sign me up</button>
-      </form>
-    </div></div>
-    
-    <div class="section"><div id="me">
-      <h2>Pleased to meet you.</h2>
-      <p>
-        <a href = "/about">Hey. I'm Sean.</a> I write about web design and front-end development. We should meet. 
-      </p>
-      <ul id="contact">
-        <li>
-          <p>
-            The easiest place to talk with me is on Twitter.
-          </p>
-          <p class="twitterfollow">
-            <a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @sfioritto</a>
-          </p>
-          
-        </li>
-        <li>
-          <p>
-            You could also just subscribe to my email list and hit reply to one of the emails. It will go directly to my inbox.
-          </p>
-        </li>
-      </ul>
-    </div></div>
-    
-    <div class="clear"></div>
-  </footer></div>
+<div class="sketching">
+</div>
 
-  <!-- twitter -->
-  <script>
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-  </script>
-  
+<div class="newsletter">
+</div>
+
+<div class="blog">
+</div>
+
+<div class="about">
 </div>
