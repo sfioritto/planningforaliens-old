@@ -1,5 +1,5 @@
 /*
-* This Gruntfile does a livereload of the jekyll site in the angular directory.
+* This Gruntfile does a livereload of this jekyll site
 * it does this in two ways
 * 1. the scss is watched, compiled, autoprefixed and then copied to the _site directory
 * 2. the jekyll blog files, like html and stuff, is watched and when it changes prompts jekyll to build
@@ -49,16 +49,8 @@ module.exports = function(grunt) {
                     ]
                 },
                 files: {
-                    'css/404.css': 'scss/404.scss',
-                    'css/angular/lesson-1.css': 'scss/angular/lesson-1.scss',
-                    'css/angular/index.css': 'scss/angular/index.scss',
-                    'css/paid/angular/index.css': 'scss/angular/index.scss',
-                    'css/paid/syllabus.css': 'scss/paid/syllabus.scss',
-                    'css/index.css': 'scss/index.scss',
-                    'css/email.css': 'scss/email.scss',
-                    'css/app/registration.css': 'scss/app/registration.scss',
-                    'css/app/upgrade.css': 'scss/app/upgrade.scss',
-                    'css/paid/angular/one/lesson.css': 'scss/paid/angular/one/lesson.scss'
+                    'css/angular/unstoppable.css': 'scss/angular/unstoppable.scss',
+                    'css/angular/animate.css': 'scss/angular/animate.scss',
                 }
             }
         },
@@ -99,7 +91,7 @@ module.exports = function(grunt) {
         },
         open: {
             server: {
-                path: 'http://localhost:<%= connect.server.options.port %>/paid/angular/five/intro'
+                path: 'http://localhost:<%= connect.server.options.port %>/'
             }
         }
     });
