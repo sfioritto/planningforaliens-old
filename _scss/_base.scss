@@ -8,8 +8,22 @@
     @include archer;
 }
 
+body {
+    @include archer;
+    font-size: $font-size-1;
+    color: $black;
+}
+
+img {
+    max-width: 100%;
+}
+
 a {
     color: $dark-base-color;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 a:visited {
     color: $base-color;
@@ -56,4 +70,22 @@ a:visited {
     @media (max-width: 320px) { @content; }
   }
 
+}
+
+
+.button {
+    @include tungsten;
+    background-color: $complementary-color;
+    border-radius: 5px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: $font-size-2;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 1px 1px 5px $black;
+    line-height: 1rem;
+    max-width: 100%;
 }

@@ -1,21 +1,5 @@
 @import "base";
 
-.button {
-    @include tungsten;
-    background-color: $complementary-color;
-    border-radius: 5px;
-    padding: 16px;
-    padding: 1rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: $font-size-2;
-    text-transform: uppercase;
-    color: white;
-    box-shadow: 1px 1px 5px $black;
-    line-height: 1rem;
-    max-width: 100%;
-}
 
 input.email {
     font-size: $font-size-2;

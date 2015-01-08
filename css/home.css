@@ -1,0 +1,119 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+body {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #222222; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #3a99c7;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+header {
+  width: 100%;
+  background-image: url("/images/old_mathematics.png"); }
+  header img {
+    padding: 1rem;
+    display: block;
+    margin: 0 auto; }
+
+h1 {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #286c8d;
+  font-size: 2.6154rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-bottom: 2rem; }
+
+h2, p, h3, figure {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.3em; }
+
+.ginormous {
+  padding: 2rem 0; }
+  .ginormous img {
+    display: none; }
+  .ginormous h2 {
+    font-size: 2.6154rem;
+    color: #3a99c7;
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase; }
+    .ginormous h2 span {
+      line-height: 2rem;
+      display: block; }
+    .ginormous h2 span.first {
+      letter-spacing: 2px;
+      font-weight: 700; }
+    .ginormous h2 span.second {
+      font-family: 'Nitro A', 'Nitro B', georgia, serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.8rem;
+      color: #b93c2f; }
+    .ginormous h2 span.third {
+      font-size: 1.9rem; }
+  .ginormous p {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: italic; }
+
+.older > div {
+  padding-bottom: 1rem; }
+  .older > div h3 {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1.6154rem;
+    text-transform: uppercase; }
+    .older > div h3 a {
+      text-decoration: underline; }
+  .older > div figure {
+    display: none; }
+  .older > div p {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: italic; }

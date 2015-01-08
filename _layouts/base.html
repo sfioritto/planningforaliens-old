@@ -16,16 +16,41 @@
     <link rel="alternate" type="application/rss+xml" title="rss"
           href="http://feeds.feedburner.com/planningforaliens"/>
 
+    <link rel="stylesheet" href="/css/reset.css" type="text/css"/>
+
+    <!-- h&fj -->
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6366632/627246/css/fonts.css" />
+
 
     {% if page.style %}
     <link rel="stylesheet" href="/css/{{ page.style }}" type="text/css"/>
     {% endif %}
+
+    {% if page.javascript %}
+    <script src="{{ page.javascript }}"></script>
+    {% endif %}
+
 
   </head>
   
   <body>
         
     {{ content }}
+
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {}; 
+      _dcs.account = '8233391';
+      
+      (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true; 
+      dc.src = '//tag.getdrip.com/8233391.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
 
   </body>
 </html>

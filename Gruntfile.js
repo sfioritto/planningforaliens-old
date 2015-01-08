@@ -45,19 +45,20 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     includePaths: [
-                        'scss/'
+                        '_scss/'
                     ]
                 },
                 files: {
-                    'css/angular/unstoppable.css': 'scss/angular/unstoppable.scss',
-                    'css/angular/animate.css': 'scss/angular/animate.scss',
+                    'css/angular/unstoppable.css': '_scss/angular/unstoppable.scss',
+                    'css/angular/animate.css': '_scss/angular/animate.scss',
+                    'css/home.css': '_scss/home.scss',
                 }
             }
         },
         
         watch: {
             sass: {
-                files: ['scss/*.scss', 'scss/angular/*.scss', 'scss/**/*.scss', '!.#*'],
+                files: ['_scss/*.scss', '_scss/angular/*.scss', '_scss/**/*.scss', '!.#*'],
                 tasks: ['sassCopy'],
                 options: {
                     spawn: false, //faster I think
