@@ -67,7 +67,7 @@ h1 {
   letter-spacing: 0.1em;
   padding-bottom: 2rem; }
 
-.resources > div, .products > div {
+.resources > div, .products > div, .about {
   max-width: 19rem;
   margin-left: auto;
   margin-right: auto; }
@@ -162,10 +162,20 @@ h2, h3, p {
 .products .sketching figure {
   max-width: 150px; }
 
+.about h2 {
+  font-size: 1.6154rem;
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 2rem 0;
+  text-align: center;
+  color: #222222; }
 .about figure {
-  padding: 1rem; }
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto; }
   .about figure img {
     width: 100%;
     border: 1px solid #76b8d8; }
 .about p {
-  padding: 1rem 1rem 0 1rem; }
+  padding-bottom: 1rem; }
