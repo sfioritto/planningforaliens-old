@@ -22,63 +22,127 @@ h1 {
     padding-bottom: 2rem;
 }
 
-h2, p, h3, figure {
-    max-width: 20rem;
+.resources > div, .products > div {
+    max-width: 19rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+h2, h3, p {
     line-height: 1.3em;
 }
 
-.ginormous {
-    padding: 2rem 0;
-    img {
-        display: none;
+.resources {
+    hr {
+        margin: .5rem 0;
+        border-top: 1px solid $rocket-grey;
+        border-bottom: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    p {
+        @include archer;
+        @include clear;
+    }
+    figure {
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        float: left;
+        padding-right: 12px;
+        img {
+            width: 100%;
+        }
+    }
+    .ginormous {
+        padding: 2rem 0;
+        hr {
+            //double thick hr
+            border-bottom: 1px solid;
+            border-color: $lighter-complementary-color;
+        }
+        h2 {
+            text-align: center;
+            font-size: $font-size-3;
+            color: $dark-base-color;
+            @include tungsten;
+            text-transform: uppercase;
+            span {
+                line-height: 2rem;
+                display: block;
+            }
+            span.first {
+                letter-spacing: 2px;
+                font-weight: 700;
+            }
+            span.second {
+                @include nitro;
+                font-size: 1.8rem;
+                color: $complementary-color;
+            }
+            span.third {
+                font-size: 1.9rem;
+            }
+        }
+    }
+    
+    .older {
+        > div {
+            padding-bottom: 1rem;
+            
+            h3 {
+                @include archer-bold;
+                font-size: $font-size-1;
+                a {text-decoration: underline; color: $darker-base-color;}
+            }
+        }
+    }
+}
+
+.products {
+    > div {
+        padding-bottom: 2rem;
+    }
+    figure {
+        padding-top: 1rem;
     }
     h2 {
+        padding: 2rem 0 3rem 0;
         font-size: $font-size-3;
-        color: $dark-base-color;
-        @include tungsten;
         text-transform: uppercase;
-        span {
-            line-height: 2rem;
-            display: block;
-        }
-        span.first {
-            letter-spacing: 2px;
-            font-weight: 700;
-        }
-        span.second {
-            @include nitro;
-            font-size: 1.8rem;
-            color: $complementary-color;
-        }
-        span.third {
-            font-size: 1.9rem;
-        }
+        color: $darker-base-color;
+        @include tungsten;
+        text-align: center;
+        letter-spacing: .1em;
+    }
+
+    h3 {
+        @include archer-bold;
+        font-size: $font-size-2;
+        a {text-decoration: underline; color: $darker-base-color;}
     }
 
     p {
         @include archer-italic;
+        
+    }
+
+    .sketching {
+        figure {
+            max-width: 150px;
+        }
     }
 }
 
-.older {
-    > div {
-        padding-bottom: 1rem;
-
-        h3 {
-            @include tungsten;
-            font-size: $font-size-2;
-            text-transform: uppercase;
-            a {text-decoration: underline;}
+.about {
+    figure {
+        img {
+            width: 100%;
+            border: 1px solid $base-color;
         }
-
-        figure {
-            display: none;
-        }
-
-        p {
-            @include archer-italic;
-        }
+        padding: 1rem;
+    }
+    p {
+        padding: 1rem 1rem 0 1rem;
     }
 }

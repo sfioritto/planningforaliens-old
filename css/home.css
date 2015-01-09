@@ -67,53 +67,105 @@ h1 {
   letter-spacing: 0.1em;
   padding-bottom: 2rem; }
 
-h2, p, h3, figure {
-  max-width: 20rem;
+.resources > div, .products > div {
+  max-width: 19rem;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; }
+
+h2, h3, p {
   line-height: 1.3em; }
 
-.ginormous {
+.resources hr {
+  margin: 0.5rem 0;
+  border-top: 1px solid #c7c8c9;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0; }
+.resources p {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+  .resources p::after {
+    content: "";
+    display: table;
+    clear: both; }
+.resources figure {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  float: left;
+  padding-right: 12px; }
+  .resources figure img {
+    width: 100%; }
+.resources .ginormous {
   padding: 2rem 0; }
-  .ginormous img {
-    display: none; }
-  .ginormous h2 {
+  .resources .ginormous hr {
+    border-bottom: 1px solid;
+    border-color: #f3d1c7; }
+  .resources .ginormous h2 {
+    text-align: center;
     font-size: 2.6154rem;
     color: #3a99c7;
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 300;
     text-transform: uppercase; }
-    .ginormous h2 span {
+    .resources .ginormous h2 span {
       line-height: 2rem;
       display: block; }
-    .ginormous h2 span.first {
+    .resources .ginormous h2 span.first {
       letter-spacing: 2px;
       font-weight: 700; }
-    .ginormous h2 span.second {
+    .resources .ginormous h2 span.second {
       font-family: 'Nitro A', 'Nitro B', georgia, serif;
       font-weight: 400;
       font-style: normal;
       font-size: 1.8rem;
       color: #b93c2f; }
-    .ginormous h2 span.third {
+    .resources .ginormous h2 span.third {
       font-size: 1.9rem; }
-  .ginormous p {
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 500;
-    font-style: italic; }
-
-.older > div {
+.resources .older > div {
   padding-bottom: 1rem; }
-  .older > div h3 {
-    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-    font-weight: 300;
-    font-size: 1.6154rem;
-    text-transform: uppercase; }
-    .older > div h3 a {
-      text-decoration: underline; }
-  .older > div figure {
-    display: none; }
-  .older > div p {
+  .resources .older > div h3 {
     font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 500;
-    font-style: italic; }
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1rem; }
+    .resources .older > div h3 a {
+      text-decoration: underline;
+      color: #286c8d; }
+
+.products > div {
+  padding-bottom: 2rem; }
+.products figure {
+  padding-top: 1rem; }
+.products h2 {
+  padding: 2rem 0 3rem 0;
+  font-size: 2.6154rem;
+  text-transform: uppercase;
+  color: #286c8d;
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.1em; }
+.products h3 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6154rem; }
+  .products h3 a {
+    text-decoration: underline;
+    color: #286c8d; }
+.products p {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: italic; }
+.products .sketching figure {
+  max-width: 150px; }
+
+.about figure {
+  padding: 1rem; }
+  .about figure img {
+    width: 100%;
+    border: 1px solid #76b8d8; }
+.about p {
+  padding: 1rem 1rem 0 1rem; }
