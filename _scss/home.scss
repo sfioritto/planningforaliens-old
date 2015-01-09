@@ -24,6 +24,9 @@ h1 {
 
 .resources > div, .products > div, .about {
     max-width: 19rem;
+    @include breakpoint("bigger") {
+        max-width: 530px;
+    }
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,6 +38,9 @@ h2, h3, p {
 .resources {
     hr {
         margin: .5rem 0;
+        @include breakpoint(bigger) {
+            margin: 1rem 0;
+        }
         border-top: 1px solid $rocket-grey;
         border-bottom: 0;
         border-right: 0;
@@ -49,12 +55,24 @@ h2, h3, p {
         height: 75px;
         overflow: hidden;
         float: left;
-        padding-right: 12px;
+        padding-right: .75rem;
         img {
             width: 100%;
         }
     }
     .ginormous {
+        @include breakpoint(bigger) {
+            figure {
+                width: 150px;
+                height: 150px;
+                padding-right: 1.5rem;
+            }
+            
+            p {
+                font-size: $font-size-2;
+            }
+        }
+        
         padding: 2rem 0;
         hr {
             //double thick hr
@@ -64,11 +82,15 @@ h2, h3, p {
         h2 {
             text-align: center;
             font-size: $font-size-3;
+            @include breakpoint(bigger) {
+                font-size: $font-size-4;
+            }
+
             color: $dark-base-color;
             @include tungsten;
             text-transform: uppercase;
             span {
-                line-height: 2rem;
+                line-height: 1.1em;
                 display: block;
             }
             span.first {
@@ -77,23 +99,32 @@ h2, h3, p {
             }
             span.second {
                 @include nitro;
-                font-size: 1.8rem;
+                font-size: .67em;
                 color: $complementary-color;
             }
             span.third {
-                font-size: 1.9rem;
+                font-size: .7em;
             }
         }
     }
     
     .older {
+        @include breakpoint(bigger) {
+            display: flex;
+            justify-content: space-between;
+        }
         > div {
             padding-bottom: 1rem;
-            
+            @include breakpoint(bigger) {
+                width: 249px; //(530px / 2) - 16px for padding (breakpoint width)
+            }
             h3 {
                 @include archer-bold;
                 font-size: $font-size-1;
-                a {text-decoration: underline; color: $darker-base-color;}
+                a {
+                    text-decoration: underline;
+                    color: $darker-base-color;
+                }
             }
         }
     }
@@ -101,11 +132,22 @@ h2, h3, p {
 
 .products {
     > div {
-        padding-bottom: 2rem;
+        border: 1px solid $rocket-grey;
+        border-radius: 4px;
+        background-image: url("/images/old_mathematics.png");
+        margin: 1rem auto;
+        a {
+            display: block;
+            padding: 1rem;
+            &:hover {text-decoration: none;}
+            color: $black;
+        }
     }
     figure {
-        padding-top: 1rem;
+        padding: 1rem 0;
+        text-align: center;
     }
+
     h2 {
         padding: 2rem 0 3rem 0;
         font-size: $font-size-3;
@@ -119,19 +161,38 @@ h2, h3, p {
     h3 {
         @include archer-bold;
         font-size: $font-size-2;
-        a {text-decoration: underline; color: $darker-base-color;}
-    }
-
-    p {
-        @include archer-italic;
-        
+        text-align: center;
+        color: $black;
     }
 
     .sketching {
-        figure {
+        figure img{
             max-width: 150px;
         }
     }
+
+    @include breakpoint(bigger) {
+        width: 530px;
+        margin: 0 auto;
+        > div {
+            @include clear;
+        }
+        h2 {
+            font-size: $font-size-4;
+        }
+        h3 {
+            font-size: $font-size-3;
+            text-align: center;
+        }
+        p {
+            font-size: $font-size-2;
+        }
+        figure {
+            float: left;
+            padding-right: 1rem;
+        }
+    }
+
 }
 
 .about {
