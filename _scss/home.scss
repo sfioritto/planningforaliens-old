@@ -22,7 +22,7 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.resources > div, .products > div, .about {
+.resources > div, div.products > div, .about {
     max-width: 19rem;
     @include breakpoint("bigger") {
         max-width: 530px;
@@ -130,12 +130,27 @@ h2, h3, p {
     }
 }
 
-.products {
+h2.products {
+    padding-bottom: 3rem;
+    font-size: $font-size-1;
+    color: $black;
+    @include archer-bold;
+    text-align: center;
+    @include breakpoint(bigger) {
+        font-size: $font-size-2;
+    }
+}
+
+div.products {
+    width: 100%;
+    background-image: url("/images/old_mathematics.png");
+    padding: 2rem 0;
+
     > div {
         border: 1px solid $rocket-grey;
         border-radius: 4px;
-        background-image: url("/images/old_mathematics.png");
-        margin: 1rem auto;
+        background: white;
+        margin: 2rem auto;
         transition: all .25s linear;
         &:hover {
             box-shadow: 0 0 10px $darker-base-color;
@@ -154,25 +169,12 @@ h2, h3, p {
         text-align: center;
     }
 
-    h2 {
-        padding: 0 0 3rem 0;
-        font-size: $font-size-3;
-        text-transform: uppercase;
-        color: $darker-base-color;
-        @include tungsten;
-        text-align: center;
-        letter-spacing: .1em;
-    }
-
     h3 {
         @include tungsten;
-        font-weight: 700;
         text-transform: uppercase;
         font-size: $font-size-2;
         text-align: center;
-        color: $darker-base-color;
-        letter-spacing: .1em;
-        text-shadow: 2px 2px $rocket-grey;
+        color: $black;
     }
 
     .sketching {
@@ -191,16 +193,13 @@ h2, h3, p {
     }
 
     @include breakpoint(bigger) {
-        width: 530px;
-        margin: 0 auto;
+
         > div > a{
             @include clear;
         }
-        h2 {
-            font-size: $font-size-4;
-        }
+
         h3 {
-            font-size: $font-size-3;
+            font-size: $font-size-4;
             text-align: center;
             padding-bottom: 1rem;
         }
@@ -222,14 +221,18 @@ h2, h3, p {
 
 }
 
-.about {
-    h2 {
+h2.about {
+    font-size: $font-size-1;
+    @include breakpoint(bigger) {
         font-size: $font-size-2;
-        @include archer-bold;
-        padding: 2rem 0;
-        text-align: center;
-        color: $black;
     }
+    @include archer-bold;
+    padding: 3rem 0;
+    text-align: center;
+    color: $black;
+}
+
+.about {
 
     figure {
         max-width: 400px;
@@ -246,9 +249,6 @@ h2, h3, p {
     }
 
     @include breakpoint(bigger) {
-        h2 {
-            font-size: $font-size-3;
-        }
         p {
             font-size: $font-size-2;
         }
@@ -256,8 +256,11 @@ h2, h3, p {
 }
 
 .vertical-elipse {
-    font-size: 10rem;
+    font-size: 7rem;
+    @include breakpoint(bigger) {
+        font-size: 10rem;
+    }
     color: $rocket-grey;
     text-align: center;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
