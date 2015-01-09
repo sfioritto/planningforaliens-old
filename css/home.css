@@ -167,7 +167,10 @@ h2, h3, p {
   border: 1px solid #c7c8c9;
   border-radius: 4px;
   background-image: url("/images/old_mathematics.png");
-  margin: 1rem auto; }
+  margin: 1rem auto;
+  transition: all 0.25s linear; }
+  .products > div:hover {
+    box-shadow: 0 0 10px #286c8d; }
   .products > div a {
     display: block;
     padding: 1rem;
@@ -178,7 +181,7 @@ h2, h3, p {
   padding: 1rem 0;
   text-align: center; }
 .products h2 {
-  padding: 2rem 0 3rem 0;
+  padding: 0 0 3rem 0;
   font-size: 2.6154rem;
   text-transform: uppercase;
   color: #286c8d;
@@ -187,19 +190,28 @@ h2, h3, p {
   text-align: center;
   letter-spacing: 0.1em; }
 .products h3 {
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 800;
-  font-style: normal;
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 1.6154rem;
   text-align: center;
-  color: #222222; }
+  color: #286c8d;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px #c7c8c9; }
 .products .sketching figure img {
-  max-width: 150px; }
+  max-width: 150px;
+  -webkit-filter: drop-shadow(0px 2px 4px #222222);
+          filter: drop-shadow(0px 2px 4px #222222); }
+.products .angular-escape figure.vertical {
+  display: none; }
+.products p {
+  padding-bottom: 1rem; }
 @media (min-width: 530px) {
   .products {
     width: 530px;
     margin: 0 auto; }
-    .products > div::after {
+    .products > div > a::after {
       content: "";
       display: table;
       clear: both; }
@@ -207,12 +219,18 @@ h2, h3, p {
       font-size: 4.2308rem; }
     .products h3 {
       font-size: 2.6154rem;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 1rem; }
     .products p {
       font-size: 1.6154rem; }
     .products figure {
       float: left;
-      padding-right: 1rem; } }
+      padding-right: 1.5rem; }
+    .products .angular-escape figure.horizontal {
+      display: none; }
+    .products .angular-escape figure.vertical {
+      display: block;
+      width: 100px; } }
 
 .about h2 {
   font-size: 1.6154rem;
@@ -231,3 +249,16 @@ h2, h3, p {
     border: 1px solid #76b8d8; }
 .about p {
   padding-bottom: 1rem; }
+@media (min-width: 530px) {
+  .about h2 {
+    font-size: 2.6154rem; }
+
+  .about p {
+    font-size: 1.6154rem; }
+ }
+
+.vertical-elipse {
+  font-size: 10rem;
+  color: #c7c8c9;
+  text-align: center;
+  padding: 4rem 0; }
