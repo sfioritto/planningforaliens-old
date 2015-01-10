@@ -24,8 +24,11 @@ h1 {
 
 .resources > div, div.products > div, .about {
     max-width: 19rem;
-    @include breakpoint("bigger") {
+    @include breakpoint(bigger) {
         max-width: 530px;
+    }
+    @include breakpoint(huge) {
+        max-width: 1250px;
     }
     margin-left: auto;
     margin-right: auto;
@@ -60,6 +63,12 @@ h2, h3, p {
             width: 100%;
         }
     }
+
+    @include breakpoint(huge) {
+        display: flex;
+        justify-content: center;
+    }
+
     .ginormous {
         @include breakpoint(bigger) {
             figure {
@@ -73,7 +82,11 @@ h2, h3, p {
             }
         }
         
-        padding: 2rem 0;
+        @include breakpoint(huge) {
+            width: 530px;
+            margin: 0;
+        }
+        padding-top: 2rem;
         hr {
             //double thick hr
             border-bottom: 1px solid;
@@ -111,10 +124,19 @@ h2, h3, p {
     .older {
         @include breakpoint(bigger) {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            
+        }
+        @include breakpoint(huge) {
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 0;
+            padding-left: 1rem;
+            padding-top: 3rem;
         }
         > div {
-            padding-bottom: 1rem;
+            padding: 1rem;
             @include breakpoint(bigger) {
                 width: 249px; //(530px / 2) - 16px for padding (breakpoint width)
             }
@@ -130,7 +152,7 @@ h2, h3, p {
     }
 }
 
-h2.products {
+h2.products, h2.resources, h2.about {
     padding-bottom: 3rem;
     font-size: $font-size-1;
     color: $black;
@@ -139,6 +161,12 @@ h2.products {
     @include breakpoint(bigger) {
         font-size: $font-size-2;
     }
+}
+h2.resources span {
+    @include nitro;
+    color: $darker-base-color;
+    padding-right: .4rem;
+//    font-style: italic;
 }
 
 div.products {
@@ -221,17 +249,6 @@ div.products {
 
 }
 
-h2.about {
-    font-size: $font-size-1;
-    @include breakpoint(bigger) {
-        font-size: $font-size-2;
-    }
-    @include archer-bold;
-    padding: 3rem 0;
-    text-align: center;
-    color: $black;
-}
-
 .about {
 
     figure {
@@ -256,9 +273,9 @@ h2.about {
 }
 
 .vertical-elipse {
-    font-size: 7rem;
+    font-size: 5rem;
     @include breakpoint(bigger) {
-        font-size: 10rem;
+        font-size: 8rem;
     }
     color: $rocket-grey;
     text-align: center;

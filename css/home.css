@@ -74,6 +74,9 @@ h1 {
   @media (min-width: 530px) {
     .resources > div, div.products > div, .about {
       max-width: 530px; } }
+  @media (min-width: 1250px) {
+    .resources > div, div.products > div, .about {
+      max-width: 1250px; } }
 
 h2, h3, p {
   line-height: 1.3em; }
@@ -103,8 +106,16 @@ h2, h3, p {
   padding-right: 0.75rem; }
   .resources figure img {
     width: 100%; }
+@media (min-width: 1250px) {
+  .resources {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 .resources .ginormous {
-  padding: 2rem 0; }
+  padding-top: 2rem; }
   @media (min-width: 530px) {
     .resources .ginormous figure {
       width: 150px;
@@ -114,6 +125,10 @@ h2, h3, p {
     .resources .ginormous p {
       font-size: 1.6154rem; }
  }
+  @media (min-width: 1250px) {
+    .resources .ginormous {
+      width: 530px;
+      margin: 0; } }
   .resources .ginormous hr {
     border-bottom: 1px solid;
     border-color: #f3d1c7; }
@@ -146,11 +161,25 @@ h2, h3, p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; } }
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+@media (min-width: 1250px) {
+  .resources .older {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 3rem; } }
 .resources .older > div {
-  padding-bottom: 1rem; }
+  padding: 1rem; }
   @media (min-width: 530px) {
     .resources .older > div {
       width: 249px; } }
@@ -163,7 +192,7 @@ h2, h3, p {
       text-decoration: underline;
       color: #286c8d; }
 
-h2.products {
+h2.products, h2.resources, h2.about {
   padding-bottom: 3rem;
   font-size: 1rem;
   color: #222222;
@@ -172,8 +201,15 @@ h2.products {
   font-style: normal;
   text-align: center; }
   @media (min-width: 530px) {
-    h2.products {
+    h2.products, h2.resources, h2.about {
       font-size: 1.6154rem; } }
+
+h2.resources span {
+  font-family: 'Nitro A', 'Nitro B', georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #286c8d;
+  padding-right: 0.4rem; }
 
 div.products {
   width: 100%;
@@ -237,18 +273,6 @@ div.products {
       width: 100px; }
  }
 
-h2.about {
-  font-size: 1rem;
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 800;
-  font-style: normal;
-  padding: 3rem 0;
-  text-align: center;
-  color: #222222; }
-  @media (min-width: 530px) {
-    h2.about {
-      font-size: 1.6154rem; } }
-
 .about figure {
   max-width: 400px;
   padding: 1rem;
@@ -264,10 +288,10 @@ h2.about {
  }
 
 .vertical-elipse {
-  font-size: 7rem;
+  font-size: 5rem;
   color: #c7c8c9;
   text-align: center;
   padding: 2rem 0; }
   @media (min-width: 530px) {
     .vertical-elipse {
-      font-size: 10rem; } }
+      font-size: 8rem; } }
