@@ -67,7 +67,7 @@ h2, h3, p {
     }
 
     .ginormous {
-
+        
         @include breakpoint(bigger) {
             figure {
                 width: 150px;
@@ -124,6 +124,31 @@ h2, h3, p {
             }
             span.third {
                 font-size: .7em;
+            }
+        }
+
+        .featured-cta {
+            @include button;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: flex-start;
+            clear: both;
+            max-width: 12rem;
+            margin-left: auto;
+
+            @include breakpoint(bigger) {
+                padding: 1.5rem;
+                font-size: 2em;
+                max-width: 17rem;
+            }
+            span {
+                flex: 1 0 auto;
+                text-decoration: underline;
+            }
+            span.raquo {
+                font-size: 3em;
+                margin-top: -.06em;
+                text-decoration: none;
             }
         }
     }
@@ -266,12 +291,12 @@ div.products {
     }
     .newsletter .product-cta {
         max-width: 28rem;
-        margin: 2rem auto 0 auto;
+        margin-top: 2rem;
     }
 
     .blog .product-cta {
         max-width: 20rem;
-        margin: 2rem auto 0 auto;            
+        margin-top: 2rem;
     }
 
 

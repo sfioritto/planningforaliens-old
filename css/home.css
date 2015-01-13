@@ -156,6 +156,46 @@ h2, h3, p {
       color: #b93c2f; }
     .resources .ginormous h2 span.third {
       font-size: 0.7em; }
+  .resources .ginormous .featured-cta {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    background-color: #b93c2f;
+    border-radius: 5px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6154rem;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 1px 1px 5px #222222;
+    line-height: 1rem;
+    max-width: 100%;
+    font-size: 1.5em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    clear: both;
+    max-width: 12rem;
+    margin-left: auto; }
+    @media (min-width: 530px) {
+      .resources .ginormous .featured-cta {
+        padding: 1.5rem;
+        font-size: 2em;
+        max-width: 17rem; } }
+    .resources .ginormous .featured-cta span {
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
+      text-decoration: underline; }
+    .resources .ginormous .featured-cta span.raquo {
+      font-size: 3em;
+      margin-top: -0.06em;
+      text-decoration: none; }
 @media (min-width: 530px) {
   .resources .older {
     display: -webkit-flex;
@@ -291,10 +331,10 @@ div.products {
         margin-right: 0; } }
   div.products .newsletter .product-cta {
     max-width: 28rem;
-    margin: 2rem auto 0 auto; }
+    margin-top: 2rem; }
   div.products .blog .product-cta {
     max-width: 20rem;
-    margin: 2rem auto 0 auto; }
+    margin-top: 2rem; }
   @media (min-width: 530px) {
     div.products > div::after {
       content: "";
