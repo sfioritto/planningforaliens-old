@@ -11,7 +11,11 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
-  color: #222222; }
+  color: #222222;
+  margin: 0; }
+
+figure, h1, h2, h3, h4, p {
+  margin: 0; }
 
 img {
   max-width: 100%; }
@@ -52,10 +56,9 @@ a:visited {
 header {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
-  header img {
+  header figure {
     padding: 1rem;
-    display: block;
-    margin: 0 auto; }
+    text-align: center; }
 
 h1 {
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
@@ -66,14 +69,6 @@ h1 {
   text-align: center;
   letter-spacing: 0.1em;
   padding-bottom: 2rem; }
-
-.resources > div, div.products > div, div.about {
-  max-width: 19rem;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 530px) {
-    .resources > div, div.products > div, div.about {
-      max-width: 530px; } }
 
 h2, h3, p {
   line-height: 1.3em; }
@@ -113,29 +108,14 @@ div.resources figure {
       width: 100px; } }
   div.resources figure img {
     width: 100%; }
-div.resources .ginormous {
-  padding-top: 2rem; }
-  @media (min-width: 530px) {
-    div.resources .ginormous figure {
-      width: 150px;
-      height: 150px;
-      padding-right: 1.5rem; }
-
-    div.resources .ginormous p {
-      font-size: 1.6154rem; }
- }
-  @media (min-width: 1250px) {
-    div.resources .ginormous {
-      max-width: 736px; }
-      div.resources .ginormous figure {
-        width: 300px;
-        height: 300px; }
-      div.resources .ginormous p {
-        font-size: 2.6154rem; } }
-  div.resources .ginormous hr {
+div.resources .featured {
+  margin: 0 auto;
+  padding-top: 2rem;
+  max-width: 19rem; }
+  div.resources .featured hr {
     border-bottom: 1px solid;
     border-color: #f3d1c7; }
-  div.resources .ginormous h2 {
+  div.resources .featured h2 {
     text-align: center;
     font-size: 2.6154rem;
     color: #3a99c7;
@@ -143,26 +123,12 @@ div.resources .ginormous {
     font-weight: 300;
     text-transform: uppercase; }
     @media (min-width: 530px) {
-      div.resources .ginormous h2 {
+      div.resources .featured h2 {
         font-size: 4.2308rem; } }
     @media (min-width: 1250px) {
-      div.resources .ginormous h2 {
+      div.resources .featured h2 {
         font-size: 6.8462rem; } }
-    div.resources .ginormous h2 span {
-      line-height: 1.1em;
-      display: block; }
-    div.resources .ginormous h2 span.first {
-      letter-spacing: 2px;
-      font-weight: 700; }
-    div.resources .ginormous h2 span.second {
-      font-family: 'Nitro A', 'Nitro B', georgia, serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 0.67em;
-      color: #b93c2f; }
-    div.resources .ginormous h2 span.third {
-      font-size: 0.7em; }
-  div.resources .ginormous .featured-cta {
+  div.resources .featured .featured-cta {
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 300;
     background-color: #b93c2f;
@@ -189,53 +155,90 @@ div.resources .ginormous {
     max-width: 12rem;
     margin-left: auto; }
     @media (min-width: 530px) {
-      div.resources .ginormous .featured-cta {
+      div.resources .featured .featured-cta {
         padding: 1.5rem;
         font-size: 2em;
         max-width: 17rem; } }
-    div.resources .ginormous .featured-cta span {
+    div.resources .featured .featured-cta span {
       -webkit-flex: 1 0 auto;
           -ms-flex: 1 0 auto;
               flex: 1 0 auto;
       text-decoration: underline; }
-    div.resources .ginormous .featured-cta span.raquo {
+    div.resources .featured .featured-cta span.raquo {
       font-size: 3em;
       margin-top: -0.06em;
       text-decoration: none; }
-@media (min-width: 530px) {
-  div.resources .older {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
-@media (min-width: 1250px) {
-  div.resources .older {
-    max-width: 1056px; } }
-div.resources .older > div {
-  padding: 1rem; }
-  div.resources .older > div h3 {
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 1rem; }
-    div.resources .older > div h3 a {
-      text-decoration: underline;
-      color: #286c8d; }
   @media (min-width: 530px) {
-    div.resources .older > div {
-      width: 249px; } }
-  @media (min-width: 1250px) {
-    div.resources .older > div {
-      width: 352px; }
-      div.resources .older > div h3 {
-        font-size: 1.6154rem; }
-      div.resources .older > div p {
+    div.resources .featured {
+      max-width: 530px; }
+      div.resources .featured figure {
+        width: 150px;
+        height: 150px;
+        padding-right: 1.5rem; }
+      div.resources .featured p {
         font-size: 1.6154rem; } }
+  @media (min-width: 1250px) {
+    div.resources .featured {
+      max-width: 736px; }
+      div.resources .featured figure {
+        width: 300px;
+        height: 300px; }
+      div.resources .featured p {
+        font-size: 2.6154rem; } }
+div.resources .ginormous h2 span {
+  line-height: 1.1em;
+  display: block; }
+div.resources .ginormous h2 span.first {
+  letter-spacing: 2px;
+  font-weight: 700; }
+div.resources .ginormous h2 span.second {
+  font-family: 'Nitro A', 'Nitro B', georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.67em;
+  color: #b93c2f; }
+div.resources .ginormous h2 span.third {
+  font-size: 0.7em; }
+div.resources .older {
+  max-width: 19rem;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 530px) {
+    div.resources .older {
+      max-width: 530px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+  @media (min-width: 1250px) {
+    div.resources .older {
+      max-width: 1056px; } }
+  div.resources .older > div {
+    padding: 1rem 0; }
+    div.resources .older > div h3 {
+      font-family: 'Archer A', 'Archer B', georgia, serif;
+      font-weight: 800;
+      font-style: normal;
+      font-size: 1rem; }
+      div.resources .older > div h3 a {
+        text-decoration: underline;
+        color: #286c8d; }
+    @media (min-width: 530px) {
+      div.resources .older > div {
+        padding: 1rem;
+        width: 249px; } }
+    @media (min-width: 1250px) {
+      div.resources .older > div {
+        width: 352px; }
+        div.resources .older > div h3 {
+          font-size: 1.6154rem; }
+        div.resources .older > div p {
+          font-size: 1.6154rem; } }
 
 h2.products, h2.resources, h2.about {
   padding-bottom: 3rem;
@@ -254,18 +257,22 @@ div.products {
   background-image: url("/images/old_mathematics.png");
   padding: 4rem 0; }
   div.products > div {
-    padding: 1rem;
+    max-width: 19rem;
+    padding: 1rem 0 2rem 0;
     border: 1px solid #c7c8c9;
     border-radius: 4px;
     background: white;
     margin: 0 auto 2rem auto;
     transition: all 0.25s linear; }
+    @media (min-width: 530px) {
+      div.products > div {
+        max-width: 530px; } }
+    div.products > div:last-of-type {
+      margin-bottom: 0; }
     @media (min-width: 1250px) {
       div.products > div {
         max-width: 736px;
         padding: 2rem; } }
-    div.products > div:last-of-type {
-      margin-bottom: 0; }
   div.products figure {
     padding: 0.5rem 0 1rem 0;
     text-align: center; }
@@ -367,19 +374,24 @@ div.products {
       width: 100px; }
  }
 
-div.about figure {
-  max-width: 400px;
-  padding: 1rem;
-  margin: 0 auto; }
-  div.about figure img {
-    width: 100%;
-    border: 1px solid #76b8d8; }
-div.about p {
-  padding-bottom: 1rem; }
-@media (min-width: 530px) {
+div.about {
+  max-width: 19rem;
+  margin-left: auto;
+  margin-right: auto; }
+  div.about figure {
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0 auto; }
+    div.about figure img {
+      width: 100%;
+      border: 1px solid #76b8d8; }
   div.about p {
-    font-size: 1.6154rem; }
- }
+    padding-bottom: 1rem; }
+  @media (min-width: 530px) {
+    div.about {
+      max-width: 530px; }
+      div.about p {
+        font-size: 1.6154rem; } }
 
 .vertical-elipse {
   font-size: 5rem;

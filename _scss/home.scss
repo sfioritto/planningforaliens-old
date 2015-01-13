@@ -2,13 +2,16 @@
 @import "colors";
 @import "base";
 
+$small-width: 19rem;
+$medium-width: 530px;
+$large-width: 736px;
+
 header {
     width: 100%;
     background-image: url("/images/old_mathematics.png");
-    img {
+    figure {
         padding: 1rem;
-        display: block;
-        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -20,15 +23,6 @@ h1 {
     text-align: center;
     letter-spacing: .1em;
     padding-bottom: 2rem;
-}
-
-.resources > div, div.products > div, div.about {
-    max-width: 19rem;
-    @include breakpoint(bigger) {
-        max-width: 530px;
-    }
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h2, h3, p {
@@ -44,6 +38,10 @@ div.products {
 }
 
 div.resources {
+
+    > div {
+    }
+
     hr {
         margin: .5rem 0;
         @include breakpoint(bigger) {
@@ -74,36 +72,18 @@ div.resources {
         }
     }
 
-    .ginormous {
-        
-        @include breakpoint(bigger) {
-            figure {
-                width: 150px;
-                height: 150px;
-                padding-right: 1.5rem;
-            }
-            
-            p {
-                font-size: $font-size-2;
-            }
-        }
-        @include breakpoint(huge) {
-            max-width: 736px;
-            figure {
-                width: 300px;
-                height: 300px;
-            }
-            p {
-                font-size: $font-size-3;
-            }
-        }
+    .featured {
 
+        margin: 0 auto;
         padding-top: 2rem;
+        max-width: $small-width;
+
         hr {
             //double thick hr
             border-bottom: 1px solid;
             border-color: $lighter-complementary-color;
         }
+        
         h2 {
             text-align: center;
             font-size: $font-size-3;
@@ -117,22 +97,6 @@ div.resources {
             color: $dark-base-color;
             @include tungsten;
             text-transform: uppercase;
-            span {
-                line-height: 1.1em;
-                display: block;
-            }
-            span.first {
-                letter-spacing: 2px;
-                font-weight: 700;
-            }
-            span.second {
-                @include nitro;
-                font-size: .67em;
-                color: $complementary-color;
-            }
-            span.third {
-                font-size: .7em;
-            }
         }
 
         .featured-cta {
@@ -159,19 +123,72 @@ div.resources {
                 text-decoration: none;
             }
         }
+
+        @include breakpoint(bigger) {
+            max-width: $medium-width;
+            figure {
+                width: 150px;
+                height: 150px;
+                padding-right: 1.5rem;
+            }
+            
+            p {
+                font-size: $font-size-2;
+            }
+        }
+        @include breakpoint(huge) {
+            max-width: $large-width;
+            figure {
+                width: 300px;
+                height: 300px;
+            }
+            p {
+                font-size: $font-size-3;
+            }
+        }
+    }
+
+    .ginormous {
+        h2 {
+            span {
+                line-height: 1.1em;
+                display: block;
+            }
+            span.first {
+                letter-spacing: 2px;
+                font-weight: 700;
+            }
+            span.second {
+                @include nitro;
+                font-size: .67em;
+                color: $complementary-color;
+            }
+            span.third {
+                font-size: .7em;
+            }
+        }
     }
     
     .older {
+        max-width: $small-width;
+        margin-left: auto;
+        margin-right: auto;
+
         @include breakpoint(bigger) {
+            max-width: $medium-width;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
         @include breakpoint(huge) {
-            max-width: 1056px;
+            // the width of the individual resources, * 3
+            max-width: (($large-width / 2) - 16) * 3
         }
+
         > div {
-            padding: 1rem;
+
+            padding: 1rem 0;
+
             h3 {
                 @include archer-bold;
                 font-size: $font-size-1;
@@ -180,11 +197,13 @@ div.resources {
                     color: $darker-base-color;
                 }
             }
+
             @include breakpoint(bigger) {
-                width: 249px; //(530px / 2) - 16px for padding (breakpoint width)
+                padding: 1rem;
+                width: ($medium-width / 2) - 16; //($medium-width / 2) - 16px for padding (breakpoint width)
             }
             @include breakpoint(huge) {
-                width: 352px; //( 736px / 2) - 16px for padding (breakpoint width)
+                width: ($large-width / 2) - 16; //( $large-width / 2) - 16px for padding (breakpoint width)
                 h3 {
                     font-size: $font-size-2;
                 }
@@ -215,25 +234,27 @@ div.products {
     padding: 4rem 0;
 
     > div {
-
-        padding: 1rem;
-        @include breakpoint(huge) {
-            max-width: 736px;
-            padding: 2rem;
+        max-width: $small-width;
+        @include breakpoint(bigger) {
+            max-width: $medium-width;
         }
-
+        padding: 1rem 0 2rem 0;
         border: 1px solid $rocket-grey;
         border-radius: 4px;
         background: white;
-
         margin: 0 auto 2rem auto;
+        transition: all .25s linear;
+
         &:last-of-type {
             //stacks with padding to create double padding,
             //so turn it off
             margin-bottom: 0;
         }
 
-        transition: all .25s linear;
+        @include breakpoint(huge) {
+            max-width: $large-width;
+            padding: 2rem;
+        }
     }
 
     figure {
@@ -297,6 +318,7 @@ div.products {
             margin-right: 0;
         }
     }
+
     .newsletter .product-cta {
         max-width: 28rem;
         margin-top: 2rem;
@@ -307,7 +329,7 @@ div.products {
         margin-top: 2rem;
     }
 
-
+    //div.products
     @include breakpoint(bigger) {
 
         > div {
@@ -338,6 +360,10 @@ div.products {
 
 div.about {
 
+    max-width: $small-width;
+    margin-left: auto;
+    margin-right: auto;
+
     figure {
         max-width: 400px;
         padding: 1rem;
@@ -353,6 +379,7 @@ div.about {
     }
 
     @include breakpoint(bigger) {
+        max-width: $medium-width;
         p {
             font-size: $font-size-2;
         }
