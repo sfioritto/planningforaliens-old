@@ -72,8 +72,7 @@ a:visited {
 
 }
 
-
-.button {
+@mixin button {
     @include tungsten;
     background-color: $complementary-color;
     border-radius: 5px;
@@ -88,4 +87,7 @@ a:visited {
     box-shadow: 1px 1px 5px $black;
     line-height: 1rem;
     max-width: 100%;
+}
+.button {
+    @include button;
 }

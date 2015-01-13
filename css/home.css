@@ -238,6 +238,63 @@ div.products {
     display: none; }
   div.products p {
     padding-bottom: 1rem; }
+  div.products .product-cta {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    background-color: #b93c2f;
+    border-radius: 5px;
+    padding: 16px;
+    padding: 1rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.6154rem;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 1px 1px 5px #222222;
+    line-height: 1rem;
+    max-width: 100%;
+    font-size: 1em;
+    display: block;
+    line-height: 1.1em;
+    max-width: 23rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    clear: both; }
+    div.products .product-cta span {
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+      text-decoration: underline; }
+    div.products .product-cta span.raquo {
+      font-size: 4em;
+      -webkit-flex: 0 1 auto;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+      margin-top: -0.06em;
+      text-decoration: none; }
+    @media (min-width: 530px) {
+      div.products .product-cta {
+        font-size: 1.5em; } }
+    @media (min-width: 1250px) {
+      div.products .product-cta {
+        font-size: 1.75em;
+        margin-right: 0; } }
+  div.products .newsletter .product-cta {
+    max-width: 28rem;
+    margin: 2rem auto 0 auto; }
+  div.products .blog .product-cta {
+    max-width: 20rem;
+    margin: 2rem auto 0 auto; }
   @media (min-width: 530px) {
     div.products > div::after {
       content: "";

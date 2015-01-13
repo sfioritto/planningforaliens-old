@@ -217,9 +217,11 @@ div.products {
     }
 
     .sketching {
-        figure img{
-            max-width: 150px;
-            filter: drop-shadow(0px 2px 4px $black);
+        figure {
+            img {
+                max-width: 150px;
+                filter: drop-shadow(0px 2px 4px $black);
+            }
         }
     }
 
@@ -230,6 +232,48 @@ div.products {
     p {
         padding-bottom: 1rem;
     }
+
+    .product-cta {
+        @include button;
+        font-size: 1em;
+        display: block;
+        line-height: 1.1em;
+        max-width: 23rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        clear: both;
+
+        span {
+            flex: 1 1 auto;
+            text-decoration: underline;
+        }
+        span.raquo {
+            font-size: 4em;
+            flex: 0 1 auto;
+            margin-top: -.06em;
+            text-decoration: none;
+        }
+        @include breakpoint(bigger) {
+            font-size: 1.5em;
+        }
+        @include breakpoint(huge) {
+            font-size: 1.75em;
+            margin-right: 0;
+        }
+    }
+    .newsletter .product-cta {
+        max-width: 28rem;
+        margin: 2rem auto 0 auto;
+    }
+
+    .blog .product-cta {
+        max-width: 20rem;
+        margin: 2rem auto 0 auto;            
+    }
+
 
     @include breakpoint(bigger) {
 
