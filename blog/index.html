@@ -1,0 +1,13 @@
+---
+layout: base
+style:
+- blog/index.css
+---
+
+<ul>
+{% for post in site.posts %}
+<li>
+{% include article.html %}
+</li>
+{% endfor %}
+</ul>

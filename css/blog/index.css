@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+body {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #222222;
+  margin: 0; }
+
+figure, h1, h2, h3, h4, p {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #3a99c7;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+p {
+  font-size: 1rem; }

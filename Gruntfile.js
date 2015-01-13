@@ -52,6 +52,7 @@ module.exports = function(grunt) {
                     'css/angular/unstoppable.css': '_scss/angular/unstoppable.scss',
                     'css/angular/animate.css': '_scss/angular/animate.scss',
                     'css/home.css': '_scss/home.scss',
+                    'css/blog/index.css': '_scss/blog/index.scss',
                 }
             }
         },
@@ -74,7 +75,7 @@ module.exports = function(grunt) {
             jekyllSources: {
                 files: [
                     // capture all except css
-                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**',
+                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'angular/**',
                     '_includes/**', '_layouts/**', 'angular/**', 'paid/**'
                 ],
                 tasks: ['shell:jekyll'] //runs jekyll build
