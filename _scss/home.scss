@@ -53,6 +53,11 @@ h2, h3, p {
     figure {
         width: 75px;
         height: 75px;
+        padding-top: .5rem;
+        @include breakpoint(huge) {
+            width: 100px;
+        }
+
         overflow: hidden;
         float: left;
         padding-right: .75rem;
@@ -171,34 +176,35 @@ h2.products, h2.resources, h2.about {
 }
 
 div.products {
+
     width: 100%;
     background-image: url("/images/old_mathematics.png");
-    padding: 2rem 0;
+    padding: 4rem 0;
 
     > div {
+
+        padding: 1rem;
         @include breakpoint(huge) {
-            max-width: 1250px;
+            max-width: 736px;
+            padding: 2rem;
         }
 
         border: 1px solid $rocket-grey;
         border-radius: 4px;
         background: white;
-        margin: 2rem auto;
+
+        margin: 0 auto 2rem auto;
+        &:last-of-type {
+            //stacks with padding to create double padding,
+            //so turn it off
+            margin-bottom: 0;
+        }
+
         transition: all .25s linear;
-        &:hover {
-            box-shadow: 0 0 10px $darker-base-color;
-        }
-        a {
-            display: block;
-            padding: 1rem;
-            &:hover {
-                text-decoration: none;
-            }
-            color: $black;
-        }
     }
+
     figure {
-        padding: 1rem 0;
+        padding: .5rem 0 1rem 0;
         text-align: center;
     }
 
@@ -227,10 +233,9 @@ div.products {
 
     @include breakpoint(bigger) {
 
-        > div > a{
+        > div {
             @include clear;
         }
-
         h3 {
             font-size: $font-size-4;
             text-align: center;

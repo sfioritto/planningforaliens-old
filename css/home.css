@@ -98,9 +98,13 @@ h2, h3, p {
 .resources figure {
   width: 75px;
   height: 75px;
+  padding-top: 0.5rem;
   overflow: hidden;
   float: left;
   padding-right: 0.75rem; }
+  @media (min-width: 1250px) {
+    .resources figure {
+      width: 100px; } }
   .resources figure img {
     width: 100%; }
 .resources .ginormous {
@@ -202,26 +206,22 @@ h2.products, h2.resources, h2.about {
 div.products {
   width: 100%;
   background-image: url("/images/old_mathematics.png");
-  padding: 2rem 0; }
+  padding: 4rem 0; }
   div.products > div {
+    padding: 1rem;
     border: 1px solid #c7c8c9;
     border-radius: 4px;
     background: white;
-    margin: 2rem auto;
+    margin: 0 auto 2rem auto;
     transition: all 0.25s linear; }
     @media (min-width: 1250px) {
       div.products > div {
-        max-width: 1250px; } }
-    div.products > div:hover {
-      box-shadow: 0 0 10px #286c8d; }
-    div.products > div a {
-      display: block;
-      padding: 1rem;
-      color: #222222; }
-      div.products > div a:hover {
-        text-decoration: none; }
+        max-width: 736px;
+        padding: 2rem; } }
+    div.products > div:last-of-type {
+      margin-bottom: 0; }
   div.products figure {
-    padding: 1rem 0;
+    padding: 0.5rem 0 1rem 0;
     text-align: center; }
   div.products h3 {
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
@@ -239,7 +239,7 @@ div.products {
   div.products p {
     padding-bottom: 1rem; }
   @media (min-width: 530px) {
-    div.products > div > a::after {
+    div.products > div::after {
       content: "";
       display: table;
       clear: both; }
