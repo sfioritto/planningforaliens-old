@@ -2,11 +2,12 @@
 layout: post
 title: "Grokking CSS Combinators A.K.A. Fancy Pants Selectors"
 blurb: "We all know how to write standard descendant selectors but have you ever seen something like ul > li {} or h2 ~ p {} lurking in a stylesheet and wondered why these selectors were written in an alien language? Don't worry, you are not alone. Take ten minutes to read this and you'll never be confused again."
-style: "combinators.css"
+styles:
+- "syntax.css"
+- "combinators.css"
 author: "sean"
+
 ---
-<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js" type="text/javascript"></script>
-<script>window.onload = prettyPrint;</script>
 <div class="section">
   <h2>It looks harder than it really is</h2>
   <p>
@@ -19,23 +20,26 @@ author: "sean"
   <p>
     First up is the child selector. The normal selectors you are probably familiar with are called descendant selectors. They look like this:
   </p>
-  <pre class="prettyprint">ul li { margin-top: 5px; }</pre>
+  {% highlight css %}
+  ul li { margin-top: 5px; }
+  {% endhighlight %}
   <p>
     With this descendant selector you are selecting every &lt;li&gt; that is under the &lt;ul&gt;. But what if one of the &lt;li&gt; tags of the &lt;ul&gt; has an inner list with other &lt;li&gt; tags? And you don't want to style those? That's where the child selector comes in. It only selects the children of the element that match the rule, not all of the descendants. It's easier to understand with an example.
   </p>
-  <pre class="prettyprint" lang="html">
-&lt;ul&gt;
-    &lt;li&gt;
-      &lt;ul&gt;
-        &lt;li&gt;inner list&lt;/li&gt;
-        &lt;li&gt;inner list&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;outer list&lt;/li&gt;
-    &lt;li&gt;outer list&lt;/li&gt;
-  &lt;/ul&gt;
-  </pre>
-  <pre class="prettyprint">
+  {% highlight html %}
+<ul>
+    <li>
+      <ul>
+        <li>inner list</li>
+        <li>inner list</li>
+      </ul>
+    </li>
+    <li>outer list</li>
+    <li>outer list</li>
+  </ul>
+{% endhighlight %}
+
+{% highlight css %}
 .childselectors > ul > li{
     border: 5px solid red;
 }
@@ -43,7 +47,8 @@ author: "sean"
 .childselectors > ul > li > ul{
     border: 5px solid blue;
 }
-  </pre>
+{% endhighlight %}
+
   <ul>
     <li>
       <ul>
@@ -58,6 +63,7 @@ author: "sean"
     I love how precise you can be with these selectors without having to create special classes.
   </p>
 </div>
+
 <div class="section">
   <h2>.adjacentsibling h3 + p{ color: red; }</h2>
   <p>
@@ -66,43 +72,50 @@ author: "sean"
   <p>
     For this example I want to make the text of the first paragraph of each section red, which is basically like saying the first &lt;p&gt; tag following the first &lt;h2&gt; tag of each section. We can do this using an adjacent selector, like so:
   </p>
-  <pre class="prettyprint">
-&lt;h3&gt;example header&lt;/h3&gt;
-&lt;p&gt;This is the first paragraph and I should be red.&lt;/p&gt;
-&lt;p&gt;This is the second paragraph and I should be normal.&lt;/p&gt;
-  </pre>
-  <pre class="prettyprint">
+  {% highlight html %}
+<h3>example header</h3>
+<p>This is the first paragraph and I should be red.</p>
+<p>This is the second paragraph and I should be normal.</p>
+{% endhighlight %}
+
+{% highlight css %}
     .adjacentsibling h3 + p{
        color: red;
     }
-  </pre>
+{% endhighlight %}
+
   <div class="adjacentsibling">
     <h3>example header</h3>
     <p>This is the first paragraph.</p>
     <p>This is the second paragraph.</p>
   </div>  
 </div>
+
 <div class="section">
   <h2>.generalsibling h3 ~ p</h2>
   <p>
     The adjacent sibling selector only gives us the first sibling that matches the rule, but what if you want all the siblings? Just change the + to a ~ and you're good to go.
   </p>
-  <pre class="prettyprint">
-&lt;h3&gt;example header&lt;/h3&gt;
-&lt;p&gt;This is the first paragraph and I should be red.&lt;/p&gt;
-&lt;p&gt;This is the second paragraph and I should be normal.&lt;/p&gt;
-  </pre>
-  <pre class="prettyprint">
+
+{% highlight html %}
+<h3>example header</h3>
+<p>This is the first paragraph and I should be red.</p>
+<p>This is the second paragraph and I should be normal.</p>
+{% endhighlight %}
+
+{% highlight css %}
     .adjacentsibling h3 ~ p{
        color: red;
     }
-  </pre>
+{% endhighlight %}
+
   <div class="generalsibling">
     <h3>example header</h3>
     <p>This is the first paragraph. I should be red.</p>
     <p>This is the second paragraph. I should also be red.</p>
   </div>  
 </div>
+
 <div class="section">
   <h2>The tiny screwdriver in the Swiss Army Knife</h2>
   <p>
@@ -113,4 +126,3 @@ author: "sean"
   </p>
 </div>
 {% include sketching.html %}
-<script>window.onload = prettyPrint;</script>

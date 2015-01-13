@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="/css/{{ page.style }}" type="text/css"/>
     {% endif %}
 
+    {% if page.styles %}
+    {% for style in page.styles %}
+    <link rel="stylesheet" href="/css/{{ style }}" type="text/css"/>
+    {% endfor %}
+    {% endif %}
+
     {% if page.javascript %}
     <script src="{{ page.javascript }}"></script>
     {% endif %}

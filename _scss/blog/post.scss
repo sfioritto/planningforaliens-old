@@ -1,0 +1,7 @@
+@import "typography";
+@import "colors";
+@import "base";
+
+article {
+    max-width: $large-width;
+}
