@@ -17,7 +17,7 @@ body {
 h2, h3, p {
   line-height: 1.3em; }
 
-figure, h1, h2, h3, h4, p {
+figure, h1, h2, h3, h4, p, pre {
   margin: 0; }
 
 img {
@@ -56,5 +56,127 @@ a:visited {
   line-height: 1rem;
   max-width: 100%; }
 
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+body {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #222222;
+  margin: 0; }
+
+h2, h3, p {
+  line-height: 1.3em; }
+
+figure, h1, h2, h3, h4, p, pre {
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #3a99c7;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+.sketching {
+  padding-top: 2rem; }
+  .sketching h3 {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.6154rem;
+    color: #222222;
+    padding-bottom: 1rem; }
+  .sketching figure, .sketching p {
+    max-width: 300px;
+    margin: 0 auto; }
+  .sketching figure {
+    padding-bottom: 1rem; }
+    .sketching figure img {
+      -webkit-filter: drop-shadow(0px 2px 4px #222222);
+              filter: drop-shadow(0px 2px 4px #222222); }
+  .sketching p {
+    margin: 1rem 0; }
+  .sketching form label, .sketching form input {
+    display: block; }
+  .sketching form label {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.6154rem;
+    padding-bottom: 0.5rem; }
+  .sketching form input.email {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 30rem;
+    font-size: 1.6154rem; }
+
+header {
+  border-bottom: 1px solid #c7c8c9; }
+  header h2 {
+    font-size: 2.6154rem;
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #286c8d;
+    line-height: 1.1em; }
+  header .byline {
+    font-size: 1rem;
+    padding: 1rem 0; }
+    header .byline .follow {
+      padding-bottom: 1rem; }
+
 article {
-  max-width: 737px; }
+  max-width: 737px;
+  padding: 1rem; }
+
+.post {
+  padding-top: 2rem; }
+  .post h2 {
+    padding: 1rem 0; }
+  .post p {
+    margin: 1rem 0; }
+
+.sharing {
+  padding: 1rem 0; }

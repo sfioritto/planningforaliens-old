@@ -10,24 +10,33 @@ style:
 
     <h2>{{ page.title }}</h2>
 
-    <p class="byline">
-      Published
-      <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span>
-      by
+    <div class="byline">
+      <p class="date">
+        Published
+        <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span>
+        by
       <a class="author" href="https://twitter.com/sfioritto">{{ page.author }}</a>
-      <a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="true">Follow @sfioritto</a>
-    </p>
+      </p>
+      <p class="follow">
+      <a href="https://twitter.com/sfioritto"
+         class="twitter-follow-button" data-show-count="true">Follow
+      @sfioritto</a>
+      </p>
 
     <p class="tldr">
       {{ page.blurb }}
     </p>
-    <div class="share">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="sfioritto">Tweet</a>
-    </div>
 
   </header>  
 
+  <div class="post">
   {{ content }}
+  </div>
+
+  <div class="sharing">
+    Share this article with your friends: <a  href="https://twitter.com/share" class="twitter-share-button"
+    data-via="sfioritto">Tweet</a></span>
+  </div>
 
 </article>
 

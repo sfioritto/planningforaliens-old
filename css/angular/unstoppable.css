@@ -17,7 +17,7 @@ body {
 h2, h3, p {
   line-height: 1.3em; }
 
-figure, h1, h2, h3, h4, p {
+figure, h1, h2, h3, h4, p, pre {
   margin: 0; }
 
 img {
@@ -75,7 +75,7 @@ body {
 h2, h3, p {
   line-height: 1.3em; }
 
-figure, h1, h2, h3, h4, p {
+figure, h1, h2, h3, h4, p, pre {
   margin: 0; }
 
 img {
