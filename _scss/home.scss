@@ -22,7 +22,7 @@ h1 {
     padding-bottom: 2rem;
 }
 
-.resources > div, div.products > div, .about {
+.resources > div, div.products > div, div.about {
     max-width: 19rem;
     @include breakpoint(bigger) {
         max-width: 530px;
@@ -35,7 +35,15 @@ h2, h3, p {
     line-height: 1.3em;
 }
 
-.resources {
+//shadows
+div.resources, .about-elipse {
+    box-shadow: 0 -6px 6px -6px $black;
+}
+div.products {
+    box-shadow: inset 0 6px 6px -6px $black;
+}
+
+div.resources {
     hr {
         margin: .5rem 0;
         @include breakpoint(bigger) {
@@ -328,7 +336,7 @@ div.products {
 
 }
 
-.about {
+div.about {
 
     figure {
         max-width: 400px;
