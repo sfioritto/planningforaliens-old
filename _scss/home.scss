@@ -4,7 +4,7 @@
 
 $small-width: 19rem;
 $medium-width: 530px;
-$large-width: 736px;
+$large-width: 737px;
 
 header {
     width: 100%;
@@ -38,9 +38,6 @@ div.products {
 }
 
 div.resources {
-
-    > div {
-    }
 
     hr {
         margin: .5rem 0;
@@ -234,21 +231,21 @@ div.products {
     padding: 4rem 0;
 
     > div {
-        max-width: $small-width;
-        @include breakpoint(bigger) {
-            max-width: $medium-width;
-        }
-        padding: 1rem 0 2rem 0;
-        border: 1px solid $rocket-grey;
-        border-radius: 4px;
+        max-width: 100%;
+        padding: 1rem 1rem 2rem 1rem;
         background: white;
+        border: 1px solid $rocket-grey;
         margin: 0 auto 2rem auto;
-        transition: all .25s linear;
 
         &:last-of-type {
             //stacks with padding to create double padding,
             //so turn it off
             margin-bottom: 0;
+        }
+
+        @include breakpoint(bigger) {
+            border-radius: 4px;
+            max-width: $medium-width;
         }
 
         @include breakpoint(huge) {
@@ -290,11 +287,11 @@ div.products {
     .product-cta {
         @include button;
         font-size: 1em;
-        display: block;
         line-height: 1.1em;
-        max-width: 23rem;
         margin-left: auto;
         margin-right: auto;
+        max-width: 15rem;
+
         display: flex;
         justify-content: flex-start;
         align-content: center;
@@ -312,6 +309,7 @@ div.products {
         }
         @include breakpoint(bigger) {
             font-size: 1.5em;
+            max-width: 23rem;
         }
         @include breakpoint(huge) {
             font-size: 1.75em;
@@ -320,12 +318,16 @@ div.products {
     }
 
     .newsletter .product-cta {
-        max-width: 28rem;
+        @include breakpoint(bigger) {
+            max-width: 28rem;
+        }
         margin-top: 2rem;
     }
 
     .blog .product-cta {
-        max-width: 20rem;
+        @include breakpoint(bigger) {
+            max-width: 20rem;
+        }
         margin-top: 2rem;
     }
 
