@@ -1,33 +1,7 @@
 @import "typography";
 @import "colors";
 @import "base";
-
-$small-width: 19rem;
-$medium-width: 530px;
-$large-width: 737px;
-
-header {
-    width: 100%;
-    background-image: url("/images/old_mathematics.png");
-    figure {
-        padding: 1rem;
-        text-align: center;
-    }
-}
-
-h1 {
-    @include tungsten;
-    text-transform: uppercase;
-    color: $darker-base-color;
-    font-size: $font-size-3;
-    text-align: center;
-    letter-spacing: .1em;
-    padding-bottom: 2rem;
-}
-
-h2, h3, p {
-    line-height: 1.3em;
-}
+@import "banner";
 
 //shadows
 div.resources, .about-elipse {

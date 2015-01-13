@@ -1,7 +1,31 @@
 @import "typography";
 @import "colors";
 @import "base";
+@import "banner";
 
-p {
-    font-size: 1rem;
+.posts {
+    max-width: $large-width;
+    margin: 0 auto;
+    list-style: none;
+    padding: 2rem 1rem;
+
+    li {
+        padding-top: 2rem;
+        &:first-of-type {
+            padding-top: 0;
+        }
+
+        .date {
+            @include archer-italic;
+            color: $light-grey;
+            padding: .5rem 0;
+            font-size: $font-size-1;
+        }
+
+        .title, p {
+            @include breakpoint(bigger) {
+                font-size: $font-size-2;
+            }
+        }
+    }
 }

@@ -1,0 +1,18 @@
+header {
+    width: 100%;
+    background-image: url("/images/old_mathematics.png");
+    figure {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+.banner-title {
+    @include tungsten;
+    text-transform: uppercase;
+    color: $darker-base-color;
+    font-size: $font-size-3;
+    text-align: center;
+    letter-spacing: .1em;
+    padding-bottom: 2rem;
+}

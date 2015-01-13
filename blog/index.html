@@ -1,13 +1,20 @@
 ---
 layout: base
+title: planning for aliens archive
 style:
 - blog/index.css
 ---
 
-<ul>
-{% for post in site.posts %}
-<li>
-{% include article.html %}
-</li>
-{% endfor %}
+{% include banner.html %}
+
+<ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="date"> Published <span class="pubdate">{{ post.date | date: "%m/%d/%y" }}</span></p>
+    <p class="tldr">
+      {{ post.blurb }}
+    </p>
+  </li>
+  {% endfor %}
 </ul>
