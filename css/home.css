@@ -74,9 +74,6 @@ h1 {
   @media (min-width: 530px) {
     .resources > div, div.products > div, .about {
       max-width: 530px; } }
-  @media (min-width: 1250px) {
-    .resources > div, div.products > div, .about {
-      max-width: 1250px; } }
 
 h2, h3, p {
   line-height: 1.3em; }
@@ -106,14 +103,6 @@ h2, h3, p {
   padding-right: 0.75rem; }
   .resources figure img {
     width: 100%; }
-@media (min-width: 1250px) {
-  .resources {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; } }
 .resources .ginormous {
   padding-top: 2rem; }
   @media (min-width: 530px) {
@@ -127,8 +116,12 @@ h2, h3, p {
  }
   @media (min-width: 1250px) {
     .resources .ginormous {
-      width: 530px;
-      margin: 0; } }
+      max-width: 736px; }
+      .resources .ginormous figure {
+        width: 300px;
+        height: 300px; }
+      .resources .ginormous p {
+        font-size: 2.6154rem; } }
   .resources .ginormous hr {
     border-bottom: 1px solid;
     border-color: #f3d1c7; }
@@ -142,6 +135,9 @@ h2, h3, p {
     @media (min-width: 530px) {
       .resources .ginormous h2 {
         font-size: 4.2308rem; } }
+    @media (min-width: 1250px) {
+      .resources .ginormous h2 {
+        font-size: 6.8462rem; } }
     .resources .ginormous h2 span {
       line-height: 1.1em;
       display: block; }
@@ -161,28 +157,17 @@ h2, h3, p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
 @media (min-width: 1250px) {
   .resources .older {
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0;
-    padding-left: 1rem;
-    padding-top: 3rem; } }
+    max-width: 1056px; } }
 .resources .older > div {
   padding: 1rem; }
-  @media (min-width: 530px) {
-    .resources .older > div {
-      width: 249px; } }
   .resources .older > div h3 {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800;
@@ -191,6 +176,16 @@ h2, h3, p {
     .resources .older > div h3 a {
       text-decoration: underline;
       color: #286c8d; }
+  @media (min-width: 530px) {
+    .resources .older > div {
+      width: 249px; } }
+  @media (min-width: 1250px) {
+    .resources .older > div {
+      width: 352px; }
+      .resources .older > div h3 {
+        font-size: 1.6154rem; }
+      .resources .older > div p {
+        font-size: 1.6154rem; } }
 
 h2.products, h2.resources, h2.about {
   padding-bottom: 3rem;
@@ -204,13 +199,6 @@ h2.products, h2.resources, h2.about {
     h2.products, h2.resources, h2.about {
       font-size: 1.6154rem; } }
 
-h2.resources span {
-  font-family: 'Nitro A', 'Nitro B', georgia, serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #286c8d;
-  padding-right: 0.4rem; }
-
 div.products {
   width: 100%;
   background-image: url("/images/old_mathematics.png");
@@ -221,6 +209,9 @@ div.products {
     background: white;
     margin: 2rem auto;
     transition: all 0.25s linear; }
+    @media (min-width: 1250px) {
+      div.products > div {
+        max-width: 1250px; } }
     div.products > div:hover {
       box-shadow: 0 0 10px #286c8d; }
     div.products > div a {
@@ -289,6 +280,8 @@ div.products {
 
 .vertical-elipse {
   font-size: 5rem;
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
   color: #c7c8c9;
   text-align: center;
   padding: 2rem 0; }
