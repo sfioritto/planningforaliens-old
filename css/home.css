@@ -16,6 +16,8 @@
   max-width: 100%; }
 
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -148,12 +150,8 @@ div.resources .featured {
     line-height: 1rem;
     max-width: 100%;
     font-size: 1.5em;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     clear: both;
     max-width: 12rem;
     margin-left: auto; }
@@ -163,9 +161,7 @@ div.resources .featured {
         font-size: 2em;
         max-width: 17rem; } }
     div.resources .featured .featured-cta span {
-      -webkit-flex: 1 0 auto;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto;
+      flex: 1 0 auto;
       text-decoration: underline; }
     div.resources .featured .featured-cta span.raquo {
       font-size: 3em;
@@ -209,15 +205,9 @@ div.resources .older {
   @media (min-width: 530px) {
     div.resources .older {
       max-width: 530px;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
+      justify-content: center;
+      flex-wrap: wrap; } }
   @media (min-width: 1250px) {
     div.resources .older {
       max-width: 1057.5px; } }
@@ -287,8 +277,7 @@ div.products {
     color: #222222; }
   div.products .sketching figure img {
     max-width: 150px;
-    -webkit-filter: drop-shadow(0px 2px 4px #222222);
-            filter: drop-shadow(0px 2px 4px #222222); }
+    filter: drop-shadow(0px 2px 4px #222222); }
   div.products .angular-escape figure.vertical {
     display: none; }
   div.products p {
@@ -314,26 +303,16 @@ div.products {
     margin-left: auto;
     margin-right: auto;
     max-width: 15rem;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    justify-content: flex-start;
+    align-content: center;
     clear: both; }
     div.products .product-cta span {
-      -webkit-flex: 1 1 auto;
-          -ms-flex: 1 1 auto;
-              flex: 1 1 auto;
+      flex: 1 1 auto;
       text-decoration: underline; }
     div.products .product-cta span.raquo {
       font-size: 4em;
-      -webkit-flex: 0 1 auto;
-          -ms-flex: 0 1 auto;
-              flex: 0 1 auto;
+      flex: 0 1 auto;
       margin-top: -0.06em;
       text-decoration: none; }
     @media (min-width: 530px) {

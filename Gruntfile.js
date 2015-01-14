@@ -55,13 +55,14 @@ module.exports = function(grunt) {
                     'css/blog/index.css': '_scss/blog/index.scss',
                     'css/blog/post.css': '_scss/blog/post.scss',
                     'css/error.css': '_scss/error.scss',
+                    'css/resource.css': '_scss/resource.scss',
                 }
             }
         },
         
         watch: {
             sass: {
-                files: ['_scss/*.scss', '_scss/angular/*.scss', '_scss/**/*.scss', '!.#*'],
+                files: ['_scss/*.scss', '_scss/resources/*.scss', '_scss/angular/*.scss', '_scss/**/*.scss', '!.#*'],
                 tasks: ['sassCopy'],
                 options: {
                     spawn: false, //faster I think
@@ -77,8 +78,8 @@ module.exports = function(grunt) {
             jekyllSources: {
                 files: [
                     // capture all except css
-                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'angular/**',
-                    '_includes/**', '_layouts/**', 'angular/**', 'paid/**'
+                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'resources/**',
+                    'angular/**', '_includes/**', '_layouts/**', 'paid/**'
                 ],
                 tasks: ['shell:jekyll'] //runs jekyll build
             }

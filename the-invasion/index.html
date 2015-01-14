@@ -1,15 +1,8 @@
 ---
-layout: base
+layout: resource
 title: The Invasion
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 <header class="newsletter">
 
   <figure class="rocket">
@@ -20,7 +13,7 @@ title: The Invasion
   <h2>A weekly(ish) newsletter for web people in the trenches</h2>
 </header>
 
-<main class="post content newsletter">
+<main class="newsletter">
   
   <p> The web is stuffed with HTML5 evangelists, elite Javascript hackers, CSS3 black belts, mustachioed Node.js hipsters and responsive design gurus. It seems like <span class="skim">every day there's something new and revolutionary you need to learn</span> to keep up with the all the cool kids.</p>
   
@@ -51,11 +44,8 @@ title: The Invasion
   
   <form action="https://www.getdrip.com/forms/3128974/submissions"
   method="post" target="_blank" data-drip-embedded-form="3068" class="validate">
-    <div class="mc-field-group">
-      <input type="email" name="fields[email]" value=""
-             class="required email" />
-    </div>
-    <div class="clear"><input data-drip-attribute="sign-up-button" type="submit" value="Be awesome" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  <input type="email" name="fields[email]" value="" class="email" />
+  <input data-drip-attribute="sign-up-button" type="submit" value="Be awesome" name="subscribe" id="mc-embedded-subscribe" class="button">
 </form>
 
 <h2>What people say about the newsletter.</h2>
@@ -67,37 +57,6 @@ title: The Invasion
   
   <blockquote>"I just wanted to tell you this is one of the best newsletters I've gotten in the past year. "</blockquote>
   
-  
-  <h3>Who am I?</h3>
-  
-  <figure class="me">
-    <img src="/images/me.jpg" alt="Sean Fioritto"></img>
-  </figure>
-  
-  <p>
-    Hey there, I'm Sean, and I'm probably a lot like you. I make stuff for the web. My web dev skills are mostly self-taught over the last decade or so and I really love what I do.
-  </p>
-  <p>
-    Recently, I wrote a book on web development called <a href="http://www.sketchingwithcss.com/">Sketching with CSS</a>. I'm also an <a href="http://coding.smashingmagazine.com/2013/11/18/the-future-of-video-in-web-design/">author in Smashing Magazine</a> and I've written some <a href="https://github.com/sfioritto/charlie.js">cool open source projects</a>.
-  </p>
-  <p>
-    Today, I'm an entrepreneur. In the not so distant past I did the usual 9-5 thing doing web development for a couple big companies.
-  </p>
-  
-  <p>
-    I'd love to meet you on Twitter. <a href="https://twitter.com/sfioritto" class="twitter-follow-button" data-show-count="true" >Follow @sfioritto</a>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  </p>
+  {% include about.html %}
   
 </main>
-
-<div id="newsletter-sharing">
-  <div>
-    <div class="fb-like" data-href="http://www.planningforaliens.com/the-invasion/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-  </div>
-  <div>
-    <a href="https://twitter.com/share" class="twitter-share-button" data-text="The Invasion, a weekly(ish) newsletter for web developers in the trenches." data-via="sfioritto">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-  </div>
-</div>

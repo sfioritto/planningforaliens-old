@@ -60,24 +60,6 @@ a:visited {
   right: 0;
   margin: 1em; }
 
-header.banner {
-  width: 100%;
-  background-image: url("/images/old_mathematics.png"); }
-  header.banner figure {
-    padding: 1rem;
-    text-align: center; }
-
-.banner-title {
-  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 2.6154rem;
-  text-align: center;
-  letter-spacing: 0.1em;
-  padding-bottom: 2rem; }
-  .banner-title a {
-    color: #286c8d; }
-
 .outer {
   padding-top: 2rem; }
   .outer form label, .outer form input {
@@ -146,57 +128,29 @@ header.banner {
   .angular-escape.outer form {
     flex: 1 1 auto; }
 
-p, li {
-  line-height: 1.4em; }
-
-header {
-  border-bottom: 1px solid #c7c8c9; }
-  header h2 {
-    font-size: 2.6154rem;
-    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #286c8d;
-    line-height: 1.1em; }
-  header .byline {
-    font-size: 1rem;
-    padding: 1rem 0; }
-    header .byline .follow {
-      padding-bottom: 1rem; }
-
-article {
-  max-width: 40rem;
+.email-form-box {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  max-width: 43rem;
+  margin: 1rem auto 0 auto;
+  background: #f8f8f8;
   padding: 1rem;
-  margin: 0 auto; }
-
-.post {
-  padding-top: 1rem; }
-  .post ul {
-    padding-left: 0.5rem; }
-    @media (min-width: 530px) {
-      .post ul {
-        padding-left: 0; } }
-  .post h2 {
+  border: 1px solid #c7c8c9; }
+  .email-form-box h2 {
+    padding: 0;
+    font-size: 1rem;
+    color: #3a99c7; }
+  .email-form-box input.email {
+    max-width: 26rem;
     font-size: 1.6154rem;
-    padding: 1.6154rem 0;
-    color: #286c8d; }
-  .post figure, .post .highlight, .post ul, .post p, .post li, .post iframe {
-    padding-top: 1rem; }
-  .post p:first-of-type, .post li:first-of-type {
-    padding-top: 0; }
-  .post h2 + h2, .post h2 + p, .post h2 + li, .post h2 + figure, .post h2 + ul, .post h2 + .highlight, .post h2 + iframe {
-    padding-top: 0; }
+    padding: 8px;
+    padding: 0.5rem;
+    margin-top: 16px;
+    margin-top: 1rem;
+    width: 100%; }
 
-.sharing {
-  padding: 1rem 0; }
-
-@media (min-width: 530px) {
-  header h2 {
-    font-size: 4.2308rem; }
-
-  p, li {
-    font-size: 1.6154rem; }
-
-  .post h2 {
-    font-size: 2.6154rem; }
- }
+.top {
+  background-image: url("/images/old_mathematics.png");
+  padding: 3rem 0 2rem 0;
+  border-bottom: 1px solid #c7c8c9; }
