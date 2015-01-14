@@ -1,5 +1,5 @@
 ---
-layout: flexbox
+layout: post
 title: "Flexbox First"
 blurb: "CSS sucks at layout &mdash; no more! The Flexbox spec is finally stable, but browser support isn't there yet. Damn. But wait...what if you used it anyway?"
 author: "sean"
@@ -92,3 +92,5 @@ Want to learn flexbox?
 --------------------
 
 Don't know flexbox yet? You can read a sample chapter from my book [all about flexbox](http://sketchingwithcss.com/samplechapter/flexbox.pdf) (PDF). If that seems daunting, I'm putting together a series of short, bite-sized videos about the basics. Just put your email address in the little box below, and I'll send you the lessons as I complete them.
+
+{% include sketching.html %}

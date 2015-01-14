@@ -1,5 +1,5 @@
 ---
-layout: flexbox
+layout: post
 title: "Clean, Modular Code is Overrated"
 blurb: "The experts say your HTML and CSS should be clean, semantic, readable, and modular. But how much does it really matter? Maybe less than you think."
 author: "sean"
@@ -24,3 +24,5 @@ It turns out, you can build a successful company on top of a giant pile of spagh
 You should write your code to the best of your ability because it shows respect for future maintainers. When you read another person's code, assume they wrote it to the best of their ability and were also trying to respect your time. You'll make more friends this way.
 
 I guess what I'm saying is, clean, maintainable, semantic code is really for the benefit of other developers. 'Do unto others" and all that. So go forth and build websites, and by all means make the HTML semantic and the CSS modular and beautiful, but remember it's not for you. It's not for some obsessive, compulsive desire to get everything perfect and check all the boxes. The extra effort is for your future maintainers. It's for your friends and colleagues.
+
+{% include sketching.html %}

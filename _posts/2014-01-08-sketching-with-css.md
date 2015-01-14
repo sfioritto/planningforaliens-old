@@ -1,5 +1,5 @@
 ---
-layout: flexbox
+layout: post
 title: "3,111 email addresses and $15,798: The story of my first successful
 product"
 blurb: "Do you have a giant list of side projects and startup ideas
@@ -250,14 +250,7 @@ relating to, you can do it, too.
 If you're looking for more entrepreneurial posts like this, you might be
 interested in
 [how patio11 redesigned my landing page]({% post_url 2013-06-02-evolution-of-landing-page %}).
-And I often talk shop on
-twitter, I'd love to [meet you there](https://twitter.com/sfioritto).
 
-And hey, if you're a web designer and your floated elements never seem
-to go where you want them to, you should sign up for my free lesson on
-flexbox using the form at the bottom of this post. It's the future of CSS layout. Or you could just
-[buy my book](http://www.sketchingwithcss.com/). :-)
+You can also drop your email in the form below for my business updates.
 
-
-
-
+{% include business-form.html %}
