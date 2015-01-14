@@ -1,5 +1,5 @@
 ---
-layout: escape
+layout: post
 title: "Angular resources worth your time"
 blurb: "While preparing the curriculum for my training course on Angular I read anything and everything I could get my hands on. Here's a list of the best stuff"
 author: "sean"
@@ -70,3 +70,4 @@ And of course I have to mention my own Angular training. :-) I've taken all of t
 
 Drop your email into the form below and I'll send you a bunch of freebies.
 
+{% include angular-escape-form.html %}

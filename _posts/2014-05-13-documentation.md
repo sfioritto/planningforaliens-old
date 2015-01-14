@@ -1,5 +1,5 @@
 ---
-layout: escape
+layout: post
 title: "The Infamous Angular Learning Curve"
 blurb: "Angular is an extremely powerful tool for creating client-side applications .. that is, if you can figure out how to use it."
 author: "sean"
@@ -115,3 +115,5 @@ Escape Plans, (what I call my training courses), are designed from the ground up
 Most training or books leave you empty handed. At the end of an Escape Plan course, you'll have a fully functioning project to demonstrate your newly acquired skills.
 
 So if after reading this you were wondering how I might approach teaching someone about Angular, just put your email address in this little form because I'll be giving away a lesson or two. And if you're on the launch list, you get a discount.
+
+{% include angular-escape-form.html %}

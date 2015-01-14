@@ -1,0 +1,15 @@
+.angular-escape.outer {
+
+    display: flex;
+
+    figure {
+        flex: 0 1 auto;
+        max-width: 100px;
+        margin: 0 auto;
+        padding-right: 1rem;
+    }
+
+    form {
+        flex: 1 1 auto;
+    }
+}

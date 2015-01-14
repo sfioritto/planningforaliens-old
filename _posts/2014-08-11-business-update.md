@@ -1,5 +1,5 @@
 ---
-layout: escape
+layout: post
 title: "How much I've made selling ebooks and videos"
 blurb: "It's been almost a year since I've had a product for sale. I'm making money. It's pretty great."
 author: "sean"
@@ -34,3 +34,5 @@ This is the best alignment of incentives ever, for you and for me.
 I love the fact that my job is to figure out what you need help with and then create articles and software to help you out. Maybe you can see why I think more of us should write little ebooks on niche topics or bundle up a few screencasts into a class or write a helpful bit of software and charge money for it. It means better quality free stuff for all of us.
 
 Have a great day, and enjoy your precious, precious 8 hours of sleep tonight while I'm changing diapers. :-)
+
+{% include angular-escape-form.html %}

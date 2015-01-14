@@ -135,6 +135,22 @@ header.banner {
     max-width: 30rem;
     font-size: 1.6154rem; }
 
+.angular-escape.outer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .angular-escape.outer figure {
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    max-width: 100px;
+    margin: 0 auto;
+    padding-right: 1rem; }
+  .angular-escape.outer form {
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+
 p, li {
   line-height: 1.4em; }
 
