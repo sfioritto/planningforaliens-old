@@ -5,6 +5,10 @@
 @import "business-form";
 @import "angular-escape-form";
 
+body {
+    background-color: $white;
+}
+
 .email-form-box {
 
     @include archer-bold;

@@ -78,7 +78,7 @@ module.exports = function(grunt) {
             jekyllSources: {
                 files: [
                     // capture all except css
-                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'resources/**',
+                    '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'the-invasion/**',
                     'angular/**', '_includes/**', '_layouts/**', 'paid/**'
                 ],
                 tasks: ['shell:jekyll'] //runs jekyll build

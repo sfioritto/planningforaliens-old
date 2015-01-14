@@ -1,10 +1,8 @@
 @import "typography";
 @import "colors";
 @import "base";
-@import "angular";
 
 .body {
-    background-color: $white;
     padding-bottom: 2rem;
 }
 
@@ -18,10 +16,6 @@
     font-size: $font-size-2;
     color: $complementary-color;
     padding: 2rem 0 1rem 0;
-}
-
-.bbl_item {
-
 }
 
 .bbl_title {
@@ -40,13 +34,14 @@ h2 {
     a {color: $dark-base-color;}
 }
 
-.top h1, .top h2, .top form, .body form, .body .bbl_list{
+.top > *, .body {
     @include centered;
 }
 
 h1 {
     padding: 0 0 2rem 0;
     font-size: $font-size-4;
+    line-height: 1em;
     @media screen and (min-width: 700px) {
         font-size: $font-size-5;
     }
@@ -58,8 +53,8 @@ h1 {
     }
     span.second {
         @include nitro;
-        padding: .5rem 0;
         font-size: 2rem;
+        line-height: 1.1em;
         @media screen and (min-width: 700px) {
             font-size: $font-size-4;
         }
