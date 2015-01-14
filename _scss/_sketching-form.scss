@@ -1,7 +1,7 @@
 @import "form";
 
+.sketching.outer {
 
-.sketching {
     h3 {
         @include tungsten;
         font-weight: 700;
@@ -12,17 +12,20 @@
         padding-bottom: 1rem;
     }
 
-    figure, p {
+    figure {
         max-width: 300px;
         margin: 0 auto;
     }
+
     figure {
         padding-bottom: 1rem;
         img {
             filter: drop-shadow(0px 2px 4px $black);
         }
     }
-    p {
+
+    p, p:first-of-type {
+        max-width: 40rem;
         margin: 1rem 0;
     }
 }

@@ -24,7 +24,8 @@
   font-style: normal; }
 
 ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
 
 h2, h3, p {
   line-height: 1.3em; }
@@ -83,7 +84,8 @@ a:visited {
   font-style: normal; }
 
 ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
 
 h2, h3, p {
   line-height: 1.3em; }

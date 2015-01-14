@@ -24,7 +24,8 @@
   font-style: normal; }
 
 ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
 
 h2, h3, p {
   line-height: 1.3em; }
@@ -94,7 +95,7 @@ header.banner {
     max-width: 30rem;
     font-size: 1.6154rem; }
 
-.sketching h3 {
+.sketching.outer h3 {
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 300;
   font-weight: 700;
@@ -103,15 +104,16 @@ header.banner {
   font-size: 2.6154rem;
   color: #222222;
   padding-bottom: 1rem; }
-.sketching figure, .sketching p {
+.sketching.outer figure {
   max-width: 300px;
   margin: 0 auto; }
-.sketching figure {
+.sketching.outer figure {
   padding-bottom: 1rem; }
-  .sketching figure img {
+  .sketching.outer figure img {
     -webkit-filter: drop-shadow(0px 2px 4px #222222);
             filter: drop-shadow(0px 2px 4px #222222); }
-.sketching p {
+.sketching.outer p, .sketching.outer p:first-of-type {
+  max-width: 40rem;
   margin: 1rem 0; }
 
 .outer {
@@ -167,14 +169,12 @@ article {
     font-size: 1.6154rem;
     padding: 1.6154rem 0;
     color: #286c8d; }
-  .post h2 + h2 {
+  .post figure, .post .highlight, .post ul, .post p, .post li, .post iframe {
+    padding-top: 1rem; }
+  .post p:first-of-type, .post li:first-of-type {
     padding-top: 0; }
-  .post p, .post li {
-    margin-top: 1rem; }
-    .post p:first-of-type, .post li:first-of-type {
-      margin-top: 0; }
-  .post h2 + p, .post h2 + li {
-    margin-top: 0; }
+  .post h2 + h2, .post h2 + p, .post h2 + li, .post h2 + figure, .post h2 + ul, .post h2 + .highlight, .post h2 + iframe {
+    padding-top: 0; }
 
 .sharing {
   padding: 1rem 0; }

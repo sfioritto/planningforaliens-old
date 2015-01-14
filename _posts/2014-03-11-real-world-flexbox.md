@@ -4,8 +4,6 @@ title: "Flexbox in the Real World"
 blurb: "Flexbox is awesome, but is it possible to use flexbox and
 still support IE8? If you follow these guidelines, you can start using
 flexbox today."
-styles:
-- syntax.css
 author: "sean"
 ---
 
