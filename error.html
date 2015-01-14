@@ -1,25 +1,17 @@
 ---
 layout: base
 title: page not found
+style: error.css
 ---
 
-<div class="error content">
-  <div class="section">  
-    <h1>four 
-    <span style="font-family: verdana">&#x2010</span><br/>
-    <span class="oh">oh</span><br/>
-    <span style="font-family: verdana">&#x2010</span>four</h1>
-    <p>
-      Looks like your URL doesn't work. I probably broke it<span class="elipse">...</span>
-    </p>
-    <p>
-      Or we have a typo situation.
-    </p>
-    <p>
-      Bummer.
-    </p>
-  </div>
-  <div class="footer"><footer>
-    {% include gun.html %}
-  </footer></div>
+<div class="code">
+  <p class="top">four</p>
+  <p class="middle">oh</p>
+  <p class="bottom">four</p>
 </div>
+<div class="message">
+  <p>Looks like your URL doesn't work. I probably broke it...</p>
+  <p>Or we have a typo situation. Bummer. :-(</p>
+</div>
+
+{% include banner.html %}

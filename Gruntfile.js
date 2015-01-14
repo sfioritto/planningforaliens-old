@@ -54,6 +54,7 @@ module.exports = function(grunt) {
                     'css/home.css': '_scss/home.scss',
                     'css/blog/index.css': '_scss/blog/index.scss',
                     'css/blog/post.css': '_scss/blog/post.scss',
+                    'css/error.css': '_scss/error.scss',
                 }
             }
         },
