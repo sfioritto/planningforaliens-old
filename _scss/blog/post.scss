@@ -19,9 +19,9 @@ header {
     }
     .byline {
         font-size: $font-size-1;
-        padding: 1rem 0;
+        padding-bottom: 1rem;
         .follow {
-            padding-bottom: 1rem;
+            padding: 0;
         }
     }
 }
@@ -62,4 +62,8 @@ article {
     .post h2 {
         font-size: $font-size-3;
     }
+}
+
+.sharing iframe, .byline iframe {
+    padding: 0;
 }

@@ -109,8 +109,9 @@ header.banner {
       font-weight: 500;
       font-style: italic;
       color: #626262;
-      padding: 0.5rem 0;
       font-size: 1rem; }
+    .posts li .tldr {
+      padding: 0; }
     @media (min-width: 530px) {
       .posts li .title, .posts li p {
         font-size: 1.6154rem; } }

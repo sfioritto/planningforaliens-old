@@ -18,10 +18,11 @@
         .date {
             @include archer-italic;
             color: $light-grey;
-            padding: .5rem 0;
             font-size: $font-size-1;
         }
-
+        .tldr {
+            padding: 0;
+        }
         .title, p {
             @include breakpoint(bigger) {
                 font-size: $font-size-2;

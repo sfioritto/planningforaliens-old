@@ -181,9 +181,9 @@ header {
     line-height: 1.1em; }
   header .byline {
     font-size: 1rem;
-    padding: 1rem 0; }
+    padding-bottom: 1rem; }
     header .byline .follow {
-      padding-bottom: 1rem; }
+      padding: 0; }
 
 article {
   max-width: 40rem;
@@ -215,3 +215,6 @@ article {
   .post h2 {
     font-size: 2.6154rem; }
  }
+
+.sharing iframe, .byline iframe {
+  padding: 0; }
