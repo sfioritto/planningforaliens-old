@@ -1,0 +1,93 @@
+@import "typography";
+@import "colors";
+@import "base";
+@import "form";
+
+header.top {
+
+    padding: 5rem 1rem 1rem 1rem;
+
+    .wrapper {
+        @include centered;
+        display: flex;
+    }
+    figure {
+        max-width: 100px;
+        min-width: 80px;
+        flex: 0 1 auto;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.title {
+        flex: 1 1 auto;
+    }
+
+    h1 {
+        @include tungsten;
+        font-weight: 700;
+        color: $darker-base-color;
+        font-size: $font-size-4;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+    
+    h2 {
+        @include archer-bold;
+        padding: 0;
+    }
+
+    @include breakpoint(bigger) {
+        h1 {
+            font-size: $font-size-5;
+        }
+        h2 {
+            font-size: $font-size-2;
+        }
+    }
+}
+
+main {
+    @include centered;
+    padding: 2rem 1rem;
+}
+
+h2 {
+    @include archer-bold;
+    font-size: $font-size-2;
+}
+
+.about {
+    figure {
+        @include centered;
+        max-width: 300px;
+        img {
+            padding: 2px;
+            border: 1px solid $darker-base-color;
+        }
+    }
+    iframe {
+        padding: 0;
+    }
+}
+
+.skim {
+    color: $complementary-color;
+}
+
+form.newsletter {
+    input.email {
+        
+    }
+}
+
+@include breakpoint(bigger) {
+    p, li {
+        font-size: $font-size-2;
+    }
+    h2 {
+        font-size: $font-size-3;
+    }
+}
+

@@ -24,13 +24,12 @@
   font-style: normal; }
 
 ul {
-  padding-left: 0;
-  margin: 0; }
+  padding-left: 0; }
 
 h2, h3, p {
   line-height: 1.3em; }
 
-figure, h1, h2, h3, h4, p, pre, li, body {
+figure, h1, h2, h3, h4, p, pre, li, body, ul, blockquote {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
   font-style: normal;
@@ -57,6 +56,26 @@ a:visited {
   top: 0;
   right: 0;
   margin: 1em; }
+  #sharing iframe {
+    padding: 0; }
+
+p, li {
+  line-height: 1.4em; }
+
+figure, .highlight, ul, p, li, iframe {
+  padding-top: 1rem; }
+
+blockquote {
+  margin: 1rem 0; }
+
+p:first-of-type, li:first-of-type {
+  padding-top: 0; }
+
+h2 {
+  padding: 2rem 0; }
+
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+  padding-top: 0; }
 
 header.banner {
   width: 100%;
@@ -151,9 +170,6 @@ header.banner {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
 
-p, li {
-  line-height: 1.4em; }
-
 header {
   border-bottom: 1px solid #c7c8c9; }
   header h2 {
@@ -185,12 +201,6 @@ article {
     font-size: 1.6154rem;
     padding: 1.6154rem 0;
     color: #286c8d; }
-  .post figure, .post .highlight, .post ul, .post p, .post li, .post iframe {
-    padding-top: 1rem; }
-  .post p:first-of-type, .post li:first-of-type {
-    padding-top: 0; }
-  .post h2 + h2, .post h2 + p, .post h2 + li, .post h2 + figure, .post h2 + ul, .post h2 + .highlight, .post h2 + iframe {
-    padding-top: 0; }
 
 .sharing {
   padding: 1rem 0; }

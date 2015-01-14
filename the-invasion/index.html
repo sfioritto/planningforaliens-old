@@ -1,16 +1,20 @@
 ---
 layout: resource
 title: The Invasion
+style: the-invasion.css
 ---
 
 <header class="top">
 
-  <figure class="rocket">
-    <img src="/images/rocket.png"/>
-  </figure>
-  
-  <h1>The Invasion</h1>
-  <h2>A weekly(ish) newsletter for web people in the trenches</h2>
+  <div class="wrapper">
+    <figure class="rocket">
+      <img src="/images/rocket.png"/>
+    </figure>
+    <div class="title">
+      <h1>The Invasion</h1>
+      <h2>A weekly(ish) newsletter for web people in the trenches</h2>
+    </div>
+  </div>
 </header>
 
 <main class="newsletter">
@@ -35,18 +39,20 @@ title: The Invasion
   <p>This is why every week or so I write for my newsletter on topics relevant to regular ol' web developers, like you and me.  I promise, there will never be a pedantic, semi-religious screed on responsive design. <span class="skim">Because we're in the thick of it, making real things on the web, for real people.</span> We don't have time for nonsense.</p>
   
   <div class="cta">
-  <h2>Join over 5,000 un-mustachioed web designers and web developers.</h2>
+  <h2>Join over 10,000 un-mustachioed web designers and web developers.</h2>
   
   <ul>
     <li>Straightforward, practical tips and tricks for web development.</li>
     <li>Advice and thoughts for people in the trenches.</li>
   </ul>
-  
-  <form action="https://www.getdrip.com/forms/3128974/submissions"
-  method="post" target="_blank" data-drip-embedded-form="3068" class="validate">
-  <input type="email" name="fields[email]" value="" class="email" />
-  <input data-drip-attribute="sign-up-button" type="submit" value="Be awesome" name="subscribe" id="mc-embedded-subscribe" class="button">
-</form>
+
+  <div class="outer">
+    <form action="https://www.getdrip.com/forms/3128974/submissions"
+          method="post" target="_blank" data-drip-embedded-form="3068" class="newsletter">
+      <input type="email" name="fields[email]" value="" class="email" />
+      <input data-drip-attribute="sign-up-button" type="submit" value="Be awesome" name="subscribe" id="mc-embedded-subscribe" class="button">
+      </form>
+    </div>
 
 <h2>What people say about the newsletter.</h2>
   

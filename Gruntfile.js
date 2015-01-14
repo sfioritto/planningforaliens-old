@@ -56,6 +56,7 @@ module.exports = function(grunt) {
                     'css/blog/post.css': '_scss/blog/post.scss',
                     'css/error.css': '_scss/error.scss',
                     'css/resource.css': '_scss/resource.scss',
+                    'css/the-invasion.css': '_scss/the-invasion.scss',
                 }
             }
         },

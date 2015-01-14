@@ -6,9 +6,6 @@
 @import "business-form";
 @import "angular-escape-form";
 
-p, li {
-    line-height: 1.4em;
-}
 
 header {
     border-bottom: 1px solid $rocket-grey;
@@ -48,27 +45,6 @@ article {
         font-size: $font-size-2;
         padding: $font-size-2 0;
         color: $darker-base-color;
-    }
-
-    figure, .highlight, ul, p, li, iframe {
-        padding-top: 1rem;
-    }
-
-    p, li {
-        &:first-of-type {
-            padding-top: 0;
-        }
-    }
-
-    h2 + h2,
-    h2 + p, 
-    h2 + li, 
-    h2 + figure, 
-    h2 + ul,
-    h2 + .highlight,
-    h2 + iframe
-    {
-        padding-top: 0;
     }
 }
 

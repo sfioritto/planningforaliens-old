@@ -96,88 +96,83 @@ h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
     max-width: 30rem;
     font-size: 1.6154rem; }
 
-.sketching.outer h3 {
-  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-  font-weight: 300;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.6154rem;
-  color: #222222;
-  padding-bottom: 1rem; }
-.sketching.outer figure {
-  max-width: 300px;
-  margin: 0 auto; }
-.sketching.outer figure {
-  padding-bottom: 1rem; }
-  .sketching.outer figure img {
-    -webkit-filter: drop-shadow(0px 2px 4px #222222);
-            filter: drop-shadow(0px 2px 4px #222222); }
-.sketching.outer p, .sketching.outer p:first-of-type {
-  max-width: 40rem;
-  margin: 1rem 0; }
-
-.outer {
-  padding-top: 2rem; }
-  .outer form label, .outer form input {
-    display: block; }
-  .outer form label {
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 1.6154rem;
-    padding-bottom: 0.5rem; }
-  .outer form input.email {
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 500;
-    font-style: normal;
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 30rem;
-    font-size: 1.6154rem; }
-
-.angular-escape.outer {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .angular-escape.outer figure {
+header.top {
+  padding: 5rem 1rem 1rem 1rem; }
+  header.top .wrapper {
+    max-width: 43rem;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  header.top figure {
+    max-width: 100px;
+    min-width: 80px;
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
-    max-width: 100px;
-    margin: 0 auto;
-    padding-right: 1rem; }
-  .angular-escape.outer form {
+    padding-right: 1rem;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  header.top div.title {
     -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
+  header.top h1 {
+    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+    font-weight: 300;
+    font-weight: 700;
+    color: #286c8d;
+    font-size: 4.2308rem;
+    text-transform: uppercase;
+    line-height: 1; }
+  header.top h2 {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 0; }
+  @media (min-width: 530px) {
+    header.top h1 {
+      font-size: 6.8462rem; }
 
-body {
-  background-color: #f8f8f8; }
+    header.top h2 {
+      font-size: 1.6154rem; }
+ }
 
-.email-form-box {
+main {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding: 2rem 1rem; }
+
+h2 {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 800;
   font-style: normal;
-  max-width: 43rem;
-  margin: 1rem auto 0 auto;
-  background: #f8f8f8;
-  padding: 1rem;
-  border: 1px solid #c7c8c9; }
-  .email-form-box h2 {
-    padding: 0;
-    font-size: 1rem;
-    color: #3a99c7; }
-  .email-form-box input.email {
-    max-width: 26rem;
-    font-size: 1.6154rem;
-    padding: 8px;
-    padding: 0.5rem;
-    margin-top: 16px;
-    margin-top: 1rem;
-    width: 100%; }
+  font-size: 1.6154rem; }
 
-.top {
-  background-image: url("/images/old_mathematics.png");
-  padding: 3rem 0 2rem 0;
-  border-bottom: 1px solid #c7c8c9; }
+.about figure {
+  max-width: 43rem;
+  margin: 0 auto;
+  max-width: 300px; }
+  .about figure img {
+    padding: 2px;
+    border: 1px solid #286c8d; }
+.about iframe {
+  padding: 0; }
+
+.skim {
+  color: #b93c2f; }
+
+@media (min-width: 530px) {
+  p, li {
+    font-size: 1.6154rem; }
+
+  h2 {
+    font-size: 2.6154rem; }
+ }

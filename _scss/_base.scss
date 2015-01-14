@@ -68,14 +68,13 @@ $large-width: 737px;
 
 ul {
     padding-left: 0;
-    margin: 0;
 }
 
 h2, h3, p {
     line-height: 1.3em;
 }
 
-figure, h1, h2, h3, h4, p, pre, li, body {
+figure, h1, h2, h3, h4, p, pre, li, body, ul, blockquote{
     @include archer;
     font-size: $font-size-1;
     color: $black;
@@ -103,5 +102,39 @@ a:visited {
     top: 0;
     right: 0;
     margin: 1em;
+    iframe {
+        padding: 0;
+    }
 }
 
+p, li {
+    line-height: 1.4em;
+}
+
+figure, .highlight, ul, p, li, iframe {
+    padding-top: 1rem;
+}
+
+blockquote {
+    margin: 1rem 0;
+}
+
+p, li {
+    &:first-of-type {
+        padding-top: 0;
+    }
+}
+
+h2 {
+    padding: 2rem 0;
+}
+
+h2 + h2,
+h2 + p, 
+h2 + li, 
+h2 + figure, 
+h2 + ul,
+h2 + .highlight,
+h2 + iframe {
+    padding-top: 0;
+}
