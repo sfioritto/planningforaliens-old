@@ -1,7 +1,13 @@
 @import "typography";
 @import "colors";
 @import "base";
+@import "banner";
 @import "sketching-form";
+@import "business-form";
+
+p, li {
+    line-height: 1.4em;
+}
 
 header {
     border-bottom: 1px solid $rocket-grey;
@@ -23,22 +29,51 @@ header {
 }
 
 article {
-    max-width: $large-width;
+    max-width: 40rem;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 .post {
-    padding-top: 2rem;
+    padding-top: 1rem;
 
-    h2 {
-        padding: 1rem 0;
+    ul {
+        padding-left: .5rem;
+        @include breakpoint(bigger) {
+            padding-left: 0;
+        }
     }
-    
-    p {
-        margin: 1rem 0;
+    h2 {
+        font-size: $font-size-2;
+        padding: $font-size-2 0;
+        color: $darker-base-color;
+    }
+    h2 + h2 {
+        padding-top: 0;
+    }
+    p, li {
+        margin-top: 1rem;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    h2 + p, h2 + li {
+        margin-top: 0;
     }
 }
 
 .sharing {
     padding: 1rem 0;
+}
+
+@include breakpoint(bigger) {
+    header h2 {
+        font-size: $font-size-4;
+    }
+    p, li {
+        font-size: $font-size-2;
+    }
+    .post h2 {
+        font-size: $font-size-3;
+    }
 }

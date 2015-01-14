@@ -1,6 +1,6 @@
 ---
 layout: flexbox
-title: "clean, modular code is overrated"
+title: "Clean, Modular Code is Overrated"
 blurb: "The experts say your HTML and CSS should be clean, semantic, readable, and modular. But how much does it really matter? Maybe less than you think."
 author: "sean"
 ---

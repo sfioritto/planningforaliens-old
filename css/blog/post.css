@@ -1,44 +1,3 @@
-*, *::before, *::after {
-  box-sizing: border-box; }
-
-.drip-tab-container {
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 500;
-  font-style: normal; }
-
-body {
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1rem;
-  color: #222222;
-  margin: 0; }
-
-h2, h3, p {
-  line-height: 1.3em; }
-
-figure, h1, h2, h3, h4, p, pre {
-  margin: 0; }
-
-img {
-  max-width: 100%; }
-
-a {
-  color: #3a99c7;
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: underline; }
-
-a:visited {
-  color: #76b8d8; }
-
-#sharing {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1em; }
-
 .button {
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 300;
@@ -64,19 +23,20 @@ a:visited {
   font-weight: 500;
   font-style: normal; }
 
-body {
+ul {
+  padding-left: 0; }
+
+h2, h3, p {
+  line-height: 1.3em; }
+
+figure, h1, h2, h3, h4, p, pre, li, body {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   color: #222222;
-  margin: 0; }
-
-h2, h3, p {
-  line-height: 1.3em; }
-
-figure, h1, h2, h3, h4, p, pre {
-  margin: 0; }
+  margin: 0;
+  font-style: normal; }
 
 img {
   max-width: 100%; }
@@ -97,53 +57,35 @@ a:visited {
   right: 0;
   margin: 1em; }
 
-.button {
+header.banner {
+  width: 100%;
+  background-image: url("/images/old_mathematics.png"); }
+  header.banner figure {
+    padding: 1rem;
+    text-align: center; }
+
+.banner-title {
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 300;
-  background-color: #b93c2f;
-  border-radius: 5px;
-  padding: 16px;
-  padding: 1rem;
-  margin-top: 16px;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1.6154rem;
   text-transform: uppercase;
-  color: white;
-  box-shadow: 1px 1px 5px #222222;
-  line-height: 1rem;
-  max-width: 100%; }
+  font-size: 2.6154rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-bottom: 2rem; }
+  .banner-title a {
+    color: #286c8d; }
 
-.sketching {
+.outer {
   padding-top: 2rem; }
-  .sketching h3 {
-    font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-    font-weight: 300;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.6154rem;
-    color: #222222;
-    padding-bottom: 1rem; }
-  .sketching figure, .sketching p {
-    max-width: 300px;
-    margin: 0 auto; }
-  .sketching figure {
-    padding-bottom: 1rem; }
-    .sketching figure img {
-      -webkit-filter: drop-shadow(0px 2px 4px #222222);
-              filter: drop-shadow(0px 2px 4px #222222); }
-  .sketching p {
-    margin: 1rem 0; }
-  .sketching form label, .sketching form input {
+  .outer form label, .outer form input {
     display: block; }
-  .sketching form label {
+  .outer form label {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 800;
     font-style: normal;
     font-size: 1.6154rem;
     padding-bottom: 0.5rem; }
-  .sketching form input.email {
+  .outer form input.email {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
@@ -151,6 +93,48 @@ a:visited {
     width: 100%;
     max-width: 30rem;
     font-size: 1.6154rem; }
+
+.sketching h3 {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.6154rem;
+  color: #222222;
+  padding-bottom: 1rem; }
+.sketching figure, .sketching p {
+  max-width: 300px;
+  margin: 0 auto; }
+.sketching figure {
+  padding-bottom: 1rem; }
+  .sketching figure img {
+    -webkit-filter: drop-shadow(0px 2px 4px #222222);
+            filter: drop-shadow(0px 2px 4px #222222); }
+.sketching p {
+  margin: 1rem 0; }
+
+.outer {
+  padding-top: 2rem; }
+  .outer form label, .outer form input {
+    display: block; }
+  .outer form label {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.6154rem;
+    padding-bottom: 0.5rem; }
+  .outer form input.email {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 30rem;
+    font-size: 1.6154rem; }
+
+p, li {
+  line-height: 1.4em; }
 
 header {
   border-bottom: 1px solid #c7c8c9; }
@@ -168,15 +152,40 @@ header {
       padding-bottom: 1rem; }
 
 article {
-  max-width: 737px;
-  padding: 1rem; }
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 0 auto; }
 
 .post {
-  padding-top: 2rem; }
+  padding-top: 1rem; }
+  .post ul {
+    padding-left: 0.5rem; }
+    @media (min-width: 530px) {
+      .post ul {
+        padding-left: 0; } }
   .post h2 {
-    padding: 1rem 0; }
-  .post p {
-    margin: 1rem 0; }
+    font-size: 1.6154rem;
+    padding: 1.6154rem 0;
+    color: #286c8d; }
+  .post h2 + h2 {
+    padding-top: 0; }
+  .post p, .post li {
+    margin-top: 1rem; }
+    .post p:first-of-type, .post li:first-of-type {
+      margin-top: 0; }
+  .post h2 + p, .post h2 + li {
+    margin-top: 0; }
 
 .sharing {
   padding: 1rem 0; }
+
+@media (min-width: 530px) {
+  header h2 {
+    font-size: 4.2308rem; }
+
+  p, li {
+    font-size: 1.6154rem; }
+
+  .post h2 {
+    font-size: 2.6154rem; }
+ }

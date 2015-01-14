@@ -1,4 +1,4 @@
-header {
+header.banner {
     width: 100%;
     background-image: url("/images/old_mathematics.png");
     figure {
@@ -10,7 +10,9 @@ header {
 .banner-title {
     @include tungsten;
     text-transform: uppercase;
-    color: $darker-base-color;
+    a {
+        color: $darker-base-color;
+    }
     font-size: $font-size-3;
     text-align: center;
     letter-spacing: .1em;

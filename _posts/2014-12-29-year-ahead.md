@@ -136,12 +136,3 @@ Wondering if I'll make it to $100,000?
 I'll be writing more about my business in 2015 so you can check in on me and see if I hit my goal and how I did it.
 
 {% include business-form.html %}
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "flexbox in the real world"
+title: "Flexbox in the Real World"
 blurb: "Flexbox is awesome, but is it possible to use flexbox and
 still support IE8? If you follow these guidelines, you can start using
 flexbox today."
+styles:
+- syntax.css
 author: "sean"
 ---
 
@@ -309,25 +311,4 @@ be the last lesson in the series. So if you liked this and you want to
 get the rest,
 [clicky-click right here](http://www.sketchingwithcss.com/flexbox-tutorial/).
 
-<!-- Drip -->
-<script type="text/javascript">
-  var _dcq = _dcq || [];
-  var _dcs = _dcs || {}; 
-  _dcs.account = '8233391';
-  
-  (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true; 
-    dc.src = '//tag.getdrip.com/8233391.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-  })();
-</script>
-
-
-
-
-
-
-
-
+{% include sketching.html %}

@@ -2,53 +2,6 @@ $small-width: 19rem;
 $medium-width: 530px;
 $large-width: 737px;
 
-*, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
-}
-
-.drip-tab-container {
-    @include archer;
-}
-
-body {
-    @include archer;
-    font-size: $font-size-1;
-    color: $black;
-    margin: 0;
-}
-
-h2, h3, p {
-    line-height: 1.3em;
-}
-
-figure, h1, h2, h3, h4, p, pre {
-    margin: 0;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    color: $dark-base-color;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-a:visited {
-    color: $base-color;
-}
-
-#sharing {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1em;
-}
-
 @mixin centered {
     max-width: 43rem;
     margin: 0 auto;
@@ -82,7 +35,6 @@ a:visited {
   @else if $point == tiny {
     @media (max-width: 320px) { @content; }
   }
-
 }
 
 @mixin button {
@@ -104,3 +56,52 @@ a:visited {
 .button {
     @include button;
 }
+
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.drip-tab-container {
+    @include archer;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h2, h3, p {
+    line-height: 1.3em;
+}
+
+figure, h1, h2, h3, h4, p, pre, li, body {
+    @include archer;
+    font-size: $font-size-1;
+    color: $black;
+    margin: 0;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $dark-base-color;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: $base-color;
+}
+
+#sharing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+}
+

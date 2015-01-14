@@ -1,3 +1,20 @@
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -6,19 +23,20 @@
   font-weight: 500;
   font-style: normal; }
 
-body {
+ul {
+  padding-left: 0; }
+
+h2, h3, p {
+  line-height: 1.3em; }
+
+figure, h1, h2, h3, h4, p, pre, li, body {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   color: #222222;
-  margin: 0; }
-
-h2, h3, p {
-  line-height: 1.3em; }
-
-figure, h1, h2, h3, h4, p, pre {
-  margin: 0; }
+  margin: 0;
+  font-style: normal; }
 
 img {
   max-width: 100%; }
@@ -39,27 +57,10 @@ a:visited {
   right: 0;
   margin: 1em; }
 
-.button {
-  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-  font-weight: 300;
-  background-color: #b93c2f;
-  border-radius: 5px;
-  padding: 16px;
-  padding: 1rem;
-  margin-top: 16px;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1.6154rem;
-  text-transform: uppercase;
-  color: white;
-  box-shadow: 1px 1px 5px #222222;
-  line-height: 1rem;
-  max-width: 100%; }
-
-header {
+header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
-  header figure {
+  header.banner figure {
     padding: 1rem;
     text-align: center; }
 
@@ -67,11 +68,12 @@ header {
   font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  color: #286c8d;
   font-size: 2.6154rem;
   text-align: center;
   letter-spacing: 0.1em;
   padding-bottom: 2rem; }
+  .banner-title a {
+    color: #286c8d; }
 
 .posts {
   max-width: 737px;
