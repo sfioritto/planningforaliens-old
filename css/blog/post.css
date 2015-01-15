@@ -218,3 +218,31 @@ article {
 
 .sharing iframe, .byline iframe {
   padding: 0; }
+
+.newsletter-prompt {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid #c7c8c9;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .newsletter-prompt p {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal; }
+  .newsletter-prompt figure.rocket {
+    width: 120px;
+    padding-right: 2rem;
+    padding-top: 0;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto; }
+  .newsletter-prompt .cta {
+    margin: 0 auto;
+    padding: 1rem 0; }
+    .newsletter-prompt .cta a {
+      line-height: 1.1;
+      display: inline-block;
+      font-size: 2.6154rem; }
+    .newsletter-prompt .cta a:visited {
+      color: #f8f8f8; }

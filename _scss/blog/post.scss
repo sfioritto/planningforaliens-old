@@ -67,3 +67,31 @@ article {
 .sharing iframe, .byline iframe {
     padding: 0;
 }
+
+.newsletter-prompt {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid $rocket-grey;
+    p {
+        @include archer-bold;
+    }
+    figure.rocket {
+        width: 120px;
+        padding-right: 2rem;
+        padding-top: 0;
+        flex: 1 0 auto;
+    }
+    display: flex;
+    .cta {
+        margin: 0 auto;
+        padding: 1rem 0;
+        a {
+            line-height: 1.1;
+            display: inline-block;
+            font-size: $font-size-3;
+        }
+        a:visited {
+            color: $white;
+        }
+    }
+}
