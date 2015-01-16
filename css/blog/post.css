@@ -223,8 +223,8 @@ article {
   padding: 0; }
 
 .newsletter-prompt {
-  padding-top: 1rem;
-  margin-top: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
   border-top: 1px solid #c7c8c9;
   display: -webkit-flex;
   display: -ms-flexbox;
