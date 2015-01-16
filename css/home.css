@@ -98,7 +98,7 @@ header.banner {
   .banner-title a {
     color: #286c8d; }
 
-div.resources, .about-elipse {
+div.resources, .about-separator {
   box-shadow: 0 -6px 6px -6px #222222; }
 
 div.products {
@@ -137,6 +137,10 @@ div.resources .featured {
   margin: 0 auto;
   padding-top: 2rem;
   max-width: 19rem; }
+  div.resources .featured::after {
+    content: "";
+    display: table;
+    clear: both; }
   div.resources .featured hr {
     border-bottom: 1px solid;
     border-color: #f3d1c7; }
@@ -423,13 +427,7 @@ div.about {
       div.about p {
         font-size: 1.6154rem; } }
 
-.vertical-elipse {
-  font-size: 5rem;
-  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-  font-weight: 300;
-  color: #c7c8c9;
-  text-align: center;
-  padding: 2rem 0; }
-  @media (min-width: 530px) {
-    .vertical-elipse {
-      font-size: 8rem; } }
+.separator {
+  width: 25%;
+  padding: 2rem 0;
+  margin: 0 auto; }

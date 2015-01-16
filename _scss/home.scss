@@ -4,7 +4,7 @@
 @import "banner";
 
 //shadows
-div.resources, .about-elipse {
+div.resources, .about-separator {
     box-shadow: 0 -6px 6px -6px $black;
 }
 div.products {
@@ -48,6 +48,7 @@ div.resources {
         margin: 0 auto;
         padding-top: 2rem;
         max-width: $small-width;
+        @include clear;
 
         hr {
             //double thick hr
@@ -366,13 +367,9 @@ div.about {
     }
 }
 
-.vertical-elipse {
-    font-size: 5rem;
-    @include tungsten;
-    @include breakpoint(bigger) {
-        font-size: 8rem;
-    }
-    color: $rocket-grey;
-    text-align: center;
+.separator {
+    width: 25%;
+//    border-bottom: 1px solid $dark-base-color;
     padding: 2rem 0;
+    margin: 0 auto;
 }
