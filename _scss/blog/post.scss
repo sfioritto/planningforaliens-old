@@ -72,23 +72,30 @@ article {
     padding-top: 1rem;
     margin-top: 1rem;
     border-top: 1px solid $rocket-grey;
+    display: flex;
+
     p {
         @include archer-bold;
     }
     figure.rocket {
-        width: 120px;
+        max-width: 170px;
         padding-right: 2rem;
         padding-top: 0;
-        flex: 1 0 auto;
+        flex: 1 1 0;
     }
-    display: flex;
+    > div {
+        flex: 3 3 0;
+    }
     .cta {
         margin: 0 auto;
         padding: 1rem 0;
         a {
             line-height: 1.1;
             display: inline-block;
-            font-size: $font-size-3;
+            font-size: $font-size-2;
+            @include breakpoint(bigger) {
+                font-size: $font-size-3;
+            }
         }
         a:visited {
             color: $white;

@@ -234,18 +234,25 @@ article {
     font-weight: 800;
     font-style: normal; }
   .newsletter-prompt figure.rocket {
-    width: 120px;
+    max-width: 170px;
     padding-right: 2rem;
     padding-top: 0;
-    -webkit-flex: 1 0 auto;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto; }
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0; }
+  .newsletter-prompt > div {
+    -webkit-flex: 3 3 0;
+        -ms-flex: 3 3 0;
+            flex: 3 3 0; }
   .newsletter-prompt .cta {
     margin: 0 auto;
     padding: 1rem 0; }
     .newsletter-prompt .cta a {
       line-height: 1.1;
       display: inline-block;
-      font-size: 2.6154rem; }
+      font-size: 1.6154rem; }
+      @media (min-width: 530px) {
+        .newsletter-prompt .cta a {
+          font-size: 2.6154rem; } }
     .newsletter-prompt .cta a:visited {
       color: #f8f8f8; }
