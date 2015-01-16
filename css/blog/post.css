@@ -77,6 +77,9 @@ h2 {
 h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
   padding-top: 0; }
 
+em {
+  font-style: italic; }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }

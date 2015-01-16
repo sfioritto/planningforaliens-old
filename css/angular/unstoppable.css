@@ -77,6 +77,9 @@ h2 {
 h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
   padding-top: 0; }
 
+em {
+  font-style: italic; }
+
 .body {
   padding-bottom: 2rem;
   padding-left: 1rem;
