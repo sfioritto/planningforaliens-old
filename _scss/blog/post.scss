@@ -19,10 +19,14 @@ header {
     }
     .byline {
         font-size: $font-size-1;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         .follow {
             padding: 0;
         }
+    }
+    .tldr {
+        @include archer-italic;
+        padding-top: 0;
     }
 }
 
@@ -33,7 +37,7 @@ article {
 }
 
 .post {
-    padding-top: 1rem;
+    padding-top: 2rem;
 
     ul {
         padding-left: .5rem;

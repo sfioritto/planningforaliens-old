@@ -184,9 +184,14 @@ header {
     line-height: 1.1em; }
   header .byline {
     font-size: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 2rem; }
     header .byline .follow {
       padding: 0; }
+  header .tldr {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 0; }
 
 article {
   max-width: 40rem;
@@ -194,7 +199,7 @@ article {
   margin: 0 auto; }
 
 .post {
-  padding-top: 1rem; }
+  padding-top: 2rem; }
   .post ul {
     padding-left: 0.5rem; }
     @media (min-width: 530px) {
