@@ -4,44 +4,73 @@
 
 .title {
     @include centered;
-    @include clear;
-    
-    h1, figure {
-        @include breakpoint(biggest){
-            float: right;
-        }
-    }
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+
     h1 {
         @include tungsten;
+        line-height: 1;
         font-weight: 700;
         color: $black;
-        font-size: $font-size-4;
-        @include breakpoint(big) {
-            font-size: $font-size-5;
-        }
-        
+        font-size: $font-size-3;
         text-transform: uppercase;
+
         > span {
             display: block;
         }
     }
     figure {
-        max-width: 13rem;
+        max-width: 8rem;
         padding-right: 2rem;
         img {
             max-width: 100%;
         }
     }
+
+    @include breakpoint(big) {
+        h1 {
+            font-size: $font-size-5;
+        }
+        figure {
+            max-width: 13rem;
+        }
+    }
+
 }
 
 .body {
     @include centered;
-    padding: 1rem 0;
-    
-    p {
-        margin: 1rem 0;
-        @include archer;
-        line-height: 1.3em;
-        font-size: $font-size-2;
+    padding-top: 2rem;
+}
+
+.hide {
+    display: none;
+}
+.hide-add {
+    transition: opacity 1s;
+    //don't strictly need this ..
+    opacity: 0;
+}
+.hide-remove {
+    transition: opacity 1s;
+    opacity: 0;
+}
+.hide-remove-active {
+    opacity: 1;
+}
+
+
+.myHideExample {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: 1px solid $rocket-grey;
+    .message {
+        height: 4rem;
+        p {
+            padding: 1rem 0;
+        }
     }
 }
