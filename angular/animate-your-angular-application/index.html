@@ -4,6 +4,7 @@ style: angular/animate.css
 external:
 - //ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js
 - //ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular-animate.min.js
+- //cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js
 javascript: directives.js
 title: "Animate your Angular App by @sfioritto"
 date: "2014-12-16T00:00:00-06:00"
@@ -123,7 +124,7 @@ animation code from your directive code.
   </p>
   
   {% highlight javascript %}
-app.controller("example1", function($scope){
+app.controller("example", function($scope){
     $scope.awesome = false;
 });
   
@@ -152,7 +153,7 @@ app.directive("myHide", function(){
   </p>
   
   {% highlight html %}
-  <div class="myHideExample" ng-controller="example1">
+  <div class="myHideExample" ng-controller="example">
     <div class="message">
       <p my-hide="awesome">Hide this text if awesome</p>
     </div>
@@ -160,7 +161,7 @@ app.directive("myHide", function(){
   </div>  
   {% endhighlight %}
   
-  <div class="myHideExample" ng-controller="example1">
+  <div class="myHideExample" ng-controller="example">
     <div class="message">
       <p my-hide="awesome">Hide this text if awesome</p>
     </div>
@@ -207,27 +208,30 @@ app.directive("myHide", function(){
     display: none;
 }
 //the animation
-.hide-add {
+.hide-add-start {
     transition: opacity 1s;
-    //don't strictly need this ..
     opacity: 0;
 }
   {% endhighlight %}
   
-  <p>And then a few lines of Javascript in the directive to add the classes at the
-  right time</p>
+  <p>
+    And then a few lines of Javascript in the directive to add the classes at the
+  right time
+  </p>
+
   {% highlight javascript %}
 // add this first to start the animation
-elem.addClass("hide-add");
+elem.addClass("hide-add-start");
 setTimeout(function() {
     // add the hide class after animation is finished
     elem.addClass("hide");
     // clean up
-    elem.removeClass("hide-add");
+    elem.removeClass("hide-add-start");
 }, 1000);
   {% endhighlight %}
+
   <p>
-  So the .hide-add class adds the transition and the final value, and
+  So the .hide-add-start class adds the transition and the final value, and
   then after the transition is done the .hide class is added which
   sets display to none.
   </p>
@@ -244,7 +248,6 @@ setTimeout(function() {
 }
   {% endhighlight %}
 
-  
   <p>
   To animate when the .hide class is removed, the first step is to set
   the opacity to 0. What would happen if you removed the hide class
@@ -279,12 +282,13 @@ The line between removing .hide and adding .hide-remove-active causes
   the element just pops in.
 </p>
 <h3>And the final result ...</h3>
-  <div class="myHideExample" ng-controller="example1">
-    <div class="message">
+
+<div class="myHideExample" ng-controller="example">
+  <div class="message">
       <p my-hide-animated="awesome">Hide this text if awesome</p>
-    </div>
-    <button class="button" ng-click="awesome = !awesome">Toggle awesomeness</button>
   </div>
+  <button class="button" ng-click="awesome = !awesome">Toggle awesomeness</button>
+</div>
 
   <h2>And now you know how $animate and ngAnimate module work</h2>
 
@@ -300,9 +304,9 @@ The line between removing .hide and adding .hide-remove-active causes
   removes classes to the element you are animating.
   </p>
   <p>
-  It adds classes at various times so you can define start and end
-  states and several other issues that you'll run into when
-  creating animations not covered here.
+  It adds and removes classes at correct times so you can define start and end
+  states. Not only that, it reads the times from your CSS, so you
+  define the timing in one place.
   </p>
   
   <h2>Rewrite the directive to use $animate</h2>
@@ -310,8 +314,8 @@ The line between removing .hide and adding .hide-remove-active causes
   <p>
   The $animate service has several methods for adding, removing,
   moving elements or adding or removing classes. The idea is to use
-  those methods instead of directly manipulating the DOM, and then
-  Angular will trigger Javscript animations or add/remove the extra
+  those methods instead of directly manipulating the DOM and let
+  Angular trigger Javscript animations or add/remove the extra
   CSS classes you need.
   </p>
   <p>
@@ -321,31 +325,255 @@ The line between removing .hide and adding .hide-remove-active causes
   directives that will work even if animations aren't defined or used.
   </p>
   <p>
+    If you do want animations to be activated, you have to download
+    the ng-animate module Javascript (however you want) and include the
+    ng-animate module in your app, like so:
+  </p>
+
+  {% highlight javascript %}
+var app = angular.module('animations', ['ngAnimate']);
+  {% endhighlight %}
+
+  <p>
   With $animate, the new version of the myHide directive now looks
   like this.
   </p>
   
   {% highlight javascript%}
+app.directive("myHide", function($animate){
+    return {
+        restrict: 'A',
+        link: function(scope, elem, attrs){
+            scope.$watch(attrs.myHide, function(value){
+                if (value) {
+                    $animate.addClass(elem, "hide");
+                } else {
+                    $animate.removeClass(elem, "hide");
+                }
+            });
+        }
+    };
+});
+{% endhighlight %}
 
+  <p>
+  The CSS is going to be slightly different. In addition to the actual
+  class you are adding to your element, addClass and
+  removeClass add two additional classes: one for the animation and
+  the starting styles and one more for the end styles. Both of these
+  extra classes are removed at the end.
+  </p>
+  <p>
+    The CSS classes added follow a naming convention. So the class you
+    are adding in this case is "hide" so $animate will add a
+    "hide-add" class where you should define the animation and the
+    starting styles and then a "hide-add-active" class which will
+    contain any end styles.
+  </p>
+
+  <p>
+    Here is a screenshot of <a href="https://code.angularjs.org/1.3.10/docs/api/ngAnimate/service/$animate">the
+    docs</a> which explains exactly what extra classes are created,
+    the naming convention, and when each of the classes is added.
+  </p>
+  <figure>
+    <img src="/images/angular/addclass.png" />
+  </figure>
+
+  <p>
+    With that in mind, the CSS looks like:
+  </p>
+
+  {% highlight css %}
+.hide-add {
+    display: block;
+    transition: opacity 1s;
+    opacity: 1;
+}
+.hide-add-active {
+    opacity: 0;
+}
+.hide-remove {
+    transition: opacity 1s;
+    display: block;
+    opacity: 0;
+}
+.hide-remove-active {
+    opacity: 1;
+}  
   {% endhighlight %}
-  <p>
-      - want to use javascript animation instead?
-      -- here's how you trigger it with $animate
-      -- here's how you define it
-  </p>
+
+<p>
+  The "hide-add" class sets display to "block" because the "hide"
+  class is added at the same time and it sets the display to
+  "none". Not what we want.
+</p>
+
+<h3>The end result using ngAnimate</h3>
+
+<div class="myHideExample" ng-controller="example">
+  <div class="message">
+    <p my-hide-ng-animate="awesome">Hide this text if awesome</p>
+  </div>
+  <button class="button" ng-click="awesome = !awesome">Toggle awesomeness</button>
+</div>
+
+<p>
+  Even though this directive is only adding a class, $animate also
+  supports methods for other operations on the DOM which will also
+  add/remove CSS classes for you so you can animate basically anything
+  in your Angular app.
+</p>
+
+<p>
+  Most of the built-in directives use $animate to do DOM manipulation, so that
+  means you can animate those as well. The list of built-in directives
+  that use $animate and what they support is <a href="https://code.angularjs.org/1.3.10/docs/api/ngAnimate">here</a>.
+</p>
+
+<h2>ngAnimate and Javascript animations</h2>
+
+<p>
+  You can use Javascript animations instead of CSS
+  animations/transitions. The following examples use <a href="http://greensock.com/tweenmax">TweenMax</a>, 
+  but you can use whatever library you want.
+</p>
+
+<p>
+  In addition to adding CSS classes, the $animate service will also
+  trigger any Javascript animations you define in your app.
+</p>
+
+{% highlight javascript %}
+app.directive("myHideJs", function($animate){
+    return {
+        restrict: 'A',
+        link: function(scope, elem, attrs){
+            scope.$watch(attrs.myHideJs, function(value){
+                if (value) {
+                    $animate.addClass(elem, "hide-js");
+                } else {
+                    $animate.removeClass(elem, "hide-js");
+                }
+            });
+        }
+    };
+});
+
+
+app.animation('.hide-js-animated', function(){
+    return {
+        addClass: function(element, className){
+            TweenMax.to(element, 1, {
+                'opacity': 0
+                });
+        },
+        removeClass: function(element, className){
+            TweenMax.to(element, 1, {
+                'opacity': 1
+            });
+        }
+    }
+});
+{% endhighlight %}
+
+<p>
+  You can see, in the directive you use the $animate service the same
+  way you use it for CSS animations. There's no difference.
+</p>
+
+<p>
+  Below the directive is the animation. The animation is named using a
+  simple, single CSS class selector. Any element that uses this
+  animation must have this class, otherwise it won't be animated.
+</p>
+
+<p>
+  The object returned by the animation call defines two properties,
+  addClass and removeClass. These are defined because the directive is
+  using addClass and removeClass. If the directive was removing or
+  adding elements instead, you would define the 'leave' or 'enter'
+  properties.
+</p>
+
+<p>
+  <a href="https://code.angularjs.org/1.3.10/docs/api/ngAnimate">The full list of events is here</a>, in the
+  "JavaScript-defined Animations" section.
+</p>
+
+<p>Here is the Angular template using the Javascript animation. Note
+the class on the element that will eventually be animated matches the
+name of the animation defined by the Angular app.</p>
+
+{% highlight html %}
+<div class="myHideExample" ng-controller="example">
+  <div class="message">
+    <p my-hide-js="awesome" class="hide-js-animated">Hide this text if awesome</p>
+  </div>
+  <button class="button" ng-click="awesome = !awesome">Toggle awesomeness</button>
+</div>
+{% endhighlight %}
+
+<div class="myHideExample" ng-controller="example">
+  <div class="message">
+    <p my-hide-js="awesome" class="hide-js-animated">Hide this text if awesome</p>
+  </div>
+  <button class="button" ng-click="awesome = !awesome">Toggle awesomeness</button>
+</div>
+
+
+<h2>Animating built-in directives</h2>
   
-  <p>
-    - all built-in directives use $animate like this, so you can define your own animations
-    - look at code for ngShow
-    - so for ngShow, you just hook in using their CSS classes
-  </p>
+<p>
+  Most of the built-in directives use $animate just like the myHide
+  directive. Just look at the code for ngHide:
+</p>
+
+{% highlight javascript %}
+var ngHideDirective = ['$animate', function($animate) {
+  return {
+    restrict: 'A',
+    multiElement: true,
+    link: function(scope, element, attr) {
+      scope.$watch(attr.ngHide, function ngHideWatchAction(value) {
+        // The comment inside of the ngShowDirective explains why we add and
+        // remove a temporary class for the show/hide animation
+        $animate[value ? 'addClass' : 'removeClass'](element,NG_HIDE_CLASS, {
+          tempClasses: NG_HIDE_IN_PROGRESS_CLASS
+        });
+      });
+    }
+  };
+}];
+{% endhighlight %}
+
+<p>
+  Look familiar? That's because it's almost exactly the sameas the
+  myHide directive you've been looking at this whole time. There are a
+  couple differences, mainly ngHide uses a ternary operator instead of
+  an if/else to determine calling addClass or removeClass. 
+</p>
+
+<p>
+  If you look at the other built-in directives, you'll see calls to
+  $animate. The documentation for each directive records which events
+  you can hook into an animate. Then it's just a matter of either
+  creating CSS animations or Javascript animations and matching all of
+  your names to the naming convention.
+</p>
   
+  <h2>Tired of reading and sifting through a ba-jillion questionable
+  Angular tutorials?</h2>
   <p>
-    Another example? Navigating on this page.
-    - how it works
-    - code is on github
+    You're a busy web developer. Don't waste your time.
   </p>
-  
-{% include angular-escape-form.html %}
+  <p>
+If you liked this tutorial then the <a
+href="http://training.planningforaliens.com/angular/">Angular Escape
+Plan</a> was made just for you. Drop your email in the form below for
+a few sample lessons and more resources like this.
+  </p>
+
+  {% include angular-escape-form.html %}
 </div><!-- end body -->
 

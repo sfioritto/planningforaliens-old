@@ -172,12 +172,22 @@ ul {
 .hide {
   display: none; }
 
-.hide-add {
+.hide-add-start {
   transition: opacity 1s;
+  opacity: 0; }
+
+/*ng-animate CSS */
+.hide-add {
+  display: block;
+  transition: opacity 1s;
+  opacity: 1; }
+
+.hide-add-active {
   opacity: 0; }
 
 .hide-remove {
   transition: opacity 1s;
+  display: block;
   opacity: 0; }
 
 .hide-remove-active {
