@@ -46,29 +46,28 @@ date: "2014-12-16T00:00:00-06:00"
 <div class="body" ng-app="animations">
 
   <p>
-    When an Angular app updates the DOM, the default experience
-    is a little ... janky. Angular dumps the elements into the view with no
+    When an Angular app refreshes the DOM, the default experience
+    is jarring
+  because Angular dumps the elements into the view with no
     transition. 
   </p>
   <p>
-  So you decide to add some animations to improve the user
-  experience, and it turns out Angular has a module and a service just
-    for animations.
+  The good news is Angular comes with great support for
+    animations. The bad news is, it might not be exactly what you
+    expected. Angular doesn't do animations for you, instead it
+    provides events you can hook into with your own, custom animations.
   </p>
 
-  <p>And maybe it's not exactly what you expected.</p>
-  
   <h2>Understanding $animate and the ngAnimate module</h2>
   
   <p>
     In a non-Angular Javascript app, you write the code that updates
     the DOM, so while you're writing that code you sprinkle in some
-    custom animations, NBD. But you don't find yourself mucking around
-    in the DOM quite as often in Angular apps, especially if you are
-    sticking to mostly built-in directives.
+    custom animations, NBD. But in an Angular app you're often using
+    built-in directives and not mucking around in the DOM <em>directly</em>.
   </p>
   <p>
-  It's not the Angular Way. So what's a developer to do.
+  So what's a developer to do?
   </p>
   <h3>
     How would animations work in a web application if you weren't using
@@ -97,20 +96,21 @@ animation code from your directive code.
   <p>
     Angular's built-in directives are pre-wired for animations. What
     that means is you get access to animation "events" which you can
-    hook into with either CSS classes or Javascript code.
+    hook into with either CSS classes or Javascript code. These events
+  correspond with adding or removing elements or classes &mdash;
+  basically anything that might make sense to animate.
   </p>
   <p>
-    That probably means very little to you right now, but stay with
-    me, by the end of this article it should make sense. The upside is
+    That might sound a bit weird to you right now, but the upside is
   you can create your own custom directives and then let end users of
   those directives define their own animations.
   </p>
   <h3>Code reuse FTW.</h3>
   <p>
   This is exactly how Angular designed its own directives. This way
-  developers and designers get to chooose animations, they aren't
+  developers and designers get to choose animations because they aren't
   predefined by Angular. And you can create the animations any way you
-  like, with CSS transitions or animations or any Javascript libary.
+  like, with CSS transitions/animations or a Javascript libary.
   </p>
   <h2>Build your own directive</h2>
   <p>
@@ -173,9 +173,18 @@ app.directive("myHide", function(){
 
   <h2>Add an animation to this directive without $animate</h2>
   <p>
-  By the end of this section, you'll have a pretty good understanding
-  of $animate without actually using it.
+  Since Angular animations work by adding CSS classes to elements only
+  during key events, (or triggering Javascript callbacks, we'll cover
+  that in a bit), let's add a simple fade animation to our
+  directive with the constraint that the Javascript can only add or
+  remove CSS classes. The Javscript will not know what the animation
+  does, and if the CSS classes are not defined, the directive will
+  still work but with no animations.
   </p>
+  <h3>
+  This should provide some illumination into how
+  $animate works.
+  </h3>
   <p>
   The animation for myHide will fade the opacity of the element
   from 1 to 0, (and back when the state is toggled). At the end of the
@@ -185,17 +194,19 @@ app.directive("myHide", function(){
   And this presents an interesting problem, because you can't set
   display to none until the end of the animation &mdash;
   otherwise the whole animation is running while the element isn't
-  visible. Oops. So you will need one class to represent the
-  transition/animation and another class to set display to none after
+  visible. Oops. So you will need one CSS class to represent the
+  transition/animation and another CSS class to set display to none after
   everything is done.
   </p>
   
   <h3>The CSS so far would look like ... </h3>
   
   {% highlight css %}
+//the final state
 .hide {
     display: none;
 }
+//the animation
 .hide-add {
     transition: opacity 1s;
     //don't strictly need this ..
@@ -278,17 +289,46 @@ The line between removing .hide and adding .hide-remove-active causes
   <h2>And now you know how $animate and ngAnimate module work</h2>
 
   <p>
-  
+  Adding animations to your directive is not as simple as adding and
+  removing a class. You need to know when the animation starts, when
+  it ends, what the start and end states are, and the Javascript needs
+  to coordinate all of it. And that's exactly what $animate does.
+  </p>
+  <p>
+  The $animate service has methods for adding/removing classes and
+  elements. When you use these methods in your directive, Angular automatically adds and
+  removes classes to the element you are animating.
+  </p>
+  <p>
+  It adds classes at various times so you can define start and end
+  states and several other issues that you'll run into when
+  creating animations not covered here.
   </p>
   
+  <h2>Rewrite the directive to use $animate</h2>
+
   <p>
-    - set start style, add element, add end style and transition
-    -but now this directive is not very reusable, everyone has to do the same animations, you want animations completely decoupled
-    - what if we just added special css classes at the right times instead? that's what $animate does for you
-    - include ngAnimate module
-    - quick intro $animate. list methods. each of those does the thing, (like add/remove element) AND adds special classes or triggers your javascript animation at the right time
-      - replace example code with $animate calls
-      - rewrite css to use angular default classes
+  The $animate service has several methods for adding, removing,
+  moving elements or adding or removing classes. The idea is to use
+  those methods instead of directly manipulating the DOM, and then
+  Angular will trigger Javscript animations or add/remove the extra
+  CSS classes you need.
+  </p>
+  <p>
+  You can inject the $animate service without loading ngAnimate and
+  everything will still work, it just won't trigger your
+  animations. This is great because you can now create custom
+  directives that will work even if animations aren't defined or used.
+  </p>
+  <p>
+  With $animate, the new version of the myHide directive now looks
+  like this.
+  </p>
+  
+  {% highlight javascript%}
+
+  {% endhighlight %}
+  <p>
       - want to use javascript animation instead?
       -- here's how you trigger it with $animate
       -- here's how you define it
