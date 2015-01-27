@@ -5,7 +5,9 @@ blurb: "How to pick a side project people will talk about and actually use."
 author: "sean"
 ---
 
-In [part one](blog/2015/01/15/github-ghost-towns/) you learned that the purpose of your side projects should be to build a portable reputation. You're not learning a new thing to put on your resume. You will likely end up with a new thing to put on your resume, but that's not *why* you are making something.
+In [part one](/blog/2015/01/15/github-ghost-towns/) you learned that the purpose of your side projects should be to build a portable reputation.
+
+You're not learning a new thing to put on your resume. You will likely end up with a new thing to put on your resume, but that's not *why* you work on side projects.
 
 Most side projects are a) not interesting to anyone and b) never finished, two qualities that certainly don't help you build a reputation.
 
@@ -33,7 +35,9 @@ How to get a call from an Apple recruiter
 
 About a year and a half ago Apple launched the new Mac Pro and a marketing site to go with it. It had some pretty slick animations synchronized with some swooping, evocative video of the new Mac Pro, and everyone wanted to know how it worked.
 
-I wanted to know how it worked too, so I spent a day reverse engineering the obfuscated Javascript code until I figured it  out. I knew a lot of people were wondering how it worked, so I thought I would do everyone a favor and spare them the hours I had put into figuring it out and put it in a blog post. The next day I published  [How the New Mac Pro Site Works](/blog/2013/06/11/mac-pro/). Tons of people shared the post and it ended up being really popular.
+I wanted to know how it worked too, so I spent a day reverse engineering the obfuscated Javascript code until I figured it  out. I knew a lot of people were wondering how it worked, so I thought I would do everyone a favor and spare them the hours I had put into figuring it out and put it in a blog post.
+
+The next day I published  [How the New Mac Pro Site Works](/blog/2013/06/11/mac-pro/). Tons of people shared the post and it ended up being really popular.
 
 ###I did such a good job reverse engineering the code, I got a call from an Apple recruiter.
 
@@ -50,7 +54,9 @@ This blog post hit all four:
 
 You caught me, I didn't write code, at least not code that I shipped. But I read a ton of code, learned new things, grew my reputation and had some fun. Isn't that the purpose of a side project?
 
-For your next project, instead of typing `git init .`, consider opening up your text editor and banging out a blog post. The end result of a side project doesn't have to be code. Or better yet ...
+For your next project, instead of typing `git init .`, consider opening up your text editor and banging out a blog post. The end result of a side project doesn't have to be code.
+
+Or better yet ...
 
 Write a blog post AND write code at the same time
 ------------------------------
