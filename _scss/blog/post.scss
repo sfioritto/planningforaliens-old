@@ -28,44 +28,24 @@ header {
         @include archer-italic;
         padding-top: 0;
     }
+    
+    @include breakpoint(bigger) {
+        h2 {
+            font-size: $font-size-4;
+        }
+    }
 }
 
 article {
-    max-width: 40rem;
-    padding: 1rem;
-    margin: 0 auto;
+    @include centered;
 }
 
 .post {
     padding-top: 2rem;
-
-    ul {
-        padding-left: .5rem;
-        @include breakpoint(bigger) {
-            padding-left: 0;
-        }
-    }
-    h2 {
-        font-size: $font-size-2;
-        padding: $font-size-2 0;
-        color: $darker-base-color;
-    }
 }
 
 .sharing {
     padding: 1rem 0;
-}
-
-@include breakpoint(bigger) {
-    header h2 {
-        font-size: $font-size-4;
-    }
-    p, li {
-        font-size: $font-size-2;
-    }
-    .post h2 {
-        font-size: $font-size-3;
-    }
 }
 
 .sharing iframe, .byline iframe {
