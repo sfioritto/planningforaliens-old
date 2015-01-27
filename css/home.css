@@ -159,7 +159,6 @@ div.resources figure {
   width: 75px;
   height: 75px;
   padding-top: 0.5rem;
-  overflow: hidden;
   float: left;
   padding-right: 0.75rem; }
   @media (min-width: 1250px) {
