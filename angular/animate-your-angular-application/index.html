@@ -111,7 +111,7 @@ animation code from your directive code.
   This is exactly how Angular designed its own directives. This way
   developers and designers get to choose animations because they aren't
   predefined by Angular. And you can create the animations any way you
-  like, with CSS transitions/animations or a Javascript libary.
+  like, with CSS transitions/animations or a Javascript library.
   </p>
   <h2>Build your own directive</h2>
   <p>
@@ -178,7 +178,7 @@ app.directive("myHide", function(){
   during key events, (or triggering Javascript callbacks, we'll cover
   that in a bit), let's add a simple fade animation to our
   directive with the constraint that the Javascript can only add or
-  remove CSS classes. The Javscript will not know what the animation
+  remove CSS classes. The Javascript will not know what the animation
   does, and if the CSS classes are not defined, the directive will
   still work but with no animations.
   </p>
@@ -315,7 +315,7 @@ The line between removing .hide and adding .hide-remove-active causes
   The $animate service has several methods for adding, removing,
   moving elements or adding or removing classes. The idea is to use
   those methods instead of directly manipulating the DOM and let
-  Angular trigger Javscript animations or add/remove the extra
+  Angular trigger Javascript animations or add/remove the extra
   CSS classes you need.
   </p>
   <p>
@@ -548,7 +548,7 @@ var ngHideDirective = ['$animate', function($animate) {
 {% endhighlight %}
 
 <p>
-  Look familiar? That's because it's almost exactly the sameas the
+  Look familiar? That's because it's almost exactly the same as the
   myHide directive you've been looking at this whole time. There are a
   couple differences, mainly ngHide uses a ternary operator instead of
   an if/else to determine calling addClass or removeClass. 
