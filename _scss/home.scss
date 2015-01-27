@@ -3,10 +3,6 @@
 @import "base";
 @import "banner";
 
-//shadows
-div.resources, .about-separator {
-    box-shadow: 0 -6px 6px -6px $black;
-}
 div.products {
     box-shadow: inset 0 6px 6px -6px $black;
 }
@@ -368,7 +364,6 @@ div.about {
 
 .separator {
     width: 25%;
-//    border-bottom: 1px solid $dark-base-color;
     padding: 2rem 0;
     margin: 0 auto;
 }
