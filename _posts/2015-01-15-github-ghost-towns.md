@@ -48,4 +48,6 @@ You are starting your next side project to create a portable reputation you can 
 
 What types of projects will help you build a reputation? How do you make something other people will care about? That's what we'll talk about in part two of this short series on side projects.
 
+If you liked this, check out parts [two](/blog/2015/01/27/github-ghost-towns-2) and [three](/blog/2015/02/04/how-to-ship/) in this series.
+
 {% include newsletter.html %}
