@@ -1,0 +1,28 @@
+@import "typography";
+@import "colors";
+
+body, html, .content {
+    height: 100%;
+}
+
+
+h2:first-of-type {
+    text-align: center;
+    padding: 1rem 0 .5rem 0;
+}
+
+.tweet {
+    border: 1px solid $rocket-grey;
+    background: $lighter-complementary-color;
+    border-radius: 4px;
+    padding: 1rem 1rem 2rem 1rem;
+    color: $black;
+    text-align: center;
+
+    a {
+        display: block;
+        padding-top: 1rem;
+        font-size: $font-size-3;
+        text-decoration: underline;
+    }
+}

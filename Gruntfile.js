@@ -57,6 +57,7 @@ module.exports = function(grunt) {
                     'css/error.css': '_scss/error.scss',
                     'css/resource.css': '_scss/resource.scss',
                     'css/workshop.css': '_scss/workshop.scss',
+                    'css/workshop-confirmation.css': '_scss/workshop-confirmation.scss',
                     'css/the-invasion.css': '_scss/the-invasion.scss',
                 }
             }

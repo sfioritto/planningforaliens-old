@@ -1,0 +1,19 @@
+body, html, .content {
+  height: 100%; }
+
+h2:first-of-type {
+  text-align: center;
+  padding: 1rem 0 0.5rem 0; }
+
+.tweet {
+  border: 1px solid #c7c8c9;
+  background: #f3d1c7;
+  border-radius: 4px;
+  padding: 1rem 1rem 2rem 1rem;
+  color: #222222;
+  text-align: center; }
+  .tweet a {
+    display: block;
+    padding-top: 1rem;
+    font-size: 2.6154rem;
+    text-decoration: underline; }

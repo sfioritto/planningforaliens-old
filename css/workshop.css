@@ -199,11 +199,13 @@ h2 {
         padding-top: 0;
         padding-left: 1rem; } }
 
-.details .limited {
-  padding-top: 1rem;
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 500;
-  font-style: italic; }
+.details {
+  padding: 2rem 0; }
+  .details .limited {
+    padding-top: 1rem;
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: italic; }
 
 @media (min-width: 530px) {
   .hosts > div figure {
