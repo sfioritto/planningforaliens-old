@@ -2,8 +2,7 @@ body, html, .content {
   height: 100%; }
 
 h2:first-of-type {
-  text-align: center;
-  padding: 1rem 0 0.5rem 0; }
+  text-align: center; }
 
 .tweet {
   border: 1px solid #c7c8c9;

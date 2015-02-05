@@ -152,6 +152,15 @@ h2 {
     .content {
       padding: 2rem; } }
 
+.free {
+  background: #286c8d;
+  text-transform: uppercase;
+  color: #f8f8f8;
+  padding: 0.5rem;
+  font-size: 1.6154rem;
+  text-align: center;
+  width: 100%; }
+
 .event {
   background: #f3d1c7;
   padding: 1rem;
@@ -163,29 +172,34 @@ h2 {
       display: flex;
       -webkit-justify-content: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
-  .event .left .day {
-    font-size: 1.6154rem;
-    padding-top: 1rem;
-    padding-bottom: 0; }
-  .event .left .time {
-    font-size: 1rem;
-    padding: 0; }
-  @media (min-width: 530px) {
-    .event .left {
-      width: 17rem; } }
-  .event .free {
-    background: #286c8d;
-    display: inline-block;
-    text-transform: uppercase;
-    color: #f8f8f8;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 4px; }
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+  .event .left {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .event .left .day {
+      font-weight: 700;
+      font-size: 1.6154rem;
+      padding: 0; }
+    .event .left .time {
+      font-size: 1rem;
+      padding: 0; }
+    @media (min-width: 530px) {
+      .event .left {
+        width: 18rem; } }
   .event form {
     padding-top: 1rem;
     width: 100%;
-    max-width: 20rem; }
+    max-width: 19rem; }
     .event form label, .event form input {
       display: block; }
     .event form label {
