@@ -1,3 +1,121 @@
 @import "typography";
 @import "colors";
 @import "base";
+
+body {
+    background: url("/images/old_mathematics.png");
+}
+
+h1 {
+    @include tungsten;
+    font-size: $font-size-4;
+    @include breakpoint(bigger) {
+        font-size: $font-size-5;
+    }
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    color: $darker-base-color
+}
+
+h2 {
+    font-size: $font-size-1;
+    @include breakpoint(bigger) {
+        font-size: $font-size-2;
+    }
+    color: $dark-base-color
+}
+
+.content {
+    @include centered;
+    background: $white;
+    padding: 2rem;
+    @include breakpoint(bigger) {
+        padding: 2rem;
+    }
+}
+
+.event {
+    background: $lighter-complementary-color;
+    padding: 1rem;
+    border-radius: 4px;
+
+    @include breakpoint(bigger) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .left {
+        .day {
+            font-size: $font-size-2;
+            padding-top: 1rem;
+            padding-bottom: 0;
+        }
+        .time {
+            font-size: $font-size-1;
+            padding: 0;
+        }
+
+        @include breakpoint(bigger) {
+            width: 17rem;
+        }
+
+    }
+    .free {
+        background: $darker-base-color;
+        display: inline-block;
+        text-transform: uppercase;
+        color: $white;
+        padding: .5rem;
+        font-size: $font-size-1;
+        border-radius: 4px;
+    }
+
+    form {
+        padding-top: 1rem;
+        width: 100%;
+        max-width: 20rem;
+        label, input {
+            display: block;
+        }
+        label {
+            font-size: $font-size-2;
+        }
+        input.email {
+            width: 100%;
+            max-width: 19rem;
+            padding: 1rem;
+        }
+
+        @include breakpoint(bigger) {
+            padding-top: 0;
+            padding-left: 1rem;
+        }
+    }
+}
+
+.details {
+    .limited {
+        padding-top: 1rem;
+        @include archer-italic;
+    }
+}
+
+.hosts {
+    > div {
+        @include breakpoint(bigger) {
+            figure {
+                padding-right: 1rem;
+                padding-bottom: 1rem;
+                padding-top: 2rem;
+                float: left;
+                max-width: 10rem;
+                img {
+                    padding: .5rem;
+                    border: 1px solid $rocket-grey;
+                }
+            }
+        }
+    }
+}

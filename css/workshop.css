@@ -1,0 +1,218 @@
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+ul {
+  padding-left: 0; }
+
+h2, h3, p {
+  line-height: 1.3em; }
+
+figure, h1, h2, h3, h4, p, pre, li, body, ul, blockquote {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #222222;
+  margin: 0;
+  font-style: normal; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #3a99c7;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+  #sharing iframe {
+    padding: 0; }
+
+p, li {
+  line-height: 1.4em; }
+
+figure, .highlight, ul, p, li, iframe {
+  padding-top: 1rem; }
+
+blockquote {
+  margin: 1rem 0; }
+
+p:first-of-type, li:first-of-type {
+  padding-top: 0; }
+
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+  padding-top: 0; }
+
+h3 {
+  padding: 1rem 0; }
+
+h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
+  padding-top: 0; }
+
+em {
+  font-style: italic; }
+
+h2 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6154rem;
+  padding: 1.6154rem 0;
+  color: #286c8d; }
+
+h3 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #b93c2f; }
+  @media (min-width: 530px) {
+    h3 {
+      font-size: 1.6154rem; } }
+
+ul {
+  padding-left: 0.5rem; }
+  @media (min-width: 530px) {
+    ul {
+      padding-left: 0; } }
+
+@media (min-width: 530px) {
+  p, li {
+    font-size: 1.6154rem; }
+
+  h2 {
+    font-size: 2.6154rem; }
+ }
+
+body {
+  background: url("/images/old_mathematics.png"); }
+
+h1 {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  font-size: 4.2308rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  color: #286c8d; }
+  @media (min-width: 530px) {
+    h1 {
+      font-size: 6.8462rem; } }
+
+h2 {
+  font-size: 1rem;
+  color: #3a99c7; }
+  @media (min-width: 530px) {
+    h2 {
+      font-size: 1.6154rem; } }
+
+.content {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #f8f8f8;
+  padding: 2rem; }
+  @media (min-width: 530px) {
+    .content {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media (min-width: 530px) {
+    .content {
+      padding: 2rem; } }
+
+.event {
+  background: #f3d1c7;
+  padding: 1rem;
+  border-radius: 4px; }
+  @media (min-width: 530px) {
+    .event {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .event .left .day {
+    font-size: 1.6154rem;
+    padding-top: 1rem;
+    padding-bottom: 0; }
+  .event .left .time {
+    font-size: 1rem;
+    padding: 0; }
+  @media (min-width: 530px) {
+    .event .left {
+      width: 17rem; } }
+  .event .free {
+    background: #286c8d;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f8f8f8;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px; }
+  .event form {
+    padding-top: 1rem;
+    width: 100%;
+    max-width: 20rem; }
+    .event form label, .event form input {
+      display: block; }
+    .event form label {
+      font-size: 1.6154rem; }
+    .event form input.email {
+      width: 100%;
+      max-width: 19rem;
+      padding: 1rem; }
+    @media (min-width: 530px) {
+      .event form {
+        padding-top: 0;
+        padding-left: 1rem; } }
+
+.details .limited {
+  padding-top: 1rem;
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: italic; }
+
+@media (min-width: 530px) {
+  .hosts > div figure {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    float: left;
+    max-width: 10rem; }
+    .hosts > div figure img {
+      padding: 0.5rem;
+      border: 1px solid #c7c8c9; }
+ }

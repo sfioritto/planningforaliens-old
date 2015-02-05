@@ -1,27 +1,22 @@
 ---
 layout: workshop
-title: "LIVE WORKSHOP: Write CSS as fast as you can sketch"
 ---
 
 <h1>Write CSS as fast as you can sketch</h1>
 
 <h2>
   There's not enough time in the day to be an expert developer AND an expert designer.
-  Learn the skills you need to know. Ship designs to your
+  Learn the skills you need to know to ship designs to your
   clients without morphing into a developer.
 </h2>
 
 <div class="event">
-  <div class="left">
-    <p class="free">Free event</p>
-    <p class="day">Wednesday, February 11</p>
-    <p class="time">11am Pacific / 2pm Eastern / 6pm GMT</p>
-  </div>
+  <p class="day">{{ day }}</p>
+  <p class="time">{{ time }}</p>
   <form action="https://www.getdrip.com/forms/8484762/submissions" method="post" target="_blank" data-drip-embedded-form="8484762">
     <label for="fields[email]">Email Address</label>
-    <input class="email" type="text" name="fields[email]" value="" />
-    <input type="submit" name="submit" value="Claim Your Spot"
-  data-drip-attribute="sign-up-button" class="button" />
+    <input type="text" name="fields[email]" value="" />
+    <input type="submit" name="submit" value="Claim Your Spot" data-drip-attribute="sign-up-button" />
   </form>
 </div>
 
@@ -32,24 +27,28 @@ title: "LIVE WORKSHOP: Write CSS as fast as you can sketch"
     <li>How Git acts as a giant undo button for your entire project</li>
     <li>The best approaches to getting the layout you want in the browser</li>
   </ul>
-  <p class="limited">
+  <p>
     Space is limited (this is a live event and there will be time for Q&A), so be sure to claim your spot now.
   </p>
 </div>
 
 <div class="hosts">
   <div>
-    <figure>
-    <img src="/images/me.jpg" />
-    </figure>
     <h3>Host: Sean Fioritto</h3>
     <p>
-      Sean's been building stuff for the web for over a decade. A few
+      Sean has been building stuff for the web for over a decade. A few
       years ago he realized that prototyping was a separate skill that
       designers could learn and then ship code without becoming a
       full-fledged frontend developer. He's been teaching people the
       art of prototyping ever since.
     </p>
   </div>
+  {% if host %}
+  <div>
+    <h3>Host: {{ host }}</h3>
+    <p>
+      {{ bio }}
+    </p>
+  </div>
+  {% endif %}
 </div>
-
