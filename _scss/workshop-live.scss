@@ -1,0 +1,26 @@
+@import "typography";
+@import "colors";
+
+.content {
+    max-width: 850px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.click {
+    padding: 1rem;
+    text-align: center;
+    background: $lighter-complementary-color;
+    margin: 2rem 0 2rem 0;
+    a {
+        color: $darker-base-color;
+        text-decoration: underline;
+    }
+}
+
+.hosts {
+    margin-top: 2rem;
+}
