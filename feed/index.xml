@@ -29,6 +29,7 @@ ignore:
 
  {% for p in site.pages %}
  {% if page.ignore contains p.title %}
+ {% elsif p.title contains "LIVE WORKSHOP" %}
  {% elsif p.title %}
  <entry>
    <title>{{ p.title | xml_escape }}</title>
