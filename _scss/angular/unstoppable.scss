@@ -2,6 +2,10 @@
 @import "colors";
 @import "base";
 
+.top > *, .body {
+    @include centered;
+}
+
 .body {
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -34,10 +38,6 @@ h2 {
     padding: 1rem 0;
     font-size: $font-size-2;
     a {color: $dark-base-color;}
-}
-
-.top > *, .body {
-    @include centered;
 }
 
 h1 {

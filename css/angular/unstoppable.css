@@ -114,6 +114,16 @@ ul {
     font-size: 2.6154rem; }
  }
 
+.top > *, .body {
+  max-width: 43rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 530px) {
+    .top > *, .body {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .body {
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -145,16 +155,6 @@ h2 {
   font-size: 1.6154rem; }
   h2 a {
     color: #3a99c7; }
-
-.top > *, .body {
-  max-width: 43rem;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  @media (min-width: 530px) {
-    .top > *, .body {
-      padding-left: 0;
-      padding-right: 0; } }
 
 h1 {
   padding: 0 0 2rem 0;

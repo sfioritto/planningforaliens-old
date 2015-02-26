@@ -124,3 +124,29 @@ h2 {
         }
     }
 }
+
+.newversion {
+    
+    h1 {
+        padding-bottom: 2rem;
+    }
+
+    .subheader {
+        
+    }
+
+    h2 {
+        font-size: $font-size-2;
+        @include breakpoint(bigger) {
+            font-size: $font-size-3;
+        }
+        color: $dark-base-color
+    }
+    h2.free {
+        color: $white;
+        font-size: $font-size-1;
+        @include breakpoint(bigger) {
+            font-size: $font-size-2;
+        }
+    }
+}

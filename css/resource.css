@@ -199,7 +199,7 @@ body {
   max-width: 43rem;
   margin: 1rem auto 0 auto;
   background: #f8f8f8;
-  padding: 1rem;
+  padding: 1rem !important;
   border: 1px solid #c7c8c9; }
   .email-form-box h2 {
     padding: 0;

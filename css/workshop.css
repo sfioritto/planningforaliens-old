@@ -232,3 +232,18 @@ h2 {
       padding: 0.5rem;
       border: 1px solid #c7c8c9; }
  }
+
+.newversion h1 {
+  padding-bottom: 2rem; }
+.newversion h2 {
+  font-size: 1.6154rem;
+  color: #3a99c7; }
+  @media (min-width: 530px) {
+    .newversion h2 {
+      font-size: 2.6154rem; } }
+.newversion h2.free {
+  color: #f8f8f8;
+  font-size: 1rem; }
+  @media (min-width: 530px) {
+    .newversion h2.free {
+      font-size: 1.6154rem; } }
