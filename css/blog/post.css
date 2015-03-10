@@ -120,7 +120,7 @@ ul, ol {
     ul, ol {
       padding-left: 0; } }
 
-ol li {
+ol > li > :first-child {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 800;
   font-style: normal; }

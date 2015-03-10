@@ -71,24 +71,25 @@ Every designer has their own process. To help you out in building _yours_, I let
 
 So, to go from “I want a website…” to designing (and coding the design) I would:
 
-1.  Define the project.I immerse myself into the project and get to know more about:
+1. Define the project.I immerse myself into the project and get to know more about:
 
-* Its purpose, intended outcomes for stakeholders
-* Its (future) users
-* The intended experience for its users/visitors4.  The branding behind the project
+    * Its purpose, intended outcomes for stakeholders
+    * Its (future) users
+    * The intended experience for its users/visitors4.  The branding behind the project
 
-2.  Acquire the needed resources. I get my hands on (sample) content (borrow from similar sites or ask the client)
-3.  Give shape to the content
+2. Acquire the needed resources. I get my hands on sample content from similar sites or I ask the client
 
-* Choose a typeface in which to typeset the content (pick one that fits the mood and message of the site)
-* Choose font size for the body copy
-* Generate a modular scale(a table of proportional harmonic dimensions) from the font size of the body copy (using type-scale.com)
-* Sketch different layouts based on the project requirements5.  Build the layout (in HTML and CSS) with the help of the modular scale: column width, line height, heading sizes, bottom margins, columns (if needed)
-* Apply color according to the brand guideline
+3. Give shape to the content
+
+    * Choose a typeface in which to typeset the content (pick one that fits the mood and message of the site)
+    * Choose font size for the body copy
+    * Generate a modular scale(a table of proportional harmonic dimensions) from the font size of the body copy (using type-scale.com)
+    * Sketch different layouts based on the project requirements5.  Build the layout (in HTML and CSS) with the help of the modular scale: column width, line height, heading sizes, bottom margins, columns (if needed)
+    * Apply color according to the brand guideline
 
 Steps 1 and 2 help you understand what do you have to design, who is going to use it, what are they going to use it for. Then phase 3 is about how are you going to do that.
 
-Going one small step at a time(vs everything at once), in this particular order, helps you to reduce the perceived complexity of the project (and the “I’m stuck” time) down the road. 
+Going one small step at a time vs. everything at once, in this particular order, helps you to reduce the complexity of the project and the “I’m stuck” time down the road. 
 
 Lets take a closer look at each of these steps.
 
@@ -98,9 +99,9 @@ To design a website, here’s the process I follow when **starting from scratch*
 
 ### 1. Define the project
 
-To know what the project is about, who is it serving and where its boundaries lie use the next questions:
+To know what the project is about, who it is serving and where its boundaries lie use the next questions:
 
-* Target
+* **Target**
 
 Who is this website intended for?
 
@@ -108,15 +109,15 @@ Knowing who are the people who will use the site will help guide your future dec
 
 Example: If the website is intended for non-tech-savvy men aged 60+ you know that you’ll have to make it as easy as possible to be navigated. Also text will have to be bigger. Some tech concepts you may take for granted in younger users may need to be taken into account, too.
 
-* Fixes for needs
+* **Fixes for needs**
 
 What valuable resources for the target audience are going to be on the site?
 
-* Types of fixes
+* **Types of fixes**
 
 What is the predominant format of content?
 
-* Technical limitations
+* **Technical limitations**
 
 How is the content going to be published? 
 
@@ -126,11 +127,11 @@ Do they have anything specific about them that can influence the use of the site
 
 Are there any technical requirements coming from the specifics of the content?
 
-Answering these questions would give you the _project brief_. Part of them may be answered already, for others you will need to ask the client or come up with answers yourself (research).
+Answering these questions would give you the _project brief_. Part of them may be answered already, for others you will need to ask the client or come up with answers yourself.
 
 ### 2. User Experience
 
-**How would people feel when they use the site**? (_the UX_) 
+**How would people feel when they use the site**?
 
 Answering this will give you overall direction as to what you want the visitors to experience when interacting with the site. How are you going to achieve it is up to you.
 
@@ -138,7 +139,7 @@ Answering this will give you overall direction as to what you want the visitors 
 
 **What do you want to encourage people to do after they used the site**?
 
-This should be in line with the business goals of your client (or the overall goals of the project). 
+This should be in line with the business goals of your client or the overall goals of the project.
 
 **How do you imagine them after consuming the content**? 
 
@@ -148,7 +149,7 @@ Back to the example: _If this is a site describing vacation opportunities for th
 
 ### 3. Get to know the brand
 
-In the case of an existing site(or client with an existing brand) you will have to get to know what the brand stands for.
+In the case of an existing site (or client with an existing brand) you will have to get to know what the brand stands for.
 
 What are their values?
 
@@ -172,7 +173,7 @@ To avoid the disaster that Lorem Ipsum brings, ask the client for sites that hav
 
 Then borrow the content so that you can start designing.
 
-#### Why not use Lorem Ipsum again? 
+**Why not use Lorem Ipsum again?**
 
 Because design’s main goal is to improve the message that gets transferred. But to improve the message you first need to have the message, the content that is.
 
@@ -182,23 +183,23 @@ When you are using dummy data that has no meaning every design decision you make
 
 ### 5. Shaping the content
 
-Now, knowing the content and the outcomes(feelings, actions) you want to create, you can start visualizing the website. I, personally, start with text, because it usually makes up the most of the website and is the part of content that bears the most different characteristics of a project.
+Now, knowing the content and the outcomes, feelings and actions you want to create, you can start visualizing the website. I, personally, start with text, because it usually makes up the most of the website and is the part of content that bears the most different characteristics of a project.
 
-#### 5.1. Choosing a typeface for body copy
+* Choosing a typeface for body copy
 
 I will choose a typeface that matches the general direction of the website.
 
 The typeface has to have the characteristics that I want to instill in the people. Some typefaces speak more mechanically, others bring associations with handwriting, old times, something new or something foreign. Every typeface has characteristics that evoke certain associations in the reader, even if the reader doesn’t realize it. It is your job to match the associations of the letter shapes to the associations you want people to have with the content, the brand and the whole website.
 
-#### 5.2. Choosing type size
+* Choosing type size
 
 You’ve chosen a typeface that is stylistically suitable to what you intend to use it for. Now you have to find the size of the type that works best for body text (between 15 and 25px) 
 
-##### 5.2.1. Look for crispy letters
+* Look for crispy letters
 
 Start with a minimum of 16 pixels and try to increase the size up with a pixel. Look for a value where the text looks crisper.
 
-##### 5.2.2. Look for even weight of stems(chars)
+* Look for even weight of stems(chars)
 
 At different sizes, glyphs of poorly designed web fonts may look heavier than the others. This is distracting for the reader so do your best to avoid it. Seek the font size that looks visually even. 
 
@@ -206,11 +207,11 @@ Avoid sizes where some vertical lines are heavier than the others.
 
 Avoid having closed loops like o, a, e, p, q heavier or visually weaker than the rest of the letters.
 
-##### 5.2.3. Get to a number and save it
+* Get to a number and save it
 
 After eyeing a paragraph of text under the above conditions you are ready to pick a base text size that gives better results than the other ones. Remember, it will never be perfect, you are just searching for the more acceptable solution under the above terms.
 
-#### 5.3. Generate your “Element Sizing Cheat Sheet”
+* Generate your “Element Sizing Cheat Sheet”
 
 Next, you will use your newly found number to generate a modular scale. The _modular scale_ is a table of interrelated sizes that will ease your design and element-sizing work later on.
 
@@ -222,7 +223,7 @@ Get the scale ratio (1.414 for example) and go to modularscale.com. Enter your b
 
 This table will reduce your wondering “How big should this exactly be?” when you get to the layout. This “library” of dimensions will be useful for creating grids, whole layouts, buttons, images… everything. The added bonus is the visual harmony you’ll get from having elements with harmonic sizes on the page. 
 
-#### 5.4. Layout
+* Layout
 
 Judging by the technical brief you may sketch some layouts. Use sketching mainly as a thinking tool to evaluate different options quickly without building them.
 
@@ -238,7 +239,7 @@ Should images take up the whole screen width?
 
 All of your questions can be answered with sketching the different options and deciding which feels best.
 
-### 6. Coding time? 
+* Coding time? 
 
 So, you got the content, you got the typeface, you’ve got some general options about the layout.
 
@@ -250,13 +251,13 @@ You are ready with the static template of the site.
 
 ### Principles to keep in mind
 
-#### Don’t focus on designing only. 
+**Don’t focus on designing only.**
 
-**The conceptual/planning part is what will provide answers to your questions when you get stuck later in the process**. 
+The conceptual/planning part is what will provide answers to your questions when you get stuck later in the process
 
 Take your time, do your research, immerse into the project and you will keep the time spent in “I’m just stuck” situations to a minimum.
 
-#### Work in iterations
+### Work in iterations
 
 I tend to work iteratively, so at the end of every session my goal is to have the project seamlessly working. This means that from the outside the website _seems complete_ and with no pieces missing. That is why the moment I have content I mark it up in HTML, next when I start working with type I do it directly in CSS. Using a versioning system (like Git) also helps you keep track of your changes during the process.
 
@@ -274,3 +275,5 @@ That's why I prepared the free email course “**Web Design Beyond HTML and CSS:
 It turns the my design process on its head, shakes it up a bit and gives you clear wins every step of the way. 
 
 [Start your free webdesign course now](http://www.rumendimitrov.com/web-design-beyond-html-css/)
+
+{% include sketching.html %}

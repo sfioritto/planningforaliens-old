@@ -181,7 +181,7 @@ ul, ol {
     }
 }
 
-ol li{
+ol > li > :first-child{
     @include archer-bold;
 }
 
