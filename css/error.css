@@ -16,6 +16,8 @@
   max-width: 100%; }
 
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -71,13 +73,25 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+h2 + h2,
+h2 + p,
+h2 + li,
+h2 + figure,
+h2 + ul,
+h2 + .highlight,
+h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
+h3 + h3,
+h3 + p,
+h3 + li,
+h3 + figure,
+h3 + ul,
+h3 + .highlight,
+h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -100,20 +114,23 @@ h3 {
     h3 {
       font-size: 1.6154rem; } }
 
-ul {
-  padding-left: 0.5rem; }
+ul, ol {
+  padding-left: .5rem; }
   @media (min-width: 530px) {
-    ul {
+    ul, ol {
       padding-left: 0; } }
+
+ol li {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal; }
 
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; }
- }
-
+    font-size: 2.6154rem; } }
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -127,7 +144,7 @@ header.banner {
   text-transform: uppercase;
   font-size: 2.6154rem;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   padding-bottom: 2rem; }
   .banner-title a {
     color: #286c8d; }
@@ -136,15 +153,9 @@ html, body {
   height: 100%; }
 
 body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   background: #edf6fa; }
 
 .banner {
@@ -177,3 +188,5 @@ body {
 
 .code, .message {
   text-align: center; }
+
+/*# sourceMappingURL=error.css.map */

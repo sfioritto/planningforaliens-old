@@ -174,11 +174,15 @@ h3 {
     color: $complementary-color;
 }
 
-ul {
+ul, ol {
     padding-left: .5rem;
     @include breakpoint(bigger) {
         padding-left: 0;
     }
+}
+
+ol li{
+    @include archer-bold;
 }
 
 @include breakpoint(bigger) {
