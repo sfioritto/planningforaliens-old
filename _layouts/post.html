@@ -16,7 +16,11 @@ styles:
         Published
         <span class="pubdate">{{ page.date | date: "%m/%d/%y" }}</span>
         by
+      {% if page.author.url %}
+      <a class="author" href="{{ page.author.url }}">{{ page.author.name }}</a>
+      {% else %}
       <a class="author" href="https://twitter.com/sfioritto">{{ page.author }}</a>
+      {% endif %}
       </p>
       <p class="follow">
       <a href="https://twitter.com/sfioritto"

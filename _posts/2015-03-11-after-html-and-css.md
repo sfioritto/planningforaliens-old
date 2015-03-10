@@ -2,7 +2,9 @@
 layout: post
 title: "Feel stuck after learning HTML and CSS? Here's how to create websites on your own"
 blurb: "Have HTML and CSS under your belt and wondering what to do next? Here's an extremely detailed look at that vague concept web designers call 'workflow'."
-author: "Rumen Dimitrov"
+author:
+   name: "Rumen Dimitrov"
+   url: "https://twitter.com/rsdimitrov"
 ---
 
 You have read a few books on HTML and CSS and know how to create websites yourself. 
