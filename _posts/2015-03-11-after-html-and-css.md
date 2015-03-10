@@ -274,7 +274,7 @@ Spending more hours going through a process, **not knowing what to aim for**, wi
 
 That's why I prepared the free email course “**Web Design Beyond HTML and CSS: 7 practical steps**”.
 
-It turns the my design process on its head, shakes it up a bit and gives you clear wins every step of the way. 
+It turns my design process on its head, shakes it up a bit and gives you clear wins every step of the way. 
 
 [Start your free webdesign course now](http://www.rumendimitrov.com/web-design-beyond-html-css/)
 
