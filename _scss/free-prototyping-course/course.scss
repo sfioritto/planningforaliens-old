@@ -53,6 +53,7 @@ h1 > .sketch{
 
     h2 {
         text-align: center;
+        @include centered;
         @include archer-italic;
     }
 
@@ -75,12 +76,22 @@ h1 > .sketch{
     }
 }
 .body {
+
+    figure {
+        margin: 2rem 0;
+    }
+
     @include centered;
     padding-top: 2rem;
+
+    .email-form-box {
+        margin-top: 2rem;
+    }
 
     h2:first-of-type {
         text-align: center;
     }
+    padding-bottom: 2rem;
 }
 
 .creative {
@@ -91,5 +102,19 @@ h1 > .sketch{
     p:first-of-type {
         font-size: $font-size-3;
         color: $complementary-color;
+    }
+}
+
+figure.pie {
+    text-align: center;
+    figcaption {
+        text-align: center;
+    }
+}
+
+.about {
+    figure {
+        width: 50%;
+        margin: 0 auto;
     }
 }
