@@ -151,7 +151,7 @@ h1 > .sketch {
   color: #3a99c7; }
 
 /* end h1 styling*/
-.top .header {
+.topper .header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -164,20 +164,19 @@ h1 > .sketch {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .top .header figure {
+  .topper .header figure {
     width: 250px;
     padding-left: 2rem; }
-.top h2 {
+.topper h2 {
   text-align: center;
+  color: #222222;
   max-width: 43rem;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 500;
-  font-style: italic; }
+  font-size: 1rem; }
   @media (min-width: 530px) {
-    .top h2 {
+    .topper h2 {
       padding-left: 0;
       padding-right: 0; } }
 
@@ -204,7 +203,6 @@ h1 > .sketch {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 2rem;
   padding-bottom: 2rem; }
   .body figure {
     margin: 2rem 0; }
@@ -213,9 +211,14 @@ h1 > .sketch {
       padding-left: 0;
       padding-right: 0; } }
   .body .email-form-box {
+    border: none;
     margin-top: 2rem; }
-  .body h2:first-of-type {
-    text-align: center; }
+  .body h2.first {
+    text-align: center;
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 2rem 0 3rem 0; }
 
 .creative {
   padding: 2rem 0; }

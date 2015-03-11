@@ -38,7 +38,7 @@ h1 > .sketch{
 /* end h1 styling*/
 
 
-.top {
+.topper {
     
     .header {
         display: flex;
@@ -53,8 +53,9 @@ h1 > .sketch{
 
     h2 {
         text-align: center;
+        color: $black;
         @include centered;
-        @include archer-italic;
+        font-size: $font-size-1;
     }
 
 }
@@ -82,14 +83,16 @@ h1 > .sketch{
     }
 
     @include centered;
-    padding-top: 2rem;
 
     .email-form-box {
+        border: none;
         margin-top: 2rem;
     }
 
-    h2:first-of-type {
+    h2.first {
         text-align: center;
+        @include archer-bold;
+        padding: 2rem 0 3rem 0;
     }
     padding-bottom: 2rem;
 }
