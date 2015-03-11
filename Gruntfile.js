@@ -49,6 +49,7 @@ module.exports = function(grunt) {
                     ]
                 },
                 files: {
+                    'css/free-prototyping-course/course.css': '_scss/free-prototyping-course/course.scss',
                     'css/angular/unstoppable.css': '_scss/angular/unstoppable.scss',
                     'css/angular/animate.css': '_scss/angular/animate.scss',
                     'css/home.css': '_scss/home.scss',
@@ -83,7 +84,7 @@ module.exports = function(grunt) {
                 files: [
                     // capture all except css
                     '*.html', '*.yml', 'javascript/**.js', '**/_posts/**', 'blog/**', 'the-invasion/**',
-                    'angular/**', '_includes/**', '_layouts/**', 'paid/**', 'workshops/**'
+                    'angular/**', '_includes/**', '_layouts/**', 'paid/**', 'workshops/**', 'free-prototyping-course/**'
                 ],
                 tasks: ['shell:jekyll'] //runs jekyll build
             }

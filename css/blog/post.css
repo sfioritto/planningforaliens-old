@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -73,25 +71,13 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2,
-h2 + p,
-h2 + li,
-h2 + figure,
-h2 + ul,
-h2 + .highlight,
-h2 + iframe {
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3,
-h3 + p,
-h3 + li,
-h3 + figure,
-h3 + ul,
-h3 + .highlight,
-h3 + iframe {
+h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -115,7 +101,7 @@ h3 {
       font-size: 1.6154rem; } }
 
 ul, ol {
-  padding-left: .5rem; }
+  padding-left: 0.5rem; }
   @media (min-width: 530px) {
     ul, ol {
       padding-left: 0; } }
@@ -130,7 +116,9 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; } }
+    font-size: 2.6154rem; }
+ }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -144,7 +132,7 @@ header.banner {
   text-transform: uppercase;
   font-size: 2.6154rem;
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   padding-bottom: 2rem; }
   .banner-title a {
     color: #286c8d; }
@@ -158,12 +146,12 @@ header.banner {
     font-weight: 800;
     font-style: normal;
     font-size: 1.6154rem;
-    padding-bottom: .5rem; }
+    padding-bottom: 0.5rem; }
   .outer form input.email {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 30rem;
     font-size: 1.6154rem; }
@@ -183,7 +171,8 @@ header.banner {
 .sketching.outer figure {
   padding-bottom: 1rem; }
   .sketching.outer figure img {
-    filter: drop-shadow(0px 2px 4px #222222); }
+    -webkit-filter: drop-shadow(0px 2px 4px #222222);
+            filter: drop-shadow(0px 2px 4px #222222); }
 .sketching.outer p, .sketching.outer p:first-of-type {
   max-width: 40rem;
   margin: 1rem 0; }
@@ -197,25 +186,31 @@ header.banner {
     font-weight: 800;
     font-style: normal;
     font-size: 1.6154rem;
-    padding-bottom: .5rem; }
+    padding-bottom: 0.5rem; }
   .outer form input.email {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 30rem;
     font-size: 1.6154rem; }
 
 .angular-escape.outer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .angular-escape.outer figure {
-    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     max-width: 100px;
     margin: 0 auto;
     padding-right: 1rem; }
   .angular-escape.outer form {
-    flex: 1 1 auto; }
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
 
 header {
   border-bottom: 1px solid #c7c8c9; }
@@ -238,7 +233,8 @@ header {
     padding-top: 0; }
   @media (min-width: 530px) {
     header h2 {
-      font-size: 4.2308rem; } }
+      font-size: 4.2308rem; }
+ }
 
 article {
   max-width: 43rem;
@@ -263,6 +259,8 @@ article {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: 1px solid #c7c8c9;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .newsletter-prompt p {
     font-family: 'Archer A', 'Archer B', georgia, serif;
@@ -272,9 +270,13 @@ article {
     max-width: 170px;
     padding-right: 2rem;
     padding-top: 0;
-    flex: 1 1 0; }
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0; }
   .newsletter-prompt > div {
-    flex: 3 3 0; }
+    -webkit-flex: 3 3 0;
+        -ms-flex: 3 3 0;
+            flex: 3 3 0; }
   .newsletter-prompt .cta {
     margin: 0 auto;
     padding: 1rem 0; }
@@ -287,5 +289,3 @@ article {
           font-size: 2.6154rem; } }
     .newsletter-prompt .cta a:visited {
       color: #f8f8f8; }
-
-/*# sourceMappingURL=post.css.map */

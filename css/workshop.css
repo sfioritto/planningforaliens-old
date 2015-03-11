@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -73,25 +71,13 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2,
-h2 + p,
-h2 + li,
-h2 + figure,
-h2 + ul,
-h2 + .highlight,
-h2 + iframe {
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3,
-h3 + p,
-h3 + li,
-h3 + figure,
-h3 + ul,
-h3 + .highlight,
-h3 + iframe {
+h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -115,7 +101,7 @@ h3 {
       font-size: 1.6154rem; } }
 
 ul, ol {
-  padding-left: .5rem; }
+  padding-left: 0.5rem; }
   @media (min-width: 530px) {
     ul, ol {
       padding-left: 0; } }
@@ -130,7 +116,9 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; } }
+    font-size: 2.6154rem; }
+ }
+
 body {
   background: url("/images/old_mathematics.png"); }
 
@@ -173,7 +161,7 @@ h2 {
   background: #286c8d;
   text-transform: uppercase;
   color: #f8f8f8;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.6154rem;
   text-align: center;
   width: 100%; }
@@ -184,13 +172,25 @@ h2 {
   border-radius: 4px; }
   @media (min-width: 530px) {
     .event {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap; } }
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   .event .left {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .event .left .day {
       font-weight: 700;
       font-size: 1.6154rem;
@@ -234,8 +234,9 @@ h2 {
     float: left;
     max-width: 10rem; }
     .hosts > div figure img {
-      padding: .5rem;
-      border: 1px solid #c7c8c9; } }
+      padding: 0.5rem;
+      border: 1px solid #c7c8c9; }
+ }
 
 .newversion h1 {
   padding-bottom: 2rem; }
@@ -251,5 +252,3 @@ h2 {
   @media (min-width: 530px) {
     .newversion h2.free {
       font-size: 1.6154rem; } }
-
-/*# sourceMappingURL=workshop.css.map */

@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -73,25 +71,13 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2,
-h2 + p,
-h2 + li,
-h2 + figure,
-h2 + ul,
-h2 + .highlight,
-h2 + iframe {
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3,
-h3 + p,
-h3 + li,
-h3 + figure,
-h3 + ul,
-h3 + .highlight,
-h3 + iframe {
+h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -115,7 +101,7 @@ h3 {
       font-size: 1.6154rem; } }
 
 ul, ol {
-  padding-left: .5rem; }
+  padding-left: 0.5rem; }
   @media (min-width: 530px) {
     ul, ol {
       padding-left: 0; } }
@@ -130,7 +116,9 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; } }
+    font-size: 2.6154rem; }
+ }
+
 .outer {
   padding-top: 2rem; }
   .outer form label, .outer form input {
@@ -140,12 +128,12 @@ ol > li > :first-child {
     font-weight: 800;
     font-style: normal;
     font-size: 1.6154rem;
-    padding-bottom: .5rem; }
+    padding-bottom: 0.5rem; }
   .outer form input.email {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 30rem;
     font-size: 1.6154rem; }
@@ -165,7 +153,8 @@ ol > li > :first-child {
 .sketching.outer figure {
   padding-bottom: 1rem; }
   .sketching.outer figure img {
-    filter: drop-shadow(0px 2px 4px #222222); }
+    -webkit-filter: drop-shadow(0px 2px 4px #222222);
+            filter: drop-shadow(0px 2px 4px #222222); }
 .sketching.outer p, .sketching.outer p:first-of-type {
   max-width: 40rem;
   margin: 1rem 0; }
@@ -179,25 +168,31 @@ ol > li > :first-child {
     font-weight: 800;
     font-style: normal;
     font-size: 1.6154rem;
-    padding-bottom: .5rem; }
+    padding-bottom: 0.5rem; }
   .outer form input.email {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 100%;
     max-width: 30rem;
     font-size: 1.6154rem; }
 
 .angular-escape.outer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .angular-escape.outer figure {
-    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     max-width: 100px;
     margin: 0 auto;
     padding-right: 1rem; }
   .angular-escape.outer form {
-    flex: 1 1 auto; }
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
 
 body {
   background-color: #f8f8f8; }
@@ -216,10 +211,13 @@ body {
     font-size: 1rem;
     color: #3a99c7; }
   .email-form-box input.email {
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 500;
+    font-style: normal;
     max-width: 26rem;
     font-size: 1.6154rem;
     padding: 8px;
-    padding: .5rem;
+    padding: 0.5rem;
     margin-top: 16px;
     margin-top: 1rem;
     width: 100%; }
@@ -228,5 +226,3 @@ body {
   background-image: url("/images/old_mathematics.png");
   padding: 3rem 0 2rem 0;
   border-bottom: 1px solid #c7c8c9; }
-
-/*# sourceMappingURL=resource.css.map */
