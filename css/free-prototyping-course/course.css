@@ -125,7 +125,10 @@ h1 {
   text-transform: uppercase;
   color: #3c3c3c;
   text-align: center;
-  padding: 3rem 0; }
+  padding: 0; }
+  @media (min-width: 475px) {
+    h1 {
+      padding: 0 0 3rem 0; } }
 
 /* H1 styling */
 h1 > span {
@@ -151,44 +154,54 @@ h1 > .sketch {
   color: #3a99c7; }
 
 /* end h1 styling*/
-.topper .header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.topper {
+  padding-top: 3rem; }
+  @media (min-width: 475px) {
+    .topper .header {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .topper .header figure {
-    width: 250px;
-    padding-left: 2rem; }
-.topper h2 {
-  text-align: center;
-  color: #222222;
-  max-width: 43rem;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 1rem; }
-  @media (min-width: 530px) {
-    .topper h2 {
-      padding-left: 0;
-      padding-right: 0; } }
+    margin: 0 auto;
+    width: 100px; }
+    @media (min-width: 475px) {
+      .topper .header figure {
+        width: 250px;
+        padding-left: 2rem;
+        margin: 0; } }
+  .topper h2 {
+    text-align: center;
+    color: #222222;
+    max-width: 43rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem; }
+    @media (min-width: 530px) {
+      .topper h2 {
+        padding-left: 0;
+        padding-right: 0; } }
 
 .email-form-box {
-  padding: 2rem !important; }
+  padding: 1rem !important; }
+  .email-form-box input.email {
+    max-width: 100%; }
   .email-form-box .testimonial {
     text-align: center;
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.6154rem;
-    padding: 0 0 1rem 0;
+    padding: 2rem 0 0 0;
     color: #286c8d; }
   .email-form-box .subtext {
     color: #76b8d8;

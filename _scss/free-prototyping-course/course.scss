@@ -7,7 +7,10 @@ h1 {
     text-transform: uppercase;
     color: $grey;
     text-align: center;
-    padding: 3rem 0;
+    padding: 0;
+    @include breakpoint(big){
+        padding: 0 0 3rem 0;
+    }
 }
 
 /* H1 styling */
@@ -39,15 +42,22 @@ h1 > .sketch{
 
 
 .topper {
-    
+    padding-top: 3rem;
     .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include breakpoint(big) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
         figure {
-            width: 250px;
-            padding-left: 2rem;
+            margin: 0 auto;
+            width: 100px;
+            @include breakpoint(big) {
+                width: 250px;
+                padding-left: 2rem;
+                margin: 0;
+            }
         }
     }
 
@@ -61,12 +71,16 @@ h1 > .sketch{
 }
 
 .email-form-box { 
-    padding: 2rem !important;
+    padding: 1rem !important;
+    input.email {
+        max-width: 100%;
+    }
+
     .testimonial {
         text-align: center;
         @include archer;
         font-size: $font-size-2;
-        padding: 0 0 1rem 0;
+        padding: 2rem 0 0 0;
         color: $darker-base-color;
     }
     .subtext {
