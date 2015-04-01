@@ -1,0 +1,153 @@
+.button {
+  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
+  font-weight: 300;
+  background-color: #b93c2f;
+  border-radius: 5px;
+  padding: 16px;
+  padding: 1rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6154rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 1px 1px 5px #222222;
+  line-height: 1rem;
+  max-width: 100%; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+.drip-tab-container {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal; }
+
+ul {
+  padding-left: 0; }
+
+h2, h3, p {
+  line-height: 1.3em; }
+
+figure, h1, h2, h3, h4, p, pre, li, body, ul, blockquote {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: #222222;
+  margin: 0;
+  font-style: normal; }
+
+img {
+  max-width: 100%; }
+
+a {
+  color: #3a99c7;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:visited {
+  color: #76b8d8; }
+
+#sharing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em; }
+  #sharing iframe {
+    padding: 0; }
+
+p, li {
+  line-height: 1.4em; }
+
+figure, .highlight, ul, p, li, iframe {
+  padding-top: 1rem; }
+
+blockquote {
+  margin: 1rem 0; }
+
+p:first-of-type, li:first-of-type {
+  padding-top: 0; }
+
+h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+  padding-top: 0; }
+
+h3 {
+  padding: 1rem 0; }
+
+h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
+  padding-top: 0; }
+
+em {
+  font-style: italic; }
+
+h2 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 1.6154rem;
+  padding: 1.6154rem 0;
+  color: #286c8d; }
+
+h3 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #b93c2f; }
+  @media (min-width: 530px) {
+    h3 {
+      font-size: 1.6154rem; } }
+
+ul, ol {
+  padding-left: 0.5rem; }
+  @media (min-width: 530px) {
+    ul, ol {
+      padding-left: 0; } }
+
+ol > li > :first-child {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 800;
+  font-style: normal; }
+
+@media (min-width: 530px) {
+  p, li {
+    font-size: 1.6154rem; }
+
+  h2 {
+    font-size: 2.6154rem; }
+ }
+
+h1 {
+  font-family: 'Archer A', 'Archer B', georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 4.2308rem; }
+
+body {
+  background-image: url("/images/old_mathematics.png"); }
+
+body, html {
+  height: 100%; }
+
+.email-confirm {
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+iframe {
+  padding: 0; }
+
+p:last-of-type {
+  padding-bottom: 1rem; }

@@ -1,0 +1,32 @@
+@import "typography";
+@import "colors";
+@import "base";
+
+h1 {
+    @include archer-italic;
+    font-size: $font-size-4;
+}
+
+body {
+    background-image: url("/images/old_mathematics.png");
+}
+
+body, html {
+    height: 100%;
+}
+
+.email-confirm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    padding: 0;
+}
+
+p:last-of-type {
+    padding-bottom: 1rem;
+}
