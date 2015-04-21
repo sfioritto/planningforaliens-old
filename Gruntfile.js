@@ -62,6 +62,7 @@ module.exports = function(grunt) {
                     'css/workshop-live.css': '_scss/workshop-live.scss',
                     'css/the-invasion.css': '_scss/the-invasion.scss',
                     'css/email-confirmation.css': '_scss/email-confirmation.scss',
+                    'css/free-prototyping-course/email-confirmation.css': '_scss/free-prototyping-course/email-confirmation.scss',
                 }
             }
         },

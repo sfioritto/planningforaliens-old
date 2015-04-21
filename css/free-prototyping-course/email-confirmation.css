@@ -123,7 +123,8 @@ h1 {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 4.2308rem; }
+  font-size: 4.2308rem;
+  padding: 2rem 0 1rem 0; }
 
 body {
   background-image: url("/images/old_mathematics.png"); }
@@ -133,26 +134,39 @@ body, html {
 
 .email-confirm {
   height: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1rem; }
 
 iframe {
   padding: 0; }
+
+h1 {
+  text-align: center; }
 
 p:last-of-type {
   padding-bottom: 1rem; }
 
 .click-to-tweet {
-  max-width: 43rem; }
+  background: #f8f8f8;
+  padding: 1rem;
+  border: 1px solid #c7c8c9;
+  margin: 1rem 0 0 0; }
   .click-to-tweet a {
     display: block; }
+  .click-to-tweet a.quote {
+    color: #286c8d; }
+  .click-to-tweet a.cta {
+    text-align: right; }
+
+p.before {
+  font-size: 2.6154rem;
+  color: #b93c2f; }
+
+p.before, p.after {
+  font-weight: 700; }
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 2rem; }

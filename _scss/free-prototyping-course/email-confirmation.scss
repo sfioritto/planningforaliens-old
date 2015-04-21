@@ -1,0 +1,64 @@
+@import "typography";
+@import "colors";
+@import "base";
+
+h1 {
+    @include archer-italic;
+    font-size: $font-size-4;
+    padding: 2rem 0 1rem 0;
+}
+
+body {
+    background-image: url("/images/old_mathematics.png");
+}
+
+body, html {
+    height: 100%;
+}
+
+.email-confirm {
+    height: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+iframe {
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+p:last-of-type {
+    padding-bottom: 1rem;
+}
+
+.click-to-tweet {
+    background: $white;
+    padding: 1rem;
+    border: 1px solid $rocket-grey;
+    margin: 1rem 0 0 0;
+    a {
+        display: block;
+    }
+    a.quote {
+        color: $darker-base-color;
+    }
+    a.cta {
+        text-align: right;
+    }
+}
+
+p.before {
+    font-size: $font-size-3;
+    color: $complementary-color;
+}
+p.before, p.after {
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
