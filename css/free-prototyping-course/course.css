@@ -16,6 +16,8 @@
   max-width: 100%; }
 
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -71,13 +73,25 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+h2 + h2,
+h2 + p,
+h2 + li,
+h2 + figure,
+h2 + ul,
+h2 + .highlight,
+h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
+h3 + h3,
+h3 + p,
+h3 + li,
+h3 + figure,
+h3 + ul,
+h3 + .highlight,
+h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -101,7 +115,7 @@ h3 {
       font-size: 1.6154rem; } }
 
 ul, ol {
-  padding-left: 0.5rem; }
+  padding-left: .5rem; }
   @media (min-width: 530px) {
     ul, ol {
       padding-left: 0; } }
@@ -116,78 +130,26 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; }
- }
-
-h1 {
-  font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #3c3c3c;
-  text-align: center;
-  padding: 0; }
-  @media (min-width: 475px) {
-    h1 {
-      padding: 0 0 3rem 0; } }
-
-/* H1 styling */
-h1 > span {
-  display: block; }
-
-h1 .first {
-  font-size: 3.8rem; }
-
-h1 > .middle {
-  font-family: 'Archer A', 'Archer B', georgia, serif;
-  font-weight: 500;
-  font-style: normal;
-  font-style: italic;
-  font-size: 5.7rem;
-  color: #76b8d8; }
-
-h1 > .bottom {
-  font-size: 4.5rem; }
-
-h1 > .sketch {
-  font-weight: 200;
-  font-size: 7.4rem;
-  color: #3a99c7; }
-
-/* end h1 styling*/
+    font-size: 2.6154rem; } }
 .topper {
   padding-top: 3rem; }
-  @media (min-width: 475px) {
-    .topper .header {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; } }
-  .topper .header figure {
-    margin: 0 auto;
-    width: 100px; }
-    @media (min-width: 475px) {
-      .topper .header figure {
-        width: 250px;
-        padding-left: 2rem;
-        margin: 0; } }
-  .topper h2 {
+  .topper figure {
+    text-align: center; }
+  .topper h1, .topper h2 {
     text-align: center;
-    color: #222222;
+    font-family: 'Archer A', 'Archer B', georgia, serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+    color: #286c8d;
     max-width: 43rem;
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1rem; }
+    font-size: 1.6154rem; }
     @media (min-width: 530px) {
-      .topper h2 {
+      .topper h1, .topper h2 {
         padding-left: 0;
         padding-right: 0; } }
 
@@ -209,7 +171,7 @@ h1 > .sketch {
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: italic;
-    padding: 0.5rem 0 0 1rem; }
+    padding: .5rem 0 0 1rem; }
 
 .body {
   max-width: 43rem;
@@ -226,12 +188,6 @@ h1 > .sketch {
   .body .email-form-box {
     border: none;
     margin-top: 2rem; }
-  .body h2.first {
-    text-align: center;
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 800;
-    font-style: normal;
-    padding: 2rem 0 3rem 0; }
 
 .creative {
   padding: 2rem 0; }
@@ -251,3 +207,5 @@ figure.pie {
 .about figure {
   width: 50%;
   margin: 0 auto; }
+
+/*# sourceMappingURL=course.css.map */

@@ -16,6 +16,8 @@
   max-width: 100%; }
 
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -71,13 +73,25 @@ blockquote {
 p:first-of-type, li:first-of-type {
   padding-top: 0; }
 
-h2 + h2, h2 + p, h2 + li, h2 + figure, h2 + ul, h2 + .highlight, h2 + iframe {
+h2 + h2,
+h2 + p,
+h2 + li,
+h2 + figure,
+h2 + ul,
+h2 + .highlight,
+h2 + iframe {
   padding-top: 0; }
 
 h3 {
   padding: 1rem 0; }
 
-h3 + h3, h3 + p, h3 + li, h3 + figure, h3 + ul, h3 + .highlight, h3 + iframe {
+h3 + h3,
+h3 + p,
+h3 + li,
+h3 + figure,
+h3 + ul,
+h3 + .highlight,
+h3 + iframe {
   padding-top: 0; }
 
 em {
@@ -101,7 +115,7 @@ h3 {
       font-size: 1.6154rem; } }
 
 ul, ol {
-  padding-left: 0.5rem; }
+  padding-left: .5rem; }
   @media (min-width: 530px) {
     ul, ol {
       padding-left: 0; } }
@@ -116,9 +130,7 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
 
   h2 {
-    font-size: 2.6154rem; }
- }
-
+    font-size: 2.6154rem; } }
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -132,7 +144,7 @@ header.banner {
   text-transform: uppercase;
   font-size: 2.6154rem;
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   padding-bottom: 2rem; }
   .banner-title a {
     color: #286c8d; }
@@ -141,7 +153,7 @@ div.products {
   box-shadow: inset 0 6px 6px -6px #222222; }
 
 div.resources hr {
-  margin: 0.5rem 0;
+  margin: .5rem 0;
   border-top: 1px solid #c7c8c9;
   border-bottom: 0;
   border-right: 0;
@@ -160,9 +172,9 @@ div.resources p {
 div.resources figure {
   width: 75px;
   height: 75px;
-  padding-top: 0.5rem;
+  padding-top: .5rem;
   float: left;
-  padding-right: 0.75rem; }
+  padding-right: .75rem; }
   @media (min-width: 1250px) {
     div.resources figure {
       width: 100px; } }
@@ -209,12 +221,8 @@ div.resources .featured {
     line-height: 1rem;
     max-width: 100%;
     font-size: 1.5em;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
     clear: both;
     max-width: 12rem;
     margin-left: auto; }
@@ -224,13 +232,11 @@ div.resources .featured {
         font-size: 2em;
         max-width: 17rem; } }
     div.resources .featured .featured-cta span {
-      -webkit-flex: 1 0 auto;
-          -ms-flex: 1 0 auto;
-              flex: 1 0 auto;
+      flex: 1 0 auto;
       text-decoration: underline; }
     div.resources .featured .featured-cta span.raquo {
       font-size: 3em;
-      margin-top: -0.06em;
+      margin-top: -.06em;
       text-decoration: none; }
   @media (min-width: 530px) {
     div.resources .featured {
@@ -259,10 +265,10 @@ div.resources .ginormous h2 span.second {
   font-family: 'Nitro A', 'Nitro B', georgia, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.67em;
+  font-size: .67em;
   color: #b93c2f; }
 div.resources .ginormous h2 span.third {
-  font-size: 0.7em; }
+  font-size: .7em; }
 div.resources .older {
   max-width: 19rem;
   margin-left: auto;
@@ -270,15 +276,9 @@ div.resources .older {
   @media (min-width: 530px) {
     div.resources .older {
       max-width: 530px;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
+      justify-content: center;
+      flex-wrap: wrap; } }
   @media (min-width: 1250px) {
     div.resources .older {
       max-width: 1057.5px; } }
@@ -337,7 +337,7 @@ div.products {
         max-width: 737px;
         padding: 2rem; } }
   div.products figure {
-    padding: 0.5rem 0 1rem 0;
+    padding: .5rem 0 1rem 0;
     text-align: center; }
   div.products h3 {
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
@@ -348,8 +348,7 @@ div.products {
     color: #222222; }
   div.products .sketching figure img {
     max-width: 150px;
-    -webkit-filter: drop-shadow(0px 2px 4px #222222);
-            filter: drop-shadow(0px 2px 4px #222222); }
+    filter: drop-shadow(0px 2px 4px #222222); }
   div.products .angular-escape figure.vertical {
     display: none; }
   div.products p {
@@ -375,27 +374,17 @@ div.products {
     margin-left: auto;
     margin-right: auto;
     max-width: 15rem;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    justify-content: flex-start;
+    align-content: center;
     clear: both; }
     div.products .product-cta span {
-      -webkit-flex: 1 1 auto;
-          -ms-flex: 1 1 auto;
-              flex: 1 1 auto;
+      flex: 1 1 auto;
       text-decoration: underline; }
     div.products .product-cta span.raquo {
       font-size: 4em;
-      -webkit-flex: 0 1 auto;
-          -ms-flex: 0 1 auto;
-              flex: 0 1 auto;
-      margin-top: -0.06em;
+      flex: 0 1 auto;
+      margin-top: -.06em;
       text-decoration: none; }
     @media (min-width: 530px) {
       div.products .product-cta {
@@ -420,26 +409,20 @@ div.products {
       content: "";
       display: table;
       clear: both; }
-
     div.products h3 {
       font-size: 4.2308rem;
       text-align: center;
       padding-bottom: 1rem; }
-
     div.products p {
       font-size: 1.6154rem; }
-
     div.products figure {
       float: left;
       padding-right: 1.5rem; }
-
     div.products .angular-escape figure.horizontal {
       display: none; }
-
     div.products .angular-escape figure.vertical {
       display: block;
-      width: 100px; }
- }
+      width: 100px; } }
 
 div.about {
   max-width: 19rem;
@@ -466,3 +449,5 @@ div.about {
   width: 25%;
   padding: 2rem 0;
   margin: 0 auto; }
+
+/*# sourceMappingURL=home.css.map */
