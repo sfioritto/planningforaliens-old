@@ -6,7 +6,9 @@
     padding-top: 3rem;
 
     figure {
-      text-align: center;
+      margin: 0 auto;      
+      max-width: 40rem;
+      text-align: center;      
     }
 
     h1, h2 {
@@ -54,17 +56,6 @@
     }
 
     padding-bottom: 2rem;
-}
-
-.creative {
-    padding: 2rem 0;
-    p {
-        @include archer-bold;
-    }
-    p:first-of-type {
-        font-size: $font-size-3;
-        color: $complementary-color;
-    }
 }
 
 figure.pie {

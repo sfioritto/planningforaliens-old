@@ -134,6 +134,8 @@ ol > li > :first-child {
 .topper {
   padding-top: 3rem; }
   .topper figure {
+    margin: 0 auto;
+    max-width: 40rem;
     text-align: center; }
   .topper h1, .topper h2 {
     text-align: center;
@@ -188,16 +190,6 @@ ol > li > :first-child {
   .body .email-form-box {
     border: none;
     margin-top: 2rem; }
-
-.creative {
-  padding: 2rem 0; }
-  .creative p {
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 800;
-    font-style: normal; }
-  .creative p:first-of-type {
-    font-size: 2.6154rem;
-    color: #b93c2f; }
 
 figure.pie {
   text-align: center; }
