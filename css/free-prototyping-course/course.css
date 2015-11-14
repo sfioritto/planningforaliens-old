@@ -132,31 +132,25 @@ ol > li > :first-child {
   h2 {
     font-size: 2.6154rem; } }
 .topper {
+  margin: 0 auto;
+  max-width: 43rem;
   padding-top: 3rem; }
-  .topper figure {
-    margin: 0 auto;
-    max-width: 40rem;
-    text-align: center; }
-  .topper h1, .topper h2 {
-    text-align: center;
-    font-family: 'Archer A', 'Archer B', georgia, serif;
-    font-weight: 800;
-    font-style: normal;
-    padding: 2rem 0 3rem 0;
-    text-align: center;
-    color: #286c8d;
-    max-width: 43rem;
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.6154rem; }
-    @media (min-width: 530px) {
-      .topper h1, .topper h2 {
-        padding-left: 0;
-        padding-right: 0; } }
+  .topper h2 {
+    font-size: 1.6154rem;
+    text-align: left; }
+  .topper h2:nth-of-type(2) {
+    color: #b93c2f;
+    font-size: 2.6154rem;
+    text-align: left; }
+
+em {
+  font-weight: 800; }
 
 .email-form-box {
-  padding: 1rem !important; }
+  background: white;
+  border: 1px solid #b93c2f;
+  border-radius: 4px;
+  padding: 2rem !important; }
   .email-form-box input.email {
     max-width: 100%; }
   .email-form-box .testimonial {
@@ -168,8 +162,8 @@ ol > li > :first-child {
     padding: 2rem 0 0 0;
     color: #286c8d; }
   .email-form-box .subtext {
-    color: #76b8d8;
-    font-size: 1rem;
+    color: #3a99c7;
+    font-size: 1.6154rem;
     font-family: 'Archer A', 'Archer B', georgia, serif;
     font-weight: 500;
     font-style: italic;
@@ -183,13 +177,18 @@ ol > li > :first-child {
   padding-bottom: 2rem; }
   .body figure {
     margin: 2rem 0; }
+  .body figure.arrow {
+    display: none;
+    margin-top: -150px;
+    margin-left: -100px;
+    position: absolute; }
+    @media (min-width: 1000px) {
+      .body figure.arrow {
+        display: block; } }
   @media (min-width: 530px) {
     .body {
       padding-left: 0;
       padding-right: 0; } }
-  .body .email-form-box {
-    border: none;
-    margin-top: 2rem; }
 
 figure.pie {
   text-align: center; }

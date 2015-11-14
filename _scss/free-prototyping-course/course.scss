@@ -3,58 +3,66 @@
 @import "base";
 
 .topper {
-    padding-top: 3rem;
-
-    figure {
-      margin: 0 auto;      
-      max-width: 40rem;
-      text-align: center;      
-    }
-
-    h1, h2 {
-      text-align: center;
-      @include archer-bold;
-      padding: 2rem 0 3rem 0;
-      text-align: center;
-      color: $darker-base-color;
-      @include centered;
-      font-size: $font-size-2;
-    }
+  margin: 0 auto;
+  max-width: 43rem;
+  padding-top: 3rem;
+  h2 {
+    font-size: $font-size-2;
+    text-align: left;
+  }
+  h2:nth-of-type(2) {
+    color: $complementary-color;
+    font-size: $font-size-3;
+    text-align: left;
+  }
 }
 
-.email-form-box { 
-    padding: 1rem !important;
-    input.email {
-        max-width: 100%;
-    }
-
-    .testimonial {
-        text-align: center;
-        @include archer;
-        font-size: $font-size-2;
-        padding: 2rem 0 0 0;
-        color: $darker-base-color;
-    }
-    .subtext {
-        color: $base-color;
-        font-size: $font-size-1;
-        @include archer-italic;
-        padding: .5rem 0 0 1rem;
-    }
+em {
+  font-weight: 800;
 }
+
+.email-form-box {
+  background: white;
+  border: 1px solid $complementary-color;
+  border-radius: 4px;
+  padding: 2rem !important;
+  
+  input.email {
+    max-width: 100%;
+  }
+  
+  .testimonial {
+    text-align: center;
+    @include archer;
+    font-size: $font-size-2;
+    padding: 2rem 0 0 0;
+    color: $darker-base-color;
+  }
+  .subtext {
+    color: $dark-base-color;
+    font-size: $font-size-2;
+    @include archer-italic;
+    padding: .5rem 0 0 1rem;
+  }
+}
+
 .body {
 
     figure {
         margin: 2rem 0;
     }
 
-    @include centered;
-
-    .email-form-box {
-        border: none;
-        margin-top: 2rem;
+    figure.arrow {
+      display: none;
+      margin-top: -150px;
+      margin-left: -100px;
+      position: absolute;
+      @include breakpoint(1000px) {
+        display: block;
+      }
     }
 
+    @include centered;
     padding-bottom: 2rem;
 }
 

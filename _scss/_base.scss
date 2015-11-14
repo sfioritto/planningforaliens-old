@@ -40,6 +40,9 @@ $large-width: 737px;
   @else if $point == tiny {
     @media (max-width: 320px) { @content; }
   }
+  @else {
+    @media (min-width: $point) { @content; }    
+  }
 }
 
 @mixin button {
