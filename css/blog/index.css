@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -169,5 +167,3 @@ header.banner {
     @media (min-width: 530px) {
       .posts li .title, .posts li p {
         font-size: 1.6154rem; } }
-
-/*# sourceMappingURL=index.css.map */

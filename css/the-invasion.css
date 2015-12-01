@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 .outer {
   padding-top: 2rem; }
   .outer form label, .outer form input {
@@ -157,6 +155,9 @@ header.top {
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
     @media (min-width: 530px) {
       header.top .wrapper {
@@ -165,13 +166,29 @@ header.top {
   header.top figure {
     max-width: 100px;
     min-width: 80px;
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     padding-right: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   header.top div.title {
-    flex: 1 1 auto; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
   header.top h1 {
     font-family: 'Tungsten A', 'Tungsten B', verdana, sans-serif;
     font-weight: 300;
@@ -221,6 +238,7 @@ h2 {
   .about figure img {
     padding: 2px;
     border: 1px solid #286c8d; }
+
 .about iframe {
   padding: 0; }
 
@@ -230,8 +248,5 @@ h2 {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
-
-/*# sourceMappingURL=the-invasion.css.map */

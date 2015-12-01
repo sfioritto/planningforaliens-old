@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,18 +126,31 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 .title {
   max-width: 43rem;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   @media (min-width: 530px) {
     .title {
       padding-left: 0;
@@ -180,20 +191,23 @@ ol > li > :first-child {
   display: none; }
 
 .hide-add-start {
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
   opacity: 0; }
 
 /*ng-animate CSS */
 .hide-add {
   display: block;
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
   opacity: 1; }
 
 .hide-add-active {
   opacity: 0; }
 
 .hide-remove {
-  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
   display: block;
   opacity: 0; }
 
@@ -209,5 +223,3 @@ ol > li > :first-child {
     height: 4rem; }
     .myHideExample .message p {
       padding: 1rem 0; }
-
-/*# sourceMappingURL=animate.css.map */

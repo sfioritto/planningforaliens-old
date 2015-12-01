@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -153,9 +151,19 @@ html, body {
   height: 100%; }
 
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #edf6fa; }
 
 .banner {
@@ -188,5 +196,3 @@ body {
 
 .code, .message {
   text-align: center; }
-
-/*# sourceMappingURL=error.css.map */

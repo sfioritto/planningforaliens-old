@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -177,13 +175,17 @@ header.banner {
   font-size: 2.6154rem;
   color: #222222;
   padding-bottom: 1rem; }
+
 .sketching.outer figure {
   max-width: 300px;
   margin: 0 auto; }
+
 .sketching.outer figure {
   padding-bottom: 1rem; }
   .sketching.outer figure img {
-    filter: drop-shadow(0px 2px 4px #222222); }
+    -webkit-filter: drop-shadow(0px 2px 4px #222222);
+            filter: drop-shadow(0px 2px 4px #222222); }
+
 .sketching.outer p, .sketching.outer p:first-of-type {
   max-width: 40rem;
   margin: 1rem 0; }
@@ -208,14 +210,23 @@ header.banner {
     font-size: 1.6154rem; }
 
 .angular-escape.outer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .angular-escape.outer figure {
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     max-width: 100px;
     margin: 0 auto;
     padding-right: 1rem; }
   .angular-escape.outer form {
-    flex: 1 1 auto; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
 
 header {
   border-bottom: 1px solid #c7c8c9; }
@@ -263,6 +274,9 @@ article {
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: 1px solid #c7c8c9;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .newsletter-prompt p {
     font-family: 'Archer A', 'Archer B', georgia, serif;
@@ -272,9 +286,15 @@ article {
     max-width: 170px;
     padding-right: 2rem;
     padding-top: 0;
-    flex: 1 1 0; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0;
+        -ms-flex: 1 1 0;
+            flex: 1 1 0; }
   .newsletter-prompt > div {
-    flex: 3 3 0; }
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 3 0;
+        -ms-flex: 3 3 0;
+            flex: 3 3 0; }
   .newsletter-prompt .cta {
     margin: 0 auto;
     padding: 1rem 0; }
@@ -287,5 +307,3 @@ article {
           font-size: 2.6154rem; } }
     .newsletter-prompt .cta a:visited {
       color: #f8f8f8; }
-
-/*# sourceMappingURL=post.css.map */

@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 header.banner {
   width: 100%;
   background-image: url("/images/old_mathematics.png"); }
@@ -161,6 +159,7 @@ div.resources hr {
   @media (min-width: 530px) {
     div.resources hr {
       margin: 1rem 0; } }
+
 div.resources p {
   font-family: 'Archer A', 'Archer B', georgia, serif;
   font-weight: 500;
@@ -169,6 +168,7 @@ div.resources p {
     content: "";
     display: table;
     clear: both; }
+
 div.resources figure {
   width: 75px;
   height: 75px;
@@ -180,6 +180,7 @@ div.resources figure {
       width: 100px; } }
   div.resources figure img {
     width: 100%; }
+
 div.resources .featured {
   margin: 0 auto;
   padding-top: 2rem;
@@ -221,8 +222,14 @@ div.resources .featured {
     line-height: 1rem;
     max-width: 100%;
     font-size: 1.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     clear: both;
     max-width: 12rem;
     margin-left: auto; }
@@ -232,7 +239,10 @@ div.resources .featured {
         font-size: 2em;
         max-width: 17rem; } }
     div.resources .featured .featured-cta span {
-      flex: 1 0 auto;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto;
       text-decoration: underline; }
     div.resources .featured .featured-cta span.raquo {
       font-size: 3em;
@@ -255,20 +265,25 @@ div.resources .featured {
         height: 300px; }
       div.resources .featured p {
         font-size: 2.6154rem; } }
+
 div.resources .ginormous h2 span {
   line-height: 1.1em;
   display: block; }
+
 div.resources .ginormous h2 span.first {
   letter-spacing: 2px;
   font-weight: 700; }
+
 div.resources .ginormous h2 span.second {
   font-family: 'Nitro A', 'Nitro B', georgia, serif;
   font-weight: 400;
   font-style: normal;
   font-size: .67em;
   color: #b93c2f; }
+
 div.resources .ginormous h2 span.third {
   font-size: .7em; }
+
 div.resources .older {
   max-width: 19rem;
   margin-left: auto;
@@ -276,9 +291,17 @@ div.resources .older {
   @media (min-width: 530px) {
     div.resources .older {
       max-width: 530px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap; } }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   @media (min-width: 1250px) {
     div.resources .older {
       max-width: 1057.5px; } }
@@ -348,7 +371,8 @@ div.products {
     color: #222222; }
   div.products .sketching figure img {
     max-width: 150px;
-    filter: drop-shadow(0px 2px 4px #222222); }
+    -webkit-filter: drop-shadow(0px 2px 4px #222222);
+            filter: drop-shadow(0px 2px 4px #222222); }
   div.products .angular-escape figure.vertical {
     display: none; }
   div.products p {
@@ -374,16 +398,30 @@ div.products {
     margin-left: auto;
     margin-right: auto;
     max-width: 15rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
     clear: both; }
     div.products .product-cta span {
-      flex: 1 1 auto;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
       text-decoration: underline; }
     div.products .product-cta span.raquo {
       font-size: 4em;
-      flex: 0 1 auto;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 auto;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
       margin-top: -.06em;
       text-decoration: none; }
     @media (min-width: 530px) {
@@ -449,5 +487,3 @@ div.about {
   width: 25%;
   padding: 2rem 0;
   margin: 0 auto; }
-
-/*# sourceMappingURL=home.css.map */

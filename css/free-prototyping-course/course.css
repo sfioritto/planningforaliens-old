@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 .topper {
   margin: 0 auto;
   max-width: 43rem;
@@ -198,5 +196,3 @@ figure.pie {
 .about figure {
   width: 50%;
   margin: 0 auto; }
-
-/*# sourceMappingURL=course.css.map */

@@ -16,8 +16,6 @@
   max-width: 100%; }
 
 *, *::before, *::after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .drip-tab-container {
@@ -128,9 +126,9 @@ ol > li > :first-child {
 @media (min-width: 530px) {
   p, li {
     font-size: 1.6154rem; }
-
   h2 {
     font-size: 2.6154rem; } }
+
 body {
   background: url("/images/old_mathematics.png"); }
 
@@ -184,13 +182,31 @@ h2 {
   border-radius: 4px; }
   @media (min-width: 530px) {
     .event {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap; } }
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   .event .left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .event .left .day {
       font-weight: 700;
       font-size: 1.6154rem;
@@ -239,17 +255,17 @@ h2 {
 
 .newversion h1 {
   padding-bottom: 2rem; }
+
 .newversion h2 {
   font-size: 1.6154rem;
   color: #3a99c7; }
   @media (min-width: 530px) {
     .newversion h2 {
       font-size: 2.6154rem; } }
+
 .newversion h2.free {
   color: #f8f8f8;
   font-size: 1rem; }
   @media (min-width: 530px) {
     .newversion h2.free {
       font-size: 1.6154rem; } }
-
-/*# sourceMappingURL=workshop.css.map */
