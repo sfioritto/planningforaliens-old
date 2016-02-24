@@ -128,3 +128,38 @@ ol > li > :first-child {
     font-size: 1.6154rem; }
   h2 {
     font-size: 2.6154rem; } }
+
+html, body {
+  height: 100%; }
+
+.main {
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.quote p {
+  text-align: center;
+  width: 30rem;
+  margin: 0 auto; }
+
+h2 {
+  font-size: 1.6154rem;
+  text-align: center;
+  padding-bottom: 2rem; }
