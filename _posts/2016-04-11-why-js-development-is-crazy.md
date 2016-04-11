@@ -153,3 +153,5 @@ development? Want to avoid feeling overwhelmed and in the process
 massively overengineering your Javascript application? That's what
 I'll be focused on in the coming months in this newsletter, so stick
 around, there's more coming in a week or two!
+
+{% include javascript-form.html %}
