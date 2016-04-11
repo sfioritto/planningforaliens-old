@@ -107,7 +107,7 @@ crazy.
 
 ###Now for that picture I promised.
 
-picture
+![Bell Curve](/images/bell_curve.png)
 
 The vast majority of Javascript web applications you will work on will
 fall somewhere in the middle of that bell curve. And in the middle, if
@@ -120,12 +120,11 @@ HAVE.
 
 ###Here's that picture again:
 
-add a "you are here" arrow, add "Google, Amazon, Facebook arrow to
-the other end.
+![Bell Curve](/images/bell_curve_2.png)
 
 The state of Javascript development is overwhelming and confusing
-because everyone is massively overegnineering their apps by default
-without even realizing it.
+because everyone is overegnineering their apps by default without even
+realizing it.
 
 How should you start a Javascript application? Should you ever use
 something like React or Angular? Should you use a package manager?
