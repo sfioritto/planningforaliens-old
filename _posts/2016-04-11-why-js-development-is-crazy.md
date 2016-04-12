@@ -111,7 +111,7 @@ crazy.
 
 The vast majority of Javascript web applications you will work on will
 fall somewhere in the middle of that bell curve. And in the middle, if
-you start with a full React stack you have massively overengineered
+you start with a full React stack you have massively over-engineered
 your application from the start.
 
 And that is why everything is crazy. Most of these tools you think you
@@ -123,7 +123,7 @@ HAVE.
 ![Bell Curve](/images/bell_curve_2.png)
 
 The state of Javascript development is overwhelming and confusing
-because everyone is overegnineering their apps by default without even
+because everyone is over-engineering their apps by default without even
 realizing it.
 
 How should you start a Javascript application? Should you ever use
@@ -141,7 +141,7 @@ applications: Jquery plus client-side templates and a dead simple
 build tool for concatenating and minifying production files (assuming
 your backend framework doesn't do this already).
 
-If you learn how to structure a Javscript app correctly, you will
+If you learn how to structure a Javascript app correctly, you will
 start to understand how, when and why to use a framework or
 npm/require/webpack or es6 or when to write tests or when you should
 bother to make your tests run locally vs. in the browser, and all of
