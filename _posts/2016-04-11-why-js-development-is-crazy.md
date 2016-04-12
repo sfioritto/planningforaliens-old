@@ -73,6 +73,10 @@ at 19,374 lines of code. And you only had to install browserify,
 babelify and react-dom, weighing in at some unknown tens of thousands
 of lines of code.
 
+###So basically this ...
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Marc was almost ready to implement his &quot;hello world&quot; React app <a href="https://t.co/ptdg4yteF1">pic.twitter.com/ptdg4yteF1</a></p>&mdash; Thomas Fuchs (@thomasfuchs) <a href="https://twitter.com/thomasfuchs/status/708675139253174273">March 12, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Ok, now let's do a hello world app with plain Javascript.
 
 {% highlight html %}
