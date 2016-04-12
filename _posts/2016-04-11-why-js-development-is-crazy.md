@@ -97,7 +97,7 @@ Ok, now let's do a hello world app with plain Javascript.
   {% endhighlight %}
 
 That's the whole thing. 18 lines of code. You can copy/paste that into a file called
-index.hml, double click and load it in your browser. Done.
+index.html, double click and load it in your browser. Done.
 
 If right at this moment you are thinking to yourself, "But wait, React
 does so much more than this dinky little thing you just wrote and you
