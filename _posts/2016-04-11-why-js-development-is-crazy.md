@@ -127,13 +127,15 @@ HAVE.
 ![Bell Curve](/images/bell_curve_2.png)
 
 The state of Javascript development is overwhelming and confusing
-because everyone is over-engineering their apps by default without even
+because everyone is overengineering their apps by default without even
 realizing it.
 
 How should you start a Javascript application? Should you ever use
 something like React or Angular? Should you use a package manager?
 What do you do if you don't? Are tests even necessary? Should you even
-generate the markup with Javascript?
+generate the markup with Javascript? These are all questions you
+should be asking before starting with your gigantic tech stack by
+default.
 
 When you start a Javascript application, the key is to pick a spot on
 that bell curve just in front of where you think the app could
@@ -153,7 +155,7 @@ these other questions and problems that will come up.
 
 Interested in filling in those gaps in your knowledge about Javascript
 development? Want to avoid feeling overwhelmed and in the process
-massively overengineering your Javascript application? That's what
+massively overengineer your Javascript application? That's what
 I'll be focused on in the coming months in this newsletter, so stick
 around, there's more coming in a week or two!
 
