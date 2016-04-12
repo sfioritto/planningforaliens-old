@@ -26,7 +26,7 @@ First step is to get your local development environment up and
 running. So Gulp, no wait Grunt, no ... NPM scripts!
 
 Webpack or Browserify? (Sheepishly) Require.js? Make the leap to ES6?
-Or is adding Babel to your preprocessing to much?
+Or is adding Babel to your preprocessing too much?
 
 BDD or regular unit testing? What assert framework should you use? It
 sure would be nice to run tests from the command line, so maybe
