@@ -189,6 +189,8 @@ div.resources .featured {
     content: "";
     display: table;
     clear: both; }
+  div.resources .featured p {
+    padding-bottom: 1rem; }
   div.resources .featured hr {
     border-bottom: 1px solid;
     border-color: #f3d1c7; }
@@ -221,29 +223,22 @@ div.resources .featured {
     box-shadow: 1px 1px 5px #222222;
     line-height: 1rem;
     max-width: 100%;
-    font-size: 1.5em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    clear: both;
+    font-size: 2em;
+    display: block;
     max-width: 12rem;
-    margin-left: auto; }
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
     @media (min-width: 530px) {
       div.resources .featured .featured-cta {
         padding: 1.5rem;
-        font-size: 2em;
+        font-size: 3em;
         max-width: 17rem; } }
     div.resources .featured .featured-cta span {
       -webkit-box-flex: 1;
       -webkit-flex: 1 0 auto;
           -ms-flex: 1 0 auto;
-              flex: 1 0 auto;
-      text-decoration: underline; }
+              flex: 1 0 auto; }
     div.resources .featured .featured-cta span.raquo {
       font-size: 3em;
       margin-top: -.06em;
@@ -267,8 +262,9 @@ div.resources .featured {
         font-size: 2.6154rem; } }
 
 div.resources .ginormous h2 span {
-  line-height: 1.1em;
-  display: block; }
+  line-height: 1em;
+  display: block;
+  font-size: .9em; }
 
 div.resources .ginormous h2 span.first {
   letter-spacing: 2px;
@@ -278,7 +274,7 @@ div.resources .ginormous h2 span.second {
   font-family: 'Nitro A', 'Nitro B', georgia, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: .67em;
+  font-size: 1em;
   color: #b93c2f; }
 
 div.resources .ginormous h2 span.third {
