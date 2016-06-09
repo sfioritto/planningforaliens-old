@@ -125,7 +125,7 @@ benefit from switching to a framework.
 Okay, so this probably sounds like a very complicated decision, but
 for a lot of companies, it's more straightforward than it seems.
 
-[chart here]
+![Should You Use a Framework](/images/use-a-framework-chart.png)
 
 ###Fast and Small e.g. Startups
 The top, left of this chart is where startups live. The faster your
