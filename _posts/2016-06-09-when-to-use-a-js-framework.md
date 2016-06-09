@@ -12,8 +12,8 @@ newsletter, [The Invasion](/the-invasion).
 So my internet exploded for a few days. In the aftermath, two
 questions emerged:
 
-1 When *should* you use a framework?
-2 If you're not using a framework, how should you proceed?
+1. When *should* you use a framework?
+2. If you're not using a framework, how should you proceed?
 
 I will try to address the first question here. How you should proceed
 without a framework is a much bigger question. I'll be working my way
