@@ -28,7 +28,7 @@ header {
         @include archer-italic;
         padding-top: 0;
     }
-    
+
     @include breakpoint(bigger) {
         h2 {
             font-size: $font-size-4;
@@ -85,4 +85,11 @@ article {
             color: $white;
         }
     }
+}
+
+.fake-internet-pic {
+  width: 20rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

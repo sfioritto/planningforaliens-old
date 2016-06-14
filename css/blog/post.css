@@ -307,3 +307,9 @@ article {
           font-size: 2.6154rem; } }
     .newsletter-prompt .cta a:visited {
       color: #f8f8f8; }
+
+.fake-internet-pic {
+  width: 20rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
