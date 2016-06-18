@@ -70,11 +70,24 @@ I'm done with that. I want people like YOU working next to me. I want
 to feel like I'm a part of Chicago, not some weirdo outsider with a
 fake internet job surfing from coffee shop to coffee shop.
 
+About two months ago, I got an email from <a
+href="https://twitter.com/TheVisionfairy">Monica Guzman</a>. She
+wanted to meet and talk shop about consulting. So we got together for
+coffee, and while we were talking she mentioned that as a freelancer,
+she felt isolated, and that she wanted to be a part of a
+community. She said that she was trying to start a coworking space,
+but that really what she wanted was a community, and that the space
+wasn't that important.
+
+Of course I immediately said I want to help! Because that is exactly
+how I feel.
+
 So what's next, what's the next step? How do we make this happen?
 
 The next step is for us to meet! You have two options:
 
-1. Email me and we get together for coffee: sean@planningforaliens.com
-2. Join me and your fellow fake-internet-jobbers at this fun event,
+1. Email me or Monica and we get together for coffee:
+   sean@planningforaliens.com, monica.v.guzman@gmail.com.
+2. Join Monica and me and your fellow fake-internet-jobbers at this fun event,
    scheduled during hours only people with fake internet jobs could
    make. [Click right here to join the meetup](http://www.meetup.com/imposterati/).
