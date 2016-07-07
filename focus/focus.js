@@ -8,15 +8,14 @@ $(function(){
 
   //chart
   var chartData = {
-    labels: ["Garage Roof",
-             "Credit Cards",
-             "Rule 4",
-             "Taxes 2015",
-             "Taxes 2014",
-             "More Credit Cards",
-             "1 Month Buffer",
-             "Sean Student Loans",
-             "Beth Student Loans"],
+    labels: ["1 Month Buffer",
+             "Tuck Pointing",
+             "Finish Kitchen",
+             "Window Treatments",
+             "Builtins",
+             "Beth Student Loans",
+             "Sean Student Loans"],
+
     datasets: [
       {
         label: "My First dataset",
@@ -24,7 +23,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [0, 0, 0, 0, 0, 0, 0, 5500, 12000],
+        data: [1500, 8000, 4000, 3000, 10000, 12000, 5000],
       },
       {
         label: "My Second dataset",
@@ -32,7 +31,7 @@ $(function(){
         strokeColor: "rgba(151,187,205,0.8)",
         highlightFill: "rgba(151,187,205,0.75)",
         highlightStroke: "rgba(151,187,205,1)",
-        data: [5000, 30000, 17000, 20000, 5000, 6100, 8300, 0, 0]
+        data: [6800, 0, 0, 0, 0, 0, 0]
       }
     ]
   };
