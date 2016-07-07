@@ -11,6 +11,7 @@ $(function(){
     labels: ["1 Month Buffer",
              "Tuck Pointing",
              "Finish Kitchen",
+             "2 More Months Buffer",
              "Window Treatments",
              "Builtins",
              "Beth Student Loans",
@@ -23,7 +24,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [1500, 8000, 4000, 3000, 10000, 12000, 5000],
+        data: [2200, 8000, 4000, 18000, 3000, 10000, 12000, 5000],
       },
       {
         label: "My Second dataset",
@@ -31,7 +32,7 @@ $(function(){
         strokeColor: "rgba(151,187,205,0.8)",
         highlightFill: "rgba(151,187,205,0.75)",
         highlightStroke: "rgba(151,187,205,1)",
-        data: [6800, 0, 0, 0, 0, 0, 0]
+        data: [6800, 0, 0, 0, 0, 0, 0, 0]
       }
     ]
   };
@@ -41,7 +42,7 @@ $(function(){
       paid = chartData.datasets[1].data.reduce(function(a, b){return a+b;}),
       paidText = "$" + Math.floor(paid/1000) + "k",
       goalText = "$" + Math.floor(goal/1000) + "k";
-  $("h2").html(paidText + " paid off, " + goalText + " until no debt. Get back to work!");
+  $("h2").html(paidText + " saved, " + goalText + " until all the cool things. Get back to work!");
 
   var ctx = document.getElementById("myChart").getContext("2d");
   var myBarChart = new Chart(ctx).StackedBar(chartData, {
