@@ -27,17 +27,17 @@
     {% endfor %}
     {% endif %}
 
-    {% if layout.style %}
-    <link rel="stylesheet" href="/css/{{ layout.style }}" type="text/css"/>
+    {% if page.style %}
+    <link rel="stylesheet" href="/css/{{ page.style }}" type="text/css"/>
     {% endif %}
 
-    {% if layout.external %}
-    {% for script in layout.external %}
+    {% if page.external %}
+    {% for script in page.external %}
     <script src="{{ script }}"></script>
     {% endfor %}
     {% endif %}
 
-    {% if layout.javascript %}
+    {% if page.javascript %}
     <script src="{{ layout.javascript }}"></script>
     {% endif %}
 
