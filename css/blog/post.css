@@ -211,12 +211,10 @@ header.banner {
 
 .angular-escape.outer {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .angular-escape.outer figure {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     max-width: 100px;
@@ -224,7 +222,6 @@ header.banner {
     padding-right: 1rem; }
   .angular-escape.outer form {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
 
@@ -275,7 +272,6 @@ article {
   margin-top: 2rem;
   border-top: 1px solid #c7c8c9;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .newsletter-prompt p {
@@ -287,12 +283,10 @@ article {
     padding-right: 2rem;
     padding-top: 0;
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0;
         -ms-flex: 1 1 0;
             flex: 1 1 0; }
   .newsletter-prompt > div {
     -webkit-box-flex: 3;
-    -webkit-flex: 3 3 0;
         -ms-flex: 3 3 0;
             flex: 3 3 0; }
   .newsletter-prompt .cta {

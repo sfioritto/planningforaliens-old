@@ -156,7 +156,6 @@ header.top {
     padding-left: 1rem;
     padding-right: 1rem;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     @media (min-width: 530px) {
@@ -167,26 +166,21 @@ header.top {
     max-width: 100px;
     min-width: 80px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     padding-right: 1rem;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
   header.top div.title {
     -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto; }
   header.top h1 {

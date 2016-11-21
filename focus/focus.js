@@ -9,12 +9,15 @@ $(function(){
   //chart
   var chartData = {
     labels: ["1 Month Buffer",
-             "Tuck Pointing",
              "Finish Kitchen",
-             "1 Month Buffer",
+             "Tuck Pointing",
              "Window Treatments",
              "1 Month Buffer",
-             "Builtins",
+             "1 Month Buffer",
+             "1 Month Buffer",
+             "1 Month Buffer",
+             "1 Month Buffer",
+             "1 Month Buffer",
              "Beth Student Loans",
              "Sean Student Loans"],
 
@@ -25,7 +28,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [0, 0, 0, 9000, 3000, 9000, 10000, 12000, 5000],
+        data: [0, 0, 11250, 0, 9000, 9000, 9000, 9000, 9000, 9000, 12000, 5000]
       },
       {
         label: "My Second dataset",
@@ -33,7 +36,7 @@ $(function(){
         strokeColor: "rgba(151,187,205,0.8)",
         highlightFill: "rgba(151,187,205,0.75)",
         highlightStroke: "rgba(151,187,205,1)",
-        data: [9000, 8000, 4000, 0, 0, 0, 0, 0, 0]
+        data: [9000, 4000, 3750, 3500, 0, 0, 0, 0, 0, 0, 0, 0]
       }
     ]
   };

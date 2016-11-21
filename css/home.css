@@ -236,7 +236,6 @@ div.resources .featured {
         max-width: 17rem; } }
     div.resources .featured .featured-cta span {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 0 auto;
           -ms-flex: 1 0 auto;
               flex: 1 0 auto; }
     div.resources .featured .featured-cta span.raquo {
@@ -288,16 +287,13 @@ div.resources .older {
     div.resources .older {
       max-width: 530px;
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
-      -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-flex-wrap: wrap;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; } }
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   @media (min-width: 1250px) {
     div.resources .older {
       max-width: 1057.5px; } }
@@ -395,27 +391,22 @@ div.products {
     margin-right: auto;
     max-width: 15rem;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-            align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     clear: both; }
     div.products .product-cta span {
       -webkit-box-flex: 1;
-      -webkit-flex: 1 1 auto;
           -ms-flex: 1 1 auto;
               flex: 1 1 auto;
       text-decoration: underline; }
     div.products .product-cta span.raquo {
       font-size: 4em;
       -webkit-box-flex: 0;
-      -webkit-flex: 0 1 auto;
           -ms-flex: 0 1 auto;
               flex: 0 1 auto;
       margin-top: -.06em;
