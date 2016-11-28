@@ -20,9 +20,16 @@
 
     <!-- h&fj -->
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6366632/627246/css/fonts.css" />
-
     {% if layout.styles %}
+
     {% for style in layout.styles %}
+    <link rel="stylesheet" href="/css/{{ style }}" type="text/css"/>
+    {% endfor %}
+    {% endif %}
+
+    {% if page.styles %}
+
+    {% for style in page.styles %}
     <link rel="stylesheet" href="/css/{{ style }}" type="text/css"/>
     {% endfor %}
     {% endif %}

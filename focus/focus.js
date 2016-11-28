@@ -10,9 +10,8 @@ $(function(){
   var chartData = {
     labels: ["1 Month Buffer",
              "Finish Kitchen",
-             "Tuck Pointing",
              "Window Treatments",
-             "1 Month Buffer",
+             "Tuck Pointing",
              "1 Month Buffer",
              "1 Month Buffer",
              "1 Month Buffer",
@@ -28,7 +27,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [0, 0, 11250, 0, 9000, 9000, 9000, 9000, 9000, 9000, 12000, 5000]
+        data: [0, 0, 0, 11250, 9000, 9000, 9000, 9000, 9000, 12000, 5000]
       },
       {
         label: "My Second dataset",
@@ -36,7 +35,7 @@ $(function(){
         strokeColor: "rgba(151,187,205,0.8)",
         highlightFill: "rgba(151,187,205,0.75)",
         highlightStroke: "rgba(151,187,205,1)",
-        data: [9000, 4000, 3750, 3500, 0, 0, 0, 0, 0, 0, 0, 0]
+        data: [9000, 4000, 3500, 3750, 0, 0, 0, 0, 0, 0, 0]
       }
     ]
   };
