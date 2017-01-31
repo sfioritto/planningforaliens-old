@@ -25,7 +25,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [0, 0, 0, 0, 3000, 9000, 9000, 4500, 4500]
+        data: [0, 0, 0, 0, 3000, 9000, 9000, 14000, 4500]
       },
       {
         label: "My Second dataset",
