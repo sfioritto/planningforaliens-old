@@ -13,8 +13,10 @@ $(function(){
              "Garage",
              "Tuck Pointing",
              "1 Month Buffer",
+             "2016 HSA",
              "1 Month Buffer",
              "1 Month Buffer",
+             "2017 HSA",
              "Beth Student Loans",
              "Sean Student Loans"],
 
@@ -25,7 +27,7 @@ $(function(){
         strokeColor: "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data: [0, 0, 0, 0, 3000, 9000, 9000, 14000, 4500]
+        data: [0, 0, 0, 0, 3000, 6750, 9000, 9000, 6750, 14000, 4500]
       },
       {
         label: "My Second dataset",
@@ -33,7 +35,7 @@ $(function(){
         strokeColor: "rgba(151,187,205,0.8)",
         highlightFill: "rgba(151,187,205,0.75)",
         highlightStroke: "rgba(151,187,205,1)",
-        data: [4000, 3500, 5500, 15000, 6000, 0, 0, 0, 0]
+        data: [4000, 3500, 5500, 15000, 6000, 0, 0, 0, 0, 0, 0]
       }
     ]
   };
