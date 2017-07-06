@@ -79,7 +79,7 @@ have used a framework? Should they use one now?
 
 When a company picks a framework, there are costs and risks:
 
-###What if support for this framework disappears in five years?
+### What if support for this framework disappears in five years?
 
 Can your organization afford to maintain this framework on it's own?
 Do you have enough expertise on your team? For most companies this
@@ -101,7 +101,7 @@ dies in 5 years is much greater, and the only way to decide if it's
 worth going forward is to think through the rest of these questions
 ...
 
-###How much productivity will we lose to the learning curve for the new framework?
+### How much productivity will we lose to the learning curve for the new framework?
 
 If you're switching to Angular, unless you hired all Angular
 developers, everyone is going to have to get up to speed. You're going
@@ -110,11 +110,11 @@ the next 3-4 months asking "how do I do this in Angular?" even though
 they could have done the same thing with Jquery/vanilla JS without
 thinking about it.
 
-###Could we build a feature that makes us more money with the development time we will spend integrating this framework?
+### Could we build a feature that makes us more money with the development time we will spend integrating this framework?
 
 For most profitable companies, the answer to this is "yes".
 
-###Will the framework allow us to build more money making features more quickly in the future?
+### Will the framework allow us to build more money making features more quickly in the future?
 
 In theory this is the value of a framework. You get more value
 from a framework the bigger your team is, the bigger your codebase is
@@ -127,7 +127,7 @@ for a lot of companies, it's more straightforward than it seems.
 
 ![Should You Use a Framework](/images/use-a-framework-chart.png)
 
-###Fast and Small e.g. Startups
+### Fast and Small e.g. Startups
 The top, left of this chart is where startups live. The faster your
 codebase is changing, the less risk there is when jumping on the
 latest framework bandwagon. If you're throwing out features left and
@@ -140,7 +140,7 @@ I would say using a framework is a good choice. With the caveat that
 most people are less productive using JS frameworks than the would
 like to admit.
 
-###Slow and Small, Small businesses and small software companies
+### Slow and Small, Small businesses and small software companies
 In the bottom left corner of this is either the classic small business
 where software is not a core component of their business, or a small
 software company. If you're a developer doing work for small
@@ -150,7 +150,7 @@ browser ever invented. If you're running a small, software business, I
 would say in most cases the risks of committing to a framework
 outweigh the benefit.
 
-###Fast and Huge, Google, Amazon, Facebook, etc.
+### Fast and Huge, Google, Amazon, Facebook, etc.
 In the top right of the corner are companies where software is a core
 part of their business, so they're knocking out new features left and
 right and probably throwing away chunks of code and doing more
@@ -166,7 +166,7 @@ worth it. Heck, if you're big enough and profitable enough and
 software is your core business, it makes sense to write your own
 framework like Facebook, Google, etc.
 
-###Slow and Huge, Enterprise
+### Slow and Huge, Enterprise
 The bottom right corner of this quadrant is where Acme sits, and its
 far less clear what the right choice is here. Software is not the core
 business, but software systems enable the core business. The industry

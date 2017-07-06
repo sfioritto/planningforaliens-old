@@ -5,7 +5,7 @@ blurb: "I have a hard time explaining what I do to my friends and family. I don'
 author: "sean"
 ---
 
-##Sure, you have a fake internet job, but are your friends real? Or are they cats?
+## Sure, you have a fake internet job, but are your friends real? Or are they cats?
 
 > [Chicago] is, also, as I like to point out frequently, one of America's last
 > great NO BULLSHIT zones.
@@ -38,7 +38,7 @@ before. Spontaneous collaboration opportunities present themselves to
 me more and more often. My business has grown in ways I could not have
 predicted.
 
-###And I don't feel alone anymore.
+### And I don't feel alone anymore.
 
 My fake internet job friends are mostly online. We talk on Slack or
 video chat. It's fine but I want that HERE, in Chicago where we

@@ -78,15 +78,15 @@ I'm working with some constraints
 
 I set the goal at $100,000 instead of, say, $200,000 because I am working with some constraints.
 
-###I work four days a week
+### I work four days a week
 
 This year I became a dad. When Isaac was born, his mom went part time and goes to work one day a week. I opted to stay at home with Isaac on those days, so I've been working only 4 days a week since July. I will keep that schedule. I love my Isaac days.
 
-###Take 'er easy
+### Take 'er easy
 
 I loathe deadlines. I don't like feeling busy or rushed. I refuse to be rushed if it's something I can control, and since I own my own company, that's true 99% of the time. In fact, I wouldn't set this goal of $100,000 if I thought it would stress me out, even a little. So I'll be working at a very easy pace with occasional sprints of productivity. This will not be a death march.
 
-###Exercise and my anxiety disorder
+### Exercise and my anxiety disorder
 
 One thing I learned this year was that I have an anxiety disorder. This is probably why deadlines are my nemesis. I've had this problem since I can remember, but the combination of becoming a dad and then not sleeping for months, (which turns out is a pretty common combination of events), meant my anxiety was bad enough that I actually went to the doctor. I've never had to do that before. She told me I have an anxiety disorder, and gave me some pills to help me sleep.
 
@@ -94,7 +94,7 @@ The pills helped, but they have side effects, so I decided to get better without
 
 Of course, I can back off on the exercise if Isaac decides to sleep more at night. But I can't ever back completely off, it's too risky for my business. I lost three solid months of productivity to the black hole of anxiety and insomnia this year. I can't afford to do that again.
 
-###Vacation
+### Vacation
 
 We're going to Rocky Mountain National Park in the summer for two weeks, maybe more if we're having a ton of fun, which we usually do. We're also going to Arizona in February for two weeks. So I'm looking at at least a month of vacation time.
 

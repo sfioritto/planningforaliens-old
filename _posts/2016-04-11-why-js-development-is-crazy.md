@@ -17,7 +17,7 @@ The truth is, yes, you're missing a few pieces to the puzzle.
 But also, the current state of the art in frontend development is
 actually crazy.
 
-###It's not just you.
+### It's not just you.
 
 Sit down, pull up a chair. It's time to write a Javascript
 application.
@@ -37,7 +37,7 @@ Angular or React? Ember? Backbone?
 You read some React docs, "Redux is a predictable state container for
 JavaScript apps." Sweet! You'll definitely need one of those.
 
-###Why is it so crazy to build a Javascript application?!?
+### Why is it so crazy to build a Javascript application?!?
 
 Let me help you understand why this all seems insane. We'll start with
 an example and then move on to pretty pictures.
@@ -73,7 +73,7 @@ at 19,374 lines of code. And you only had to install browserify,
 babelify and react-dom, weighing in at some unknown tens of thousands
 of lines of code.
 
-###So basically this ...
+### So basically this ...
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Marc was almost ready to implement his &quot;hello world&quot; React app <a href="https://t.co/ptdg4yteF1">pic.twitter.com/ptdg4yteF1</a></p>&mdash; Thomas Fuchs (@thomasfuchs) <a href="https://twitter.com/thomasfuchs/status/708675139253174273">March 12, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -109,7 +109,7 @@ can't write a Javascript app that way!" you are (mostly) correct, and
 you are also one tiny step away from understanding why everything is
 crazy.
 
-###Now for that picture I promised.
+### Now for that picture I promised.
 
 ![Bell Curve](/images/bell_curve.png)
 
@@ -122,7 +122,7 @@ And that is why everything is crazy. Most of these tools you think you
 have to have are solving problems you don't have NOR WILL YOU EVER
 HAVE.
 
-###Here's that picture again:
+### Here's that picture again:
 
 ![Bell Curve](/images/bell_curve_2.png)
 

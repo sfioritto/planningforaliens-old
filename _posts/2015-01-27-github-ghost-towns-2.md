@@ -39,7 +39,7 @@ I wanted to know how it worked too, so I spent a day reverse engineering the obf
 
 The next day I published  [How the New Mac Pro Site Works](/blog/2013/06/11/mac-pro/). Tons of people shared the post and it ended up being really popular.
 
-###I did such a good job reverse engineering the code, I got a call from an Apple recruiter.
+### I did such a good job reverse engineering the code, I got a call from an Apple recruiter.
 
 This is what happens when you follow the four rules for picking a side project.
 
@@ -63,7 +63,7 @@ Write a blog post AND write code at the same time
 
 The popularity of the Mac Pro post was a clue that people were interested in synchronizing video and CSS animations. So I came up with an idea for an article, (following the four rules), and pitched it to Smashing Magazine. I sent them a draft and they decided to [publish it](http://www.smashingmagazine.com/2013/11/18/the-future-of-video-in-web-design/).
 
-And now I'm a writer for Smashing Magazine, which is super cool and definitely helps my reputation. 
+And now I'm a writer for Smashing Magazine, which is super cool and definitely helps my reputation.
 
 As I was writing the post I realized it would be more valuable if the article walked through an actual code base, so I whipped together a [little library](https://github.com/sfioritto/charlie.js) and put it on Github and mentioned it in the article. Hey presto ... my first open source project actually used by other people.
 
